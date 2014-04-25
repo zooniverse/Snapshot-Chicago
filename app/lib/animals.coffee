@@ -69,10 +69,7 @@ animalCharacteristics = [
   {melanisticGraySquirrel: [0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,1,0,0,1,0,0]}
 ]
 
-keys = (for animal in animalCharacteristics
-          key for key, value in animal )
 
-debugger
 # # The master list of animals is generated from this spreadsheet that the science team put together.
 # # https://docs.google.com/spreadsheet/ccc?key=0AlwCBXG5ae-wdGo5b3hRcnU1RDZsYlV2YVpjMWtNU0E
 
