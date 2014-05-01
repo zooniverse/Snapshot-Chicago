@@ -1,5 +1,5 @@
 {Controller} = require 'spine'
-template = require 'views/about_page'
+template = require '../views/about_page'
 $ = require 'jqueryify'
 
 class AboutPage extends Controller

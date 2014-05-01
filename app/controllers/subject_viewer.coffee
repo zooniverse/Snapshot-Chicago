@@ -1,10 +1,10 @@
 {Controller} = require 'spine'
-template = require 'views/subject_viewer'
+template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
-Subject = require 'models/subject'
+Subject = require '../models/subject'
 $ = require 'jqueryify'
-modulus = require 'lib/modulus'
-splits = require 'lib/splits'
+modulus = require '../lib/modulus'
+splits = require '../lib/splits'
 
 class SubjectViewer extends Controller
   classification: null

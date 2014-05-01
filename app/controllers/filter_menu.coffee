@@ -1,5 +1,5 @@
 {Controller} = require 'spine'
-template = require 'views/filter_menu'
+template = require '../views/filter_menu'
 $ = require 'jqueryify'
 translate = require 't7e'
 

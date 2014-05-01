@@ -1,15 +1,15 @@
 {
-  "name": "serengeti",
+  "name": "chicago-zoo",
   "version": "0.0.1",
   "dependencies": {
     "es5-shimify": "~0.0.1",
-    "hem": "~0.1.8",
+    "haw": "~0.4.7",
     "t7e": "~0.2.3",
     "jqueryify": "~0.0.1",
     "json2ify": "~0.0.1",
     "nib": "~0.8.2",
     "serveup": "~0.0.5",
-    "spine": "~1.0.7",
+    "spine": "1.0.7",
     "underscore": "~1.4.2",
     "zooniverse": "zooniverse/Zooniverse#98ffd4b",
     "zootorial": "~0.2.0",
@@ -17,8 +17,8 @@
     "publisssh": "~0.1.3"
   },
   "scripts": {
-    "start": "hem server --port 6371",
-    "deploy-to-staging": "hem build && publisssh ./public zooniverse-demo/serengeti && trash ./public/application.*",
-    "deploy-to-production": "hem build && publisssh ./public www.snapshotserengeti.org && trash ./public/application.*"
+    "start": "haw serve --port 9999",
+    "deploy-to-staging": "haw build && publisssh ./public zooniverse-demo/serengeti && trash ./public/application.*",
+    "deploy-to-production": "haw build && publisssh ./public www.snapshotserengeti.org && trash ./public/application.*"
   }
 }

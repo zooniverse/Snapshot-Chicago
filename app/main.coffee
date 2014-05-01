@@ -1,23 +1,23 @@
-require 'lib/setup'
+require './lib/setup'
 
-Navigation = require 'controllers/navigation'
+Navigation = require './controllers/navigation'
 $ = require 'jqueryify'
-{Stack} = require 'spine/lib/manager'
 Route = require 'spine/lib/route'
-AboutPage = require 'controllers/about_page'
-HomePage = require 'controllers/home_page'
-Classifier = require 'controllers/classifier'
-Profile = require 'controllers/profile'
-# Explore = require 'controllers/explore'
+AboutPage = require './controllers/about_page'
+HomePage = require './controllers/home_page'
+Classifier = require './controllers/classifier'
+Profile = require './controllers/profile'
+# Explore = require './controllers/explore'
 Api = require 'zooniverse/lib/api'
-seasons = require 'lib/seasons'
+seasons = require './lib/seasons'
 TopBar = require 'zooniverse/lib/controllers/top_bar'
 User = require 'zooniverse/lib/models/user'
 googleAnalytics = require 'zooniverse/lib/google_analytics'
 # Map = require 'zooniverse/lib/map'
 
-ContentPage = require 'controllers/content_page'
-feedbackContent = require 'views/feedback_page'
+{Stack} = require 'spine/lib/manager'
+ContentPage = require './controllers/content_page'
+feedbackContent = require './views/feedback_page'
 
 BrowserCheck = require 'zooniverse/lib/controllers/browser_check'
 bc = new BrowserCheck
@@ -30,7 +30,7 @@ bc.check()
 navigation = new Navigation
 navigation.el.appendTo document.body
 
-LanguagePicker = require 'controllers/language_picker'
+LanguagePicker = require './controllers/language_picker'
 
 languagePicker = new LanguagePicker
 languagePicker.el.prependTo document.body
@@ -107,4 +107,6 @@ Api.proxy.el().one 'load', ->
     TranslationEditor = require 't7e/editor'
     TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 
-module.exports = app
+
+window.app = app
+module.exports = window.app

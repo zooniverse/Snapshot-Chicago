@@ -1,5 +1,5 @@
-$ = require 'jqueryify'
-strings = require 'translations/en_us'
+x$ = require 'jqueryify'
+strings = require '../translations/en_us'
 
 translate = (keys...) ->
   keys = keys[0].split '.' if keys.length is 1

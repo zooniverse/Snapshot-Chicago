@@ -1,11 +1,11 @@
 {Controller} = require 'spine'
 $ = require 'jqueryify'
-template = require 'views/animal_selector'
+template = require '../views/animal_selector'
 FilterMenu = require './filter_menu'
-columnize = require 'lib/columnize'
+columnize = require '../lib/columnize'
 AnimalDetails = require './animal_details'
-getTutorialSubject = require 'lib/get_tutorial_subject'
-getPhysicallyAdjacentSibling = require 'lib/get_physically_adjacent_sibling'
+getTutorialSubject = require '../lib/get_tutorial_subject'
+getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
 
 class AnimalSelector extends Controller
   set: null

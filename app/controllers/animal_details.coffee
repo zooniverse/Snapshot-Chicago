@@ -1,5 +1,5 @@
 {Controller} = require 'spine'
-template = require 'views/animal_details'
+template = require '../views/animal_details'
 PopupButton = require './popup_button'
 ImageChanger = require './image_changer'
 

@@ -1,5 +1,5 @@
-FilteringSet = require 'models/filtering_set'
-Animal = require 'models/animal'
+FilteringSet = require '../models/filtering_set'
+Animal = require '../models/animal'
 translate = require 't7e'
 
 
