@@ -10,11 +10,11 @@
 </div>
 
 <div class="characteristic-filters">
-  <div class="pattern filter-menu"></div>
   <div class="coat filter-menu"></div>
   <div class="horns filter-menu"></div>
   <div class="tail filter-menu"></div>
   <div class="build filter-menu"></div>
+  <div class="manMade filter-menu"></div>
 </div>
 
 <div class="selection-area">

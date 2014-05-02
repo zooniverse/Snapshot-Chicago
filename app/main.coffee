@@ -56,7 +56,7 @@ Api.init
 # TODO: Don't count on the proxy frame to have no loaded yet.
 
 Api.proxy.el().one 'load', ->
-  Api.get '/projects/asteroid', (project) ->
+  Api.get '/projects/serengeti', (project) ->
     sortedSeasons = for season, {_id: id, total, complete} of project.seasons
       total ?= 0
       complete ?= 0
@@ -91,7 +91,7 @@ Api.proxy.el().one 'load', ->
 
     # Load the top bar last since it fetches the user.
     app.topBar = new TopBar
-      app: 'asteroid'
+      app: 'serengeti'
       appName: 'Asteroid Zoo'
 
     $(window).on 'request-login-dialog', ->

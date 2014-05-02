@@ -48,7 +48,7 @@ class Classification extends Model
       favorite: @favorite
 
   url: ->
-    "/projects/asteroid/workflows/#{@subject.workflowId}/classifications"
+    "/projects/serengeti/workflows/#{@subject.workflowId}/classifications"
 
   send: ->
     unless @subject.metadata.tutorial or @subject.metadata.empty
