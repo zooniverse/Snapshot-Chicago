@@ -24,8 +24,6 @@ class Classifier extends Controller
   constructor: ->
     super
 
-    #debugger
-
     @subjectViewer = new SubjectViewer
 
     @el.append @subjectViewer.el
@@ -101,7 +99,8 @@ class Classifier extends Controller
     getEmptySubject().select()
 
   onUserSignIn: =>
-    tutorialDone = User.current?.project.tutorial_done
+    #tutorialDone = User.current?.project.tutorial_done
+    tutorialDone = true
     doingTutorial = Subject.current?.metadata.tutorial
 
     if tutorialDone
