@@ -1,8 +1,0 @@
-{
-  "generate":
-    {
-      "index.html": "public/index.{html,eco}",
-      "/main.js": "app/index.{js,coffee}",
-      "/main.css": "css/index.{css,styl}"
-    }
-}
