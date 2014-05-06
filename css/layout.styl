@@ -33,18 +33,17 @@ html {
     }
 
     > nav {
-      @extend #paper-stripe;
-      background: $white;
+      /* @extend #paper-stripe; */
+      background: inherit;
       bottom: 0;
       box-shadow: 0 0 3px $black;
       font-size: 14px;
       font-weight: bold;
       padding: 20px 0 10px;
-      position: fixed;
-      text-align: center;
+      overflow:hidden;
       width: 100%;
       z-index: 3;
-
+      position: relative;
       ul {
         margin: 0;
         padding: 0;

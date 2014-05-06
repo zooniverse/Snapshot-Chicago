@@ -22,8 +22,7 @@ feedbackContent = require './views/feedback_page'
 BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()
 
-navigation = new Navigation
-navigation.el.appendTo document.body
+
 
 #TODO convert to Zooniverse Language Manager
 LanguagePicker = require './controllers/language_picker'
@@ -82,8 +81,7 @@ app.stack = new Stack
 
 # Load the top bar last since it fetches the user.
 app.topBar = new TopBar
-  app: 'serengeti'
-  appName: 'serengeti'
+ 
 
 #TODO is this behavior needed?
 # $(window).on 'request-login-dialog', ->
@@ -91,13 +89,21 @@ app.topBar = new TopBar
 #   app.topBar.loginForm.signInButton.click()
 #   app.topBar.loginDialog.reattach()
 
-app.stack.el.appendTo 'body'
-app.topBar.el.prependTo 'body'
-
 Route.setup()
 
 TranslationEditor = require 't7e/editor'
 TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
+
+#TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
+navigation = new Navigation
+app.navigation = navigation
+#####################################################
+# Append components to the document body
+#####################################################
+
+app.navigation.el.appendTo  "body"
+app.stack.el.appendTo  "body"
+app.topBar.el.appendTo "body"
 
 
 window.app = app
