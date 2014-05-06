@@ -10,20 +10,19 @@ Profile = require './controllers/profile'
 # Explore = require './controllers/explore'
 Api = require 'zooniverse/lib/api'
 seasons = require './lib/seasons'
-TopBar = require 'zooniverse/lib/controllers/top_bar'
-User = require 'zooniverse/lib/models/user'
-googleAnalytics = require 'zooniverse/lib/google_analytics'
+TopBar = require 'zooniverse/controllers/top-bar'
+User = require 'zooniverse/models/user'
+googleAnalytics = require 'zooniverse/lib/google-analytics'
 # Map = require 'zooniverse/lib/map'
 
 {Stack} = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
 feedbackContent = require './views/feedback_page'
 
-BrowserCheck = require 'zooniverse/lib/controllers/browser_check'
-bc = new BrowserCheck
-bc.support.opera = 12
-bc.check()
+BrowserDialog = require 'zooniverse/controllers/browser-dialog'
+BrowserDialog.check()
 
+#TODO Commented out in SS. what was this for? 
 # Map::tilesId = 53589
 # Map::apiKey = '21a5504123984624a5e1a856fc00e238'
 
@@ -35,77 +34,72 @@ LanguagePicker = require './controllers/language_picker'
 languagePicker = new LanguagePicker
 languagePicker.el.prependTo document.body
 
-googleAnalytics.init
-  account: 'UA-1224199-36'
-  domain: 'snapshotserengeti.org'
+# #TODO Analytics values
+# googleAnalytics.init
+#   account: 'Y?'
+#   domain: 'X?'
 
 app = {}
 
 User.bind 'sign-in', ->
   $('html').toggleClass 'signed-in', User.current?
 
-Api.init
-  host: if !!location.href.match /demo|beta/
-    'https://dev.zooniverse.org'
-  else if +location.port < 1024
-    'https://api.zooniverse.org'
-  else
-    'https://dev.zooniverse.org'
-    #"#{location.protocol}//#{location.hostname}:3000"
 
-# TODO: Don't count on the proxy frame to have no loaded yet.
+api = new Api project: 'serengeti'
 
-Api.proxy.el().one 'load', ->
-  Api.get '/projects/serengeti', (project) ->
-    sortedSeasons = for season, {_id: id, total, complete} of project.seasons
-      total ?= 0
-      complete ?= 0
-      {season, id, total, complete}
 
-    sortedSeasons.sort (a, b) ->
-      a.season > b.season
+#TODO rewrite this logic for sorted seasons
+# Api.get '/projects/serengeti', (project) ->
+#   sortedSeasons = for season, {_id: id, total, complete} of project.seasons
+#     total ?= 0
+#     complete ?= 0
+#     {season, id, total, complete}
 
-    seasons.push sortedSeasons...
+#   sortedSeasons.sort (a, b) ->
+#       a.season > b.season
 
-    User.count = project.user_count
+#   seasons.push sortedSeasons...
 
-    $('.before-load').remove()
-    app.stack = new Stack
-      className: "main #{Stack::className}"
+#TODO That's not how we do it nowadays
+#User.count = project.user_count
 
-      controllers:
-        home: HomePage
-        about: AboutPage
-        classify: Classifier
-        profile: Profile
-        # explore: Explore
+#TODO do we need this
+$('.before-load').remove()
 
-      routes:
-        '/home': 'home'
-        '/about': 'about'
-        '/classify': 'classify'
-        '/profile': 'profile'
-        # '/explore': 'explore'
+app.stack = new Stack
+  className: "main #{Stack::className}"
 
-      default: 'home'
+  controllers:
+    home: HomePage
+    about: AboutPage
+    classify: Classifier
+    profile: Profile
+  
+  routes:
+    '/home': 'home'
+    '/about': 'about'
+    '/classify': 'classify'
+    '/profile': 'profile'
 
-    # Load the top bar last since it fetches the user.
-    app.topBar = new TopBar
-      app: 'serengeti'
-      appName: 'Asteroid Zoo'
+  default: 'home'
 
-    $(window).on 'request-login-dialog', ->
-      app.topBar.onClickSignUp()
-      app.topBar.loginForm.signInButton.click()
-      app.topBar.loginDialog.reattach()
+# Load the top bar last since it fetches the user.
+app.topBar = new TopBar
+  app: 'serengeti'
+  appName: 'serengeti'
 
-    app.stack.el.appendTo 'body'
-    app.topBar.el.prependTo 'body'
+$(window).on 'request-login-dialog', ->
+  app.topBar.onClickSignUp()
+  app.topBar.loginForm.signInButton.click()
+  app.topBar.loginDialog.reattach()
 
-    Route.setup()
+app.stack.el.appendTo 'body'
+app.topBar.el.prependTo 'body'
 
-    TranslationEditor = require 't7e/editor'
-    TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
+Route.setup()
+
+TranslationEditor = require 't7e/editor'
+TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 
 
 window.app = app

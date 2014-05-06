@@ -9,7 +9,7 @@
 *
 */
 
-L = require('zooniverse/vendor/leaflet/leaflet-src');
+L = require('./leaflet-src');
 
 if (typeof(L.CartoDBLayer) === "undefined") {
 

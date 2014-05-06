@@ -1,10 +1,10 @@
 {Controller} = require 'spine'
 $ = require 'jqueryify'
 template = require '../views/explore'
-LoginForm = require 'zooniverse/lib/controllers/login_form'
-User = require 'zooniverse/lib/models/user'
+LoginForm = require 'zooniverse/controllers/login_form'
+User = require 'zooniverse/models/user'
 Map = require 'zooniverse/lib/map'
-L = require 'zooniverse/vendor/leaflet/leaflet-src'
+L = require '../lib/leaflet-src'
 moment = require('moment/moment')
 animals = require('../lib/animals')
 

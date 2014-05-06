@@ -1,8 +1,8 @@
 {Model} = require 'spine'
 $ = require 'jqueryify'
 Api = require 'zooniverse/lib/api'
-Favorite = require 'zooniverse/lib/models/favorite'
-Recent = require 'zooniverse/lib/models/recent'
+Favorite = require 'zooniverse/models/favorite'
+Recent = require 'zooniverse/models/recent'
 
 class Classification extends Model
   @configure 'Classification', 'subject', 'annotations', 'metadata', 'favorite'
