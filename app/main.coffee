@@ -1,6 +1,7 @@
 require './lib/setup'
 
 Navigation = require './controllers/navigation'
+
 $ = require 'jqueryify'
 Route = require 'spine/lib/route'
 AboutPage = require './controllers/about_page'
@@ -11,6 +12,7 @@ Profile = require './controllers/profile'
 Api = require 'zooniverse/lib/api'
 seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
+Footer = require 'zooniverse/controllers/footer'
 User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
 
@@ -79,9 +81,8 @@ app.stack = new Stack
 
   default: 'home'
 
-# Load the top bar last since it fetches the user.
 app.topBar = new TopBar
- 
+app.footer = new Footer 
 
 #TODO is this behavior needed?
 # $(window).on 'request-login-dialog', ->
@@ -97,14 +98,14 @@ TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 #TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation
 app.navigation = navigation
+
 #####################################################
 # Append components to the document body
 #####################################################
-
 app.navigation.el.appendTo  "body"
 app.stack.el.appendTo  "body"
 app.topBar.el.appendTo "body"
-
+app.footer.el.appendTo "body"
 
 window.app = app
 module.exports = window.app
