@@ -1,3 +1,4 @@
+#TODO delete, no longer being referenced
 {Model} = require 'spine'
 $ = require 'jqueryify'
 Api = require 'zooniverse/lib/api'
@@ -53,7 +54,8 @@ class Classification extends Model
   send: ->
     unless @subject.metadata.tutorial or @subject.metadata.empty
       @constructor.sentThisSession += 1
-
+      
+    #TODO that's not how we do it nowadays
     @trigger 'send'
     Api.post @url(), @toJSON(), arguments...
 

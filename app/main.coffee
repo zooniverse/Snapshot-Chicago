@@ -42,8 +42,9 @@ app = {}
 # User.bind 'sign-in', ->
 #   $('html').toggleClass 'signed-in', User.current?
 
-
 api = new Api project: 'serengeti'
+# api = new Api project: 'asteroid'
+
 
 
 #TODO rewrite this logic for sorted seasons
@@ -80,6 +81,8 @@ app.stack = new Stack
     '/profile': 'profile'
 
   default: 'home'
+
+User.fetch()
 
 app.topBar = new TopBar
 app.footer = new Footer 

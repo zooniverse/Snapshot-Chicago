@@ -1,6 +1,6 @@
 {Controller} = require 'spine'
 template = require '../views/home_page'
-ImageChanger = require './image_changer'
+# ImageChanger = require './image_changer'
 Api = require 'zooniverse/lib/api'
 Recent = require 'zooniverse/models/recent'
 

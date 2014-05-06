@@ -1,3 +1,4 @@
+#TODO delete, no longer being referenced
 {Model} = require 'spine'
 $ = require 'jqueryify'
 Api = require 'zooniverse/lib/api'

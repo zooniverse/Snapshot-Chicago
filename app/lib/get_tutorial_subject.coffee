@@ -1,4 +1,4 @@
-Subject = require '../models/subject'
+Subject = require 'zooniverse/models/subject'
 
 module.exports = ->
   Subject.create

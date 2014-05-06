@@ -5,13 +5,13 @@ AnimalSelector = require './animal_selector'
 animals = require '../lib/animals'
 characteristics = require '../lib/characteristics'
 AnimalMenuItem = require './animal_menu_item'
-Subject = require '../models/subject'
+Subject = require 'zooniverse/models/subject'
 User = require 'zooniverse/models/user'
 {Tutorial} = require 'zootorial'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
-Classification = require '../models/classification'
+Classification = require 'zooniverse/models/classification'
 
 class Classifier extends Controller
   className: 'classifier'
@@ -23,9 +23,9 @@ class Classifier extends Controller
 
   constructor: ->
     super
-
+   
     @subjectViewer = new SubjectViewer
-
+    
     @el.append @subjectViewer.el
 
     @animalSelector = new AnimalSelector
@@ -39,9 +39,9 @@ class Classifier extends Controller
       steps: tutorialSteps
       parent: @el
 
-    Subject.bind 'select', @onSubjectSelect
-    Subject.bind 'no-subjects', @onNoLocalSubjects
-    User.bind 'sign-in', @onUserSignIn
+    User.on 'change', @onUserChange
+    Subject.on 'select', @onSubjectSelect
+    Subject.on 'no-more', @onNoLocalSubjects
 
     $(document).on 'keydown', @onKeyDown
 
@@ -82,7 +82,8 @@ class Classifier extends Controller
     else
       element.click()
 
-  onSubjectSelect: (subject) =>
+  onSubjectSelect: (event, subject) =>
+    console.log "********* remote subjects retrieved"
     for property in ['tutorial', 'empty']
       @el.toggleClass property, !!subject.metadata[property]
 
@@ -96,16 +97,17 @@ class Classifier extends Controller
       @tutorial.end()
 
   onNoLocalSubjects: =>
-    getEmptySubject().select()
+    console?.log "********* No remote subjects retrieved"
+    subject = getEmptySubject()
+    subject.select()
 
-  onUserSignIn: =>
-    #tutorialDone = User.current?.project.tutorial_done
+  onUserChange: =>
     tutorialDone = true
     doingTutorial = Subject.current?.metadata.tutorial
 
     if tutorialDone
       @tutorial.end()
-      Subject.next() if doingTutorial or not Subject.current
+      Subject.next() # if doingTutorial or not Subject.current
     else
       getTutorialSubject().select()
 

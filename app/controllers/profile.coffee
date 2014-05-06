@@ -30,15 +30,15 @@ class Profile extends Controller
     @html template
     @loginForm = new LoginForm el: @signInContainer
 
-    User.bind 'sign-in', @onUserSignIn
+    User.on 'sign-in', @onUserSignIn
 
-    Favorite.bind 'create destroy', @onItemCreateDestroy
-    Favorite.bind 'send', @onCreateItem
-    Favorite.bind 'is-new', @onMarkNew
+    Favorite.on 'create destroy', @onItemCreateDestroy
+    Favorite.on 'send', @onCreateItem
+    Favorite.on 'is-new', @onMarkNew
 
-    Recent.bind 'create destroy', @onItemCreateDestroy
-    Recent.bind 'send', @onCreateItem
-    Recent.bind 'is-new', @onMarkNew
+    Recent.on 'create destroy', @onItemCreateDestroy
+    Recent.on 'send', @onCreateItem
+    Recent.on 'is-new', @onMarkNew
 
     @navButtons.first().click()
     @onUserSignIn()
@@ -87,6 +87,8 @@ class Profile extends Controller
     loadMoreButton.attr disabled: not hasItems
 
   onCreateItem: (item) =>
+    #TODO what is item, use bind() or on()
+    
     list = @["#{item.constructor.className.toLowerCase()}sList"]
     return unless list.find("[data-item='#{item.id}']").length is 0
 
