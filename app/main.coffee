@@ -13,7 +13,7 @@ seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
 User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
-# Map = require 'zooniverse/lib/map'
+
 
 {Stack} = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
@@ -22,15 +22,11 @@ feedbackContent = require './views/feedback_page'
 BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()
 
-#TODO Commented out in SS. what was this for? 
-# Map::tilesId = 53589
-# Map::apiKey = '21a5504123984624a5e1a856fc00e238'
-
 navigation = new Navigation
 navigation.el.appendTo document.body
 
+#TODO convert to Zooniverse Language Manager
 LanguagePicker = require './controllers/language_picker'
-
 languagePicker = new LanguagePicker
 languagePicker.el.prependTo document.body
 
@@ -41,8 +37,9 @@ languagePicker.el.prependTo document.body
 
 app = {}
 
-User.bind 'sign-in', ->
-  $('html').toggleClass 'signed-in', User.current?
+#TODO is that how we do it nowadays?
+# User.bind 'sign-in', ->
+#   $('html').toggleClass 'signed-in', User.current?
 
 
 api = new Api project: 'serengeti'
@@ -88,10 +85,11 @@ app.topBar = new TopBar
   app: 'serengeti'
   appName: 'serengeti'
 
-$(window).on 'request-login-dialog', ->
-  app.topBar.onClickSignUp()
-  app.topBar.loginForm.signInButton.click()
-  app.topBar.loginDialog.reattach()
+#TODO is this behavior needed?
+# $(window).on 'request-login-dialog', ->
+#   app.topBar.onClickSignUp()
+#   app.topBar.loginForm.signInButton.click()
+#   app.topBar.loginDialog.reattach()
 
 app.stack.el.appendTo 'body'
 app.topBar.el.prependTo 'body'
