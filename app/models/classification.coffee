@@ -1,71 +1,19 @@
-#TODO delete, no longer being referenced
-{Model} = require 'spine'
-$ = require 'jqueryify'
-Api = require 'zooniverse/lib/api'
-Favorite = require 'zooniverse/models/favorite'
-Recent = require 'zooniverse/models/recent'
+# This class exists just to add an event to the zooniverse classification class
+# There might be a better way to do this. 
+ZooniverseClassification = require 'zooniverse/models/classification'
 
-class Classification extends Model
-  @configure 'Classification', 'subject', 'annotations', 'metadata', 'favorite'
+class Classification extends ZooniverseClassification
 
-  @sentThisSession: 0
-
-  constructor: ->
+  # compare with original signature
+  # annotate: (values, isMetadata = false) ->
+  annotate: (values) ->
     super
-    @annotations ||= []
-    @metadata ||= {}
-
-    @metadata.agent ||= window.navigator.userAgent
-    @metadata.started ||= (new Date).toUTCString()
-
-  annotate: (values, isMetadata = false) ->
-    if isMetadata
-      @metadata[key] = value for own key, value of values
-      delete @metadata[key] unless value?
-    else
-      @annotations.push values
-
-    @save()
+    # does the metadata really need to get cleaned off in this manner
+    # if isMetadata
+    #   @metadata[key] = value for own key, value of values
+    #   delete @metadata[key] unless value?
+    # else
+    #   @annotations.push values
     @trigger 'add-species', values if 'species' of values
-
-  deannotate: (toDelete) ->
-    for annotation, i in @annotations when annotation is toDelete
-      @annotations.splice i, 1
-      @save()
-      @trigger 'deannotate', toDelete
-      return toDelete
-
-  toJSON: ->
-    metaAnnotations = for key, value of @metadata
-      annotation = {}
-      annotation[key] = value
-      annotation
-
-    metaAnnotations.push language: $(document.body.parentNode).attr 'data-language'
-
-    classification:
-      subject_ids: [@subject.id]
-      annotations: @annotations.concat metaAnnotations
-      favorite: @favorite
-
-  url: ->
-    "/projects/serengeti/workflows/#{@subject.workflowId}/classifications"
-
-  send: ->
-    unless @subject.metadata.tutorial or @subject.metadata.empty
-      @constructor.sentThisSession += 1
-      
-    #TODO that's not how we do it nowadays
-    @trigger 'send'
-    Api.post @url(), @toJSON(), arguments...
-
-    recent = Recent.create subjects: @subject
-    recent.trigger 'send'
-    recent.trigger 'is-new'
-
-    if @favorite
-      favorite = Favorite.create subjects: @subject
-      favorite.trigger 'send'
-      favorite.trigger 'is-new'
 
 module.exports = Classification

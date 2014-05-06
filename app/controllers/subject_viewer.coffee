@@ -63,7 +63,7 @@ class SubjectViewer extends Controller
       @classification.on 'add-species', @onClassificationAddSpecies
 
       @html template @classification
-      debugger
+      
       @active = Math.floor @classification.subject.location.standard.length / 2
       @activate @active
 
@@ -72,15 +72,21 @@ class SubjectViewer extends Controller
       @html ''
 
   onClassificationChange: (event, milk) =>
+    debugger
     noAnnotations = @classification.annotations.length is 0
-    nothing = @classification.metadata.nothing
+    #TODO ignore this value from old model for now
+    #nothing = @classification.metadata.nothing
     isFavorite = !!@classification.favorite
-    inSelection = @classification.metadata.inSelection
-
+    
+    #inSelection = @classification.metadata.inSelection
+    # TODO stubbing to false for now
+    # shouldn't we be loooking for @classification.annotations['in-selecton'] thought i saw this somewhere
+    inSelection = false
     @el.toggleClass 'no-annotations', noAnnotations
     @el.toggleClass 'favorite', isFavorite
-
-    @finishButton.attr disabled: inSelection or (noAnnotations and not nothing)
+    #TODO ignoring this extra sense of nothingness for now
+    @finishButton.attr disabled: inSelection or noAnnotations
+    #@finishButton.attr disabled: inSelection or (noAnnotations and not nothing)
 
   onClassificationAddSpecies: (classification, annotation) =>
     item = new AnnotationItem {@classification, annotation}

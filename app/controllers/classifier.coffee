@@ -11,7 +11,10 @@ User = require 'zooniverse/models/user'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
-Classification = require 'zooniverse/models/classification'
+# TODO review
+# Classification is subclassed from 'zooniverse/models/classification' to keep the event logic around
+# add species. This might not be the best solution
+Classification = require '../models/classification' 
 
 class Classifier extends Controller
   className: 'classifier'
@@ -88,6 +91,7 @@ class Classifier extends Controller
       @el.toggleClass property, !!subject.metadata[property]
 
     @classification = new Classification {subject}
+    debugger
     @subjectViewer.setClassification @classification
     @animalSelector.setClassification @classification
 

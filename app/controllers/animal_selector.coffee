@@ -48,7 +48,7 @@ class AnimalSelector extends Controller
 
   setClassification: (@classification) ->
     @clearFilters()
-    @classification.bind 'add-species', @clearFilters
+    @classification.on 'add-species', @clearFilters
 
   KEYS =
     ENTER: 13
