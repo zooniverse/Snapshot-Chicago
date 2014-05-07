@@ -129,13 +129,14 @@ class AnimalSelector extends Controller
 
   select: (animal) ->
     details = new AnimalDetails {animal, @classification, @set}
-
     @classification.annotate inSelection: true, true
-    details.bind 'release', =>
-      @classification.annotate inSelection: null, true
-
+    details.bind 'release', @onDetailsRelease
     @el.append details.el
     setTimeout details.show, 125
+
+  #TODO This seems to create a second inSelection annotation which seems like strange thing  
+  onDetailsRelease: =>
+    @classification.annotate inSelection: null, true
 
   onClickClearFilters: ->
     @clearFilters()

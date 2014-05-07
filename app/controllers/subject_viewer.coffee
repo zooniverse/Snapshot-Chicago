@@ -15,8 +15,6 @@ class SubjectViewer extends Controller
   playTimeouts: null
 
   events:
-    # 'click button[name="zoom"]': 'onClickZoomToggle'
-    # 'mousedown .subject-images': 'onMouseDownImage'
     'click button[name="play"]': 'onClickPlay'
     'click button[name="pause"]': 'onClickPause'
     'click button[name="toggle"]': 'onClickToggle'
@@ -45,12 +43,6 @@ class SubjectViewer extends Controller
     @el.attr tabindex: 0
     @setClassification @classification
 
-  # delegateEvents: ->
-  #   super
-  #   doc = $(document)
-  #   doc.on 'mousemove', @onDocMouseMove
-  #   doc.on 'mouseup', @onDocMouseUp
-
   setClassification: (classification) ->
     @el.removeClass 'finished'
     @classification?.off 'change', @onClassificationChange
@@ -61,9 +53,9 @@ class SubjectViewer extends Controller
     if @classification
       @classification.on 'change', @onClassificationChange
       @classification.on 'add-species', @onClassificationAddSpecies
-
+    
       @html template @classification
-      
+    
       @active = Math.floor @classification.subject.location.standard.length / 2
       @activate @active
 
@@ -71,17 +63,14 @@ class SubjectViewer extends Controller
     else
       @html ''
 
-  onClassificationChange: (event, milk) =>
+  onClassificationChange:  =>
     debugger
     noAnnotations = @classification.annotations.length is 0
     #TODO ignore this value from old model for now
     #nothing = @classification.metadata.nothing
     isFavorite = !!@classification.favorite
     
-    #inSelection = @classification.metadata.inSelection
-    # TODO stubbing to false for now
-    # shouldn't we be loooking for @classification.annotations['in-selecton'] thought i saw this somewhere
-    inSelection = false
+    inSelection = @classification.metadata.inSelection
     @el.toggleClass 'no-annotations', noAnnotations
     @el.toggleClass 'favorite', isFavorite
     #TODO ignoring this extra sense of nothingness for now
@@ -129,6 +118,7 @@ class SubjectViewer extends Controller
   onClickNext: ->
     Subject.next()
 
+  #TODO remove the image play logic  
   play: ->
     # Flip the images back and forth a couple times.
     last = @classification.subject.location.standard.length - 1
