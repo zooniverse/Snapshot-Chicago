@@ -25,11 +25,21 @@ BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()
 
 
+t7e = require 't7e'
+enUs = require './translations/en_us'
+LanguageManager = require 'zooniverse/lib/language-manager'
+languageManager = new LanguageManager
+  translations:
+    en: label: 'English', strings: enUs
+   
+languageManager.on 'change-language', (e, code, strings) ->
+  t7e.load strings
+  t7e.refresh()
 
-#TODO convert to Zooniverse Language Manager
-LanguagePicker = require './controllers/language_picker'
-languagePicker = new LanguagePicker
-languagePicker.el.prependTo document.body
+#TODO investigate this functionality
+TranslationEditor = require 't7e/editor'
+TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
+
 
 # #TODO Analytics values
 # googleAnalytics.init
@@ -82,6 +92,8 @@ app.stack = new Stack
 
   default: 'home'
 
+Route.setup()
+
 User.fetch()
 
 app.topBar = new TopBar
@@ -92,11 +104,6 @@ app.footer = new Footer
 #   app.topBar.onClickSignUp()
 #   app.topBar.loginForm.signInButton.click()
 #   app.topBar.loginDialog.reattach()
-
-Route.setup()
-
-TranslationEditor = require 't7e/editor'
-TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 
 #TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation
