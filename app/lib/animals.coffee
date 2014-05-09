@@ -145,11 +145,17 @@ animalCharacteristics = [
 dashedFromId = (id) ->
   id.replace /[A-Z]/g, (cap) -> "-#{cap.toLowerCase()}"
 
+# imagesFromId = (id) -> [
+#     "images/animals/#{dashedFromId id}-1.jpg"
+#     "images/animals/#{dashedFromId id}-2.jpg"
+#     "images/animals/#{dashedFromId id}-3.jpg"
+#   ]
+
 imagesFromId = (id) -> [
-    "images/animals/#{dashedFromId id}-1.jpg"
-    "images/animals/#{dashedFromId id}-2.jpg"
-    "images/animals/#{dashedFromId id}-3.jpg"
-  ]
+    "http://placehold.it/350x150&text=#{dashedFromId id}"
+    "http://placehold.it/350x150&text=#{dashedFromId id}"
+    "http://placehold.it/350x150&text=#{dashedFromId id}"
+  ]  
 
 animals = new FilteringSet
   searchProperties: ['label', 'description']

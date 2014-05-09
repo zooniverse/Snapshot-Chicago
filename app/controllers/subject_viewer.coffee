@@ -64,7 +64,6 @@ class SubjectViewer extends Controller
       @html ''
 
   onClassificationChange:  =>
-    debugger
     noAnnotations = @classification.annotations.length is 0
     #TODO ignore this value from old model for now
     #nothing = @classification.metadata.nothing

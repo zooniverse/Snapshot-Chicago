@@ -46,12 +46,52 @@ values.each do | chara|
 end 
 
 #for translations
-values.each do | chara|
-  # get the camelicased value separated out
-  human_value =  ActiveSupport::Inflector.humanize(chara.underscore).titleize
-  # throw out the keyword
-  human_value_a = human_value.split(" ")
-  human_value_a.shift
-  human_value = human_value_a.join(" ")
-  puts "#{chara}: '#{human_value}'"
-end 
+# values.each do | chara|
+#   # get the camelicased value separated out
+#   human_value =  ActiveSupport::Inflector.humanize(chara.underscore).titleize
+#   # throw out the keyword
+#   human_value_a = human_value.split(" ")
+#   human_value_a.shift
+#   human_value = human_value_a.join(" ")
+#   puts "#{chara}: '#{human_value}'"
+# end 
+
+#for animal images
+# &.aardvark .image {
+#     @extend #thumb-for.aardvark;
+#   }
+
+# out = ""
+# animal_list.each do |animal_name|
+#   hyphenated_animal_name = animal_name.underscore.dasherize
+#   out << 
+# <<-thumb
+# #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/350x150?text=#{hyphenated_animal_name}); } 
+# thumb
+# end
+# puts out
+# out = ""
+# animal_list.each do |animal_name|
+#   hyphenated_animal_name = animal_name.underscore.dasherize
+#   out << 
+#   <<-selector
+#     &.#{hyphenated_animal_name} .image {
+#       @extend #thumb-for.#{hyphenated_animal_name};
+#     }
+
+# selector
+# end
+# puts out
+
+out = ""
+animal_list.each do |animal_name|
+  hyphenated_animal_name = animal_name.underscore.dasherize
+  out << 
+  <<-danimal
+  [data-animal="#{hyphenated_animal_name}"] .image {
+    @extend #thumb-for.#{hyphenated_animal_name};
+  }
+
+danimal
+end
+puts out

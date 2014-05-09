@@ -91,7 +91,6 @@ class Classifier extends Controller
       @el.toggleClass property, !!subject.metadata[property]
 
     @classification = new Classification {subject}
-    debugger
     @subjectViewer.setClassification @classification
     @animalSelector.setClassification @classification
 

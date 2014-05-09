@@ -1,10 +1,10 @@
 .animal-selector {
-  background: $green-dark;
+  background: $white;
   border: 1px solid rgba($black, 0.75);
   border-radius: 5px;
   box-shadow: 0 2px 1px rgba($white, 0.25) inset, 0 1px 2px $black;
   box-sizing: border-box;
-  color: $white;
+  color: $black;
   float: right;
   margin-top: 4px;
   outer-deboss: 5px;
@@ -15,7 +15,7 @@
   width: 405px;
 
   .general-filters {
-    background: rgba($black, 0.33);
+   
     border-radius: 3px;
     box-shadow: 0 2px 3px rgba($black, 0.5) inset;
     box-sizing: border-box;
@@ -53,7 +53,6 @@
       }
 
       .menu {
-        background: $white;
         box-shadow: 0 2px 3px $black;
         color: $green-dark;
         font-size: 12px;
@@ -73,7 +72,7 @@
 
           &:hover,
           &.selected {
-            background: $green;
+            background: $blue;
             color: $white;
           }
 
@@ -113,7 +112,6 @@
 
       input[name="search"] {
         appearance: none;
-        background: $black;
         border: 2px solid rgba($gray, 0.5);
         border-radius: 20px;
         box-sizing: border-box;
@@ -164,7 +162,6 @@
       }
 
       .menu {
-        background: lighten($green, 0.33);
         border: 1px solid $black;
         bottom: 100%;
         box-sizing: border-box;
@@ -192,7 +189,7 @@
             border: 1px solid $gold;
             margin: 3px 0 0 4px;
           }
-
+          /* TODO get rid of sprite? */
           &[value="patternVerticalStripe"]   {background-position: -8px -152px;}
           &[value="patternHorizontalStripe"] {background-position: -56px -152px;}
           &[value="patternSpots"]            {background-position: -104px -152px;}
@@ -224,7 +221,6 @@
           &[value="buildLowSlung"]           {background-position: -200px -8px;}
 
           .label {
-            background: $gold;
             bottom: 100%;
             border-radius: 3px;
             box-shadow: 0 1px 2px $black;
@@ -263,8 +259,7 @@
       }
 
       &.open button[name="characteristic"] {
-        background: lighten($green, 0.33);
-
+       
         &:after {
           border: 6px solid transparent;
           border-bottom-color: lighten($green, 0.33);
@@ -279,13 +274,12 @@
       }
 
       &.in-use button[name="characteristic"] {
-        background: rgba($white, 0.25);
+       
       }
     }
   }
 
   .selection-area {
-    background: rgba($black, 0.33);
     border-radius: 3px;
     box-shadow: 0 2px 3px rgba($black, 0.5) inset;
 
@@ -315,11 +309,11 @@
         }
 
         &:hover {
-          background: rgba($black, 0.67);
+          background: $blue;
         }
 
         &:focus {
-          border: 1px solid rgba($gold, 0.5);
+          border: 1px solid rgba($blue, 0.5);
           outline: none;
         }
 
@@ -330,204 +324,197 @@
         &.hidden {
           display: none;
         }
-
-        .image {
-          @extends #thumb-for;
-        }
+        
       }
 
       // NOTE: I totally hate this.
 
-      [data-animal="aardvark"] .image {
-        @extend #thumb-for.aardvark;
+      [data-animal="american-coot"] .image {
+        @extend #thumb-for.american-coot;
       }
 
-      [data-animal="aardwolf"] .image {
-        @extend #thumb-for.aardwolf;
+      [data-animal="beaver"] .image {
+        @extend #thumb-for.beaver;
       }
 
-      [data-animal="baboon"] .image {
-        @extend #thumb-for.baboon;
+      [data-animal="bike"] .image {
+        @extend #thumb-for.bike;
       }
 
-      [data-animal="batEaredFox"] .image {
-        @extend #thumb-for.batEaredFox;
+      [data-animal="bird-cannot-id"] .image {
+        @extend #thumb-for.bird-cannot-id;
       }
 
-      [data-animal="otherBird"] .image {
-        @extend #thumb-for.otherBird;
+      [data-animal="canada-goose"] .image {
+        @extend #thumb-for.canada-goose;
       }
 
-      [data-animal="buffalo"] .image {
-        @extend #thumb-for.buffalo;
+      [data-animal="car"] .image {
+        @extend #thumb-for.car;
       }
 
-      [data-animal="bushbuck"] .image {
-        @extend #thumb-for.bushbuck;
+      [data-animal="cardinal"] .image {
+        @extend #thumb-for.cardinal;
       }
 
-      [data-animal="caracal"] .image {
-        @extend #thumb-for.caracal;
+      [data-animal="chickadee"] .image {
+        @extend #thumb-for.chickadee;
       }
 
-      [data-animal="cheetah"] .image {
-        @extend #thumb-for.cheetah;
+      [data-animal="chipmunk"] .image {
+        @extend #thumb-for.chipmunk;
       }
 
-      [data-animal="civet"] .image {
-        @extend #thumb-for.civet;
+      [data-animal="coyote"] .image {
+        @extend #thumb-for.coyote;
       }
 
-      [data-animal="dikDik"] .image {
-        @extend #thumb-for.dikDik;
+      [data-animal="crow"] .image {
+        @extend #thumb-for.crow;
       }
 
-      [data-animal="eland"] .image {
-        @extend #thumb-for.eland;
+      [data-animal="deer"] .image {
+        @extend #thumb-for.deer;
       }
 
-      [data-animal="elephant"] .image {
-        @extend #thumb-for.elephant;
+      [data-animal="dom-cat"] .image {
+        @extend #thumb-for.dom-cat;
       }
 
-      [data-animal="gazelleGrants"] .image {
-        @extend #thumb-for.gazelleGrants;
+      [data-animal="dom-dog"] .image {
+        @extend #thumb-for.dom-dog;
       }
 
-      [data-animal="gazelleThomsons"] .image {
-        @extend #thumb-for.gazelleThomsons;
+      [data-animal="empty"] .image {
+        @extend #thumb-for.empty;
       }
 
-      [data-animal="genet"] .image {
-        @extend #thumb-for.genet;
+      [data-animal="flying-squirrel"] .image {
+        @extend #thumb-for.flying-squirrel;
       }
 
-      [data-animal="giraffe"] .image {
-        @extend #thumb-for.giraffe;
+      [data-animal="fox-squirrel"] .image {
+        @extend #thumb-for.fox-squirrel;
       }
 
-      [data-animal="guineaFowl"] .image {
-        @extend #thumb-for.guineaFowl;
+      [data-animal="grackle"] .image {
+        @extend #thumb-for.grackle;
       }
 
-      [data-animal="hare"] .image {
-        @extend #thumb-for.hare;
+      [data-animal="gray-fox"] .image {
+        @extend #thumb-for.gray-fox;
       }
 
-      [data-animal="hartebeest"] .image {
-        @extend #thumb-for.hartebeest;
+      [data-animal="gray-squirrel"] .image {
+        @extend #thumb-for.gray-squirrel;
       }
 
-      [data-animal="hippopotamus"] .image {
-        @extend #thumb-for.hippopotamus;
+      [data-animal="great-blue-heron"] .image {
+        @extend #thumb-for.great-blue-heron;
       }
 
-      [data-animal="honeyBadger"] .image {
-        @extend #thumb-for.honeyBadger;
+      [data-animal="horse"] .image {
+        @extend #thumb-for.horse;
       }
 
-      [data-animal="hyenaSpotted"] .image {
-        @extend #thumb-for.hyenaSpotted;
-      }
-
-      [data-animal="hyenaStriped"] .image {
-        @extend #thumb-for.hyenaStriped;
-      }
-
-      [data-animal="impala"] .image {
-        @extend #thumb-for.impala;
-      }
-
-      [data-animal="jackal"] .image {
-        @extend #thumb-for.jackal;
-      }
-
-      [data-animal="koriBustard"] .image {
-        @extend #thumb-for.koriBustard;
-      }
-
-      [data-animal="leopard"] .image {
-        @extend #thumb-for.leopard;
-      }
-
-      [data-animal="lionFemale"] .image {
-        @extend #thumb-for.lionFemale;
-      }
-
-      [data-animal="lionMale"] .image {
-        @extend #thumb-for.lionMale;
-      }
-
-      [data-animal="mongoose"] .image {
-        @extend #thumb-for.mongoose;
-      }
-
-      [data-animal="ostrich"] .image {
-        @extend #thumb-for.ostrich;
-      }
-
-      [data-animal="porcupine"] .image {
-        @extend #thumb-for.porcupine;
-      }
-
-      [data-animal="reedbuck"] .image {
-        @extend #thumb-for.reedbuck;
-      }
-
-      [data-animal="reptiles"] .image {
-        @extend #thumb-for.reptiles;
-      }
-
-      [data-animal="rhinoceros"] .image {
-        @extend #thumb-for.rhinoceros;
-      }
-
-      [data-animal="rodents"] .image {
-        @extend #thumb-for.rodents;
-      }
-
-      [data-animal="secretaryBird"] .image {
-        @extend #thumb-for.secretaryBird;
-      }
-
-      [data-animal="serval"] .image {
-        @extend #thumb-for.serval;
-      }
-
-      [data-animal="topi"] .image {
-        @extend #thumb-for.topi;
-      }
-
-      [data-animal="vervetMonkey"] .image {
-        @extend #thumb-for.vervetMonkey;
-      }
-
-      [data-animal="warthog"] .image {
-        @extend #thumb-for.warthog;
-      }
-
-      [data-animal="waterbuck"] .image {
-        @extend #thumb-for.waterbuck;
-      }
-
-      [data-animal="wildcat"] .image {
-        @extend #thumb-for.wildcat;
-      }
-
-      [data-animal="wildebeest"] .image {
-        @extend #thumb-for.wildebeest;
-      }
-
-      [data-animal="zebra"] .image {
-        @extend #thumb-for.zebra;
-      }
-
-      [data-animal="zorilla"] .image {
-        @extend #thumb-for.zorilla;
+      [data-animal="house-sparrow"] .image {
+        @extend #thumb-for.house-sparrow;
       }
 
       [data-animal="human"] .image {
         @extend #thumb-for.human;
+      }
+
+      [data-animal="livestock"] .image {
+        @extend #thumb-for.livestock;
+      }
+
+      [data-animal="mallard"] .image {
+        @extend #thumb-for.mallard;
+      }
+
+      [data-animal="mink"] .image {
+        @extend #thumb-for.mink;
+      }
+
+      [data-animal="mourning-dove"] .image {
+        @extend #thumb-for.mourning-dove;
+      }
+
+      [data-animal="mouse"] .image {
+        @extend #thumb-for.mouse;
+      }
+
+      [data-animal="mower"] .image {
+        @extend #thumb-for.mower;
+      }
+
+      [data-animal="muskrat"] .image {
+        @extend #thumb-for.muskrat;
+      }
+
+      [data-animal="northern-flicker"] .image {
+        @extend #thumb-for.northern-flicker;
+      }
+
+      [data-animal="opossum"] .image {
+        @extend #thumb-for.opossum;
+      }
+
+      [data-animal="other-vehicle"] .image {
+        @extend #thumb-for.other-vehicle;
+      }
+
+      [data-animal="pigeon"] .image {
+        @extend #thumb-for.pigeon;
+      }
+
+      [data-animal="rabbit"] .image {
+        @extend #thumb-for.rabbit;
+      }
+
+      [data-animal="raccoon"] .image {
+        @extend #thumb-for.raccoon;
+      }
+
+      [data-animal="rat"] .image {
+        @extend #thumb-for.rat;
+      }
+
+      [data-animal="red-fox"] .image {
+        @extend #thumb-for.red-fox;
+      }
+
+      [data-animal="robin"] .image {
+        @extend #thumb-for.robin;
+      }
+
+      [data-animal="skunk"] .image {
+        @extend #thumb-for.skunk;
+      }
+
+      [data-animal="squirrel-cannot-id"] .image {
+        @extend #thumb-for.squirrel-cannot-id;
+      }
+
+      [data-animal="starling"] .image {
+        @extend #thumb-for.starling;
+      }
+
+      [data-animal="unknown"] .image {
+        @extend #thumb-for.unknown;
+      }
+
+      [data-animal="wood-duck"] .image {
+        @extend #thumb-for.wood-duck;
+      }
+
+      [data-animal="wood-chuck"] .image {
+        @extend #thumb-for.wood-chuck;
+      }
+
+      [data-animal="melanistic-gray-squirrel"] .image {
+        @extend #thumb-for.melanistic-gray-squirrel;
       }
 
       &[data-items="lots"] [data-animal] {
