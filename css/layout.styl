@@ -5,6 +5,7 @@ html {
   overflow-y: scroll;
 
   body {
+    background-color: $light-blue;
     margin: 0;
     height: 100%;
     padding: 0 0 100px;
@@ -32,17 +33,17 @@ html {
     }
 
     > nav {
-      /* @extend #paper-stripe; */
-      background: inherit;
+      background: white;
       bottom: 0;
-      box-shadow: 0 0 3px $black;
       font-size: 14px;
       font-weight: bold;
+      margin: 0 0 20px 0;
       padding: 20px 0 10px;
-      overflow:hidden;
+      overflow: hidden;
       width: 100%;
       z-index: 3;
       position: relative;
+
       ul {
         margin: 0;
         padding: 0;
@@ -80,7 +81,6 @@ html {
     }
 
     .main {
-      background-color: $light-blue;
       z-index: 1;
       height 100%
       margin-bottom: 3em;
