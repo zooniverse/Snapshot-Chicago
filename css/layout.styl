@@ -5,9 +5,10 @@ html {
   overflow-y: scroll;
 
   body {
+    background-color: $light-blue;
     margin: 0;
     height: 100%;
-    padding: 0 0 100px;
+    padding: 0;
     position: relative;
 
     > h1 {
@@ -32,17 +33,17 @@ html {
     }
 
     > nav {
-      /* @extend #paper-stripe; */
-      background: inherit;
+      background: white;
       bottom: 0;
-      box-shadow: 0 0 3px $black;
       font-size: 14px;
       font-weight: bold;
+      margin: 0 0 20px 0;
       padding: 20px 0 10px;
-      overflow:hidden;
+      overflow: hidden;
       width: 100%;
       z-index: 3;
       position: relative;
+
       ul {
         margin: 0;
         padding: 0;
@@ -52,6 +53,8 @@ html {
           width: 160px;
          
           a {
+            border: 1px solid transparent
+            border-radius: 125px;
             color: $medium-blue;
             display: block;
             opacity: 0.75;
@@ -62,10 +65,7 @@ html {
 
             &:hover,
             &.active {
-              border: $light-blue;
-              -webkit-border-radius: 125px;
-              -moz-border-radius: 125px;
-              border-radius: 125px;
+              border-color: $light-blue
             }
           }
         }
@@ -81,7 +81,6 @@ html {
     }
 
     .main {
-      background-color: $light-blue;
       z-index: 1;
       height 100%
       margin-bottom: 3em;
@@ -106,9 +105,34 @@ html {
       }
     }
   }
-  .zooniverse-footer {
+
+  .site-footer {
     background-color: $medium-blue;
-    overflow:hidden;
+
+    .zooniverse-footer {
+      color: white;
+      margin: 0 auto;
+      max-width: 64em;
+
+      .zooniverse-logo-container {
+        float: none;
+
+        .zooniverse-logo {
+          width: 100%;
+        }
+      }
+
+      .zooniverse-footer-content {
+        float: none;
+        width: 100%;
+      }
+      .zooniverse-footer-heading {
+        text-align: center;
+      }
+
+      .zooniverse-footer-projects a {
+        color: #ddd;
+      }
+    }
   }
-  
 }

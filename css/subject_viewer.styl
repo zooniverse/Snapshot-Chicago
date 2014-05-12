@@ -12,54 +12,14 @@
   .images {
     position: relative;
 
-    figure {
+    .subject-image {
       border: 5px solid $white;
       box-sizing: border-box;
-      // height: 410px;
       left: 0;
       margin: 0;
-      opacity: 0;
       overflow: hidden;
-      position: absolute;
       top: 0;
       width: 580px;
-
-      &.active {
-        box-shadow: 0 3px 5px rgba($black, 0.33);
-        opacity: 1;
-        position: relative;
-        z-index: 1;
-      }
-
-      &.satellite {
-        left: 0;
-        position: absolute;
-        top: 0;
-
-        img {
-          width: auto;
-
-          &.continent {
-            bottom: 1px;
-            box-shadow: 1px -1px 5px $black;
-            left: 1px;
-            height: 150px;
-            position: absolute;
-            width: 150px;
-          }
-        }
-
-        .timestamp {
-          background: rgba($black, 0.5);
-          color: $white;
-          position: absolute;
-          left: 0;
-          text-align: center;
-          text-shadow: 0 1px 1px $black;
-          top: 0;
-          width: 100%;
-        }
-      }
 
       img {
         display: block;
@@ -211,46 +171,6 @@
   }
 
   .controls {
-    .play button,
-    .finished button {
-      @extend #standard-button;
-      margin: 0 4px;
-      outer-deboss: 5px;
-      position: relative;
-    }
-
-    button[name="play"],
-    button[name="pause"] {
-      i {
-        position: relative;
-        top: 2px;
-      }
-    }
-
-    button[name="pause"] {
-      display: none;
-    }
-
-    .toggles {
-      margin-left: 10px;
-    }
-
-    button[name="toggle"] {
-      @extend #standard-toggle;
-    }
-
-    .satellite {
-      margin-left: 5px;
-    }
-
-    button[name="satellite"] {
-      vertical-align: -2px;
-
-      &.active {
-        color $white;
-        text-shadow: 0 1px 1px $black;
-      }
-    }
 
     .finished {
       float: right;
@@ -332,16 +252,6 @@
 
   &.dragging .images figure {
     cursor: -moz-grabbing;
-  }
-
-  &.playing .controls .play {
-    button[name="play"] {
-      display: none;
-    }
-
-    button[name="pause"] {
-      display: inline-block;
-    }
   }
 
   &.favorite .images .favorite {

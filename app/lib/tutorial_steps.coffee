@@ -1,7 +1,6 @@
 {Tutorial} = require 'zootorial'
 {Step} = Tutorial
 translate = require 't7e'
-$ = require 'jqueryify'
 
 Step::defaultButton = translate 'classify.tutorial.continueButton'
 

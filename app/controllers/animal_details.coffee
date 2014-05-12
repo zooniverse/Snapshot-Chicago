@@ -56,7 +56,6 @@ class AnimalDetails extends Controller
     setTimeout =>
       count = @getCount()
       behaviors = @getBehaviors()
-
       @identifyButton.attr disabled: (not count) or (behaviors.length is 0)
 
   getCount: ->
@@ -64,9 +63,8 @@ class AnimalDetails extends Controller
 
   getBehaviors: ->
     for checkbox in @behaviorCheckboxes
-      checkbox = $(checkbox)
-      continue unless checkbox.attr 'checked'
-      checkbox.val()
+      continue unless checkbox.checked
+      $(checkbox).val()
 
   getBabies: ->
     !!@babiesCheckbox.attr 'checked'

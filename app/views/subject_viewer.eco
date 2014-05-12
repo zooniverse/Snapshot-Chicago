@@ -1,13 +1,9 @@
 <% translate = require 't7e' %>
-<% moment = require 'moment/moment' %>
 <% sponsoredCameraTraps = window.SERENGETI_SPONSORED_CAMERA_TRAPS || {} %>
 
 <div class="images">
-  <!--<button name="zoom" style="margin-left: -20px;">+/-</button>-->
-  <div class="subject-images">
-    <% for image, i in @subject.location.standard: %>
-      <figure><img src="<%= image %>" /></figure>
-    <% end %>
+  <div class="subject-image">
+    <img src="<%- @subject.location.standard %>" />
   </div>
 
   <div class="annotations"></div>
@@ -25,21 +21,6 @@
 </div>
 
 <div class="controls">
-  <span class="play group">
-    <button name="play" title="<%- translate 'classify.play' %> [SPACE]" data-shortcut="SPACE"><i rel="play"><%- translate 'span', 'classify.play' %></i></button>
-    <button name="pause" title="<%- translate 'classify.pause' %> [SPACE]" data-shortcut="SPACE"><i rel="stop"><%- translate 'span', 'classify.pause' %></i></button>
-  </span>
-
-  <span class="toggles group">
-    <% for image, i in @subject.location.standard: %>
-      <button name="toggle" value="<%= i %>" title="[<%= i + 1 %>]" data-shortcut="<%= i + 1 %>"><%= i + 1 %></button>
-    <% end %>
-  </span>
-
-  <span class="satellite group">
-    <button name="satellite" title="<%- translate 'classify.satellite' %> [M]" data-shortcut="M"><i rel="location"><%- translate 'span', 'classify.satellite' %></i></button>
-  </span>
-
   <span class="finished group">
     <label class="nothing-label" title="[X]">
       <input type="checkbox" name="nothing" data-shortcut="X" />

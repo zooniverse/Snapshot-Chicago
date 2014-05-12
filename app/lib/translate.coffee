@@ -1,4 +1,3 @@
-x$ = require 'jqueryify'
 strings = require '../translations/en-us'
 
 translate = (keys...) ->

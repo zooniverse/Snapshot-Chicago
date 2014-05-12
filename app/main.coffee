@@ -1,14 +1,18 @@
-require './lib/setup'
+
+translate = require 't7e'
+enUs = require './translations/en_us'
+translate.load enUs
+
+$ = window.jQuery
+require 'spine'
 
 Navigation = require './controllers/navigation'
 
-$ = require 'jqueryify'
 Route = require 'spine/lib/route'
 AboutPage = require './controllers/about_page'
 HomePage = require './controllers/home_page'
 Classifier = require './controllers/classifier'
 Profile = require './controllers/profile'
-# Explore = require './controllers/explore'
 Api = require 'zooniverse/lib/api'
 seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
@@ -16,14 +20,12 @@ Footer = require 'zooniverse/controllers/footer'
 User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
 
-
 {Stack} = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
 feedbackContent = require './views/feedback_page'
 
 BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()
-
 
 t7e = require 't7e'
 enUs = require './translations/en_us'
@@ -109,13 +111,12 @@ app.footer = new Footer
 navigation = new Navigation
 app.navigation = navigation
 
-#####################################################
-# Append components to the document body
-#####################################################
-app.navigation.el.appendTo  "body"
-app.stack.el.appendTo  "body"
-app.topBar.el.appendTo "body"
-app.footer.el.appendTo "body"
+app.navigation.el.appendTo  'body'
+app.stack.el.appendTo  'body'
+app.topBar.el.appendTo 'body'
+
+siteFooter = $('<div class="site-footer"></div>').append app.footer.el
+siteFooter.appendTo 'body'
 
 window.app = app
 module.exports = window.app
