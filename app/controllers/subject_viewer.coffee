@@ -14,9 +14,6 @@ class SubjectViewer extends Controller
   playTimeouts: null
 
   events:
-    'click button[name="play"]': 'onClickPlay'
-    'click button[name="pause"]': 'onClickPause'
-    'click button[name="toggle"]': 'onClickToggle'
     'click button[name="sign-in"]': 'onClickSignIn'
     'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="unfavorite"]': 'onClickUnfavorite'
@@ -28,7 +25,6 @@ class SubjectViewer extends Controller
     '.subject-images figure': 'figures'
     '.annotations': 'annotationsContainer'
     '.extra-message': 'extraMessageContainer'
-    '.toggles button': 'toggles'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
@@ -51,10 +47,6 @@ class SubjectViewer extends Controller
       @classification.on 'add-species', @onClassificationAddSpecies
     
       @html template @classification
-    
-      @active = Math.floor @classification.subject.location.standard.length / 2
-      @activate @active
-
       @onClassificationChange()
     else
       @html ''
@@ -75,16 +67,6 @@ class SubjectViewer extends Controller
   onClassificationAddSpecies: (classification, annotation) =>
     item = new AnnotationItem {@classification, annotation}
     item.el.appendTo @annotationsContainer
-
-  onClickPlay: ->
-    @play()
-
-  onClickPause: ->
-    @pause()
-
-  onClickToggle: ({currentTarget}) =>
-    selectedIndex = $(currentTarget).val()
-    @activate selectedIndex
 
   onClickSignIn: ->
     $(window).trigger 'request-login-dialog'
@@ -110,42 +92,5 @@ class SubjectViewer extends Controller
 
   onClickNext: ->
     Subject.next()
-
-  #TODO remove the image play logic  
-  play: ->
-    # Flip the images back and forth a couple times.
-    last = @classification.subject.location.standard.length - 1
-    iterator = [0...last].concat [last...0]
-    iterator = iterator.concat [0...last].concat [last...0]
-
-    # End half way through.
-    iterator = iterator.concat [0...Math.floor(@classification.subject.location.standard.length / 2) + 1]
-
-    @el.addClass 'playing'
-
-    for index, i in iterator then do (index, i) =>
-      @playTimeouts.push setTimeout (=> @activate index), i * 333
-
-    @playTimeouts.push setTimeout @pause, i * 333
-
-  pause: =>
-    clearTimeout timeout for timeout in @playTimeouts
-    @playTimeouts.splice 0
-    @el.removeClass 'playing'
-
-  activate: (@active) ->
-    @active = modulus +@active, @classification.subject.location.standard.length
-
-    for image, i in @figures
-      @setActiveClasses image, i, @active
-
-    for button, i in @toggles
-      @setActiveClasses button, i, @active
-
-  setActiveClasses: (el, elIndex, activeIndex) ->
-    el = $(el)
-    el.toggleClass 'before', +elIndex < +activeIndex
-    el.toggleClass 'active', +elIndex is +activeIndex
-    el.toggleClass 'after', +elIndex > +activeIndex
 
 module.exports = SubjectViewer
