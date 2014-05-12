@@ -52,6 +52,8 @@ html {
           width: 160px;
          
           a {
+            border: 1px solid transparent
+            border-radius: 125px;
             color: $medium-blue;
             display: block;
             opacity: 0.75;
@@ -62,10 +64,7 @@ html {
 
             &:hover,
             &.active {
-              border: $light-blue;
-              -webkit-border-radius: 125px;
-              -moz-border-radius: 125px;
-              border-radius: 125px;
+              border-color: $light-blue
             }
           }
         }
