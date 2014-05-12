@@ -1,6 +1,5 @@
 {Controller} = require 'spine'
 template = require '../views/filter_menu'
-$ = require 'jqueryify'
 translate = require 't7e'
 
 class FilterMenu extends Controller

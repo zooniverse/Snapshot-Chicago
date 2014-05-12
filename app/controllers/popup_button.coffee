@@ -1,5 +1,4 @@
 {attach} = require 'zootorial'
-$ = require 'jqueryify'
 
 class PopupButton
   @fromDOM: (el) ->

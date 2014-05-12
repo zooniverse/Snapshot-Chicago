@@ -2,7 +2,6 @@
 template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
-$ = require 'jqueryify'
 modulus = require '../lib/modulus'
 splits = require '../lib/splits'
 
@@ -18,7 +17,6 @@ class SubjectViewer extends Controller
     'click button[name="play"]': 'onClickPlay'
     'click button[name="pause"]': 'onClickPause'
     'click button[name="toggle"]': 'onClickToggle'
-    'click button[name="satellite"]': 'onClickSatellite'
     'click button[name="sign-in"]': 'onClickSignIn'
     'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="unfavorite"]': 'onClickUnfavorite'
@@ -28,11 +26,9 @@ class SubjectViewer extends Controller
 
   elements:
     '.subject-images figure': 'figures'
-    'figure.satellite': 'satelliteImage'
     '.annotations': 'annotationsContainer'
     '.extra-message': 'extraMessageContainer'
     '.toggles button': 'toggles'
-    'button[name="satellite"]': 'satelliteToggle'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
@@ -90,9 +86,6 @@ class SubjectViewer extends Controller
     selectedIndex = $(currentTarget).val()
     @activate selectedIndex
 
-  onClickSatellite: ->
-    @satelliteImage.add(@satelliteToggle).toggleClass 'active'
-
   onClickSignIn: ->
     $(window).trigger 'request-login-dialog'
 
@@ -114,6 +107,7 @@ class SubjectViewer extends Controller
     @el.addClass 'finished'
    # @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)
+
   onClickNext: ->
     Subject.next()
 
@@ -140,8 +134,6 @@ class SubjectViewer extends Controller
     @el.removeClass 'playing'
 
   activate: (@active) ->
-    @satelliteImage.add(@satelliteToggle).removeClass 'active'
-
     @active = modulus +@active, @classification.subject.location.standard.length
 
     for image, i in @figures

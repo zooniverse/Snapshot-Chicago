@@ -1,8 +1,13 @@
-require './lib/setup'
+
+translate = require 't7e'
+enUs = require './translations/en_us'
+translate.load enUs
+
+$ = window.jQuery
+require 'spine'
 
 Navigation = require './controllers/navigation'
 
-$ = require 'jqueryify'
 Route = require 'spine/lib/route'
 AboutPage = require './controllers/about_page'
 HomePage = require './controllers/home_page'
@@ -21,7 +26,6 @@ feedbackContent = require './views/feedback_page'
 
 BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()
-
 
 t7e = require 't7e'
 enUs = require './translations/en_us'

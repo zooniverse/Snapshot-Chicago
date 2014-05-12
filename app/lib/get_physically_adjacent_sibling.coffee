@@ -1,5 +1,3 @@
-$ = require 'jqueryify'
-
 module.exports = (el, direction = 'right', range = 25, step = 5) ->
   return unless 'elementFromPoint' of document
 

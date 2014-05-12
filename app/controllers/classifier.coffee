@@ -1,5 +1,4 @@
 {Controller} = require 'spine'
-$ = require 'jqueryify'
 SubjectViewer = require './subject_viewer'
 AnimalSelector = require './animal_selector'
 animals = require '../lib/animals'

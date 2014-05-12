@@ -1,4 +1,3 @@
-$ = require 'jqueryify'
 translate = require 't7e'
 enUs = require '../translations/en_us'
 
