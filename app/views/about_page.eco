@@ -16,7 +16,7 @@
 <section data-page="organizations">
   <%- translate 'h2', 'about.sections.organizations' %>
 
-  <% for organization in ['umn', 'mnZoo', 'nsf', 'gpsa', 'umnGradSChool', 'explorersClub', 'asm', 'bellMuseum', 'umnCbs', 'trailCamPro', 'zgf', 'tawiri', 'tanzaniaParks', 'oxford', 'adler']: %>
+  <% for organization in ['oxford', 'adler']: %>
     <% staticProperties = translate "about.organizations.#{organization}" %>
     <div class="member organization">
       <img data-src="<%= staticProperties.image %>" />
@@ -31,7 +31,7 @@
 <section data-page="teams">
   <div class="science team column">
     <h2><%- translate 'span', 'about.sections.scienceTeam' %></h2>
-    <% for member in ['swanson', 'kosmala', 'packer', 'rosengren', 'mwampeta', 'finlay']: %>
+    <% for member in ['magle']: %>
       <% staticProperties = translate "about.teams.science.#{member}" %>
       <div class="science team member">
         <img data-src="<%= staticProperties.image %>" />
@@ -45,7 +45,7 @@
 
   <div class="development team column">
     <h2><%- translate 'span', 'about.sections.developmentTeam' %></h2>
-    <% for member in ['borden', 'carstensen', 'lintott', 'miller', 'parrish', 'smith']: %>
+    <% for member in ['borden', 'raden', 'lintott', 'vansingel', 'parrish', 'whyte']: %>
       <% staticProperties = translate "about.teams.development.#{member}" %>
       <div class="development team member">
         <img data-src="<%= staticProperties.image %>" />

@@ -478,176 +478,21 @@ module.exports =
 
     information:
       main: '''
-        <h2>Observing animals in the wild</h2>
-        <p>Over the last 45 years, the <a href="http://www.cbs.umn.edu/lionresearch/" target="_blank">University of Minnesota Lion Project</a> has discovered a lot about lions – everything from why they have manes to why they live in groups. Now we’re turning our sights to understanding how an entire community of large animals interacts. We currently monitor 24 lion prides in Serengeti National Park, Tanzania, using radio-tracking.  To collect information about other species, we’ve set out a grid of 225 camera traps.  With photographs from these cameras, we’re able to study how over 30 species are distributed across the landscape – and how they interact with lions and one another.</p>
+        <h2>Mainbar content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sagittis est, sit amet pellentesque enim. Mauris ut dictum est, ut consectetur arcu. Fusce convallis odio in feugiat malesuada. Nunc pharetra non massa a sagittis. Phasellus faucibus tempor lectus, malesuada pretium nibh tincidunt vel. Vestibulum eu nibh scelerisque, sagittis nisl sed, adipiscing ligula. Integer sagittis dui eros, eget vulputate neque feugiat tempor. Fusce pellentesque, diam ac sagittis bibendum, turpis leo vehicula erat, et condimentum orci nibh vitae est. Aliquam sit amet mi est. Suspendisse mattis enim non lectus auctor ullamcorper. Integer euismod pulvinar bibendum.</p>
 
-        <p style="text-align: center;"><img src="images/about/tanzania-map.png" /></p>
+        <p>Cras ut libero vel sem iaculis fringilla non et mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam leo urna, commodo et eleifend id, vehicula eu metus. Vivamus aliquet placerat justo et adipiscing. Duis eget elit ac lorem fringilla tempus. Vivamus ut venenatis nisi. Aliquam at nunc mattis, aliquam neque nec, tempus turpis.</p>
 
-        <h3>Our scientific questions</h3>
-        <p>Understanding how competing species coexist is a fundamental theme in ecology, with important implications for food webs, biodiversity, and the sustainability of life on Earth.  Much of our current research focuses on how carnivores coexist with carnivores, herbivores with herbivores, and the joint dynamics of predators and their prey. These insights will guide strategies for species reintroduction, conservation, and ecosystem management around the world.</p>
-        <ul>
-          <li>Carnivore Coexistence: Carnivores eat meat. If two carnivore species eat the same prey, one of those species can outcompete the other, preventing coexistence of both species in the same area. Even where carnivores don’t compete for the exact same prey, aggressive interactions such as scavenging from and killing each other can prevent coexistence.  Research in other parts of the world suggests that when one species avoids the other, the two species might be able to coexist, but coexistence may depend on the structure and complexity of the habitat. Our cameras reveal whether lions, leopards, cheetah and hyenas avoid each other in space or in time and the extent to which this varies across the landscape.</li>
-          <li>Herbivore Coexistence: Herbivores eat plants. The Serengeti supports sixteen different species of hoofed herbivores.  Although these species don’t kill or steal food from each other, we still don’t really understand how they all manage to coexist in this system.  Herbivores that are able to feed most efficiently may also be more likely to be killed by predators, and this could explain some of the coexistence. Another possibility is that different herbivores may specialize on different habitat areas. We are using the camera traps to investigate these ideas, as well as study how the annual migration of 1.5 million wildebeest and zebra through our study area affects changes these dynamics.</li>
-          <li>Predator Prey Relationships: Recent advances in ecology have suggested that there may be costs to herbivores when they avoid predators. For example, if predators hunt in areas with the best plants, herbivores may avoid those areas and only be able to eat plants that aren’t as good. We are using the camera trap data on herbivore distributions to study whether herbivores are found where the best food is or where the risk of being killed by predators is lowest.</li>
-        </ul>
+        <p>Nullam rutrum in purus quis porttitor. Nullam congue mi faucibus lorem egestas, a tempus est bibendum. Aenean elementum ligula sapien, eget tristique sem elementum eget. Vivamus urna odio, convallis ac faucibus at, adipiscing ac est. Vivamus mollis venenatis nisi, quis dictum lectus tempor et. Nulla fringilla aliquam volutpat. Morbi dignissim quam tristique ligula laoreet hendrerit. Proin ac cursus nulla. Sed molestie at odio vitae rhoncus. In hac habitasse platea dictumst.</p>
 
-        <p>Images are licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
 
-        <p>Help us translate this project into your language! <a href="https://github.com/zooniverse/Serengeti/tree/master/public/translations">Check out our GitHub repo to find out how.</a></p>
       '''
 
       sidebar: '''
-        <h3>The Serengeti Lion Project</h3>
-        <p>The camera trapping survey is operated by the long-term <a href="http://www.cbs.umn.edu/lionresearch/" target="_blank">Serengeti Lion Project</a>.  The Lion Project has been studying African lions in Tanzania’s Serengeti National Park and the Ngorongoro Conservation Area since the 1960’s.  At any given time, our field teams keep track of about 330 lions in 24 prides in the Serengeti, and 50–60 lions in 5 prides on the floor of Ngorongoro Crater.  This daily monitoring has produced one of the most extensive datasets on any mammalian species anywhere in the world - over 5,000 lions have been included in the Serengeti and Crater studies over the past 40+ years, and genealogical data from these two populations extend over 12 generations. The daily records include information on the lions’ location, group size, diet, food intake, health and reproduction.  You can find out more on <a href="http://www.cbs.umn.edu/lionresearch/" target="_blank">the Lion Project website</a>.</p>
-        <h3>What we do</h3>
-        <p>We check on the camera traps in the course of daily lion monitoring.  We change batteries, exchange the SD cards, and cut tall grass in front of the camera so that grass waving in the wind doesn’t accidentally trigger the sensor.  225 cameras are a lot of work!  When things run smoothly, a camera can last about two months before needing maintenance.  But that’s not always the case – sometimes we return to a camera only to find it chewed on by hyenas or torn down by elephants, waterlogged from a heavy rain or infested by ants. </p>
-        <h3>How the cameras work</h3>
-        <p>The cameras use passive infrared sensors that are triggered when an object warmer than the ambient temperature moves in front of the sensor.  This is usually an animal…but tall sunlit grass can also trigger the camera when it blows in the wind.  We currently use the Scoutguard 565 and DLC Covert Reveal models – these are incandescent flash cameras (with a white flash).  Some people worry that incandescent flashes startle the animals, but in our study area the same individuals often come back to the same camera site night after night!</p>
-        <h3>Where we live</h3>
-        <p>When in Serengeti, we live in the remote Serengeti Wildlife Research Center—a small community of houses and research offices near the park headquarters in the middle of the park.  Our house is modest, but the outdoor toilet provides some of our more exciting run-ins with nocturnal wildlife.  In recent years donations from visitors and supporters have allowed us to install a solar power system that gives us electricity at night and supports the most exciting recent addition to our house – a refrigerator!  </p>
+        <h3>Sidebar content</h3>
       '''
 
     organizations:
-      umn:
-        name: 'University of Minnesota'
-        url: "http://www.cbs.umn.edu/eeb"
-        image: 'images/about/organizations/umn.jpg'
-        description: '''
-          The members of Snapshot Serengeti’s science team are ecologists at the University of Minnesota in the Department of Ecology, Evolution, and Behavior.
-          The University of Minnesota, founded in the belief that all people are enriched by understanding,
-          is dedicated to the advancement of learning and the search for truth;
-          to the sharing of this knowledge through education for a diverse community;
-          and to the application of this knowledge to benefit the people of the state, the nation, and the world.
-        '''
-
-      mnZoo:
-        name: 'Minnesota Zoo'
-        url: 'http://www.mnzoo.com/'
-        image: 'images/about/organizations/mn-zoo.jpg'
-        description: '''
-          The Minnesota Zoo has provided partial funding for the camera trap survey through a Ulysses S. Seal Conservation Grant
-          and has helped recruit volunteers who have assisted the development of Snapshot Serengeti.
-          The Minnesota Zoo connects people, animals, and the natural world.
-          It is dedicated to inspiring guests to act on behalf of wildlife and wild lands.
-          To accomplish this, the zoo provides award-winning recreational, educational, and conservation programs, locally, nationally, and internationally.
-        '''
-
-      nsf:
-        name: 'National Science Foundation'
-        url: 'http://www.nsf.gov/'
-        image: 'images/about/organizations/nsf.jpg'
-        description: '''
-          The National Science Foundation (NSF) provides ongoing funding support for the long-term Serengeti Lion Project (grant DEB‐1020479)
-          that provides the underlying infrastructure for the camera trapping survey.
-          The mission of NSF is to promote the progress of science; to advance the national health, prosperity, and welfare; and to secure the national defense.
-          NSF envisions a nation that capitalizes on new concepts in science and engineering and provides global leadership in advancing research and education.
-        '''
-
-      gpsa:
-        name: 'The Global Programs and Strategy Alliance'
-        url: 'http://global.umn.edu/'
-        image: 'images/about/organizations/umn.jpg'
-        description: '''
-          The Global Programs and Strategy Alliance provided the funding for the first 50 cameras of the camera trap survey, which were established in June 2010.
-          The mission of the Global Programs and Strategy Alliance is to be the driving force for the University of Minnesota in globalizing teaching, learning, research, and engagement.
-          The office sponsors many programs and strategies that promote and support international activities by students, faculty, and staff across the University system.
-        '''
-
-      umnGradSChool:
-        name: 'University of Minnesota Graduate School'
-        url: 'http://www.grad.umn.edu/'
-        image: 'images/about/organizations/umn.jpg'
-        description: '''
-          The University of Minnesota Graduate School provided funding for the initial camera trap survey in 2010 through a Thesis Research Grant.
-          As one of the world's most comprehensive public research universities, the University of Minnesota offers outstanding graduate and professional education
-          across a range of disciplines—agriculture, engineering, humanities, sciences, and social sciences.
-        '''
-
-      explorersClub:
-        name: 'Explorers Club'
-        url: 'http://www.explorers.org/'
-        image: 'images/about/organizations/explorers-club.jpg'
-        description: '''
-          The Explorers Club provided funding for the initial camera trap survey through its Exploration Fund.
-          The Explorers Club is an international multidisciplinary professional society dedicated to the advancement of field research and the ideal that it is vital to preserve the instinct to explore.
-          The Explorers Club promotes the scientific exploration of land, sea, air, and space by supporting research and education in the physical, natural and biological sciences.
-        '''
-
-      asm:
-        name: 'American Society of Mammalogists'
-        url: 'http://www.mammalsociety.org/'
-        image: 'images/about/organizations/asm.jpg'
-        description: '''
-          The American Society of Mammalogists provided funding for the initial camera trap survey through its Grants-in-aid of Research program.
-          ASM was established in 1919 for the purpose of promoting interest in the study of mammals.
-          The ASM is currently composed of over 4,500 members, many of whom are professional scientists.
-          Members of the Society have always had a strong interest in the public good,
-          and this is reflected in their involvement in providing information for public policy, resources management, conservation, and education.
-        '''
-
-      bellMuseum:
-        name: 'James Ford Bell Museum of Natural History'
-        url: 'http://www.bellmuseum.org/'
-        image: 'images/about/organizations/bell-museum.jpg'
-        description: '''
-          The James Ford Bell Museum of Natural History provided funding for the initial 2010 camera trap survey
-          through a James W. Wilkie Fellowship for Natural History. The Bell Museum was established by Minnesota legislative mandate in 1872
-          to collect, preserve, skillfully prepare, display, and interpret our state's diverse animal and plant life
-          for scholarly research and teaching and for public appreciation, enrichment, and enjoyment.
-          Collecting, researching, and teaching serve to inform exhibits, exhibitions, and public outreach.
-        '''
-
-      umnCbs:
-        name: 'University of Minnesota College of Biological Sciences (CBS)'
-        url: 'https://www.cbs.umn.edu/'
-        image: 'images/about/organizations/umn.jpg'
-        description: '''
-          The College of Biological Sciences provided funding for 2009 pilot work that led to the camera survey through a Rothman Fellowship.
-          CBS promotes research that will improve human welfare and global conditions by advancing the knowledge of the mechanisms of life.
-          With its exclusive focus on biology, CBS seeks to prepare today’s students to create the biology of tomorrow.
-        '''
-
-      trailCamPro:
-        name: 'TrailCamPro.com'
-        url: 'http://www.trailcampro.com/'
-        image: 'images/about/organizations/trailcampro.jpg'
-        description: '''
-          TrailCamPro has provided affordable camera traps for the survey and has shared invaluable personal expertise and advice on using them,
-          which has had a large impact on the survey’s success.
-          TrailCamPro specializes in selling trail cameras, camera traps, and security cameras.
-        '''
-
-      zgf:
-        name: 'Frankfurt Zoological Society'
-        url: 'http://www.zgf.de/?id=14&language=en'
-        image: 'images/about/organizations/fzs.jpg'
-        description: '''
-          The Frankfurt Zoological Society (FZS) provides logistical support for the field team in the Serengeti.
-          FZS is a non-profit, internationally operating, conservation organization based in Frankfurt/Main.
-          The Society is committed to conserving biological diversity.
-          FZS is therefore faced with one of the greatest challenges of the 21st century: the preservation of the world’s natural environments.
-        '''
-
-      tawiri:
-        name: 'Tanzania Wildlife Research Institute'
-        url: 'http://www.tawiri.or.tz/'
-        image: 'images/about/organizations/tawiri.jpg'
-        description: '''
-          Tanzania Wildlife Research Institute (TAWIRI) provides permission and facilities for the camera trapping project.
-          TAWIRI is a parastatal organization under the Ministry of Natural Resources and Tourism responsible for conducting and coordinating wildlife research in the United Republic Tanzania.
-          TAWIRI’s overall objective is providing scientific information and advice to the Government and wildlife management authorities on the sustainable conservation of wildlife and natural resources.
-        '''
-
-      tanzaniaParks:
-        name: 'Tanzania National Parks'
-        url: 'http://www.tanzaniaparks.com/'
-        image: 'images/about/organizations/tanapa.jpg'
-        description: '''
-          Tanzania National Parks (TANAPA) provides permission and facilities for the camera trapping project.
-          The mission of TANAPA is to manage and regulate National Parks to preserve the country’s heritage, encompassing natural and cultural resources.
-          TANAPA sustainably conserves and manages park resources and their aesthetic value, for the benefit of present and future generations of mankind, as well as efficiently provide high-class tourism products and services.
-        '''
-
       oxford:
         name: 'University of Oxford'
         url: 'http://www.ox.ac.uk/'
@@ -672,58 +517,11 @@ module.exports =
 
     teams:
       science:
-        swanson:
-          name: 'Ali Swanson'
-          image: 'images/about/team/ali.jpg'
+        magle:
+          name: 'Seth Magle'
+          image: 'http://placehold.it/100'
           description: '''
-            Ali spent several years chasing mammals, fish, and birds around North America (scientifically, of course) before beginning her Ph.D. at the University of Minnesota.
-            She initiated the camera trapping survey in 2010 for her dissertation research on how Serengeti carnivores coexist.
-            She now spends about half the year in Serengeti devising ways to foil the relentless efforts of hyenas and elephants to munch and destroy the cameras.
-          '''
-
-        kosmala:
-          name: 'Margaret Kosmala'
-          image: 'images/about/team/margaret.jpg'
-          description: '''
-            Margaret is an ecologist finishing her Ph.D. at the University of Minnesota.
-            She explores the complex interactions among species and is especially interested in understanding how humans impact species communities.
-            She is currently a fellow at the National Museum of Natural History in Washington, D.C.
-            where she is trying to figure out what might happen to insect communities as the planet warms.
-          '''
-
-        packer:
-          name: 'Craig Packer'
-          image: 'images/about/team/craig.jpg'
-          description: '''
-            Craig Packer is a Distinguished McKnight University Professor at the University of Minnesota
-            and a research scientist at the Tanzanian Wildlife Research Institute.
-            He has worked in Tanzania for 40 years and has two enduring passions: the Serengeti and photography.
-            But he no longer carries his own camera, preferring the dramatic and exciting photographs captured by Serengeti Snapshot.
-          '''
-
-        rosengren:
-          name: 'Daniel Rosengren'
-          image: 'images/about/team/daniel.jpg'
-          description: '''
-            Daniel got his master’s degree in Sweden studying vole population dynamics.
-            After cycling from the Northern Cape of Europe to the southernmost point in Africa, Daniel left his bike for a Lion Project Land Rover.
-            He is now the senior Serengeti field assistant and is rarely seen without his camera in hand.
-          '''
-
-        mwampeta:
-          name: 'Stanslaus Mwampeta'
-          image: 'images/about/team/stanslaus.jpg'
-          description: '''
-            Stan joined the Lion Project after graduating from the University of Dar es Salaam, Tanzania.
-            When he’s not watching lions, he’s making the rounds on the camera trap survey to ensure that Snapshot Serengeti never runs out of footage.
-          '''
-
-        finlay:
-          name: 'Fred Finlay'
-          image: 'images/about/team/fred.jpg'
-          description: '''
-            Fred is an Associate Professor at University of Minnesota’s College of Education and Human Development.
-            He’s interested in how social and cultural context influence how people learn about science, and conducts much of his research in Thailand.
+            Short bio
           '''
 
       development:
@@ -736,12 +534,11 @@ module.exports =
             When not pondering the wonders of science, Kelly can often be found baking or spending time with her herd of cats – Murray, Ada, & Kepler.
           '''
 
-        carstensen:
-          name: 'Brian Carstensen'
-          image: 'images/about/team/brian.jpg'
+        raden:
+          name: 'Steve Raden'
+          image: 'http://placehold.it/100'
           description: '''
-            Brian is a web developer working on the Zooniverse family of projects at the Adler Planearium.
-            Brian has a degree in graphic design from Columbia College in Chicago, and worked in that field for a number of years before finding a niche in web development.
+            Steve bio
           '''
 
         lintott:
@@ -752,13 +549,11 @@ module.exports =
             A keen popularizer of science, he is best known as co-presenter of the BBC's long running Sky at Night program. He's currently drinking a lot of sherry.
           '''
 
-        miller:
-          name: 'David Miller'
-          image: 'images/about/team/david.jpg'
+        vansingel:
+          name: 'Heath Van Singel'
+          image: 'http://placehold.it/100'
           description: '''
-            David is passionate about tellings stories through clear, clean, and effective design.
-            Before joining the Zooniverse team as Visual Designer, David worked for the Raindance Film Festival, the News 21 Initiative's Apart From War, and as a freelance designer for his small business, Miller Visual.
-            David is a graduate of the S.I. Newhouse School of Public Communications at Syracuse University.
+            Heath bio
           '''
 
         parrish:
@@ -769,12 +564,9 @@ module.exports =
             Aside from web development; new technologies, science, AI, reptiles, and coffee tend to occupy his attention.
           '''
 
-        smith:
-          name: 'Arfon Smith'
-          image: 'images/about/team/arfon.jpg'
+        whyte:
+          name: 'Laura Whyte'
+          image: 'http://placehold.it/100'
           description: '''
-            Arfon is responsible for leading the development of the Zooniverse, a platform for online citizen science.
-            In August of 2011 he took up the position of Director of Citizen Science at the Adler Planetarium
-            where he continues to lead the software and infrastructure development for the Zooniverse.
-            He studied Chemistry at the University of Sheffield and completed his PhD in Astrochemistry at The University of Nottingham in 2006.
+            Whyte bio
           '''
