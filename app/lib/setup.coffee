@@ -10,8 +10,3 @@ require 'es5-shimify'
 
 require 'jqueryify'
 require 'spine'
-
-# Here so that it is included after jQuery
-require './jquery-ui-1.9.2.custom'
-require './wax.leaf'
-require './cartodb-leaflet'
