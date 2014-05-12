@@ -8,7 +8,7 @@ html {
     background-color: $light-blue;
     margin: 0;
     height: 100%;
-    padding: 0 0 100px;
+    padding: 0;
     position: relative;
 
     > h1 {
@@ -105,9 +105,34 @@ html {
       }
     }
   }
-  .zooniverse-footer {
+
+  .site-footer {
     background-color: $medium-blue;
-    overflow:hidden;
+
+    .zooniverse-footer {
+      color: white;
+      margin: 0 auto;
+      max-width: 64em;
+
+      .zooniverse-logo-container {
+        float: none;
+
+        .zooniverse-logo {
+          width: 100%;
+        }
+      }
+
+      .zooniverse-footer-content {
+        float: none;
+        width: 100%;
+      }
+      .zooniverse-footer-heading {
+        text-align: center;
+      }
+
+      .zooniverse-footer-projects a {
+        color: #ddd;
+      }
+    }
   }
-  
 }

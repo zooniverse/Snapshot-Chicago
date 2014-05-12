@@ -111,13 +111,12 @@ app.footer = new Footer
 navigation = new Navigation
 app.navigation = navigation
 
-#####################################################
-# Append components to the document body
-#####################################################
-app.navigation.el.appendTo  "body"
-app.stack.el.appendTo  "body"
-app.topBar.el.appendTo "body"
-app.footer.el.appendTo "body"
+app.navigation.el.appendTo  'body'
+app.stack.el.appendTo  'body'
+app.topBar.el.appendTo 'body'
+
+siteFooter = $('<div class="site-footer"></div>').append app.footer.el
+siteFooter.appendTo 'body'
 
 window.app = app
 module.exports = window.app
