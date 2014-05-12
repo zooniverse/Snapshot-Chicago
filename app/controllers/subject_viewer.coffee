@@ -53,16 +53,14 @@ class SubjectViewer extends Controller
 
   onClassificationChange:  =>
     noAnnotations = @classification.annotations.length is 0
-    #TODO ignore this value from old model for now
-    #nothing = @classification.metadata.nothing
+    nothing = @classification.metadata.nothing
     isFavorite = !!@classification.favorite
     
     inSelection = @classification.metadata.inSelection
     @el.toggleClass 'no-annotations', noAnnotations
     @el.toggleClass 'favorite', isFavorite
-    #TODO ignoring this extra sense of nothingness for now
-    @finishButton.attr disabled: inSelection or noAnnotations
-    #@finishButton.attr disabled: inSelection or (noAnnotations and not nothing)
+
+    @finishButton.attr disabled: inSelection or (noAnnotations and not nothing)
 
   onClassificationAddSpecies: (classification, annotation) =>
     item = new AnnotationItem {@classification, annotation}
@@ -78,7 +76,7 @@ class SubjectViewer extends Controller
     @classification.updateAttribute 'favorite', false
 
   onChangeNothingCheckbox: ->
-    nothing = !!@nothingCheckbox.attr 'checked'
+    nothing = @nothingCheckbox.get(0).checked
     @classification.annotate {nothing}, true
 
   onClickFinish: ->
@@ -87,7 +85,7 @@ class SubjectViewer extends Controller
     @extraMessageContainer.hide() unless message
 
     @el.addClass 'finished'
-   # @classification.send() unless @classification.subject.metadata.empty
+    # @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)
 
   onClickNext: ->
