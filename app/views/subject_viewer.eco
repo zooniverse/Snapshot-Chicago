@@ -10,10 +10,6 @@
 
   <div class="extra-message"></div>
 
-  <span class="sign-in">
-    <button name="sign-in"><%- translate 'span', 'classify.notSignedIn' %></button>
-  </span>
-
   <span class="favorite">
     <button name="favorite" title="<%- translate 'classify.favorite' %> [F]" data-shortcut="F"><i rel="heart-empty"><%- translate 'span', 'classify.favorite' %></i></button>
     <button name="unfavorite" title="<%- translate 'classify.unfavorite' %> [F]" data-shortcut="F"><i rel="heart"><%- translate 'span', 'classify.unfavorite' %></i></button>

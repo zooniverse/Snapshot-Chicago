@@ -14,7 +14,6 @@ class SubjectViewer extends Controller
   playTimeouts: null
 
   events:
-    'click button[name="sign-in"]': 'onClickSignIn'
     'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="unfavorite"]': 'onClickUnfavorite'
     'change input[name="nothing"]': 'onChangeNothingCheckbox'

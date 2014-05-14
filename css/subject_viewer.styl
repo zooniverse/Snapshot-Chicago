@@ -95,35 +95,6 @@
       }
     }
 
-    .sign-in {
-      box-shadow: 0 1px 3px rgba($black, 0.5);
-      padding: 0 10px;
-      right: -3px;
-      top: 10px;
-
-      &:hover {
-        padding-right: 15px;
-      }
-
-      &:before,
-      &:after {
-        border: 10px solid rgba($red, 0);
-        content: "";
-        position: absolute;
-        left: -10px;
-      }
-
-      &:before {
-        border-top-color: $red;
-        top: 0;
-      }
-
-      &:after {
-        border-bottom-color: $red;
-        bottom: 0;
-      }
-    }
-
     .favorite {
       display: none;
       font-size: 16px;
@@ -284,10 +255,7 @@
 }
 
 .signed-in .subject-viewer .images {
-  .sign-in {
-    display: none;
-  }
-
+ 
   .favorite {
     display: inline;
   }

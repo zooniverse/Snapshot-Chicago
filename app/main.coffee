@@ -1,4 +1,3 @@
-
 translate = require 't7e'
 enUs = require './translations/en_us'
 translate.load enUs
@@ -50,13 +49,8 @@ TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 
 app = {}
 
-#TODO is that how we do it nowadays?
-# User.bind 'sign-in', ->
-#   $('html').toggleClass 'signed-in', User.current?
-
 api = new Api project: 'serengeti'
 # api = new Api project: 'asteroid'
-
 
 
 #TODO rewrite this logic for sorted seasons
@@ -71,8 +65,6 @@ api = new Api project: 'serengeti'
 
 #   seasons.push sortedSeasons...
 
-#TODO That's not how we do it nowadays
-#User.count = project.user_count
 
 #TODO do we need this
 $('.before-load').remove()
@@ -101,11 +93,6 @@ User.fetch()
 app.topBar = new TopBar
 app.footer = new Footer 
 
-#TODO is this behavior needed?
-# $(window).on 'request-login-dialog', ->
-#   app.topBar.onClickSignUp()
-#   app.topBar.loginForm.signInButton.click()
-#   app.topBar.loginDialog.reattach()
 
 #TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation
