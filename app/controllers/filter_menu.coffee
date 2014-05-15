@@ -2,11 +2,17 @@
 template = require '../views/filter_menu'
 translate = require 't7e'
 
+
 class FilterMenu extends Controller
   set: null
   characteristic: null
 
   className: 'filter-menu'
+
+  # this charcteristic is boolean and not a list of a values
+  # therefore special logic will be used to just dispaly 
+  MAN_MADE: "manMade"
+  
 
   events:
     'click button[name="characteristic"]': 'onToggleClick'
@@ -27,7 +33,10 @@ class FilterMenu extends Controller
     @close()
 
   onToggleClick: ->
-    @toggle()
+    if @characteristic.id is @MAN_MADE
+      @toggleManMade()
+    else
+      @toggle()
 
   open: ->
     @el.addClass 'open'
@@ -46,12 +55,19 @@ class FilterMenu extends Controller
   toggle: ->
     if @el.hasClass 'open' then @close() else @open()
 
+  toggleManMade: ->
+    @filterSetForValue(@MAN_MADE)
+
   onValueClick: ({currentTarget}) ->
-    id = $(currentTarget).val()
-    result = {}
-    result[@characteristic.id] = id
-    @set.filter result, false
+    value = $(currentTarget).val()
+    @filterSetForValue(value)    
     @close()
+
+  filterSetForValue: (value) ->
+    result = {}
+    result[@characteristic.id] = value
+    @set.filter result, false
+   
 
   onClearClick: ->
     result = {}
