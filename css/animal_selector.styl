@@ -2,13 +2,13 @@
   background: $white;
   box-sizing: border-box;
   color: $black;
-  float: right;
+  float: left;
   margin-top: 4px;
   padding: 10px;
   position: relative;
   -webkit-tap-highlight-color: transparent;
   transition: opacity 0.5s ease-in-out;
-  width: 405px;
+  width: 100%;
 
   .general-filters {
     border-radius: 3px;
@@ -172,7 +172,7 @@
         }
 
         button[name="characteristic-value"] {
-          background: url("images/characteristics-values.png");
+          /*background: url("images/characteristics-values.png");*/
           float: left;
           height: 40px;
           margin: 4px 0 0 5px;
@@ -183,36 +183,36 @@
             border: 1px solid $gold;
             margin: 3px 0 0 4px;
           }
-          /* TODO get rid of sprite? */
-          &[value="patternVerticalStripe"]   {background-position: -8px -152px;}
-          &[value="patternHorizontalStripe"] {background-position: -56px -152px;}
-          &[value="patternSpots"]            {background-position: -104px -152px;}
-          &[value="patternSolid"]            {background-position: -152px -152px;}
+         
+          &[value="coatTanYellow"]           {background: url(images/characteristics-values/coatTanYellow.png)}
+          &[value="coatRedBrown"]            {background: url(images/characteristics-values/coatRedBrown.png)}
+          &[value="coatBrownBlack"]          {background: url(images/characteristics-values/coatBrownBlack.png)}
+          &[value="coatGray"]                {background: url(images/characteristics-values/coatGray.png)}
+          &[value="coatGrayBlack"]           {background: url(images/characteristics-values/coatGrayBlack.png)}
+          &[value="coatBlack"]               {background: url(images/characteristics-values/coatBlack.png)}
+          &[value="coatOther"]               {background: url(images/characteristics-values/coatOther.png)}
+          &[value="coatMottled"]             {background: url(images/characteristics-values/coatMottled.png)}
+          &[value="coatSolid"]               {background: url(images/characteristics-values/coatSolid.png)}
+          &[value="coatOrTailStriped"]       {background: url(images/characteristics-values/coatOrTailStriped.png)}
 
-          &[value="coatTanYellow"]           {background-position: -8px -56px;}
-          &[value="coatOrange"]              {background-position: -56px -56px;}
-          &[value="coatRedBrown"]            {background-position: -104px -56px;}
-          &[value="coatBrownBlack"]          {background-position: -152px -56px;}
-          &[value="coatWhite"]               {background-position: -200px -56px;}
-          &[value="coatGray"]                {background-position: -248px -56px;}
-          &[value="coatBlack"]               {background-position: -296px -56px;}
+         
+          /* TODO eliminate these two single choice filter */
+          &[value="hornsNone"]               {background: url(images/characteristics-values/hornNone.png)}
+          &[value="manMade"]           {background: url(images/characteristics-values/manManMade.png)}
+        
+          &[value="tailBushy"]               {background: url(images/characteristics-values/tailBushy.png)}
+          &[value="tailSmooth"]              {background: url(images/characteristics-values/tailSmooth.png)}
+          &[value="tailFlat"]                {background: url(images/characteristics-values/tailFlat.png)}
+          &[value="tailLong"]                {background: url(images/characteristics-values/tailLong.png)}
 
-          &[value="hornsStraight"]           {background-position: -8px -104px;}
-          &[value="hornsSimpleCurve"]        {background-position: -56px -104px;}
-          &[value="hornsLyrate"]             {background-position: -104px -104px;}
-          &[value="hornsCurly"]              {background-position: -152px -104px;}
+          &[value="buildStocky"]             {background: url(images/characteristics-values/buildStocky.png)}
+          &[value="buildTall"]               {background: url(images/characteristics-values/buildTall.png)}
+          &[value="buildLanky"]              {background: url(images/characteristics-values/buildLanky.png)}
+          &[value="buildSmall"]              {background: url(images/characteristics-values/buildSmall.png)}
+          &[value="buildLowSlung"]           {background: url(images/characteristics-values/buildLowSlung.png)}
 
-          &[value="tailBushy"]               {background-position: -8px -200px;}
-          &[value="tailSmooth"]              {background-position: -56px -200px;}
-          &[value="tailTufted"]              {background-position: -104px -200px;}
-          &[value="tailLong"]                {background-position: -152px -200px;}
-          &[value="tailShort"]               {background-position: -200px -200px;}
 
-          &[value="buildStocky"]             {background-position: -8px -8px;}
-          &[value="buildTall"]               {background-position: -56px -8px;}
-          &[value="buildLanky"]              {background-position: -104px -8px;}
-          &[value="buildSmall"]              {background-position: -152px -8px;}
-          &[value="buildLowSlung"]           {background-position: -200px -8px;}
+
 
           .label {
             bottom: 100%;
