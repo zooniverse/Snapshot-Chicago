@@ -31,12 +31,12 @@ module.exports = [
       new Value id: 'coatOrTailStriped', label: translate 'span', 'characteristicValues.coatOrTailStriped'
     ]
 
-  new Characteristic
-    id: 'horns'
-    label: translate 'span', 'characteristics.horns'
-    values: [
-      new Value id: 'hornsNone', label: translate 'span', 'characteristicValues.hornsNone'
-    ]
+  # new Characteristic
+  #   id: 'horns'
+  #   label: translate 'span', 'characteristics.horns'
+  #   values: [
+  #     new Value id: 'hornsNone', label: translate 'span', 'characteristicValues.hornsNone'
+  #   ]
 
   new Characteristic
     id: 'tail'
