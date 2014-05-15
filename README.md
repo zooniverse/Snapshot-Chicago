@@ -1,11 +1,4 @@
-Snapshot Serengeti
+Snapshot Chicago
 ==================
 
-```
-hub clone zooniverse/Serengeti
-cd Serengeti
-npm install
-npm start
-```
-
-http://www.snapshotserengeti.org/
+This is the repository for the Lincoln Park Zoo project.
