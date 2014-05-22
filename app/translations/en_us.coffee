@@ -8,11 +8,10 @@ module.exports =
     blog: 'Blog'
 
   home:
-    heading: 'Welcome to Chicago Zoo'
+    heading: 'Welcome to Snapshot Chicago'
     content: '''
-      Hundreds of camera traps in Serengeti National Park, Tanzania,
-      are providing a powerful new window into the dynamics of Africa’s most elusive wildlife species.
-      We need your help to classify all the different animals caught in millions of camera trap images.
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sagittis est,
+      sit amet pellentesque enim. Mauris ut dictum est, ut consectetur arcu. Fusce convallis odio i
     '''
     allSeasonsComplete: '''
       <p>With your help, we've classified all the data we have so far. Great work!</p>
