@@ -1,6 +1,5 @@
 <% translate = require 't7e' %>
 
-
 <ul>
   <a href="#/" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
 
