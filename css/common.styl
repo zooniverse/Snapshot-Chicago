@@ -3,6 +3,8 @@ $medium-blue = #2099de;
 $dark-blue = #213742;
 $red = #ee4737;
 $white = #ffffff;
+$dark-grey-font = #505050;
+$light-grey-bg = #eaeaea;
 /* above are in line with LPZ mockup */
 
 $black = #140b03;
@@ -49,7 +51,6 @@ $gold = #fc0; // TODO
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0 1px 1px $black;
   vertical-align: middle;
 
   &:hover {
@@ -65,6 +66,11 @@ $gold = #fc0; // TODO
   &.disabled {
     opacity: 0.5;
   }
+}
+
+.light-grey-btn {
+  color: $dark-grey-font;
+  background-color: $light-grey-bg;
 }
 
 outer-deboss($distance) {

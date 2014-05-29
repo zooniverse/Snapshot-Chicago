@@ -3,7 +3,6 @@
   box-sizing: border-box;
   color: $black;
   float: right;
-  margin-top: 4px;
   padding: 10px;
   position: relative;
   -webkit-tap-highlight-color: transparent;
@@ -13,8 +12,7 @@
   .general-filters {
     border-radius: 3px;
     box-sizing: border-box;
-    height: 50px;
-    padding: 10px 5px;
+    height: 40px;
     position: relative;
     text-align: left;
 
@@ -25,25 +23,24 @@
       z-index: 1;
 
       button[name="characteristic"] {
-        padding: 0 20px 0 10px;
         position: relative;
-        text-shadow: 0 1px 1px $black;
 
         &:hover {
           box-shadow: 0 0 0 1px rgba($white, 0.5) inset;
         }
 
-        &:after {
-          border: 4px solid transparent;
-          border-top-color: $white;
-          content: "";
-          height: 0;
-          margin-top: -2px;
-          position: absolute;
-          right: 5px;
-          top: 50%;
-          width: 0;
-        }
+        // TODO: Delete this? It is causing weird fragmenting
+        // &:after {
+        //   border: 4px solid transparent;
+        //   border-top-color: $white;
+        //   content: "";
+        //   height: 0;
+        //   margin-top: -2px;
+        //   position: absolute;
+        //   right: 5px;
+        //   top: 50%;
+        //   width: 0;
+        // }
       }
 
       .menu {
@@ -63,6 +60,7 @@
           display: block;
           min-width: 100%;
           padding: 0 10px;
+          background: $white;
 
           &:hover,
           &.selected {
@@ -91,31 +89,34 @@
     }
 
     .search {
+      $search-height = 30
       display: inline-block;
       float: right;
       margin: 5px 5px 0 0;
       position: relative;
 
       i[rel="search"] {
-        font-size: 12px;
+        font-size: 16px;
         left: 7px;
         position: absolute;
         top: 4px;
+        color: #ddd;
         z-index: 1;
       }
 
       input[name="search"] {
         appearance: none;
-        border: 2px solid rgba($gray, 0.5);
-        border-radius: 20px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
         box-sizing: border-box;
-        color: $white;
+        color: $dark-grey-font;
         font-family: inherit;
         font-size: 12px;
-        height: 20px;
-        padding: 0 10px 0 20px;
-        vertical-align: top;
+        height: unit($search-height, 'px');
+        padding: 0 10px 0 25px;
+        margin-top: unit(-($search-height / 2), 'px');;
         width: 160px;
+        outline: none;
       }
     }
   }
@@ -123,13 +124,14 @@
   .characteristic-filters {
     clearfix();
     padding: 5px 0;
+    margin-bottom: 5px;
     position: relative;
 
     .filter-menu {
       box-sizing: border-box;
       float: left;
       margin-left: 7px;
-      width: 71px;
+      width: 80px;
 
       [data-language="pl_pl"] &,
       [data-language="fi_fi"] & {
@@ -143,10 +145,10 @@
 
       button[name="characteristic"] {
         @extend #standard-button;
+        @extend .light-grey-btn;
         float: left;
         font-size: 12px;
-        font-weight: bold;
-        height: 22px;
+        height: 30px;
         overflow: hidden;
         padding: 0;
         position: relative;
@@ -268,7 +270,6 @@
       }
 
       &.in-use button[name="characteristic"] {
-       
       }
     }
   }
@@ -283,7 +284,8 @@
       position: relative;
 
       [data-animal] {
-        border: 1px solid $green-dark;
+        // border: 1px solid $green-dark;
+        color: $dark-grey-font;
         box-sizing: border-box;
         cursor: pointer;
         float: left;
@@ -301,12 +303,7 @@
           letter-spacing: -1px
         }
 
-        &:hover {
-          background: $blue;
-        }
-
         &:focus {
-          border: 1px solid rgba($blue, 0.5);
           outline: none;
         }
 
@@ -316,6 +313,19 @@
 
         &.hidden {
           display: none;
+        }
+
+        &:hover {
+          span {
+            background: $medium-blue;
+            color: #fff;
+          }
+        }
+
+        span {
+          padding: 5px 5px 5px 10px;
+          margin-left: -10px;
+          border-radius: 14px;
         }
         
       }

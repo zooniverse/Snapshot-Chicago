@@ -45,6 +45,7 @@ module.exports =
     pin: 'Pin it'
     discuss: 'Discuss'
     next: 'Next capture'
+    search: 'Search'
 
     nothingToShow: 'There\'s nothing to show with these filters.'
     clearFilters: 'Clear filters'

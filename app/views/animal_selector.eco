@@ -5,7 +5,7 @@
 
   <span class="search" title="[S]">
     <i rel="search">Search</i>
-    <input name="search" data-shortcut="S" />
+    <input name="search" data-shortcut="S" placeholder="<%= translate 'classify.search' %>"/>
   </span>
 </div>
 
