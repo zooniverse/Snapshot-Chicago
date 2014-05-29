@@ -1,5 +1,5 @@
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   min-height: 100%;
   overflow-y: scroll;
@@ -38,11 +38,29 @@ html {
       font-size: 14px;
       font-weight: bold;
       margin: 0 0 20px 0;
-      padding: 20px 0 10px;
+      padding: 25px 0 25px 50px;
       overflow: hidden;
       width: 100%;
       z-index: 3;
       position: relative;
+
+      #site-title {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 18px;
+        margin-right: 25px;
+        span {
+          &:nth-child(1) {
+            color: $dark-blue;
+            font-weight: 400;
+          }
+          &:nth-child(2) {
+            color: $red;
+            font-weight: 700;
+          }
+        }
+      }
 
       ul {
         margin: 0;
@@ -50,10 +68,9 @@ html {
 
         li {
           display: inline-block;
-          width: 160px;
-         
+          width: 90px;
           a {
-            border: 1px solid transparent
+            border: 2px solid transparent;
             border-radius: 125px;
             color: $medium-blue;
             display: block;
