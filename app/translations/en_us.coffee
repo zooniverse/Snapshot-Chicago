@@ -423,6 +423,209 @@ module.exports =
         Describe Melanistic Gray Squirrel
     '''
 
+  differences:
+    beaver:
+      muskrat: '''
+      to do description
+      '''
+        
+      woodchuck: '''
+      to do description
+      '''
+        
+      mink: '''
+      to do description
+      '''
+        
+    chipmunk:
+      fraySquirrel: '''
+      to do description
+      '''
+        
+      foxSquirrel: '''
+      to do description
+      '''
+        
+    coyote:
+      domDog: '''
+      to do description
+      '''
+        
+      grayFox: '''
+      to do description
+      '''
+        
+      redFox: '''
+      to do description
+      '''
+        
+    deer:
+      horse: '''
+      to do description
+      '''
+        
+    domCat:
+      raccoon: '''
+      to do description
+      '''
+        
+    domDog:
+      coyote: '''
+      to do description
+      '''
+        
+      grayFox: '''
+      to do description
+      '''
+        
+      redFox: '''
+      to do description
+      '''
+        
+    flyingSquirrel:
+      mouse: '''
+      to do description
+      '''
+        
+      graySquirrel: '''
+      to do description
+      '''
+        
+      foxSquirrel: '''
+      to do description
+      '''
+        
+      rat: '''
+      to do description
+      '''
+        
+    foxSquirrel:
+      graySquirrel: '''
+      to do description
+      '''
+        
+    grayFox:
+      domDog: '''
+      to do description
+      '''
+        
+      coyote: '''
+      to do description
+      '''
+        
+      redFox: '''
+      to do description
+      '''
+        
+    graySquirrel:
+      foxSquirrel: '''
+      to do description
+      '''
+        
+    horse:
+      deer: '''
+      to do description
+      '''
+        
+    mink:
+      muskrat: '''
+      to do description
+      '''
+        
+      beaver: '''
+      to do description
+      '''
+        
+      woodChuck: '''
+      to do description
+      '''
+        
+    mouse:
+      rat: '''
+      to do description
+      '''
+        
+    muskrat:
+      mink: '''
+      to do description
+      '''
+        
+      beaver: '''
+      to do description
+      '''
+        
+      woodChuck: '''
+      to do description
+      '''
+        
+    opossum:
+      rat: '''
+      to do description
+      '''
+        
+      raccoon: '''
+      to do description
+      '''
+        
+    rabbit:
+      opossum: '''
+      to do description
+      '''
+        
+    raccoon:
+      opossum: '''
+      to do description
+      '''
+        
+      domCat: '''
+      to do description
+      '''
+        
+    rat:
+      mouse: '''
+      to do description
+      '''
+        
+      opossum: '''
+      to do description
+      '''
+        
+    redFox:
+      grayFox: '''
+      to do description
+      '''
+        
+      domCat: '''
+      to do description
+      '''
+        
+      coyote: '''
+      to do description
+      '''
+        
+    skunk:
+      raccoon: '''
+      to do description
+      '''
+        
+    woodChuck:
+      mink: '''
+      to do description
+      '''
+        
+      beaver: '''
+      to do description
+      '''
+        
+      muskrat: '''
+      to do description
+      '''
+        
+    melanisticGraySquirrel:
+      mink: '''
+      to do description
+      '''
+
   characteristics:
     like: 'Looks like'
     coat: 'Coat'
