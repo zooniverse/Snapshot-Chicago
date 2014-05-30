@@ -69,6 +69,7 @@ module.exports =
     identify: 'Identify'
 
     tutorial:
+      button: "View Tutorial"
       continueButton: 'Continue'
 
       welcomeHeader: 'Welcome to Snapshot Serengeti!'
@@ -425,7 +426,7 @@ module.exports =
     '''
 
   characteristics:
-    like: 'Looks like'
+    like: 'Looks like...'
     coat: 'Coat'
     horns: 'Horns'
     tail: 'Tail'

@@ -36,6 +36,6 @@
 </div>
 
 <div class="aux">
-  <button name="start-tutorial">Tutorial</button>
   <button name="clear-filters"><%- translate 'span', 'classify.clearFilters' %></button>
+  <button name="start-tutorial"><%- translate 'span', 'classify.tutorial.button' %></button>
 </div>

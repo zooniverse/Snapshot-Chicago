@@ -22,10 +22,9 @@
   }
 
   > nav {
-    color: rgba($black, 0.75);
+    color: $medium-blue;
     left: -2px;
     position: absolute;
-    text-shadow: -1px 1px rgba($white, 0.5);
     top: 70px;
 
     button {
@@ -55,15 +54,18 @@
       }
 
       &.active {
-        background: $green-light;
+        background: $red;
         opacity: 1;
 
         &:before {
-          border-top-color: $green-light;
+          border-top-color: $red;
         }
 
         &:after {
-          border-bottom-color: $green-light;
+          border-bottom-color: $red;
+        }
+        i {
+          color: $gold;
         }
       }
 

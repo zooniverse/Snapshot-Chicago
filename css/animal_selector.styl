@@ -21,6 +21,7 @@
       line-height: 30px;
       position: absolute;
       z-index: 1;
+      color: $dark-grey-font
 
       button[name="characteristic"] {
         position: relative;
@@ -29,42 +30,45 @@
           box-shadow: 0 0 0 1px rgba($white, 0.5) inset;
         }
 
-        // TODO: Delete this? It is causing weird fragmenting
-        // &:after {
-        //   border: 4px solid transparent;
-        //   border-top-color: $white;
-        //   content: "";
-        //   height: 0;
-        //   margin-top: -2px;
-        //   position: absolute;
-        //   right: 5px;
-        //   top: 50%;
-        //   width: 0;
-        // }
+        &:after {
+          border: 4px solid transparent;
+          border-top-color: $dark-grey-font;
+          content: "";
+          height: 12px;
+          width: 20px;
+          display: inline-block;
+          margin-top: -2px;
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          width: 0;
+        }
       }
 
       .menu {
-        box-shadow: 0 2px 3px $black;
-        color: $green-dark;
+        border: 2px solid #ddd;
+        border-radius: 5px;
         font-size: 12px;
         overflow: hidden;
-        padding-top: 2px;
         right: 0;
         text-align: center;
         top: 100%;
         white-space: nowrap;
 
         button {
-          border-top: 1px solid $gray;
           box-sizing: border-box;
           display: block;
           min-width: 100%;
           padding: 0 10px;
           background: $white;
 
+          &:not(:first-child) {
+            border-top: 1px solid $gray;
+          }
+
           &:hover,
           &.selected {
-            background: $blue;
+            background: $medium-blue;
             color: $white;
           }
 
@@ -81,8 +85,7 @@
       &.open {
         button[name="characteristic"] {
           background: $white;
-          border-bottom: 1px solid $gray;
-          color: $green-dark;
+          color: $medium-blue;
           text-shadow: none;
         }
       }
@@ -158,7 +161,8 @@
       }
 
       .menu {
-        border: 1px solid $black;
+        background: $light-grey-bg;
+        border-radius: 5px;
         bottom: 100%;
         box-sizing: border-box;
         font-size: 12px;
@@ -197,7 +201,6 @@
           &[value="coatSolid"]               {background: url(images/characteristics-values/coatSolid.png)}
           &[value="coatOrTailStriped"]       {background: url(images/characteristics-values/coatCoatOrTailStriped.png)}
 
-         
           /* TODO eliminate these two single choice filter */
           &[value="hornsNone"]               {background: url(images/characteristics-values/hornNone.png)}
           &[value="manMade"]           {background: url(images/characteristics-values/manManMade.png)}
@@ -213,14 +216,10 @@
           &[value="buildSmall"]              {background: url(images/characteristics-values/buildSmall.png)}
           &[value="buildLowSlung"]           {background: url(images/characteristics-values/buildLowSlung.png)}
 
-
-
-
           .label {
             bottom: 100%;
             border-radius: 3px;
-            box-shadow: 0 1px 2px $black;
-            color: $black;
+            color: $dark-grey-font;
             display: none;
             font-size: 10px;
             font-weight: bold;
@@ -243,13 +242,18 @@
 
           &:hover .label {
             display: block;
+            background-color: $gold;
           }
         }
 
         button[name="clear-characteristic"] {
           @extend #standard-button;
+          color: $white;
+          background-color: $red;
+          height: 30px;
           float: right;
-          margin: 11px 7px 0 0;
+          margin: 10px;
+          border-radius: 4px;
           text-align: center;
         }
       }
@@ -609,7 +613,6 @@
       margin: 0 10px;
       text-align: right;
       text-shadow: 0 1px 0 rgba($white, 0.25);
-      width: 70px;
     }
   }
 

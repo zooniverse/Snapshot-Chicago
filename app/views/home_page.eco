@@ -10,15 +10,12 @@
 <div class="introduction">
   <%- translate 'h1', 'home.heading' %>
 
-  <hr />
-
   <%- translate 'p', 'home.content' %>
 
   <% if allSeasonsComplete: %>
     <%- translate 'div', 'home.allSeasonsComplete', class: 'all-seasons-complete' %>
 
   <% else: %>
-    <hr />
 
     <% for {season, total, complete}, i in seasons: %>
       <!-- TODO: Translate these! -->
@@ -33,7 +30,6 @@
       </div>
     <% end %>
 
-    <hr />
   <% end %>
 
   <p class="action">

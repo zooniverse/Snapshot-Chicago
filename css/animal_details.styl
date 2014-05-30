@@ -17,6 +17,8 @@
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
   width: 100%;
   z-index: 1;
+  color: $dark-grey-font;
+
 
   &:focus {
     outline: none;
@@ -55,9 +57,7 @@
     }
 
     .toggles {
-      position: absolute;
-      right: 20px;
-      top: 100%;
+      text-align: center;
       z-index: 1;
 
       button[name="toggle"] {
@@ -76,7 +76,7 @@
   }
 
   .content {
-    height: 135px;
+    height: 120px;
     overflow: auto;
 
     p.label {
@@ -92,17 +92,14 @@
   }
 
   .options {
-    bottom: 0;
     left: 0;
     position: absolute;
     width: 100%;
 
     .group {
-      border-top: 1px solid $light-grey-bg;
       padding: 5px;
 
       .title {
-        color: $gray;
         display: inline-block;
         width: 6em;
 
@@ -147,17 +144,23 @@
     right: 0;
 
     button {
+      @extend #standard-button;
       line-height: 12px;
+      height: 30px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 400;
 
       &[name="cancel"] {
-        @extend #standard-button;
         color: $white;
         background: $red;
+        width: 70px;
       }
 
       &[name="identify"] {
-        @extend #standard-button
         color: $white;
+        letter-spacing: 1px;
+        width: 120px;
         background: $medium-blue;
         text-transform: uppercase;
       }
