@@ -15,13 +15,14 @@ class SubjectViewer extends Controller
 
   events:
     'click button[name="favorite"]': 'onClickFavorite'
-    'click button[name="unfavorite"]': 'onClickUnfavorite'
     'change input[name="nothing"]': 'onChangeNothingCheckbox'
     'click button[name="finish"]': 'onClickFinish'
     'click button[name="next"]': 'onClickNext'
 
   elements:
     '.subject-images figure': 'figures'
+    'button[name="favorite"]': 'favoriteBtn'
+    'button[name="favorite"] i': 'favoriteIcon'
     '.annotations': 'annotationsContainer'
     '.extra-message': 'extraMessageContainer'
     'input[name="nothing"]': 'nothingCheckbox'
@@ -69,10 +70,9 @@ class SubjectViewer extends Controller
     $(window).trigger 'request-login-dialog'
 
   onClickFavorite: ->
-    @classification.updateAttribute 'favorite', true
-
-  onClickUnfavorite: ->
-    @classification.updateAttribute 'favorite', false
+    @classification.favorite = !@classification.favorite
+    @favoriteBtn.toggleClass 'favorited', @classification.favorite
+    @favoriteIcon.attr 'rel', if @classification.favorite then "heart" else "heart-empty"
 
   onChangeNothingCheckbox: ->
     nothing = @nothingCheckbox.get(0).checked
