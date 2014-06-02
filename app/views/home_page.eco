@@ -7,10 +7,59 @@
   <div class="image-changer"></div>
 </div>
 
-<div class="introduction">
+<section>
+  <div class="home-section left">
+    <div class="content">
+      <p>Welcome to</p>
+      <h1>Snapshot</h1>
+      <h1>Chicago</h1>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="home-section right">
+    <div class="content">
+      <%- translate 'h2', 'home.rightBannerHeader' %>
+      <%- translate 'p', 'home.content' %>
+      <p class="action">
+        <%- translate 'a', 'home.action', href: '#/classify' %>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="snapshot-chicago-stats">
+    <div class="content">
+      <%- translate 'h1', 'home.stats.header' %>
+      <div class="quarter">
+        <h2>275</h2>
+        <%- translate 'p', 'home.stats.activeUsers' %>
+      </div>
+
+      <div class="quarter">
+        <h2>10,024</h2>
+        <%- translate 'p', 'home.stats.crittersIdentified' %>
+      </div>
+
+      <div class="quarter">
+        <h2>100,366</h2>
+        <%- translate 'p', 'home.stats.totalImages' %>
+      </div>
+
+      <div class="quarter">
+        <h2>6%</h2>
+        <%- translate 'p', 'home.stats.complete' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO: Remove the old .introduction section -->
+<div class="introduction" style="display: none;">
   <%- translate 'h1', 'home.heading' %>
 
-  <%- translate 'p', 'home.content' %>
 
   <% if allSeasonsComplete: %>
     <%- translate 'div', 'home.allSeasonsComplete', class: 'all-seasons-complete' %>
@@ -32,7 +81,4 @@
 
   <% end %>
 
-  <p class="action">
-    <%- translate 'a', 'home.action', href: '#/classify' %>
-  </p>
 </div>
