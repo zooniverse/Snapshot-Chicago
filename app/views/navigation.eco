@@ -1,7 +1,7 @@
 <% translate = require 't7e' %>
 
 <ul>
-  <a href="#/" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
+  <a href="#/home" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
 
   <li><%- translate 'a', 'navigation.classify', href: '#/classify' %></li>
   <li><%- translate 'a', 'navigation.profile', href: '#/profile' %></li>
