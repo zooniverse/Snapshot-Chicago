@@ -29,19 +29,21 @@
 
     .annotations {
       color: $white;
-      font-size: 10px;
-      font-weight: bold;
-      position: absolute;
+      font-size: 12px;
+      font-weight: 300;
+      position: relative;
+      width: unit($subject-width, 'px')
       left: 10px;
-      text-shadow: 0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 2px $black, 0 1px 2px $black;
-      top: 10px;
       z-index: 1;
+      overflow: auto;
 
       .annotation-item {
         transition: background 0.5s ease-in-out;
         border-radius: 20px;
-        clear: left;
+        display: inline-block;
         float: left;
+        margin: 2px;
+        background: $medium-blue;
         padding: 1px 5px 1px 10px;
 
         &.new {
@@ -50,7 +52,7 @@
 
         &:hover {
           transition: none;
-          background: rgba($black, 0.75);
+          background: $red;
         }
 
         button[name="delete"] {
