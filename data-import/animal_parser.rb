@@ -20,6 +20,8 @@ class AnimalParser
       do_names
     elsif command == "labels"
       do_labels
+    elsif command == "css"
+      do_css
     else
       #no op
     end
@@ -73,15 +75,15 @@ class AnimalParser
 
   # names file isn't really used to generate app code
   def do_names
-    animal_list = get_names(@charateristics_file)
+    animal_list = get_names()
     print_names(animal_list)
   end 
 
-  def get_names(input_file)
+  def get_names()
     raw_animal_list = Array.new
     animal_list = Array.new
     
-    File.open(input_file).each do |line|
+    File.open(@charateristics_file).each do |line|
       if line[0] == "{"
         raw_animal_list  << line
       end
@@ -105,7 +107,7 @@ class AnimalParser
   end
 
   def do_labels
-    animal_list = get_names(@charateristics_file)
+    animal_list = get_names()
     formated_labels =  labels_from_animal_list(animal_list)
     print_animal_labels(formated_labels)
   end
@@ -139,13 +141,82 @@ class AnimalParser
   end
 end 
 
+#CSS generation
+def do_css()
+  animal_list = get_names()
+  out = ""
+  out = "/*Generated css by animal-parser.rb for manual integration*/"
+  out << "\n/* thumnail css is integrated into css/animal_thumbs.styl */\n"
+  out << thumbnail_css(animal_list) 
+  out << "\n/* animal image  css is integrated into css/animal_details.styl */\n"
+  out << animal_image_css(animal_list)
+  out << "\n/* data-animal css is integrated into css/animal_selector.styl */\n"
+  out << data_animal_css(animal_list)
+  print_css(out)
+end
+
+def thumbnail_css(animal_list)
+  out = ""
+  animal_list.each do |animal_name|
+    hyphenated_animal_name = animal_name.underscore.dasherize
+    out << 
+    <<-thumb
+      #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); } 
+    thumb
+  end
+  out
+end
+
+
+def animal_image_css(animal_list)
+  out = ""
+  animal_list.each do |animal_name|
+    hyphenated_animal_name = animal_name.underscore.dasherize
+    out << 
+    <<-selector
+      &.#{hyphenated_animal_name} .image {
+        @extend #thumb-for.#{hyphenated_animal_name};
+      }
+    selector
+    end
+  out
+end
+
+def data_animal_css(animal_list)
+  out = ""
+  animal_list.each do |animal_name|
+    hyphenated_animal_name = animal_name.underscore.dasherize
+    out << 
+    <<-danimal
+    [data-animal="#{hyphenated_animal_name}"] .image {
+      @extend #thumb-for.#{hyphenated_animal_name};
+    }
+    danimal
+  end
+  out
+end
+
+def print_css(css_string)
+  puts css_string
+  output_file=  File.join(@data_dir, "animal_styles.css")
+  file = File.open(output_file , "w+") do |f|
+    f.write(css_string)
+  end
+  # formated_animal_list.each do |animal|
+  #   file << animal + "\n"
+  # end
+  #file.close
+end 
+
+###############################################
+# Load class and run command
 # creates the parser which expects a command to be sent through the arguments list i.e. ARGV
 a_parser =  AnimalParser.new
 
 
-# # file = File.new(output_file , "w+")
-# # file << out
-# # file.close
+
+
+
 
 # # for lib/charachteristics.coffee
 # values = ['likeCatDog','likeBird','likeWaterBird','likeWeasel','likeRodent','likeOther','coatTanYellow','coatRedBrown','coatBrownBlack','coatGray','coatGrayBlack','coatBlack','coatOther','coatMottled','coatSolid','coatOrTailStriped','hornsNone','tailBushy','tailSmooth','tailFlat','tailLong','buildStocky','buildLanky','buildSmall','buildLowSlung','manMade']
@@ -164,43 +235,6 @@ a_parser =  AnimalParser.new
 # #   puts "#{chara}: '#{human_value}'"
 # # end 
 
-# #for animal images
-# # &.aardvark .image {
-# #     @extend #thumb-for.aardvark;
-# #   }
 
-# # out = ""
-# # animal_list.each do |animal_name|
-# #   hyphenated_animal_name = animal_name.underscore.dasherize
-# #   out << 
-# # <<-thumb
-# # #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/350x150?text=#{hyphenated_animal_name}); } 
-# # thumb
-# # end
-# # puts out
-# # out = ""
-# # animal_list.each do |animal_name|
-# #   hyphenated_animal_name = animal_name.underscore.dasherize
-# #   out << 
-# #   <<-selector
-# #     &.#{hyphenated_animal_name} .image {
-# #       @extend #thumb-for.#{hyphenated_animal_name};
-# #     }
 
-# # selector
-# # end
-# # puts out
-
-# out = ""
-# animal_list.each do |animal_name|
-#   hyphenated_animal_name = animal_name.underscore.dasherize
-#   out << 
-#   <<-danimal
-#   [data-animal="#{hyphenated_animal_name}"] .image {
-#     @extend #thumb-for.#{hyphenated_animal_name};
-#   }
-
-# danimal
-# end
-# puts out
 
