@@ -1,5 +1,5 @@
 ## A series of hacky scripts to generate parts of the user interface
-## Thus far these have been executed manually, comment-toggle hacking
+## Thus far these functions and the corresponding code replacement have been executed manually 
 
 require 'debugger'
 require 'active_support'
@@ -9,10 +9,23 @@ require 'csv'
 
 class AnimalParser
 
-  def initialize 
+  def initialize()
+    command = ARGV[0] unless ARGV[0].nil?
+    puts command
     @data_dir = File.dirname(__FILE__)
+    @charateristics_file = File.join(@data_dir, 'chicagoAnimalChar.txt')
+    if command == "differences"
+      do_differences
+    elsif command == "names"
+      do_names
+    elsif command == "labels"
+      do_labels
+    else
+      #no op
+    end
   end
 
+  # difference record
   def do_differences
     confusions = ["OCW1", "OCW2", "OCW3", "OCW4"]
     diff_table = get_csv_table()
@@ -58,43 +71,77 @@ class AnimalParser
     diff_table
   end 
 
-end
+  # names file isn't really used to generate app code
+  def do_names
+    animal_list = get_names(@charateristics_file)
+    print_names(animal_list)
+  end 
 
+  def get_names(input_file)
+    raw_animal_list = Array.new
+    animal_list = Array.new
+    
+    File.open(input_file).each do |line|
+      if line[0] == "{"
+        raw_animal_list  << line
+      end
+    end
+      
+    raw_animal_list.each do |animal|
+    #  i.e. strip "{americanCoot: blah"] -> americanCoot
+      real_animal = animal[1..animal.index(":")-1]  
+      animal_list.push real_animal
+    end
+    animal_list 
+  end
+
+  def print_names(animal_list) 
+    output_file=  File.join(@data_dir, "animal_names.txt")
+    file = File.new(output_file , "w+")
+    animal_list.each do |animal|
+      file << animal + "\n"
+    end
+    file.close
+  end
+
+  def do_labels
+    animal_list = get_names(@charateristics_file)
+    formated_labels =  labels_from_animal_list(animal_list)
+    print_animal_labels(formated_labels)
+  end
+
+  #TODO this would need to be revised to expect and use the descriptions
+  # formats the translation records from the animal list
+  # uses ActiveSupport to get humanize the names in the list
+  def labels_from_animal_list(animal_list)
+    formated_animal_list = Array.new
+    animal_list.each do |animal_name|
+      humanized_animal_name = ActiveSupport::Inflector.humanize( ActiveSupport::Inflector.camelize(animal_name).underscore).titleize
+      # note the heredoc string is whitespace aware
+      formated_animal_list << <<-label
+              #{animal_name}:
+                label: '#{humanized_animal_name}'
+                description: '''
+                  Describe #{humanized_animal_name}
+              '''
+            label
+    end
+    formated_animal_list
+  end
+
+  def print_animal_labels(formated_animal_list)
+    output_file=  File.join(@data_dir, "animal_labels.txt")
+    file = File.new(output_file , "w+")
+    formated_animal_list.each do |animal|
+      file << animal + "\n"
+    end
+    file.close
+  end
+end 
+
+# creates the parser which expects a command to be sent through the arguments list i.e. ARGV
 a_parser =  AnimalParser.new
-a_parser.do_differences()
 
-# data_dir = File.dirname(__FILE__)
-# input_file = File.join(data_dir, 'chicagoAnimalChar.txt')
-# output_file=  File.join(data_dir, "animal_labels.txt")
- 
-
-# raw_animal_list = Array.new
-# animal_list = Array.new
-# File.open(input_file).each do |line|
-#   if line[0] == "{"
-#     raw_animal_list  << line
-#   end
-# end
-
-# raw_animal_list.each do |animal|
-#   # [strip "{americanCoot: blah"] -> americanCoot
-#   real_animal = animal[1..animal.index(":")-1]
-#   animal_list.push real_animal
-# end 
-
-
-
-# out = ""
-# animal_list.each do |animal_name|
-#   humanized_animal_name = ActiveSupport::Inflector.humanize( ActiveSupport::Inflector.camelize(animal_name).underscore).titleize
-#   out << <<-label
-#           #{animal_name}:
-#           \tlabel: '#{humanized_animal_name}'
-#           \tdescription: '''
-#           \t\tDescribe #{humanized_animal_name}
-#           '''
-#         label
-# end
 
 # # file = File.new(output_file , "w+")
 # # file << out
@@ -156,5 +203,4 @@ a_parser.do_differences()
 # danimal
 # end
 # puts out
-
 
