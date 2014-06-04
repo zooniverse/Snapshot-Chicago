@@ -8,8 +8,6 @@ module.exports = [
     label: translate 'span', 'characteristics.like'
     values: [
       new Value id: 'likeCatDog', label: translate 'span', 'characteristicValues.likeCatDog'
-      new Value id: 'likeBird', label: translate 'span', 'characteristicValues.likeCowHorse'
-      new Value id: 'likeWaterBird', label: translate 'span', 'characteristicValues.likeWaterBird'
       new Value id: 'likeWeasel', label: translate 'span', 'characteristicValues.likeWeasel'
       new Value id: 'likeRodent', label: translate 'span', 'characteristicValues.likeRodent'
       new Value id: 'likeOther', label: translate 'span', 'characteristicValues.likeOther'
@@ -30,13 +28,6 @@ module.exports = [
       new Value id: 'coatSolid', label: translate 'span', 'characteristicValues.coatSolid'
       new Value id: 'coatOrTailStriped', label: translate 'span', 'characteristicValues.coatOrTailStriped'
     ]
-
-  # new Characteristic
-  #   id: 'horns'
-  #   label: translate 'span', 'characteristics.horns'
-  #   values: [
-  #     new Value id: 'hornsNone', label: translate 'span', 'characteristicValues.hornsNone'
-  #   ]
 
   new Characteristic
     id: 'tail'

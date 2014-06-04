@@ -189,241 +189,175 @@ module.exports =
       science: 'Good job! Our science team needs your classifications to understand how different animals coexist in the Serengeti.'
 
   animals:
-    americanCoot:
-      label: 'American Coot'
-      description: '''
-        Describe American Coot
-    '''
     beaver:
       label: 'Beaver'
       description: '''
         Describe Beaver
     '''
+
     bike:
       label: 'Bike'
       description: '''
         Describe Bike
     '''
-    birdCannotID:
-      label: 'Bird Cannot'
-      description: '''
-        Describe Bird Cannot
-    '''
-    canadaGoose:
-      label: 'Canada Goose'
-      description: '''
-        Describe Canada Goose
-    '''
+
     car:
       label: 'Car'
       description: '''
         Describe Car
     '''
-    cardinal:
-      label: 'Cardinal'
-      description: '''
-        Describe Cardinal
-    '''
-    chickadee:
-      label: 'Chickadee'
-      description: '''
-        Describe Chickadee
-    '''
+
     chipmunk:
       label: 'Chipmunk'
       description: '''
         Describe Chipmunk
     '''
+
     coyote:
       label: 'Coyote'
       description: '''
         Describe Coyote
     '''
-    crow:
-      label: 'Crow'
-      description: '''
-        Describe Crow
-    '''
+
     deer:
       label: 'Deer'
       description: '''
         Describe Deer
     '''
+
     domCat:
       label: 'Dom Cat'
       description: '''
         Describe Dom Cat
     '''
+
     domDog:
       label: 'Dom Dog'
       description: '''
         Describe Dom Dog
     '''
-    empty:
-      label: 'Empty'
-      description: '''
-        Describe Empty
-    '''
+
     flyingSquirrel:
       label: 'Flying Squirrel'
       description: '''
         Describe Flying Squirrel
     '''
+
     foxSquirrel:
       label: 'Fox Squirrel'
       description: '''
         Describe Fox Squirrel
     '''
-    grackle:
-      label: 'Grackle'
-      description: '''
-        Describe Grackle
-    '''
+
     grayFox:
       label: 'Gray Fox'
       description: '''
         Describe Gray Fox
     '''
+
     graySquirrel:
       label: 'Gray Squirrel'
       description: '''
         Describe Gray Squirrel
     '''
-    greatBlueHeron:
-      label: 'Great Blue Heron'
-      description: '''
-        Describe Great Blue Heron
-    '''
+
     horse:
       label: 'Horse'
       description: '''
         Describe Horse
     '''
-    houseSparrow:
-      label: 'House Sparrow'
-      description: '''
-        Describe House Sparrow
-    '''
+
     human:
       label: 'Human'
       description: '''
         Describe Human
     '''
+
     livestock:
       label: 'Livestock'
       description: '''
         Describe Livestock
     '''
-    mallard:
-      label: 'Mallard'
-      description: '''
-        Describe Mallard
-    '''
+
     mink:
       label: 'Mink'
       description: '''
         Describe Mink
     '''
-    mourningDove:
-      label: 'Mourning Dove'
-      description: '''
-        Describe Mourning Dove
-    '''
+
     mouse:
       label: 'Mouse'
       description: '''
         Describe Mouse
     '''
+
     mower:
       label: 'Mower'
       description: '''
         Describe Mower
     '''
+
     muskrat:
       label: 'Muskrat'
       description: '''
         Describe Muskrat
     '''
-    northernFlicker:
-      label: 'Northern Flicker'
-      description: '''
-        Describe Northern Flicker
-    '''
+
     opossum:
       label: 'Opossum'
       description: '''
         Describe Opossum
     '''
+
     otherVehicle:
       label: 'Other Vehicle'
       description: '''
         Describe Other Vehicle
     '''
-    pigeon:
-      label: 'Pigeon'
-      description: '''
-        Describe Pigeon
-    '''
+
     rabbit:
       label: 'Rabbit'
       description: '''
         Describe Rabbit
     '''
+
     raccoon:
       label: 'Raccoon'
       description: '''
         Describe Raccoon
     '''
+
     rat:
       label: 'Rat'
       description: '''
         Describe Rat
     '''
+
     redFox:
       label: 'Red Fox'
       description: '''
         Describe Red Fox
     '''
-    robin:
-      label: 'Robin'
-      description: '''
-        Describe Robin
-    '''
+
     skunk:
       label: 'Skunk'
       description: '''
         Describe Skunk
     '''
+
     squirrelCannotID:
       label: 'Squirrel Cannot'
       description: '''
         Describe Squirrel Cannot
     '''
-    starling:
-      label: 'Starling'
-      description: '''
-        Describe Starling
-    '''
-    unknown:
-      label: 'Unknown'
-      description: '''
-        Describe Unknown
-    '''
-    woodDuck:
-      label: 'Wood Duck'
-      description: '''
-        Describe Wood Duck
-    '''
-    woodChuck:
-      label: 'Wood Chuck'
-      description: '''
-        Describe Wood Chuck
-    '''
+
     melanisticGraySquirrel:
       label: 'Melanistic Gray Squirrel'
       description: '''
         Describe Melanistic Gray Squirrel
     '''
+
+
 
   differences:
     beaver:
@@ -638,8 +572,6 @@ module.exports =
 
   characteristicValues:
     likeCatDog: 'Cat Dog'
-    likeBird: 'Bird'
-    likeWaterBird: 'Water Bird'
     likeWeasel: 'Weasel'
     likeRodent: 'Rodent'
     likeOther: 'Other'
