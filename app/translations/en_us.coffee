@@ -573,8 +573,6 @@ module.exports =
   characteristicValues:
     likeCatDog: 'Cat Dog'
     likeBird: 'Bird'
-    likeWaterBird: 'Water Bird'
-    likeWeasel: 'Weasel'
     likeRodent: 'Rodent'
     likeOther: 'Other'
     coatTanYellow: 'Tan Yellow'
