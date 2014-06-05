@@ -9,9 +9,12 @@ module.exports =
 
   home:
     heading: 'Welcome to Snapshot Chicago'
+    rightBannerHeader: "What is Snapshot Chicago?"
     content: '''
-      lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sagittis est,
-      sit amet pellentesque enim. Mauris ut dictum est, ut consectetur arcu. Fusce convallis odio i
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     '''
     allSeasonsComplete: '''
       <p>With your help, we've classified all the data we have so far. Great work!</p>
@@ -29,6 +32,13 @@ module.exports =
     '''
     action: 'Start classifying'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
+
+    stats:
+      header: "SNAPSHOT CHICAGO Classification Statistics"
+      activeUsers: "Active Users"
+      crittersIdentified: "Critters Identified"
+      totalImages: "Images Total"
+      complete: "Complete"
 
   classify:
     deleteAnnotation: 'Delete'

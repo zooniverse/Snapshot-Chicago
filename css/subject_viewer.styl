@@ -29,19 +29,21 @@
 
     .annotations {
       color: $white;
-      font-size: 10px;
-      font-weight: bold;
-      position: absolute;
+      font-size: 12px;
+      font-weight: 300;
+      position: relative;
+      width: unit($subject-width, 'px')
       left: 10px;
-      text-shadow: 0 0 1px $black, 0 0 1px $black, 0 0 1px $black, 0 0 2px $black, 0 1px 2px $black;
-      top: 10px;
       z-index: 1;
+      overflow: auto;
 
       .annotation-item {
-        transition: background 0.5s ease-in-out;
+        transition: background 0.2s;
         border-radius: 20px;
-        clear: left;
+        display: inline-block;
         float: left;
+        margin: 2px;
+        background: $medium-blue;
         padding: 1px 5px 1px 10px;
 
         &.new {
@@ -50,7 +52,8 @@
 
         &:hover {
           transition: none;
-          background: rgba($black, 0.75);
+          background: $red;
+          cursor: default;
         }
 
         button[name="delete"] {
@@ -59,6 +62,9 @@
           line-height: 1em;
           text-align: center;
           width: 1em;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
@@ -81,8 +87,8 @@
 
     .sign-in,
     .favorite {
-      background: $red;
-      color: $white;
+      background: $light-blue;
+      color: $red;
       font-size: 12px;
       font-weight: bold;
       position: absolute;
@@ -96,10 +102,9 @@
     }
 
     .favorite {
-      display: none;
       font-size: 16px;
       padding: 5px 5px 0;
-      right: 10px;
+      right: 20px;
       top: -3px;
 
       &:hover {
@@ -115,19 +120,19 @@
       }
 
       &:before {
-        border-left-color: $red;
+        border-left-color: $light-blue;
         left: 0;
       }
 
       &:after {
-        border-right-color: $red;
+        border-right-color: $light-blue;
         right: 0;
       }
 
-      button[name="unfavorite"] {
-        color: $gold;
-        display: none;
-        text-shadow: 0 1px 1px $black;
+      button[name="favorite"] {
+        &.favorited {
+          color: $red
+        }
       }
     }
   }
@@ -155,7 +160,7 @@
       }
 
       button {
-        width: 120px;
+        @extend .classifier-action-button
       }
     }
   }
@@ -223,16 +228,6 @@
 
   &.dragging .images figure {
     cursor: -moz-grabbing;
-  }
-
-  &.favorite .images .favorite {
-    button[name="favorite"] {
-      display: none;
-    }
-
-    button[name="unfavorite"] {
-      display: inline-block;
-    }
   }
 
   &.no-annotations .controls .finished .nothing-label {
