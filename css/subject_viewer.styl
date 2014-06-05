@@ -38,7 +38,7 @@
       overflow: auto;
 
       .annotation-item {
-        transition: background 0.5s ease-in-out;
+        transition: background 0.2s;
         border-radius: 20px;
         display: inline-block;
         float: left;
@@ -53,6 +53,7 @@
         &:hover {
           transition: none;
           background: $red;
+          cursor: default;
         }
 
         button[name="delete"] {
@@ -61,6 +62,9 @@
           line-height: 1em;
           text-align: center;
           width: 1em;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
