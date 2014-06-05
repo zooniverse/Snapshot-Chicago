@@ -82,13 +82,14 @@ class AnimalParser
   def get_names()
     raw_animal_list = Array.new
     animal_list = Array.new
-    
+    debugger
     File.open(@charateristics_file).each do |line|
-      if line[0] == "{"
-        raw_animal_list  << line
+      stripped_line = line.strip
+      if stripped_line[0] == "{"
+        raw_animal_list  << stripped_line
       end
     end
-      
+    debugger
     raw_animal_list.each do |animal|
     #  i.e. strip "{americanCoot: blah"] -> americanCoot
       real_animal = animal[1..animal.index(":")-1]  
@@ -139,74 +140,82 @@ class AnimalParser
     end
     file.close
   end
-end 
 
-#CSS generation
-def do_css()
-  animal_list = get_names()
-  out = ""
-  out = "/*Generated css by animal-parser.rb for manual integration*/"
-  out << "\n/* thumnail css is integrated into css/animal_thumbs.styl */\n"
-  out << thumbnail_css(animal_list) 
-  out << "\n/* animal image  css is integrated into css/animal_details.styl */\n"
-  out << animal_image_css(animal_list)
-  out << "\n/* data-animal css is integrated into css/animal_selector.styl */\n"
-  out << data_animal_css(animal_list)
-  print_css(out)
-end
+  #CSS generation
+  def do_css()
+    animal_list = get_names()
+    out = ""
+    out = "/*Generated css by animal-parser.rb for manual integration*/"
+    out << "\n/* thumnail css is integrated into css/animal_thumbs.styl */\n"
+    out << thumbnail_css(animal_list) 
+    out << "\n/* animal image  css is integrated into css/animal_details.styl */\n"
+    out << animal_image_css(animal_list)
+    out << "\n/* data-animal css is integrated into css/animal_selector.styl */\n"
+    out << data_animal_css(animal_list)
+    print_css(out)
+    end
 
-def thumbnail_css(animal_list)
-  out = ""
-  animal_list.each do |animal_name|
-    hyphenated_animal_name = animal_name.underscore.dasherize
-    out << 
-    <<-thumb
-      #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); } 
-    thumb
+  def thumbnail_css(animal_list)
+    out = ""
+    animal_list.each do |animal_name|
+      hyphenated_animal_name = camelizeName(animal_name)
+      out << 
+      <<-thumb
+        #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); } 
+      thumb
+    end
+    out
   end
-  out
-end
 
 
-def animal_image_css(animal_list)
-  out = ""
-  animal_list.each do |animal_name|
-    hyphenated_animal_name = animal_name.underscore.dasherize
-    out << 
-    <<-selector
-      &.#{hyphenated_animal_name} .image {
+  def animal_image_css(animal_list)
+    out = ""
+    animal_list.each do |animal_name|
+      hyphenated_animal_name = camelizeName(animal_name)
+      out << 
+      <<-selector
+        &.#{hyphenated_animal_name} .image {
+          @extend #thumb-for.#{hyphenated_animal_name};
+        }
+      selector
+      end
+    out
+  end
+
+  def data_animal_css(animal_list)
+    out = ""
+    animal_list.each do |animal_name|
+      hyphenated_animal_name = camelizeName(animal_name)
+      out << 
+      <<-danimal
+      [data-animal="#{hyphenated_animal_name}"] .image {
         @extend #thumb-for.#{hyphenated_animal_name};
       }
-    selector
+      danimal
     end
-  out
-end
-
-def data_animal_css(animal_list)
-  out = ""
-  animal_list.each do |animal_name|
-    hyphenated_animal_name = animal_name.underscore.dasherize
-    out << 
-    <<-danimal
-    [data-animal="#{hyphenated_animal_name}"] .image {
-      @extend #thumb-for.#{hyphenated_animal_name};
-    }
-    danimal
+    out
   end
-  out
-end
 
-def print_css(css_string)
-  puts css_string
-  output_file=  File.join(@data_dir, "animal_styles.css")
-  file = File.open(output_file , "w+") do |f|
-    f.write(css_string)
+  def print_css(css_string)
+    puts css_string
+    output_file=  File.join(@data_dir, "animal_styles.css")
+    file = File.open(output_file , "w+") do |f|
+      f.write(css_string)
+    end
+    # formated_animal_list.each do |animal|
+    #   file << animal + "\n"
+    # end
+    #file.close
+  end 
+
+
+  def camelizeName(name)
+    name.underscore.camelize(:lower)
   end
-  # formated_animal_list.each do |animal|
-  #   file << animal + "\n"
-  # end
-  #file.close
+
 end 
+
+
 
 ###############################################
 # Load class and run command

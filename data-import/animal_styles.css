@@ -1,202 +1,202 @@
 /*Generated css by animal-parser.rb for manual integration*/
 /* thumnail css is integrated into css/animal_thumbs.styl */
-      #thumb-for.beaver {background: url(http://placehold.it/100x100?text=beaver); } 
-      #thumb-for.bike {background: url(http://placehold.it/100x100?text=bike); } 
-      #thumb-for.car {background: url(http://placehold.it/100x100?text=car); } 
-      #thumb-for.chipmunk {background: url(http://placehold.it/100x100?text=chipmunk); } 
-      #thumb-for.coyote {background: url(http://placehold.it/100x100?text=coyote); } 
-      #thumb-for.deer {background: url(http://placehold.it/100x100?text=deer); } 
-      #thumb-for.dom-cat {background: url(http://placehold.it/100x100?text=dom-cat); } 
-      #thumb-for.dom-dog {background: url(http://placehold.it/100x100?text=dom-dog); } 
-      #thumb-for.flying-squirrel {background: url(http://placehold.it/100x100?text=flying-squirrel); } 
-      #thumb-for.fox-squirrel {background: url(http://placehold.it/100x100?text=fox-squirrel); } 
-      #thumb-for.gray-fox {background: url(http://placehold.it/100x100?text=gray-fox); } 
-      #thumb-for.gray-squirrel {background: url(http://placehold.it/100x100?text=gray-squirrel); } 
-      #thumb-for.horse {background: url(http://placehold.it/100x100?text=horse); } 
-      #thumb-for.human {background: url(http://placehold.it/100x100?text=human); } 
-      #thumb-for.livestock {background: url(http://placehold.it/100x100?text=livestock); } 
-      #thumb-for.mink {background: url(http://placehold.it/100x100?text=mink); } 
-      #thumb-for.mouse {background: url(http://placehold.it/100x100?text=mouse); } 
-      #thumb-for.mower {background: url(http://placehold.it/100x100?text=mower); } 
-      #thumb-for.muskrat {background: url(http://placehold.it/100x100?text=muskrat); } 
-      #thumb-for.opossum {background: url(http://placehold.it/100x100?text=opossum); } 
-      #thumb-for.other-vehicle {background: url(http://placehold.it/100x100?text=other-vehicle); } 
-      #thumb-for.rabbit {background: url(http://placehold.it/100x100?text=rabbit); } 
-      #thumb-for.raccoon {background: url(http://placehold.it/100x100?text=raccoon); } 
-      #thumb-for.rat {background: url(http://placehold.it/100x100?text=rat); } 
-      #thumb-for.red-fox {background: url(http://placehold.it/100x100?text=red-fox); } 
-      #thumb-for.skunk {background: url(http://placehold.it/100x100?text=skunk); } 
-      #thumb-for.squirrel-cannot-id {background: url(http://placehold.it/100x100?text=squirrel-cannot-id); } 
-      #thumb-for.melanistic-gray-squirrel {background: url(http://placehold.it/100x100?text=melanistic-gray-squirrel); } 
+        #thumb-for.beaver {background: url(http://placehold.it/100x100?text=beaver); } 
+        #thumb-for.bike {background: url(http://placehold.it/100x100?text=bike); } 
+        #thumb-for.car {background: url(http://placehold.it/100x100?text=car); } 
+        #thumb-for.chipmunk {background: url(http://placehold.it/100x100?text=chipmunk); } 
+        #thumb-for.coyote {background: url(http://placehold.it/100x100?text=coyote); } 
+        #thumb-for.deer {background: url(http://placehold.it/100x100?text=deer); } 
+        #thumb-for.domCat {background: url(http://placehold.it/100x100?text=domCat); } 
+        #thumb-for.domDog {background: url(http://placehold.it/100x100?text=domDog); } 
+        #thumb-for.flyingSquirrel {background: url(http://placehold.it/100x100?text=flyingSquirrel); } 
+        #thumb-for.foxSquirrel {background: url(http://placehold.it/100x100?text=foxSquirrel); } 
+        #thumb-for.grayFox {background: url(http://placehold.it/100x100?text=grayFox); } 
+        #thumb-for.graySquirrel {background: url(http://placehold.it/100x100?text=graySquirrel); } 
+        #thumb-for.horse {background: url(http://placehold.it/100x100?text=horse); } 
+        #thumb-for.human {background: url(http://placehold.it/100x100?text=human); } 
+        #thumb-for.livestock {background: url(http://placehold.it/100x100?text=livestock); } 
+        #thumb-for.mink {background: url(http://placehold.it/100x100?text=mink); } 
+        #thumb-for.mouse {background: url(http://placehold.it/100x100?text=mouse); } 
+        #thumb-for.mower {background: url(http://placehold.it/100x100?text=mower); } 
+        #thumb-for.muskrat {background: url(http://placehold.it/100x100?text=muskrat); } 
+        #thumb-for.opossum {background: url(http://placehold.it/100x100?text=opossum); } 
+        #thumb-for.otherVehicle {background: url(http://placehold.it/100x100?text=otherVehicle); } 
+        #thumb-for.rabbit {background: url(http://placehold.it/100x100?text=rabbit); } 
+        #thumb-for.raccoon {background: url(http://placehold.it/100x100?text=raccoon); } 
+        #thumb-for.rat {background: url(http://placehold.it/100x100?text=rat); } 
+        #thumb-for.redFox {background: url(http://placehold.it/100x100?text=redFox); } 
+        #thumb-for.skunk {background: url(http://placehold.it/100x100?text=skunk); } 
+        #thumb-for.squirrelCannotId {background: url(http://placehold.it/100x100?text=squirrelCannotId); } 
+        #thumb-for.melanisticGraySquirrel {background: url(http://placehold.it/100x100?text=melanisticGraySquirrel); } 
 
 /* animal image  css is integrated into css/animal_details.styl */
-      &.beaver .image {
-        @extend #thumb-for.beaver;
-      }
-      &.bike .image {
-        @extend #thumb-for.bike;
-      }
-      &.car .image {
-        @extend #thumb-for.car;
-      }
-      &.chipmunk .image {
-        @extend #thumb-for.chipmunk;
-      }
-      &.coyote .image {
-        @extend #thumb-for.coyote;
-      }
-      &.deer .image {
-        @extend #thumb-for.deer;
-      }
-      &.dom-cat .image {
-        @extend #thumb-for.dom-cat;
-      }
-      &.dom-dog .image {
-        @extend #thumb-for.dom-dog;
-      }
-      &.flying-squirrel .image {
-        @extend #thumb-for.flying-squirrel;
-      }
-      &.fox-squirrel .image {
-        @extend #thumb-for.fox-squirrel;
-      }
-      &.gray-fox .image {
-        @extend #thumb-for.gray-fox;
-      }
-      &.gray-squirrel .image {
-        @extend #thumb-for.gray-squirrel;
-      }
-      &.horse .image {
-        @extend #thumb-for.horse;
-      }
-      &.human .image {
-        @extend #thumb-for.human;
-      }
-      &.livestock .image {
-        @extend #thumb-for.livestock;
-      }
-      &.mink .image {
-        @extend #thumb-for.mink;
-      }
-      &.mouse .image {
-        @extend #thumb-for.mouse;
-      }
-      &.mower .image {
-        @extend #thumb-for.mower;
-      }
-      &.muskrat .image {
-        @extend #thumb-for.muskrat;
-      }
-      &.opossum .image {
-        @extend #thumb-for.opossum;
-      }
-      &.other-vehicle .image {
-        @extend #thumb-for.other-vehicle;
-      }
-      &.rabbit .image {
-        @extend #thumb-for.rabbit;
-      }
-      &.raccoon .image {
-        @extend #thumb-for.raccoon;
-      }
-      &.rat .image {
-        @extend #thumb-for.rat;
-      }
-      &.red-fox .image {
-        @extend #thumb-for.red-fox;
-      }
-      &.skunk .image {
-        @extend #thumb-for.skunk;
-      }
-      &.squirrel-cannot-id .image {
-        @extend #thumb-for.squirrel-cannot-id;
-      }
-      &.melanistic-gray-squirrel .image {
-        @extend #thumb-for.melanistic-gray-squirrel;
-      }
+        &.beaver .image {
+          @extend #thumb-for.beaver;
+        }
+        &.bike .image {
+          @extend #thumb-for.bike;
+        }
+        &.car .image {
+          @extend #thumb-for.car;
+        }
+        &.chipmunk .image {
+          @extend #thumb-for.chipmunk;
+        }
+        &.coyote .image {
+          @extend #thumb-for.coyote;
+        }
+        &.deer .image {
+          @extend #thumb-for.deer;
+        }
+        &.domCat .image {
+          @extend #thumb-for.domCat;
+        }
+        &.domDog .image {
+          @extend #thumb-for.domDog;
+        }
+        &.flyingSquirrel .image {
+          @extend #thumb-for.flyingSquirrel;
+        }
+        &.foxSquirrel .image {
+          @extend #thumb-for.foxSquirrel;
+        }
+        &.grayFox .image {
+          @extend #thumb-for.grayFox;
+        }
+        &.graySquirrel .image {
+          @extend #thumb-for.graySquirrel;
+        }
+        &.horse .image {
+          @extend #thumb-for.horse;
+        }
+        &.human .image {
+          @extend #thumb-for.human;
+        }
+        &.livestock .image {
+          @extend #thumb-for.livestock;
+        }
+        &.mink .image {
+          @extend #thumb-for.mink;
+        }
+        &.mouse .image {
+          @extend #thumb-for.mouse;
+        }
+        &.mower .image {
+          @extend #thumb-for.mower;
+        }
+        &.muskrat .image {
+          @extend #thumb-for.muskrat;
+        }
+        &.opossum .image {
+          @extend #thumb-for.opossum;
+        }
+        &.otherVehicle .image {
+          @extend #thumb-for.otherVehicle;
+        }
+        &.rabbit .image {
+          @extend #thumb-for.rabbit;
+        }
+        &.raccoon .image {
+          @extend #thumb-for.raccoon;
+        }
+        &.rat .image {
+          @extend #thumb-for.rat;
+        }
+        &.redFox .image {
+          @extend #thumb-for.redFox;
+        }
+        &.skunk .image {
+          @extend #thumb-for.skunk;
+        }
+        &.squirrelCannotId .image {
+          @extend #thumb-for.squirrelCannotId;
+        }
+        &.melanisticGraySquirrel .image {
+          @extend #thumb-for.melanisticGraySquirrel;
+        }
 
 /* data-animal css is integrated into css/animal_selector.styl */
-    [data-animal="beaver"] .image {
-      @extend #thumb-for.beaver;
-    }
-    [data-animal="bike"] .image {
-      @extend #thumb-for.bike;
-    }
-    [data-animal="car"] .image {
-      @extend #thumb-for.car;
-    }
-    [data-animal="chipmunk"] .image {
-      @extend #thumb-for.chipmunk;
-    }
-    [data-animal="coyote"] .image {
-      @extend #thumb-for.coyote;
-    }
-    [data-animal="deer"] .image {
-      @extend #thumb-for.deer;
-    }
-    [data-animal="dom-cat"] .image {
-      @extend #thumb-for.dom-cat;
-    }
-    [data-animal="dom-dog"] .image {
-      @extend #thumb-for.dom-dog;
-    }
-    [data-animal="flying-squirrel"] .image {
-      @extend #thumb-for.flying-squirrel;
-    }
-    [data-animal="fox-squirrel"] .image {
-      @extend #thumb-for.fox-squirrel;
-    }
-    [data-animal="gray-fox"] .image {
-      @extend #thumb-for.gray-fox;
-    }
-    [data-animal="gray-squirrel"] .image {
-      @extend #thumb-for.gray-squirrel;
-    }
-    [data-animal="horse"] .image {
-      @extend #thumb-for.horse;
-    }
-    [data-animal="human"] .image {
-      @extend #thumb-for.human;
-    }
-    [data-animal="livestock"] .image {
-      @extend #thumb-for.livestock;
-    }
-    [data-animal="mink"] .image {
-      @extend #thumb-for.mink;
-    }
-    [data-animal="mouse"] .image {
-      @extend #thumb-for.mouse;
-    }
-    [data-animal="mower"] .image {
-      @extend #thumb-for.mower;
-    }
-    [data-animal="muskrat"] .image {
-      @extend #thumb-for.muskrat;
-    }
-    [data-animal="opossum"] .image {
-      @extend #thumb-for.opossum;
-    }
-    [data-animal="other-vehicle"] .image {
-      @extend #thumb-for.other-vehicle;
-    }
-    [data-animal="rabbit"] .image {
-      @extend #thumb-for.rabbit;
-    }
-    [data-animal="raccoon"] .image {
-      @extend #thumb-for.raccoon;
-    }
-    [data-animal="rat"] .image {
-      @extend #thumb-for.rat;
-    }
-    [data-animal="red-fox"] .image {
-      @extend #thumb-for.red-fox;
-    }
-    [data-animal="skunk"] .image {
-      @extend #thumb-for.skunk;
-    }
-    [data-animal="squirrel-cannot-id"] .image {
-      @extend #thumb-for.squirrel-cannot-id;
-    }
-    [data-animal="melanistic-gray-squirrel"] .image {
-      @extend #thumb-for.melanistic-gray-squirrel;
-    }
+      [data-animal="beaver"] .image {
+        @extend #thumb-for.beaver;
+      }
+      [data-animal="bike"] .image {
+        @extend #thumb-for.bike;
+      }
+      [data-animal="car"] .image {
+        @extend #thumb-for.car;
+      }
+      [data-animal="chipmunk"] .image {
+        @extend #thumb-for.chipmunk;
+      }
+      [data-animal="coyote"] .image {
+        @extend #thumb-for.coyote;
+      }
+      [data-animal="deer"] .image {
+        @extend #thumb-for.deer;
+      }
+      [data-animal="domCat"] .image {
+        @extend #thumb-for.domCat;
+      }
+      [data-animal="domDog"] .image {
+        @extend #thumb-for.domDog;
+      }
+      [data-animal="flyingSquirrel"] .image {
+        @extend #thumb-for.flyingSquirrel;
+      }
+      [data-animal="foxSquirrel"] .image {
+        @extend #thumb-for.foxSquirrel;
+      }
+      [data-animal="grayFox"] .image {
+        @extend #thumb-for.grayFox;
+      }
+      [data-animal="graySquirrel"] .image {
+        @extend #thumb-for.graySquirrel;
+      }
+      [data-animal="horse"] .image {
+        @extend #thumb-for.horse;
+      }
+      [data-animal="human"] .image {
+        @extend #thumb-for.human;
+      }
+      [data-animal="livestock"] .image {
+        @extend #thumb-for.livestock;
+      }
+      [data-animal="mink"] .image {
+        @extend #thumb-for.mink;
+      }
+      [data-animal="mouse"] .image {
+        @extend #thumb-for.mouse;
+      }
+      [data-animal="mower"] .image {
+        @extend #thumb-for.mower;
+      }
+      [data-animal="muskrat"] .image {
+        @extend #thumb-for.muskrat;
+      }
+      [data-animal="opossum"] .image {
+        @extend #thumb-for.opossum;
+      }
+      [data-animal="otherVehicle"] .image {
+        @extend #thumb-for.otherVehicle;
+      }
+      [data-animal="rabbit"] .image {
+        @extend #thumb-for.rabbit;
+      }
+      [data-animal="raccoon"] .image {
+        @extend #thumb-for.raccoon;
+      }
+      [data-animal="rat"] .image {
+        @extend #thumb-for.rat;
+      }
+      [data-animal="redFox"] .image {
+        @extend #thumb-for.redFox;
+      }
+      [data-animal="skunk"] .image {
+        @extend #thumb-for.skunk;
+      }
+      [data-animal="squirrelCannotId"] .image {
+        @extend #thumb-for.squirrelCannotId;
+      }
+      [data-animal="melanisticGraySquirrel"] .image {
+        @extend #thumb-for.melanisticGraySquirrel;
+      }
