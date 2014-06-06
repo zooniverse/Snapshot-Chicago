@@ -8,7 +8,6 @@ module.exports = [
     label: translate 'span', 'characteristics.like'
     values: [
       new Value id: 'likeCatDog', label: translate 'span', 'characteristicValues.likeCatDog'
-      new Value id: 'likeWeasel', label: translate 'span', 'characteristicValues.likeWeasel'
       new Value id: 'likeRodent', label: translate 'span', 'characteristicValues.likeRodent'
       new Value id: 'likeOther', label: translate 'span', 'characteristicValues.likeOther'
     ]
