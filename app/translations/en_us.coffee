@@ -277,18 +277,6 @@ module.exports =
         Describe Horse
     '''
 
-    human:
-      label: 'Human'
-      description: '''
-        Describe Human
-    '''
-
-    livestock:
-      label: 'Livestock'
-      description: '''
-        Describe Livestock
-    '''
-
     mink:
       label: 'Mink'
       description: '''
@@ -366,7 +354,6 @@ module.exports =
       description: '''
         Describe Melanistic Gray Squirrel
     '''
-
 
 
   differences:
