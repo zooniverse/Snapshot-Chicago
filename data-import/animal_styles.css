@@ -24,7 +24,7 @@
         #thumb-for.rat {background: url(http://placehold.it/100x100?text=rat); }
         #thumb-for.redFox {background: url(http://placehold.it/100x100?text=redFox); }
         #thumb-for.skunk {background: url(http://placehold.it/100x100?text=skunk); }
-        #thumb-for.squirrelCannotId {background: url(http://placehold.it/100x100?text=squirrelCannotId); }
+        #thumb-for.squirrelCannotID {background: url(http://placehold.it/100x100?text=squirrelCannotID); }
         #thumb-for.melanisticGraySquirrel {background: url(http://placehold.it/100x100?text=melanisticGraySquirrel); }
 
 /* animal image  css is integrated into css/animal_details.styl */
@@ -100,8 +100,8 @@
         &.skunk .image {
           @extend #thumb-for.skunk;
         }
-        &.squirrelCannotId .image {
-          @extend #thumb-for.squirrelCannotId;
+        &.squirrelCannotID .image {
+          @extend #thumb-for.squirrelCannotID;
         }
         &.melanisticGraySquirrel .image {
           @extend #thumb-for.melanisticGraySquirrel;
@@ -180,8 +180,8 @@
       [data-animal="skunk"] .image {
         @extend #thumb-for.skunk;
       }
-      [data-animal="squirrelCannotId"] .image {
-        @extend #thumb-for.squirrelCannotId;
+      [data-animal="squirrelCannotID"] .image {
+        @extend #thumb-for.squirrelCannotID;
       }
       [data-animal="melanisticGraySquirrel"] .image {
         @extend #thumb-for.melanisticGraySquirrel;

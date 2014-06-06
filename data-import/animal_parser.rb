@@ -39,7 +39,7 @@ class AnimalParser
         # only some animals are confused in this list
         if row["OCW1"]
           
-          species = row["Species"]
+         species = row["Species"]
          #for each 1 to 4 possible confusion
          #emit the template
          output << "  #{species}:\n"
@@ -203,7 +203,9 @@ class AnimalParser
 
 
   def camelizeName(name)
-    name.underscore.camelize(:lower)
+    outName = name.underscore.camelize(:lower)
+    #lame
+    outName.gsub("Id","ID")
   end
 
 end 
