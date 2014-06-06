@@ -34,7 +34,6 @@ module.exports = [
     values: [
       new Value id: 'tailBushy', label: translate 'span', 'characteristicValues.tailBushy'
       new Value id: 'tailSmooth', label: translate 'span', 'characteristicValues.tailSmooth'
-      new Value id: 'tailFlat', label: translate 'span', 'characteristicValues.tailFlat'
       new Value id: 'tailLong', label: translate 'span', 'characteristicValues.tailLong'
     ]
 

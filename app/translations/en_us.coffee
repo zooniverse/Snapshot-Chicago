@@ -562,7 +562,6 @@ module.exports =
   characteristics:
     like: 'Looks like...'
     coat: 'Coat'
-    horns: 'Horns'
     tail: 'Tail'
     build: 'Build'
     manMade: "Man Made"
@@ -581,10 +580,8 @@ module.exports =
     coatMottled: 'Mottled'
     coatSolid: 'Solid'
     coatOrTailStriped: 'Or Tail Striped'
-    hornsNone: 'None'
     tailBushy: 'Bushy'
     tailSmooth: 'Smooth'
-    tailFlat: 'Flat'
     tailLong: 'Long'
     buildStocky: 'Stocky'
     buildLanky: 'Lanky'
