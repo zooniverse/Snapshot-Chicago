@@ -350,7 +350,7 @@ module.exports =
     '''
 
     melanisticGraySquirrel:
-      label: 'Melanistic Gray Squirrel'
+      label: 'Gray Black Squirrel'
       description: '''
         Describe Melanistic Gray Squirrel
     '''
@@ -573,10 +573,7 @@ module.exports =
     coatTanYellow: 'Tan Yellow'
     coatRedBrown: 'Red Brown'
     coatBrownBlack: 'Brown Black'
-    coatGray: 'Gray'
     coatGrayBlack: 'Gray Black'
-    coatBlack: 'Black'
-    coatOther: 'Other'
     coatMottled: 'Mottled'
     coatSolid: 'Solid'
     coatOrTailStriped: 'Or Tail Striped'

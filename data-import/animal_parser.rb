@@ -220,10 +220,23 @@ a_parser =  AnimalParser.new
 
 
 
-
+#Chicago values
+values = [
+  'likeCatDog','likeRodent','likeOther',
+  'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
+  'tailBushy','tailSmooth','tailLong',
+  'buildStocky','buildLanky','buildSmall','buildLowSlung',
+  'manMade'
+]
 
 # # for lib/charachteristics.coffee
-# values = ['likeCatDog','likeBird','likeWaterBird','likeWeasel','likeRodent','likeOther','coatTanYellow','coatRedBrown','coatBrownBlack','coatGray','coatGrayBlack','coatBlack','coatOther','coatMottled','coatSolid','coatOrTailStriped','hornsNone','tailBushy','tailSmooth','tailFlat','tailLong','buildStocky','buildLanky','buildSmall','buildLowSlung','manMade']
+# values = 
+  # 'likeCatDog','likeRodent','likeOther',
+  # 'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
+  # 'tailBushy','tailSmooth','tailLong',
+  # 'buildStocky','buildLanky','buildSmall','buildLowSlung',
+  # 'manMade'
+]
 # values.each do | chara|
 #   puts "new Value id: '#{chara}', label: translate 'span', 'characteristicValues.#{chara}'"
 # end 

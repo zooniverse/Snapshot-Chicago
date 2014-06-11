@@ -19,10 +19,7 @@ module.exports = [
       new Value id: 'coatTanYellow', label: translate 'span', 'characteristicValues.coatTanYellow'
       new Value id: 'coatRedBrown', label: translate 'span', 'characteristicValues.coatRedBrown'
       new Value id: 'coatBrownBlack', label: translate 'span', 'characteristicValues.coatBrownBlack'
-      new Value id: 'coatGray', label: translate 'span', 'characteristicValues.coatGray'
       new Value id: 'coatGrayBlack', label: translate 'span', 'characteristicValues.coatGrayBlack'
-      new Value id: 'coatBlack', label: translate 'span', 'characteristicValues.coatBlack'
-      new Value id: 'coatOther', label: translate 'span', 'characteristicValues.coatOther'
       new Value id: 'coatMottled', label: translate 'span', 'characteristicValues.coatMottled'
       new Value id: 'coatSolid', label: translate 'span', 'characteristicValues.coatSolid'
       new Value id: 'coatOrTailStriped', label: translate 'span', 'characteristicValues.coatOrTailStriped'
@@ -43,7 +40,6 @@ module.exports = [
     label: translate 'span', 'characteristics.build'
     values: [
       new Value id: 'buildStocky', label: translate 'span', 'characteristicValues.buildStocky'
-    #  new Value id: 'buildTall', label: translate 'span', 'characteristicValues.buildTall'
       new Value id: 'buildLanky', label: translate 'span', 'characteristicValues.buildLanky'
       new Value id: 'buildSmall', label: translate 'span', 'characteristicValues.buildSmall'
       new Value id: 'buildLowSlung', label: translate 'span', 'characteristicValues.buildLowSlung'

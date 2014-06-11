@@ -3,11 +3,10 @@ Animal = require '../models/animal'
 translate = require 't7e'
 
 
-#TOOD we've removed animals so there may be filtering bits here that need removal
 #Chicago values
 values = [
   'likeCatDog','likeRodent','likeOther',
-  'coatTanYellow','coatRedBrown','coatBrownBlack','coatGray','coatGrayBlack','coatBlack','coatOther','coatMottled','coatSolid','coatOrTailStriped',
+  'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
   'tailBushy','tailSmooth','tailLong',
   'buildStocky','buildLanky','buildSmall','buildLowSlung',
   'manMade'
@@ -17,35 +16,34 @@ values = [
 # The order of characteristics is derived from the list of values.
 characteristics = ['like', 'coat','tail', 'build', 'manMade']
 
-#TOOD we've removed animals so there may be filtering bits here that need removal
-#Chicago animals
+#Chicago animal  characteristics
 animalCharacteristics = [
-  {beaver:                 [0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0]}
-  {bike:                   [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
-  {car:                    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
-  {chipmunk:               [0,1,0,1,1,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0]}
-  {coyote:                 [1,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,0,0]}
-  {deer:                   [0,0,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0]}
-  {domCat:                 [1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0]}
-  {domDog:                 [1,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0]}
-  {flyingSquirrel:         [0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0]}
-  {foxSquirrel:            [0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0]}
-  {grayFox:                [1,0,0,0,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0]}
-  {graySquirrel:           [0,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0]}
-  {horse:                  [0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0]}
-  {mink:                   [0,0,0,0,1,1,0,0,1,0,0,1,0,0,1,1,0,0,1,1,0]}
-  {mouse:                  [0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0]}
-  {mower:                  [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
-  {muskrat:                [0,1,0,0,1,1,0,0,0,0,0,1,0,0,1,1,1,0,1,1,0]}
-  {opossum:                [0,1,0,1,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,1,0]}
-  {otherVehicle:           [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
-  {rabbit:                 [0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0]}
-  {raccoon:                [0,0,1,0,0,1,0,1,0,0,1,0,1,1,0,1,0,0,0,1,0]}
-  {rat:                    [0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,1,1,0]}
-  {redFox:                 [1,0,0,0,1,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0]}
-  {skunk:                  [0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,1,0,0,0,1,0]}
-  {squirrelCannotID:       [0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,0,0,1,0,0]}
-  {melanisticGraySquirrel: [0,1,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,0]}
+  {beaver:                  [0,1,1,0,1,1,0,0,0,0,0,0,1,1,0,0,1,0]}
+  {bike:                    [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
+  {car:                     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
+  {chipmunk:                [0,1,0,1,1,0,0,0,0,1,0,1,1,0,0,1,1,0]}
+  {coyote:                  [1,0,0,1,0,1,1,1,0,0,1,0,1,0,1,0,0,0]}
+  {deer:                    [0,0,1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0]}
+  {domCat:                  [1,0,0,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0]}
+  {domDog:                  [1,0,0,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0]}
+  {flyingSquirrel:          [0,1,0,1,0,0,1,0,0,0,0,1,1,0,0,1,1,0]}
+  {foxSquirrel:             [0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0]}
+  {grayFox:                 [1,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0]}
+  {graySquirrel:            [0,1,0,1,0,0,1,1,0,0,1,0,1,0,0,1,0,0]}
+  {horse:                   [0,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0]}
+  {mink:                    [0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,1,1,0]}
+  {mouse:                   [0,1,0,1,0,0,1,0,1,0,0,1,1,0,0,1,1,0]}
+  {mower:                   [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
+  {muskrat:                 [0,1,0,0,1,1,0,0,1,0,0,1,1,1,0,1,1,0]}
+  {opossum:                 [0,1,0,1,0,0,1,1,0,0,0,1,1,0,0,0,1,0]}
+  {otherVehicle:            [0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]}
+  {rabbit:                  [0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,1,0]}
+  {raccoon:                 [0,0,1,0,0,1,1,1,0,1,1,0,1,0,0,0,1,0]}
+  {rat:                     [0,1,0,0,0,0,1,0,1,0,0,1,1,0,0,1,1,0]}
+  {redFox:                  [1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0,0]}
+  {skunk:                   [0,0,1,0,0,1,0,0,1,1,1,0,1,0,0,0,1,0]}
+  {squirrelCannotID:        [0,1,0,1,1,1,1,1,0,0,1,0,1,0,0,1,0,0]}
+  {melanisticGraySquirrel:  [0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,1,0,0]}
 ]
 
 
