@@ -6,4 +6,31 @@
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 10px 20px -10px $dark-grey-font;
+
+  @media screen and (max-width: 1000px) {
+    width: 580px;
+    .animal-selector {
+      width: 100%;
+    }
+    .subject-viewer {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    width: 380px;
+    .subject-viewer {
+      .images .subject-image {
+        width: 380px;
+      }
+      .followup {
+        span.social.group, span.continue.group {
+          margin-bottom: 10px;
+          width 100%;
+          float: none;
+        }
+      }
+    }
+  }
 }
