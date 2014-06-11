@@ -142,6 +142,7 @@
     color: darken($brown, 67%);
     font-size: 14px;
     margin: 15px 0 4px;
+    overflow: auto;
     position: relative;
     text-shadow: 0 1px 0 rgba($white, 0.25);
   }
@@ -156,6 +157,7 @@
         display: none;
         font-size: 12px;
         font-weight: bold;
+        color: $dark-grey-font;
         margin-right: 10px;
       }
 
@@ -181,7 +183,6 @@
     .group {
       display: inline-block;
       margin: 0 5px;
-      outer-deboss: 4px;
       position: relative;
 
       &.continue {
@@ -192,26 +193,30 @@
       button {
         @extend #standard-button;
         padding-left: 32px;
-
+        padding-right 10px;
+        color: $dark-grey-font;
+        background: $light-grey-bg;
+        font-size: 12px;
+        line-height: 25px;
+        border-radius: 4px;
         i {
-          color: $black;
-          border-right: 1px solid rgba($black, 0.5);
-          box-shadow: 2px 0 1px -1px rgba($white, 0.25);
-          height: 22px;
-          left: 0
-          line-height: 20px;
+          left: 0;
+          height: 25px;
+          line-height: 25px;
           position: absolute;
           top: 3px;
-          text-shadow: 0 1px 0 rgba($white, 0.25);
-          width: 24px;
+          width: 30px;
         }
       }
 
       button[name="next"] {
-        background: darken($green-really, 25%);
-
+        color: $white;
+        background: $medium-blue
+        padding: 3px 10px 3px 32px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         &:active {
-          background: darken($green-really, 50%);
+          background: lighten($medium-blue, 5%);
         }
       }
     }
