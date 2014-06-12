@@ -61,13 +61,11 @@ class AnimalDetails extends Controller
   getCount: ->
     @countRadios.filter(':checked').val()
 
-  #TODO ammend issue 15
   getBehaviors: ->
     for checkbox in @behaviorCheckboxes
       continue unless checkbox.checked
       $(checkbox).val()
 
-  #TODO in question issue 15
   getBabies: ->
     !!@babiesCheckbox.attr 'checked'
 
