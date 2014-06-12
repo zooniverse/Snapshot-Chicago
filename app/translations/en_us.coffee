@@ -66,11 +66,11 @@ module.exports =
 
     behavior: 'Behavior'
     behaviors:
-      resting: 'Resting'
-      standing: 'Standing'
-      moving: 'Moving'
-      eating: 'Eating'
-      interacting: 'Interacting'
+      headUp: 'Head Up'
+      headDown: 'Head Down'
+      neither: 'Neither'
+      notVisible: 'Not Visble'
+     
 
     babies: 'Young present'
     rain: 'Raining'
