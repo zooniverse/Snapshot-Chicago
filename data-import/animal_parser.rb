@@ -11,7 +11,6 @@ class AnimalParser
 
   def initialize()
     command = ARGV[0] unless ARGV[0].nil?
-    puts command
     @data_dir = File.dirname(__FILE__)
     @charateristics_file = File.join(@data_dir, 'chicagoAnimalChar.txt')
     if command == "differences"
@@ -53,9 +52,17 @@ class AnimalParser
       end
       #process each row
     end 
-    puts output
+    output
   end 
 
+  def print_names(animal_list) 
+    output_file=  File.join(@data_dir, "animal_names.txt")
+    file = File.new(output_file , "w+")
+    animal_list.each do |animal|
+      file << animal + "\n"
+    end
+    file.close
+  end
   # returns a difference string record 
   def emit_differences(species, confused_with)
   <<-difference
@@ -118,6 +125,12 @@ class AnimalParser
     formated_animal_list = Array.new
     animal_list.each do |animal_name|
       humanized_animal_name = ActiveSupport::Inflector.humanize( ActiveSupport::Inflector.camelize(animal_name).underscore).titleize
+      #we want the species first so tokenize the string and invert a bit
+      if humanized_animal_name.include?(" ")
+        words = humanized_animal_name.split(" ")
+        # take last word as species name so push in front of the rest
+        humanized_animal_name  = words.last + ", " +  words[0 .. words.length-2].join(" ")
+      end 
       # note the heredoc string is whitespace aware
       formated_animal_list << <<-label
               #{animal_name}:
@@ -159,7 +172,9 @@ class AnimalParser
       hyphenated_animal_name = camelizeName(animal_name)
       out << 
       <<-thumb
-        #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); }
+        #thumb-for.#{hyphenated_animal_name} {
+          background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); 
+        }
       thumb
     end
     out
@@ -236,7 +251,7 @@ values = [
   # 'tailBushy','tailSmooth','tailLong',
   # 'buildStocky','buildLanky','buildSmall','buildLowSlung',
   # 'manMade'
-]
+#]
 # values.each do | chara|
 #   puts "new Value id: '#{chara}', label: translate 'span', 'characteristicValues.#{chara}'"
 # end 
