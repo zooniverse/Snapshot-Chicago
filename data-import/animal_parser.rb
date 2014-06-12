@@ -39,7 +39,7 @@ class AnimalParser
         # only some animals are confused in this list
         if row["OCW1"]
           
-          species = row["Species"]
+         species = row["Species"]
          #for each 1 to 4 possible confusion
          #emit the template
          output << "  #{species}:\n"
@@ -82,14 +82,12 @@ class AnimalParser
   def get_names()
     raw_animal_list = Array.new
     animal_list = Array.new
-    debugger
     File.open(@charateristics_file).each do |line|
       stripped_line = line.strip
       if stripped_line[0] == "{"
         raw_animal_list  << stripped_line
       end
     end
-    debugger
     raw_animal_list.each do |animal|
     #  i.e. strip "{americanCoot: blah"] -> americanCoot
       real_animal = animal[1..animal.index(":")-1]  
@@ -161,7 +159,7 @@ class AnimalParser
       hyphenated_animal_name = camelizeName(animal_name)
       out << 
       <<-thumb
-        #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); } 
+        #thumb-for.#{hyphenated_animal_name} {background: url(http://placehold.it/100x100?text=#{hyphenated_animal_name}); }
       thumb
     end
     out
@@ -197,20 +195,17 @@ class AnimalParser
   end
 
   def print_css(css_string)
-    puts css_string
     output_file=  File.join(@data_dir, "animal_styles.css")
     file = File.open(output_file , "w+") do |f|
       f.write(css_string)
     end
-    # formated_animal_list.each do |animal|
-    #   file << animal + "\n"
-    # end
-    #file.close
   end 
 
 
   def camelizeName(name)
-    name.underscore.camelize(:lower)
+    outName = name.underscore.camelize(:lower)
+    #lame
+    outName.gsub("Id","ID")
   end
 
 end 
@@ -225,10 +220,23 @@ a_parser =  AnimalParser.new
 
 
 
-
+#Chicago values
+values = [
+  'likeCatDog','likeRodent','likeOther',
+  'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
+  'tailBushy','tailSmooth','tailLong',
+  'buildStocky','buildLanky','buildSmall','buildLowSlung',
+  'manMade'
+]
 
 # # for lib/charachteristics.coffee
-# values = ['likeCatDog','likeBird','likeWaterBird','likeWeasel','likeRodent','likeOther','coatTanYellow','coatRedBrown','coatBrownBlack','coatGray','coatGrayBlack','coatBlack','coatOther','coatMottled','coatSolid','coatOrTailStriped','hornsNone','tailBushy','tailSmooth','tailFlat','tailLong','buildStocky','buildLanky','buildSmall','buildLowSlung','manMade']
+# values = 
+  # 'likeCatDog','likeRodent','likeOther',
+  # 'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
+  # 'tailBushy','tailSmooth','tailLong',
+  # 'buildStocky','buildLanky','buildSmall','buildLowSlung',
+  # 'manMade'
+]
 # values.each do | chara|
 #   puts "new Value id: '#{chara}', label: translate 'span', 'characteristicValues.#{chara}'"
 # end 

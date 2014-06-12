@@ -277,18 +277,6 @@ module.exports =
         Describe Horse
     '''
 
-    human:
-      label: 'Human'
-      description: '''
-        Describe Human
-    '''
-
-    livestock:
-      label: 'Livestock'
-      description: '''
-        Describe Livestock
-    '''
-
     mink:
       label: 'Mink'
       description: '''
@@ -362,11 +350,10 @@ module.exports =
     '''
 
     melanisticGraySquirrel:
-      label: 'Melanistic Gray Squirrel'
+      label: 'Gray Black Squirrel'
       description: '''
         Describe Melanistic Gray Squirrel
     '''
-
 
 
   differences:
@@ -575,30 +562,23 @@ module.exports =
   characteristics:
     like: 'Looks like...'
     coat: 'Coat'
-    horns: 'Horns'
     tail: 'Tail'
     build: 'Build'
     manMade: "Man Made"
 
   characteristicValues:
     likeCatDog: 'Cat Dog'
-    likeWeasel: 'Weasel'
     likeRodent: 'Rodent'
     likeOther: 'Other'
     coatTanYellow: 'Tan Yellow'
     coatRedBrown: 'Red Brown'
     coatBrownBlack: 'Brown Black'
-    coatGray: 'Gray'
     coatGrayBlack: 'Gray Black'
-    coatBlack: 'Black'
-    coatOther: 'Other'
     coatMottled: 'Mottled'
     coatSolid: 'Solid'
     coatOrTailStriped: 'Or Tail Striped'
-    hornsNone: 'None'
     tailBushy: 'Bushy'
     tailSmooth: 'Smooth'
-    tailFlat: 'Flat'
     tailLong: 'Long'
     buildStocky: 'Stocky'
     buildLanky: 'Lanky'
