@@ -16,6 +16,12 @@
                   Describe Car
               '''
 
+              domCat:
+                label: 'Cat, Dom'
+                description: '''
+                  Describe Cat, Dom
+              '''
+
               chipmunk:
                 label: 'Chipmunk'
                 description: '''
@@ -34,46 +40,34 @@
                   Describe Deer
               '''
 
-              domCat:
-                label: 'Dom Cat'
-                description: '''
-                  Describe Dom Cat
-              '''
-
               domDog:
-                label: 'Dom Dog'
+                label: 'Dog, Dom'
                 description: '''
-                  Describe Dom Dog
-              '''
-
-              flyingSquirrel:
-                label: 'Flying Squirrel'
-                description: '''
-                  Describe Flying Squirrel
-              '''
-
-              foxSquirrel:
-                label: 'Fox Squirrel'
-                description: '''
-                  Describe Fox Squirrel
+                  Describe Dog, Dom
               '''
 
               grayFox:
-                label: 'Gray Fox'
+                label: 'Fox, Gray'
                 description: '''
-                  Describe Gray Fox
+                  Describe Fox, Gray
               '''
 
-              graySquirrel:
-                label: 'Gray Squirrel'
+              redFox:
+                label: 'Fox, Red'
                 description: '''
-                  Describe Gray Squirrel
+                  Describe Fox, Red
               '''
 
               horse:
                 label: 'Horse'
                 description: '''
                   Describe Horse
+              '''
+
+              livestock:
+                label: 'Livestock'
+                description: '''
+                  Describe Livestock
               '''
 
               mink:
@@ -107,9 +101,9 @@
               '''
 
               otherVehicle:
-                label: 'Other Vehicle'
+                label: 'Vehicle, Other'
                 description: '''
-                  Describe Other Vehicle
+                  Describe Vehicle, Other
               '''
 
               rabbit:
@@ -130,27 +124,39 @@
                   Describe Rat
               '''
 
-              redFox:
-                label: 'Red Fox'
-                description: '''
-                  Describe Red Fox
-              '''
-
               skunk:
                 label: 'Skunk'
                 description: '''
                   Describe Skunk
               '''
 
-              squirrelCannotID:
-                label: 'Squirrel Cannot'
+              flyingSquirrel:
+                label: 'Squirrel, Flying'
                 description: '''
-                  Describe Squirrel Cannot
+                  Describe Squirrel, Flying
+              '''
+
+              foxSquirrel:
+                label: 'Squirrel, Fox'
+                description: '''
+                  Describe Squirrel, Fox
+              '''
+
+              graySquirrel:
+                label: 'Squirrel, Gray'
+                description: '''
+                  Describe Squirrel, Gray
               '''
 
               melanisticGraySquirrel:
-                label: 'Melanistic Gray Squirrel'
+                label: 'Squirrel, Melanistic Gray'
                 description: '''
-                  Describe Melanistic Gray Squirrel
+                  Describe Squirrel, Melanistic Gray
+              '''
+
+              woodChuck:
+                label: 'Chuck, Wood'
+                description: '''
+                  Describe Chuck, Wood
               '''
 

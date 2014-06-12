@@ -236,45 +236,51 @@ module.exports =
     '''
 
     domCat:
-      label: 'Dom Cat'
+      label: 'Cat, Domestic'
       description: '''
-        Describe Dom Cat
+        Describe Cat, Domestic
     '''
 
     domDog:
-      label: 'Dom Dog'
+      label: 'Dog, Domestic'
       description: '''
-        Describe Dom Dog
+        Describe Dog, Domestic
     '''
 
     flyingSquirrel:
-      label: 'Flying Squirrel'
+      label: 'Squirrel, Flying'
       description: '''
-        Describe Flying Squirrel
+        Describe Squirrel, Flying
     '''
 
     foxSquirrel:
-      label: 'Fox Squirrel'
+      label: 'Squirrel, Fox'
       description: '''
-        Describe Fox Squirrel
+        Describe Squirrel, Fox
     '''
 
     grayFox:
-      label: 'Gray Fox'
+      label: 'Fox, Gray'
       description: '''
-        Describe Gray Fox
+        Describe Fox, Gray
     '''
 
     graySquirrel:
-      label: 'Gray Squirrel'
+      label: 'Squirrel, Gray'
       description: '''
-        Describe Gray Squirrel
+        Describe Squirrel, Gray
     '''
 
     horse:
       label: 'Horse'
       description: '''
         Describe Horse
+    '''
+
+    livestock:
+      label: 'Livestock'
+      description: '''
+        Describe Livestock
     '''
 
     mink:
@@ -308,9 +314,9 @@ module.exports =
     '''
 
     otherVehicle:
-      label: 'Other Vehicle'
+      label: 'Vehicle, Other'
       description: '''
-        Describe Other Vehicle
+        Describe Vehicle, Other
     '''
 
     rabbit:
@@ -332,9 +338,9 @@ module.exports =
     '''
 
     redFox:
-      label: 'Red Fox'
+      label: 'Fox, Red'
       description: '''
-        Describe Red Fox
+        Describe Fox, Red
     '''
 
     skunk:
@@ -343,16 +349,16 @@ module.exports =
         Describe Skunk
     '''
 
-    squirrelCannotID:
-      label: 'Squirrel Cannot'
+    woodChuck:
+      label: 'Wood Chuck'
       description: '''
-        Describe Squirrel Cannot
+        Describe Wood Chuck
     '''
 
     melanisticGraySquirrel:
-      label: 'Gray Black Squirrel'
+      label: 'Squirrel, Melanistic Gray'
       description: '''
-        Describe Melanistic Gray Squirrel
+        Describe Squirrel, Melanistic Gray
     '''
 
 
