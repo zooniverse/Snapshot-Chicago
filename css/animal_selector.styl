@@ -412,7 +412,7 @@
 
       &[data-items="lots"] [data-animal] {
         font-size: 12px;
-        height: 6.25%;
+        height: 10.25%;
         padding: 1px 0 0 3px;
         width: 33.33%;
 
@@ -450,7 +450,8 @@
         }
 
         .label {
-          float: left;
+          /* float: left; breaks long names */
+          word-wrap: break-word
           margin: 10px 0 0 10px;
         }
       }
