@@ -286,7 +286,7 @@
         box-sizing: border-box;
         cursor: pointer;
         float: left;
-        font-size: 14px;
+        font-size: 12px;
         opacity: 1;
         transition: opacity 0.25s ease-in-out;
 
@@ -312,8 +312,12 @@
           display: none;
         }
 
+        .label {
+          display: inline-block;
+        }
+
         &:hover {
-          span {
+          .label {
             background: $medium-blue;
             color: #fff;
           }
@@ -452,12 +456,12 @@
         .label {
           /* float: left; breaks long names */
           word-wrap: break-word
-          margin: 10px 0 0 10px;
+          margin: 20px 0 0 10px;
         }
       }
 
       &[data-items="10"] [data-animal] .label {
-        max-width: 110px;
+        max-width: 100px;
       }
 
       &[data-items="5"] [data-animal] {
@@ -465,6 +469,7 @@
 
         .label {
           margin-top: 25px;
+          font-size: 14px;
         }
       }
 
