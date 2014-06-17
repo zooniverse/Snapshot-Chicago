@@ -18,11 +18,14 @@
     }
   }
 
-  @media screen and (max-width: 620px) {
-    width: 380px;
+  @media screen and (max-width: 680px) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     .subject-viewer {
       .images .subject-image {
-        width: 380px;
+        width: 100%;
+        margin: 0;
       }
       .followup {
         span.social.group, span.continue.group {
@@ -30,6 +33,12 @@
           width 100%;
           float: none;
         }
+      }
+      .controls .finished {
+        float: none;
+      }
+      .animal-selector .selection-area .items[data-items="10"] [data-animal] .image {
+        display: none;
       }
     }
   }
