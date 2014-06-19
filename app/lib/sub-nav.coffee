@@ -23,7 +23,7 @@ class SubNav
 
   activateFirstTab: (page) ->
     firstSection = $(".sub-nav-#{page} button:nth-child(1)").attr('name')
-    @activatePage(page, firstSection)
+    @activateSection(page, firstSection)
 
   showSection: (page, section) ->
     @el.find(".sub-nav-#{page}-#{section}")
@@ -40,9 +40,12 @@ class SubNav
 
   activatePage: (page, section) =>
     Route.navigate("/#{page}", section, false)
+    @activateMainNavLink(page)
+    @activateSection(page, section)
+
+  activateSection: (page, section) ->
     @showSection(page, section)
     @activateSubNavLink(page, section)
-    @activateMainNavLink(page)
 
 
 module?.exports = SubNav
