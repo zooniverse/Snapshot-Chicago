@@ -22,8 +22,8 @@ class SubNav
       @activatePage(page, e.target.name)
 
   activateFirstTab: (page) ->
-    firstTab = $(".sub-nav-#{page} button:nth-child(1)").addClass("active").attr('name')
-    @el.find(".sub-nav-#{page}-#{firstTab}:nth-child(1)").siblings().hide()
+    firstSection = $(".sub-nav-#{page} button:nth-child(1)").attr('name')
+    @activatePage(page, firstSection)
 
   showSection: (page, section) ->
     @el.find(".sub-nav-#{page}-#{section}")
