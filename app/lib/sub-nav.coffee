@@ -15,26 +15,34 @@ Secondary Page SubNav Usage
 ###
 
 class SubNav
-  constructor: (pageName) -> @createSubNav(pageName)
+  constructor: (page, @el) ->
+    setTimeout => @activateFirstTab(page)
 
-  createSubNav: (pageName) ->
-    setTimeout =>
-      initialPageBtn = $(".sub-nav-#{pageName} button:nth-child(1)").addClass("active")
-      initialClassName = initialPageBtn.attr('name')
+    @el.find(".sub-nav-#{page} button").on "click", (e) =>
+      @activatePage(page, e.target.name)
 
-      $(".sub-nav-#{pageName}-#{initialClassName}:nth-child(1)").siblings().hide()
+  activateFirstTab: (page) ->
+    firstTab = $(".sub-nav-#{page} button:nth-child(1)").addClass("active").attr('name')
+    @el.find(".sub-nav-#{page}-#{firstTab}:nth-child(1)").siblings().hide()
 
-      $(".sub-nav-#{pageName} button").on "click", (e) =>
-        Route.navigate("/#{pageName}", e.target.name, false)
-        @showSection(pageName, e.target.name)
+  showSection: (page, section) ->
+    @el.find(".sub-nav-#{page}-#{section}")
+      .show()
+      .siblings().hide()
 
-  showSection: (pageName, section) ->
-    $(".sub-nav-#{pageName}-#{section}").show().siblings().hide()
-    $(".sub-nav-#{pageName} button[name=#{section}]").addClass("active").siblings().removeClass("active")
-    @activateMainNavLink(pageName)
+  activateSubNavLink: (page, section) ->
+    @el.find(".sub-nav-#{page} button[name=#{section}]")
+      .addClass("active")
+      .siblings().removeClass("active")
 
-  activateMainNavLink: (pageName) ->
-    setTimeout => $("nav a[href$='#{pageName}']").addClass("active")
+  activateMainNavLink: (page) ->
+    setTimeout => $("nav a[href$='#{page}']").addClass("active")
+
+  activatePage: (page, section) =>
+    Route.navigate("/#{page}", section, false)
+    @showSection(page, section)
+    @activateSubNavLink(page, section)
+    @activateMainNavLink(page)
 
 
 module?.exports = SubNav

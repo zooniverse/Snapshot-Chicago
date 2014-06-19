@@ -8,10 +8,10 @@ class AboutPage extends Controller
   constructor: ->
     super
     @html template
-    aboutNav = new SubNav "about"
+    aboutNav = new SubNav "about", @el
 
     Route.add "/about/:section", (params) =>
       @active()
-      setTimeout => aboutNav.showSection("about", params.section)
+      setTimeout => aboutNav.activatePage("about", params.section)
 
 module.exports = AboutPage
