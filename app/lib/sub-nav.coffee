@@ -1,3 +1,5 @@
+{Route} = require "spine"
+
 ###
 Secondary Page SubNav Usage
 
@@ -23,7 +25,16 @@ class SubNav
       $(".sub-nav-#{pageName}-#{initialClassName}:nth-child(1)").siblings().hide()
 
       $(".sub-nav-#{pageName} button").on "click", (e) =>
-        $(".sub-nav-#{pageName}-#{e.target.name}").show().siblings().hide()
-        $(".sub-nav-#{pageName} button[name=#{e.target.name}]").addClass("active").siblings().removeClass("active")
+        Route.navigate("/#{pageName}", e.target.name, false)
+        @showSection(pageName, e.target.name)
+
+  showSection: (pageName, section) ->
+    $(".sub-nav-#{pageName}-#{section}").show().siblings().hide()
+    $(".sub-nav-#{pageName} button[name=#{section}]").addClass("active").siblings().removeClass("active")
+    @activateMainNavLink(pageName)
+
+  activateMainNavLink: (pageName) ->
+    setTimeout => $("nav a[href$='#{pageName}']").addClass("active")
+
 
 module?.exports = SubNav

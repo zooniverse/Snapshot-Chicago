@@ -1,4 +1,4 @@
-{Controller} = require 'spine'
+{Controller, Route} = require 'spine'
 template = require '../views/about_page'
 SubNav = require "../lib/sub-nav"
 
@@ -9,5 +9,9 @@ class AboutPage extends Controller
     super
     @html template
     aboutNav = new SubNav "about"
+
+    Route.add "/about/:section", (params) =>
+      @active()
+      setTimeout => aboutNav.showSection("about", params.section)
 
 module.exports = AboutPage
