@@ -12,6 +12,6 @@ class AboutPage extends Controller
 
     Route.add "/about/:section", (params) =>
       @active()
-      setTimeout => aboutNav.activatePage("about", params.section)
+      setTimeout => aboutNav.routeTo(params.section)
 
 module.exports = AboutPage

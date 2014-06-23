@@ -15,37 +15,36 @@ Secondary Page SubNav Usage
 ###
 
 class SubNav
-  constructor: (page, @el) ->
+  constructor: (@page, @el) ->
     setTimeout => @activateFirstTab(page)
 
     @el.find(".sub-nav-#{page} button").on "click", (e) =>
-      @activatePage(page, e.target.name)
+      @routeTo(e.target.name)
 
-  activateFirstTab: (page) ->
-    firstSection = $(".sub-nav-#{page} button:nth-child(1)").attr('name')
-    @activateSection(page, firstSection)
+  activateFirstTab: ->
+    firstSection = $(".sub-nav-#{@page} button:nth-child(1)").attr('name')
+    @activateSection(firstSection)
 
-  showSection: (page, section) ->
-    @el.find(".sub-nav-#{page}-#{section}")
+  showSection: (section) ->
+    @el.find(".sub-nav-#{@page}-#{section}")
       .show()
       .siblings().hide()
 
-  activateSubNavLink: (page, section) ->
-    @el.find(".sub-nav-#{page} button[name=#{section}]")
+  activateSubNavLink: (section) ->
+    @el.find(".sub-nav-#{@page} button[name=#{section}]")
       .addClass("active")
       .siblings().removeClass("active")
 
-  activateMainNavLink: (page) ->
-    setTimeout => $("nav a[href$='#{page}']").addClass("active")
+  activateMainNavLink: ->
+    setTimeout => $("nav a[href$='#{@page}']").addClass("active")
 
-  activatePage: (page, section) =>
-    Route.navigate("/#{page}", section, false)
-    @activateMainNavLink(page)
-    @activateSection(page, section)
+  activateSection: (section) ->
+    @showSection(section)
+    @activateSubNavLink(section)
 
-  activateSection: (page, section) ->
-    @showSection(page, section)
-    @activateSubNavLink(page, section)
-
+  routeTo: (section) =>
+    Route.navigate("/#{@page}", section, false)
+    @activateMainNavLink(@page)
+    @activateSection(section)
 
 module?.exports = SubNav
