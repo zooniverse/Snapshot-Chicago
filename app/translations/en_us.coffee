@@ -593,6 +593,7 @@ module.exports =
     manMade: 'Man Made'
 
   profile:
+    header: "Your Profile"
     favorites: 'Favorites'
     recents: 'Recents'
     noFavorites: 'You have no favorites!'
