@@ -1,59 +1,52 @@
 <% translate = require 't7e' %>
 
-<nav>
-  <button name="turn-page" value="information"><i rel="globe"><%- translate 'span', 'about.sections.information' %></i></button>
-  <button name="turn-page" value="organizations"><i rel="home"><%- translate 'span', 'about.sections.organizations' %></i></button>
-  <button name="turn-page" value="teams"><i rel="users"><%- translate 'span', 'about.sections.teams' %></i></button>
-</nav>
+<div class='secondary-header'>
+  <h1>About</h1>
+</div>
 
-<section data-page="information">
-  <%- translate 'div', 'about.information.main', class: 'content column' %>
-  <%- translate 'div', 'about.information.sidebar', class: 'sidebar column' %>
-</section>
+<div class='secondary-bg'>
+  <div class='secondary-content'>
+    <nav class='sub-nav-about'>
+      <button name='info'><%- translate 'span', 'about.info.nav' %></button>
+      <button name='about'><%- translate 'span', 'about.about.nav' %></button>
+      <button name='organizations'><%- translate 'span', 'about.organizations.nav' %></button>
+      <button name='team'><%- translate 'span', 'about.team.nav' %></button>
+    </nav>
+  </div>
 
-<!-- TODO: The static properties here could ideally be translated somehow. -->
+  <div class='secondary-content'>
+    <div class='left-column'>
+      <div class='content sub-nav-about-info'>
+        <%- translate 'h1', 'about.info.header' %>
+        <%- translate 'p', 'about.info.p' %>
+      </div>
 
-<section data-page="organizations">
-  <%- translate 'h2', 'about.sections.organizations' %>
+      <div class='content sub-nav-about-about'>
+        <%- translate 'h1', 'about.about.header' %>
+        <%- translate 'p', 'about.about.p' %>
+      </div>
 
-  <% for organization in ['oxford', 'adler']: %>
-    <% staticProperties = translate "about.organizations.#{organization}" %>
-    <div class="member organization">
-      <img data-src="<%= staticProperties.image %>" />
-      <div class="description">
-        <h3><%- translate 'a', "about.organizations.#{organization}.name", href: staticProperties.url, target: '_blank' %></h3>
-        <%- translate 'p', "about.organizations.#{organization}.description" %>
+      <div class='content sub-nav-about-organizations'>
+        <%- translate 'h1', 'about.organizations.header' %>
+
+        <%- translate 'h2', 'about.organizations.adler.header' %>
+        <%- translate 'p', 'about.organizations.adler.p' %>
+
+        <%- translate 'h2', 'about.organizations.lincolnParkZoo.header' %>
+        <%- translate 'p', 'about.organizations.lincolnParkZoo.p' %>
+      </div>
+
+      <div class='content sub-nav-about-team'>
+        <%- translate 'h1', 'about.team.header' %>
       </div>
     </div>
-  <% end %>
-</section>
 
-<section data-page="teams">
-  <div class="science team column">
-    <h2><%- translate 'span', 'about.sections.scienceTeam' %></h2>
-    <% for member in ['magle']: %>
-      <% staticProperties = translate "about.teams.science.#{member}" %>
-      <div class="science team member">
-        <img data-src="<%= staticProperties.image %>" />
-        <div class="description">
-          <%- translate 'h3', "about.teams.science.#{member}.name" %>
-          <%- translate 'p', "about.teams.science.#{member}.description" %>
-        </div>
+    <div class='right-column'>
+      <div class='content'>
+        <%- translate 'h1', 'about.connect.header' %>
+        <a href='#/classify'><%- translate 'button', 'about.connect.action' %></a>
+        <%- translate 'p', 'about.connect.social' %>
       </div>
-    <% end %>
+    </div>
   </div>
-
-  <div class="development team column">
-    <h2><%- translate 'span', 'about.sections.developmentTeam' %></h2>
-    <% for member in ['borden', 'raden', 'lintott', 'vansingel', 'parrish', 'whyte']: %>
-      <% staticProperties = translate "about.teams.development.#{member}" %>
-      <div class="development team member">
-        <img data-src="<%= staticProperties.image %>" />
-        <div class="description">
-          <%- translate 'h3', "about.teams.development.#{member}.name" %>
-          <%- translate 'p', "about.teams.development.#{member}.description" %>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</section>
+</div>

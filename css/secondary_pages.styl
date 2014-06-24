@@ -1,0 +1,107 @@
+.secondary-header
+  margin 0 auto
+  max-width 1090px
+  height 150px
+  font-size 20px
+  color #fff
+  padding 0 5vw
+  h1
+    line-height 150px
+    font-size 40px
+
+.secondary-bg
+  background-color $white
+  padding 0 5vw 50px 5vw
+  min-height 730px
+  overflow auto
+  .secondary-content
+    margin 0 auto
+    max-width 1090px
+    color $medium-grey-font
+    span
+      pointer-events none
+    nav
+      margin-bottom 40px
+      button
+        height 60px
+        color $medium-grey-font
+        font-size 16px
+        font-weight 300
+        padding 0 10px
+        background-color transparent
+        transition background-color 0.2s
+        &.active
+          color #fff
+          background-color $red
+    h1
+      font-weight 300
+      font-size 36px
+      line-height 1.2em
+      margin-bottom 30px
+      a
+        font-size 30px
+        font-style normal
+        text-decoration none
+        &:hover
+          text-decoration underline
+    h2
+      margin 0 0 10px 0
+      font-size 20px
+      font-weight 300
+      color $medium-grey-font
+    p
+      line-height 1.5em
+      font-size 16px
+      font-weight 300
+      margin-bottom 20px
+    img
+      width 100%
+    .team-member
+      overflow auto
+      img
+        width 150px
+        height 150px
+        border-radius 5px
+        float left
+        vertical-align middle
+        margin 0 20px 20px 0
+      p
+        margin 0
+        max-width 500px
+        float left
+    a
+      text-decoration underline
+    .left-column, .right-column
+      float left
+    .left-column
+      width 66%
+      .content
+        padding-right 30px
+    .right-column
+      width 33%
+      color $medium-grey-font
+      button
+        width 100%
+        margin 20px 0
+        height 60px
+        font-size 14px
+        border-radius 5px
+        text-transform uppercase
+        font-weight 800
+        letter-spacing 2px
+        color #fff
+        text-align center
+        background-color $medium-blue
+        &:active
+          position relative
+          top 1px
+        &:hover
+          background-color lighten($medium-blue, 10%)
+
+@media screen and (max-width: 820px)
+  .secondary-bg
+    .secondary-content
+      .right-column, .left-column
+        width 100%
+        .content
+          padding 0

@@ -593,6 +593,7 @@ module.exports =
     manMade: 'Man Made'
 
   profile:
+    header: "Your Profile"
     favorites: 'Favorites'
     recents: 'Recents'
     noFavorites: 'You have no favorites!'
@@ -601,53 +602,48 @@ module.exports =
     loadMore: 'Load more'
 
   about:
-    sections:
-      information: 'Information'
-      organizations: 'Organizations'
-      teams: 'Teams'
-      scienceTeam: 'Science team'
-      developmentTeam: 'Development team'
-
-    information:
-      main: '''
-        <h2>Mainbar content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sagittis est, sit amet pellentesque enim. Mauris ut dictum est, ut consectetur arcu. Fusce convallis odio in feugiat malesuada. Nunc pharetra non massa a sagittis. Phasellus faucibus tempor lectus, malesuada pretium nibh tincidunt vel. Vestibulum eu nibh scelerisque, sagittis nisl sed, adipiscing ligula. Integer sagittis dui eros, eget vulputate neque feugiat tempor. Fusce pellentesque, diam ac sagittis bibendum, turpis leo vehicula erat, et condimentum orci nibh vitae est. Aliquam sit amet mi est. Suspendisse mattis enim non lectus auctor ullamcorper. Integer euismod pulvinar bibendum.</p>
-
-        <p>Cras ut libero vel sem iaculis fringilla non et mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam leo urna, commodo et eleifend id, vehicula eu metus. Vivamus aliquet placerat justo et adipiscing. Duis eget elit ac lorem fringilla tempus. Vivamus ut venenatis nisi. Aliquam at nunc mattis, aliquam neque nec, tempus turpis.</p>
-
-        <p>Nullam rutrum in purus quis porttitor. Nullam congue mi faucibus lorem egestas, a tempus est bibendum. Aenean elementum ligula sapien, eget tristique sem elementum eget. Vivamus urna odio, convallis ac faucibus at, adipiscing ac est. Vivamus mollis venenatis nisi, quis dictum lectus tempor et. Nulla fringilla aliquam volutpat. Morbi dignissim quam tristique ligula laoreet hendrerit. Proin ac cursus nulla. Sed molestie at odio vitae rhoncus. In hac habitasse platea dictumst.</p>
-
-
-      '''
-
-      sidebar: '''
-        <h3>Sidebar content</h3>
-      '''
-
+    info:
+      nav: "Info"
+      header: "What is Snapshot Chicago?"
+      p: """
+        Snapshot Chicago is a collaboration between two of Chicago’s venerated institutions, born of the desire to get everyone involved in the scientific process. 
+        The project aims to achieve a greater understanding of how our urban development affects local biodiversity.
+        Any can participate and help us learn about this great city we live in.
+      """
+    about:
+      nav: "About"
+      header: "About"
+      p: """
+        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. 
+        However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
+        <br><br>
+        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, 
+        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four 
+        times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+        <br><br>
+        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and 
+        ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
+      """
     organizations:
-      oxford:
-        name: 'University of Oxford'
-        url: 'http://www.ox.ac.uk/'
-        image: 'images/about/organizations/oxford.png'
-        description: '''
-          The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries.
-          Today, it combines research in the humanities with major effort in the natural sciences and medicine.
-          Citizen science is supported by the <a href="http://www.physics.ox.ac.uk/" target="_blank">Department of Physics</a>,
-          the <a href="http://www.mpls.ox.ac.uk/" target="_blank">Division of Mathematics, Physical and Life Sciences</a>,
-          and the <a href="http://www.oxfordmartin.ox.ac.uk/" target="_blank">Oxford Martin Schools</a>.
-        '''
-
+      nav: "Organizations"
+      header: "Organizations"
       adler:
-        name: 'Adler Planetarium'
-        url: 'http://www.adlerplanetarium.org/'
-        image: 'images/about/organizations/adler.jpg'
-        description: '''
-          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
-          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
+        header: "Adler Planetarium"
+        p: """
+          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler. 
+          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. 
           Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
-        '''
+        """
+      lincolnParkZoo:
+        header: "Lincoln Park Zoo"
+        p: """
+          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing 
+          the highest quality of animal care, education, science and conservation.
+        """
 
-    teams:
+    team:
+      nav: "Team"
+      header: "Team"
       science:
         magle:
           name: 'Seth Magle'
@@ -702,3 +698,9 @@ module.exports =
           description: '''
             Whyte bio
           '''
+    connect:
+      header: "Connect"
+      action: "Get Started"
+      social: """
+        Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
+      """
