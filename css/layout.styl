@@ -10,6 +10,7 @@ html {
     height: 100%;
     padding: 0;
     position: relative;
+    -webkit-font-smoothing: antialiased;
 
     > h1 {
       color: $white;
@@ -155,18 +156,20 @@ html {
   }
 
   .site-footer {
-    background-color: $medium-blue;
+    background-color: darken($medium-blue, 10%);
 
     .zooniverse-footer {
       color: white;
       margin: 0 auto;
+      padding: 50px 0 25px 0;
       max-width: 64em;
-
       .zooniverse-logo-container {
-        float: none;
-
+        display: block;
+        width: 100%;
+        text-align: center;
         .zooniverse-logo {
-          width: 100%;
+          width: 80px;
+          margin-bottom: 30px;
         }
       }
 
@@ -175,7 +178,11 @@ html {
         width: 100%;
       }
       .zooniverse-footer-heading {
+        wrap(720px)
         text-align: center;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-bottom: 20px;
       }
 
       .zooniverse-footer-projects a {
