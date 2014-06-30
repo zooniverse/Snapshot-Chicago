@@ -26,6 +26,6 @@ class Navigation extends Controller
     @navItems.slideToggle(200)
 
   onChangePage: =>
-    @navItems.slideUp() if window.innerWidth < 520
+    @navItems.slideUp(200) if window.innerWidth < 520
 
 module.exports = Navigation
