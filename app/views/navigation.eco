@@ -1,6 +1,7 @@
 <% translate = require 't7e' %>
 
 <ul>
+  <img id='hamburger-icon' src='./images/hamburger-icon.svg'>
   <a href="#/home" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
 
   <li><%- translate 'a', 'navigation.classify', href: '#/classify' %></li>
