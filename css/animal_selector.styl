@@ -1,4 +1,4 @@
-.animal-selector {
+.animal-selector
   background: $white;
   box-sizing: border-box;
   color: $black;
@@ -9,28 +9,27 @@
   transition: opacity 0.5s ease-in-out;
   width: 405px;
 
-  .general-filters {
+  .general-filters
     border-radius: 3px;
     box-sizing: border-box;
     height: 40px;
     position: relative;
     text-align: left;
 
-    .filter-menu {
+    .filter-menu
       font-size: 14px;
       line-height: 30px;
       position: absolute;
       z-index: 1;
       color: $dark-grey-font
 
-      button[name="characteristic"] {
+      button[name="characteristic"]
         position: relative;
 
-        &:hover {
+        &:hover
           box-shadow: 0 0 0 1px rgba($white, 0.5) inset;
-        }
 
-        &:after {
+        &:after
           border: 4px solid transparent;
           border-top-color: $dark-grey-font;
           content: "";
@@ -42,10 +41,8 @@
           right: -20px;
           top: 50%;
           width: 0;
-        }
-      }
 
-      .menu {
+      .menu
         border: 2px solid #ddd;
         border-radius: 5px;
         font-size: 12px;
@@ -55,59 +52,49 @@
         top: 100%;
         white-space: nowrap;
 
-        button {
+        button
           box-sizing: border-box;
           display: block;
           min-width: 100%;
           padding: 0 10px;
           background: $white;
 
-          &:not(:first-child) {
+          &:not(:first-child)
             border-top: 1px solid $gray;
-          }
 
           &:hover,
-          &.selected {
+          &.selected
             background: $medium-blue;
             color: $white;
-          }
 
-          img {
+          img
             display: none;
-          }
-        }
 
-        &.hidden {
+        &.hidden
           display: none;
-        }
-      }
 
-      &.open {
-        button[name="characteristic"] {
+      &.open
+        button[name="characteristic"]
           background: $white;
           color: $medium-blue;
           text-shadow: none;
-        }
-      }
-    }
 
-    .search {
+    .search
       $search-height = 30
       display: inline-block;
       float: right;
       margin: 5px 5px 0 0;
       position: relative;
 
-      i[rel="search"] {
+      i[rel="search"]
         font-size: 16px;
         left: 7px;
         position: absolute;
         top: 4px;
         color: #ddd;
         z-index: 1;
-      }
 
-      input[name="search"] {
+      input[name="search"]
         appearance: none;
         border: 2px solid #ddd;
         border-radius: 5px;
@@ -120,17 +107,14 @@
         margin-top: unit(-($search-height / 2), 'px');;
         width: 160px;
         outline: none;
-      }
-    }
-  }
 
-  .characteristic-filters {
+  .characteristic-filters
     clearfix();
     padding: 5px 0;
     margin-bottom: 5px;
     position: relative;
 
-    .filter-menu {
+    .filter-menu
       box-sizing: border-box;
       float: left;
       margin-left: 7px;
@@ -139,16 +123,14 @@
       text-align: center;
 
       [data-language="pl_pl"] &,
-      [data-language="fi_fi"] & {
+      [data-language="fi_fi"] &
         font-size: 13px;
         letter-spacing: -1px;
-      }
 
-      &:first-child {
+      &:first-child
         margin-left: 0;
-      }
 
-      button[name="characteristic"] {
+      button[name="characteristic"]
         @extend #standard-button;
         @extend .light-grey-btn;
         font-size: 12px;
@@ -160,9 +142,8 @@
         white-space: nowrap;
         float: none;
         width: 95%
-      }
 
-      .menu {
+      .menu
         background: $light-grey-bg;
         border-radius: 5px;
         bottom: 100%;
@@ -174,11 +155,10 @@
         width: 100%;
         z-index: 1;
 
-        &.hidden {
+        &.hidden
           display: none;
-        }
 
-        button[name="characteristic-value"] {
+        button[name="characteristic-value"]
           /*background: url("images/characteristics-values.png");*/
           float: left;
           height: 40px;
@@ -186,31 +166,56 @@
           position: relative;
           width: 40px;
 
-          &.selected {
+          &.selected
             border: 1px solid $gold;
             margin: 3px 0 0 4px;
-          }
-         
-          &[value="coatTanYellow"]           {background: url(images/characteristics-values/coatTanYellow.png)}
-          &[value="coatRedBrown"]            {background: url(images/characteristics-values/coatRedBrown.png)}
-          &[value="coatBrownBlack"]          {background: url(images/characteristics-values/coatBrownBlack.png)}
-          &[value="coatGrayBlack"]           {background: url(images/characteristics-values/coatGrayBlack.png)}
-          &[value="coatMottled"]             {background: url(images/characteristics-values/coatMottled.png)}
-          &[value="coatSolid"]               {background: url(images/characteristics-values/coatSolid.png)}
-          &[value="coatOrTailStriped"]       {background: url(images/characteristics-values/coatCoatOrTailStriped.png)}
 
-                  
-          &[value="tailBushy"]               {background: url(images/characteristics-values/tailBushy.png)}
-          &[value="tailSmooth"]              {background: url(images/characteristics-values/tailSmooth.png)}
-          &[value="tailLong"]                {background: url(images/characteristics-values/tailLong.png)}
+          &[value="coatTanYellow"]
+            background: url(images/characteristics-values/coatTanYellow.png)
 
-          &[value="buildStocky"]             {background: url(images/characteristics-values/buildStocky.png)}
-          &[value="buildTall"]               {background: url(images/characteristics-values/buildTall.png)}
-          &[value="buildLanky"]              {background: url(images/characteristics-values/buildLanky.png)}
-          &[value="buildSmall"]              {background: url(images/characteristics-values/buildSmall.png)}
-          &[value="buildLowSlung"]           {background: url(images/characteristics-values/buildLowSlung.png)}
+          &[value="coatRedBrown"]
+            background: url(images/characteristics-values/coatRedBrown.png)
 
-          .label {
+          &[value="coatBrownBlack"]
+            background: url(images/characteristics-values/coatBrownBlack.png)
+
+          &[value="coatGrayBlack"]
+            background: url(images/characteristics-values/coatGrayBlack.png)
+
+          &[value="coatMottled"]
+            background: url(images/characteristics-values/coatMottled.png)
+
+          &[value="coatSolid"]
+            background: url(images/characteristics-values/coatSolid.png)
+
+          &[value="coatOrTailStriped"]
+            background: url(images/characteristics-values/coatCoatOrTailStriped.png)
+
+          &[value="tailBushy"]
+            background: url(images/characteristics-values/tailBushy.png)
+
+          &[value="tailSmooth"]
+            background: url(images/characteristics-values/tailSmooth.png)
+
+          &[value="tailLong"]
+            background: url(images/characteristics-values/tailLong.png)
+
+          &[value="buildStocky"]
+            background: url(images/characteristics-values/buildStocky.png)
+
+          &[value="buildTall"]
+            background: url(images/characteristics-values/buildTall.png)
+
+          &[value="buildLanky"]
+            background: url(images/characteristics-values/buildLanky.png)
+
+          &[value="buildSmall"]
+            background: url(images/characteristics-values/buildSmall.png)
+
+          &[value="buildLowSlung"]
+            background: url(images/characteristics-values/buildLowSlung.png)
+
+          .label
             bottom: 100%;
             border-radius: 3px;
             color: $dark-grey-font;
@@ -224,23 +229,19 @@
             white-space: nowrap;
             z-index: 1;
 
-            &:after {
+            &:after
               border: 5px solid transparent;
               border-top-color: $gold;
               content: "";
               left: 5px;
               position: absolute;
               top: 100%;
-            }
-          }
 
-          &:hover .label {
+          &:hover .label
             display: block;
             background-color: $gold;
-          }
-        }
 
-        button[name="clear-characteristic"] {
+        button[name="clear-characteristic"]
           @extend #standard-button;
           color: $white;
           background-color: $red;
@@ -249,12 +250,9 @@
           margin: 10px;
           border-radius: 4px;
           text-align: center;
-        }
-      }
 
-      &.open button[name="characteristic"] {
-       
-        &:after {
+      &.open button[name="characteristic"]
+        &:after
           border: 6px solid transparent;
           border-bottom-color: lighten($green, 0.33);
           bottom: 100%;
@@ -264,24 +262,20 @@
           position: absolute;
           left: 50%;
           width: 0;
-        }
-      }
 
       &.in-use button[name="characteristic"] {
       }
-    }
-  }
 
-  .selection-area {
+  .selection-area
     border-radius: 3px;
 
-    .items {
+    .items
       clearfix();
       height: 345px;
       margin: 0 -1px;
       position: relative;
 
-      [data-animal] {
+      [data-animal]
         // border: 1px solid $green-dark;
         color: $dark-grey-font;
         box-sizing: border-box;
@@ -291,223 +285,190 @@
         opacity: 1;
         transition: opacity 0.25s ease-in-out;
 
-        [data-language="pl_pl"] & {
+        [data-language="pl_pl"] &
           font-size: 11px;
           letter-spacing: -1px;
-        }
 
-        [data-language="fi_fi"] & {
+        [data-language="fi_fi"] &
           font-size: 10px;
           letter-spacing: -1px
-        }
 
-        &:focus {
+        &:focus
           outline: none;
-        }
 
-        &.dimmed {
+        &.dimmed
           opacity: 0.33;
-        }
 
-        &.hidden {
+        &.hidden
           display: none;
-        }
 
-        .label {
+        .label
           display: inline-block;
-        }
 
-        &:hover {
-          .label {
+        &:hover
+          .label
             background: $medium-blue;
             color: #fff;
-          }
-        }
 
-        span {
+        span
           padding: 5px 5px 5px 10px;
           margin-left: -10px;
           border-radius: 14px;
-        }
-        
-      }
 
       // NOTE: I totally hate this.
-      [data-animal="beaver"] .image {
+      [data-animal="beaver"] .image
         @extend #thumb-for.beaver;
-      }
-      [data-animal="bike"] .image {
-        @extend #thumb-for.bike;
-      }
-      [data-animal="car"] .image {
-        @extend #thumb-for.car;
-      }
-      [data-animal="domCat"] .image {
-        @extend #thumb-for.domCat;
-      }
-      [data-animal="chipmunk"] .image {
-        @extend #thumb-for.chipmunk;
-      }
-      [data-animal="coyote"] .image {
-        @extend #thumb-for.coyote;
-      }
-      [data-animal="deer"] .image {
-        @extend #thumb-for.deer;
-      }
-      [data-animal="domDog"] .image {
-        @extend #thumb-for.domDog;
-      }
-      [data-animal="grayFox"] .image {
-        @extend #thumb-for.grayFox;
-      }
-      [data-animal="redFox"] .image {
-        @extend #thumb-for.redFox;
-      }
-      [data-animal="horse"] .image {
-        @extend #thumb-for.horse;
-      }
-      [data-animal="livestock"] .image {
-        @extend #thumb-for.livestock;
-      }
-      [data-animal="mink"] .image {
-        @extend #thumb-for.mink;
-      }
-      [data-animal="mouse"] .image {
-        @extend #thumb-for.mouse;
-      }
-      [data-animal="mower"] .image {
-        @extend #thumb-for.mower;
-      }
-      [data-animal="muskrat"] .image {
-        @extend #thumb-for.muskrat;
-      }
-      [data-animal="opossum"] .image {
-        @extend #thumb-for.opossum;
-      }
-      [data-animal="otherVehicle"] .image {
-        @extend #thumb-for.otherVehicle;
-      }
-      [data-animal="rabbit"] .image {
-        @extend #thumb-for.rabbit;
-      }
-      [data-animal="raccoon"] .image {
-        @extend #thumb-for.raccoon;
-      }
-      [data-animal="rat"] .image {
-        @extend #thumb-for.rat;
-      }
-      [data-animal="skunk"] .image {
-        @extend #thumb-for.skunk;
-      }
-      [data-animal="flyingSquirrel"] .image {
-        @extend #thumb-for.flyingSquirrel;
-      }
-      [data-animal="foxSquirrel"] .image {
-        @extend #thumb-for.foxSquirrel;
-      }
-      [data-animal="graySquirrel"] .image {
-        @extend #thumb-for.graySquirrel;
-      }
-      [data-animal="melanisticGraySquirrel"] .image {
-        @extend #thumb-for.melanisticGraySquirrel;
-      }
-      [data-animal="woodChuck"] .image {
-        @extend #thumb-for.woodChuck;
-      }
 
-      &[data-items="lots"] [data-animal] {
+      [data-animal="bike"] .image
+        @extend #thumb-for.bike;
+
+      [data-animal="car"] .image
+        @extend #thumb-for.car;
+
+      [data-animal="domCat"] .image
+        @extend #thumb-for.domCat;
+
+      [data-animal="chipmunk"] .image
+        @extend #thumb-for.chipmunk;
+
+      [data-animal="coyote"] .image
+        @extend #thumb-for.coyote;
+
+      [data-animal="deer"] .image
+        @extend #thumb-for.deer;
+
+      [data-animal="domDog"] .image
+        @extend #thumb-for.domDog;
+
+      [data-animal="grayFox"] .image
+        @extend #thumb-for.grayFox;
+
+      [data-animal="redFox"] .image
+        @extend #thumb-for.redFox;
+
+      [data-animal="horse"] .image
+        @extend #thumb-for.horse;
+
+      [data-animal="livestock"] .image
+        @extend #thumb-for.livestock;
+
+      [data-animal="mink"] .image
+        @extend #thumb-for.mink;
+
+      [data-animal="mouse"] .image
+        @extend #thumb-for.mouse;
+
+      [data-animal="mower"] .image
+        @extend #thumb-for.mower;
+
+      [data-animal="muskrat"] .image
+        @extend #thumb-for.muskrat;
+
+      [data-animal="opossum"] .image
+        @extend #thumb-for.opossum;
+
+      [data-animal="otherVehicle"] .image
+        @extend #thumb-for.otherVehicle;
+
+      [data-animal="rabbit"] .image
+        @extend #thumb-for.rabbit;
+
+      [data-animal="raccoon"] .image
+        @extend #thumb-for.raccoon;
+
+      [data-animal="rat"] .image
+        @extend #thumb-for.rat;
+
+      [data-animal="skunk"] .image
+        @extend #thumb-for.skunk;
+
+      [data-animal="flyingSquirrel"] .image
+        @extend #thumb-for.flyingSquirrel;
+
+      [data-animal="foxSquirrel"] .image
+        @extend #thumb-for.foxSquirrel;
+
+      [data-animal="graySquirrel"] .image
+        @extend #thumb-for.graySquirrel;
+
+      [data-animal="melanisticGraySquirrel"] .image
+        @extend #thumb-for.melanisticGraySquirrel;
+
+      [data-animal="woodChuck"] .image
+        @extend #thumb-for.woodChuck;
+
+      &[data-items="lots"] [data-animal]
         font-size: 12px;
         height: 10.25%;
         padding: 1px 0 0 3px;
         width: 33.33%;
 
-        .image {
+        .image
           display: none;
-        }
 
-        [data-language="fi_fi"] & {
+        [data-language="fi_fi"] &
           font-size: 10px;
-        }
-      }
-
-      &[data-items="20"] [data-animal] {
+      &[data-items="20"] [data-animal]
         height: 10%;
         padding-top: 7px;
         text-align: center;
         width: 50%;
 
-        .image {
+        .image
           display: none;
-        }
-      }
 
       &[data-items="10"] [data-animal],
-      &[data-items="5"] [data-animal] {
+      &[data-items="5"] [data-animal]
         clearfix();
         height: 20%;
         width: 50%;
 
-        .image {
+        .image
           float: left;
           height: 68px;
           overflow: hidden;
           width: 68px;
-        }
 
-        .label {
+        .label
           /* float: left; breaks long names */
           word-wrap: break-word
           margin: 20px 0 0 10px;
-        }
-      }
 
-      &[data-items="10"] [data-animal] .label {
+      &[data-items="10"] [data-animal] .label
         max-width: 100px;
-      }
 
-      &[data-items="5"] [data-animal] {
+      &[data-items="5"] [data-animal]
         width: 100%;
 
-        .label {
+        .label
           margin-top: 25px;
           font-size: 14px;
-        }
-      }
 
-      .none {
+      .none
         display: none;
         font-size: 12px;
         margin-top: 125px;
         text-align: center;
 
-        button[name="clear-filters"] {
+        button[name="clear-filters"]
           text-decoration: underline;
-        }
-      }
 
-      &[data-items="0"] .none {
+      &[data-items="0"] .none
         display: block;
-      }
-    }
-  }
 
-  .aux {
+  .aux
     color: $dark-grey-font;
     font-size: 12px;
     left: 0;
     margin: 10px 0;
     text-align: right;
 
-    button {
+    button
       font-weight: 300;
       margin: 0 10px;
       text-align: right;
       text-shadow: 0 1px 0 rgba($white, 0.25);
-    }
-  }
 
-  .finished + & {
+  .finished + &
     opacity: 0.75;
     pointer-events: none;
-  }
-}

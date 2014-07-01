@@ -1,18 +1,17 @@
-.subject-viewer {
+.subject-viewer
   display: inline-block;
   float: left;
   -webkit-tap-highlight-color: transparent;
 
-  &:focus {
+  &:focus
     // For now, so Miller doesn't kill me.
     // TODO: Make it clear that this is in focus.
     outline: 0;
-  }
 
-  .images {
+  .images
     position: relative;
 
-    .subject-image {
+    .subject-image
       border: 5px solid $white;
       box-sizing: border-box;
       left: 0;
@@ -21,13 +20,11 @@
       top: 0;
       width: 580px;
 
-      img {
+      img
         display: block;
         width: 100%;
-      }
-    }
 
-    .annotations {
+    .annotations
       color: $white;
       font-size: 12px;
       font-weight: 300;
@@ -37,7 +34,7 @@
       z-index: 1;
       overflow: auto;
 
-      .annotation-item {
+      .annotation-item
         transition: background 0.2s;
         border-radius: 20px;
         display: inline-block;
@@ -46,30 +43,24 @@
         background: $medium-blue;
         padding: 1px 5px 1px 10px;
 
-        &.new {
+        &.new
           background: $gold;
-        }
 
-        &:hover {
+        &:hover
           transition: none;
           background: $red;
           cursor: default;
-        }
 
-        button[name="delete"] {
+        button[name="delete"]
           border-radius: 50%;
           height: 1em;
           line-height: 1em;
           text-align: center;
           width: 1em;
-          &:hover {
+          &:hover
             cursor: pointer;
-          }
-        }
-      }
-    }
 
-    .extra-message {
+    .extra-message
       background: rgba($black, 0.75);
       bottom: 5px;
       color: $white;
@@ -83,10 +74,9 @@
       text-align: center;
       text-shadow: 0 1px 1px $black;
       z-index: 1;
-    }
 
     .sign-in,
-    .favorite {
+    .favorite
       background: $light-blue;
       color: $red;
       font-size: 12px;
@@ -95,82 +85,66 @@
       transition: padding 0.25s ease-out;
       z-index: 1;
 
-      > button {
+      > button
         position: relative;
         z-index: 1;
-      }
-    }
 
-    .favorite {
+    .favorite
       font-size: 16px;
       padding: 5px 5px 0;
       right: 20px;
       top: -3px;
 
-      &:hover {
+      &:hover
         padding-top: 10px;
-      }
 
       &:before,
-      &:after {
+      &:after
         border: 15px solid transparent;
         content: "";
         position: absolute;
         bottom: -15px;
-      }
 
-      &:before {
+      &:before
         border-left-color: $light-blue;
         left: 0;
-      }
 
-      &:after {
+      &:after
         border-right-color: $light-blue;
         right: 0;
-      }
 
-      button[name="favorite"] {
-        &.favorited {
+      button[name="favorite"]
+        &.favorited
           color: $red
-        }
-      }
-    }
-  }
 
   .controls,
-  .followup {
+  .followup
     color: darken($brown, 67%);
     font-size: 14px;
     margin: 15px 0 4px;
     overflow: auto;
     position: relative;
     text-shadow: 0 1px 0 rgba($white, 0.25);
-  }
 
-  .controls {
-
-    .finished {
+  .controls
+    .finished
       float: right;
 
-      .nothing-label {
+      .nothing-label
         cursor: pointer;
         display: none;
         font-size: 12px;
         font-weight: bold;
         color: $dark-grey-font;
         margin-right: 10px;
-      }
 
-      button {
+      button
         @extend .classifier-action-button
-      }
-    }
-  }
 
-  .followup {
+  .followup
     display: none;
 
-    button[name="not-done"] {
+    button[name="not-done"]
       background: rgba($black, 0.5);
       border-radius: 15px;
       color: $white;
@@ -178,19 +152,17 @@
       margin-right: 10px;
       padding: 0 10px;
       text-shadow: none;
-    }
 
-    .group {
+    .group
       display: inline-block;
       margin: 0 5px;
       position: relative;
 
-      &.continue {
+      &.continue
         float: right;
-      }
 
       a,
-      button {
+      button
         @extend #standard-button;
         padding-left: 32px;
         padding-right 10px;
@@ -199,64 +171,46 @@
         font-size: 12px;
         line-height: 25px;
         border-radius: 4px;
-        i {
+        i
           left: 0;
           height: 25px;
           line-height: 25px;
           position: absolute;
           top: 3px;
           width: 30px;
-        }
-      }
 
-      button[name="next"] {
+      button[name="next"]
         color: $white;
         background: $medium-blue
         padding: 3px 10px 3px 32px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        &:active {
+        &:active
           background: lighten($medium-blue, 5%);
-        }
-      }
-    }
-  }
 
-  &.zoomed .images figure {
+  &.zoomed .images figure
     cursor: -moz-grab;
 
-    img {
+    img
       position: absolute;
       width: 1200px;
-    }
-  }
 
-  &.dragging .images figure {
+  &.dragging .images figure
     cursor: -moz-grabbing;
-  }
 
-  &.no-annotations .controls .finished .nothing-label {
+  &.no-annotations .controls .finished .nothing-label
     display: inline-block;
-  }
 
-  &.finished {
-    .images .extra-message {
+  &.finished
+    .images .extra-message
       display: block;
-    }
 
-    .controls {
+    .controls
       display: none;
-    }
 
-    .followup {
+    .followup
       display: block;
-    }
-  }
-}
 
-.signed-in .subject-viewer .images {
- 
-  .favorite {
+.signed-in .subject-viewer .images
+  .favorite
     display: inline;
-  }
-}
