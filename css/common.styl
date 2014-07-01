@@ -7,32 +7,24 @@ $dark-grey-font = #505050;
 $medium-grey-font = #777777
 $light-grey-bg = #eaeaea;
 
-
 $subject-width = 580
 /* above are in line with LPZ mockup */
 
 $black = #140b03;
-
-
 $blue =  #00688B;
-
-
 $red-dark = #7c011c;
 
 $green = #525b46;
 $green-light = #85937a;
 $green-dark = #2b2e27;
-
 $green-really = #490; // TODO
 
 $gray = #dcdcdc;
-
 $brown = #813e1e;
-
 $gold = #fc0; // TODO
 
-#paper-stripe {
-  &:before {
+#paper-stripe
+  &:before
     border: 1px solid $gray;
     border-width: 1px 0;
     content: " ";
@@ -41,10 +33,8 @@ $gold = #fc0; // TODO
     position: absolute
     top: 10px;
     width: 100%;
-  }
-}
 
-#standard-button {
+#standard-button
   background: $green-dark;
   border-radius: 2px;
   box-sizing: border-box;
@@ -57,21 +47,21 @@ $gold = #fc0; // TODO
   text-decoration: none;
   vertical-align: middle;
 
-  &:hover {
+  &:hover
     border-color: $black;
-  }
 
-  &:active {
+  &:active
     opacity: 0.75;
-  }
 
   &:disabled,
-  &.disabled {
+  &.disabled
     opacity: 0.5;
-  }
-}
 
-.classifier-action-button {
+wrap(sectionWidth)
+  max-width sectionWidth
+  margin 0 auto
+
+.classifier-action-button
   @extend #standard-button
   line-height: 12px;
   height: 30px;
@@ -83,15 +73,13 @@ $gold = #fc0; // TODO
   width: 120px;
   background: $medium-blue;
   text-transform: uppercase;
-}
 
-.light-grey-btn {
+.light-grey-btn
   color: $dark-grey-font;
   background-color: $light-grey-bg;
-}
 
-outer-deboss($distance) {
-  &:before {
+outer-deboss($distance)
+  &:before
     background: rgba($black, 0.25);
     border-radius: $distance;
     box-shadow: 0 1px 2px rgba($black, 0.5) inset, 0 -1px 0px rgba($white, 0.25) inset;
@@ -103,17 +91,15 @@ outer-deboss($distance) {
     top: 0 - $distance;
     width: 100%;
     z-index: -1;
-  }
-}
 
-#standard-toggle {
+#standard-toggle
   color: transparent;
   height: 20px;
   position: relative;
   text-shadow: none;
   width: 20px;
 
-  &:before {
+  &:before
     background: $light-grey-bg
     border-radius: 50%;
     content: ' ';
@@ -123,9 +109,8 @@ outer-deboss($distance) {
     position: absolute;
     top: 50%;
     width: 10px;
-  }
 
-  &.active:after {
+  &.active:after
     background: $medium-blue;
     border-radius: 50%;
     content: ' ';
@@ -135,5 +120,3 @@ outer-deboss($distance) {
     position: absolute;
     top: 50%;
     width: 10px;
-  }
-}

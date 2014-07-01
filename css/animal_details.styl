@@ -1,4 +1,4 @@
-.animal-details {
+.animal-details
   background: $white;
   border-radius: 4px;
   border-width: 75px 5px 5px;
@@ -19,152 +19,124 @@
   z-index: 1;
   color: $dark-grey-font;
 
-
-  &:focus {
+  &:focus
     outline: none;
-  }
 
-  &.hidden {
+  &.hidden
     transform: scale(0.95);
     opacity: 0;
-  }
 
-  .image-changer {
+  .image-changer
     position: relative;
 
-    .images {
+    .images
       border-bottom: 1px solid $light-grey-bg;
       box-shadow: 0px 1px 1px -1px rgba($white, 0.5);
       overflow: hidden;
       position: relative;
 
-      figure {
+      figure
         height: 200px;
         margin: 0;
         left: 0;
         position: absolute;
         top: 0;
 
-        &.active {
+        &.active
           position: relative;
           z-index: 1;
-        }
 
-        img {
+        img
           max-width: 100%;
-        }
-      }
-    }
 
-    .toggles {
+    .toggles
       text-align: center;
       z-index: 1;
 
-      button[name="toggle"] {
+      button[name="toggle"]
         @extend #standard-toggle;
-      }
-    }
-  }
 
-  .image-changer-shortcuts {
+  .image-changer-shortcuts
     height: 0;
     left: 0;
     position: absolute;
     top: 0;
     width: 0;
     overflow: hidden;
-  }
 
-  .content {
+  .content
     height: 120px;
     overflow: auto;
 
-    p.label {
+    p.label
       font-size: 16px;
       margin: 10px 0 -10px;
-    }
 
-    button[name="confusion"] {
+    button[name="confusion"]
       @extends #standard-button;
       color: $dark-grey-font;
       background-color: $light-grey-bg;
       border-radius: 10px;
       padding: 0 5px;
-    }
-  }
 
-  .options {
+  .options
     left: 0;
     position: absolute;
     width: 100%;
 
-    .group {
+    .group
       padding: 5px;
 
-      .title {
+      .title
         display: inline-block;
         width: 6em;
 
         [data-language="pl_pl"] &,
-        [data-language="fi_fi"] & {
+        [data-language="fi_fi"] &
           letter-spacing: -1px;
-        }
-      }
 
       &.count,
-      &.behavior {
+      &.behavior
         clearfix();
 
-        label {
+        label
           cursor: pointer;
 
-          > input {
+          > input
             opacity: 0.01;
             position: absolute;
-          }
 
-          > .label {
+          > .label
             @extend #standard-button;
             @extend .light-grey-btn;
             padding: 2px 5px;
-          }
 
-          > input:checked + .label {
+          > input:checked + .label
             background: $medium-blue;
             color: $white;
-          }
-        }
-      }
-    }
-  }
 
-  .action {
+  .action
     bottom: 0;
     font-weight: bold;
     padding: 2px;
     position: absolute;
     right: 0;
 
-    button {
+    button
       @extend .classifier-action-button;
 
-      &[name="cancel"] {
+      &[name="cancel"]
         color: $white;
         background: $red;
         text-transform: none;
         width: 70px;
         letter-spacing: 0px;
-      }
 
-      &[name="identify"] {
+      &[name="identify"]
         color: $white;
         background: $medium-blue;
-      }
-    }
-  }
-}
 
-.confusion-popup {
+.confusion-popup
   clearfix();
   background: $gold;
   border: 2px solid $gold;
@@ -176,7 +148,7 @@
   position: absolute;
   z-index: 1;
 
-  &:after {
+  &:after
     border: 10px solid transparent;
     border-top-color: $gold;
     content: "";
@@ -184,122 +156,113 @@
     margin-left: -10px;
     position: absolute;
     top: 100%;
-  }
 
-  button[name="close"] {
+  button[name="close"]
     height: 1em;
     position: absolute;
     right: 0;
     top: 0;
     width: 1em;
-  }
 
-  .image {
+  .image
     margin-right: 10px;
     height: 68px;
     float: left;
     width: 68px;
-  }
 
-  &.beaver .image {
+  &.beaver .image
     @extend #thumb-for.beaver;
-  }
-  &.bike .image {
-    @extend #thumb-for.bike;
-  }
-  &.car .image {
-    @extend #thumb-for.car;
-  }
-  &.domCat .image {
-    @extend #thumb-for.domCat;
-  }
-  &.chipmunk .image {
-    @extend #thumb-for.chipmunk;
-  }
-  &.coyote .image {
-    @extend #thumb-for.coyote;
-  }
-  &.deer .image {
-    @extend #thumb-for.deer;
-  }
-  &.domDog .image {
-    @extend #thumb-for.domDog;
-  }
-  &.grayFox .image {
-    @extend #thumb-for.grayFox;
-  }
-  &.redFox .image {
-    @extend #thumb-for.redFox;
-  }
-  &.horse .image {
-    @extend #thumb-for.horse;
-  }
-  &.livestock .image {
-    @extend #thumb-for.livestock;
-  }
-  &.mink .image {
-    @extend #thumb-for.mink;
-  }
-  &.mouse .image {
-    @extend #thumb-for.mouse;
-  }
-  &.mower .image {
-    @extend #thumb-for.mower;
-  }
-  &.muskrat .image {
-    @extend #thumb-for.muskrat;
-  }
-  &.opossum .image {
-    @extend #thumb-for.opossum;
-  }
-  &.otherVehicle .image {
-    @extend #thumb-for.otherVehicle;
-  }
-  &.rabbit .image {
-    @extend #thumb-for.rabbit;
-  }
-  &.raccoon .image {
-    @extend #thumb-for.raccoon;
-  }
-  &.rat .image {
-    @extend #thumb-for.rat;
-  }
-  &.skunk .image {
-    @extend #thumb-for.skunk;
-  }
-  &.flyingSquirrel .image {
-    @extend #thumb-for.flyingSquirrel;
-  }
-  &.foxSquirrel .image {
-    @extend #thumb-for.foxSquirrel;
-  }
-  &.graySquirrel .image {
-    @extend #thumb-for.graySquirrel;
-  }
-  &.melanisticGraySquirrel .image {
-    @extend #thumb-for.melanisticGraySquirrel;
-  }
-  &.woodChuck .image {
-    @extend #thumb-for.woodChuck;
-  }
 
-  .description {
+  &.bike .image
+    @extend #thumb-for.bike;
+
+  &.car .image
+    @extend #thumb-for.car;
+
+  &.domCat .image
+    @extend #thumb-for.domCat;
+
+  &.chipmunk .image
+    @extend #thumb-for.chipmunk;
+
+  &.coyote .image
+    @extend #thumb-for.coyote;
+
+  &.deer .image
+    @extend #thumb-for.deer;
+
+  &.domDog .image
+    @extend #thumb-for.domDog;
+
+  &.grayFox .image
+    @extend #thumb-for.grayFox;
+
+  &.redFox .image
+    @extend #thumb-for.redFox;
+
+  &.horse .image
+    @extend #thumb-for.horse;
+
+  &.livestock .image
+    @extend #thumb-for.livestock;
+
+  &.mink .image
+    @extend #thumb-for.mink;
+
+  &.mouse .image
+    @extend #thumb-for.mouse;
+
+  &.mower .image
+    @extend #thumb-for.mower;
+
+  &.muskrat .image
+    @extend #thumb-for.muskrat;
+
+  &.opossum .image
+    @extend #thumb-for.opossum;
+
+  &.otherVehicle .image
+    @extend #thumb-for.otherVehicle;
+
+  &.rabbit .image
+    @extend #thumb-for.rabbit;
+
+  &.raccoon .image
+    @extend #thumb-for.raccoon;
+
+  &.rat .image
+    @extend #thumb-for.rat;
+
+  &.skunk .image
+    @extend #thumb-for.skunk;
+
+  &.flyingSquirrel .image
+    @extend #thumb-for.flyingSquirrel;
+
+  &.foxSquirrel .image
+    @extend #thumb-for.foxSquirrel;
+
+  &.graySquirrel .image
+    @extend #thumb-for.graySquirrel;
+
+  &.melanisticGraySquirrel .image
+    @extend #thumb-for.melanisticGraySquirrel;
+
+  &.woodChuck .image
+    @extend #thumb-for.woodChuck;
+
+  .description
     float: left;
     max-width: 300px;
 
-    p {
+    p
       margin: 0;
 
-      &.label {
+      &.label
         font-size: 16px;
         font-weight: bold;
-      }
-    }
-  }
 
-  .rump {
+  .rump
     display: inline-block;
     margin: 0;
     text-align: center;
-  }
-}

@@ -1,12 +1,11 @@
-@font-face {
+@font-face
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
   src: url("fonts/icons.eot");
   src: url("fonts/icons.eot?#iefix") format('embedded-opentype'), url("fonts/icons.woff") format('woff'), url("fonts/icons.ttf") format('truetype'), url("fonts/icons.svg#icons") format('svg');
-}
 
-i {
+i
   display: inline-block;
   font-size: 1em
   height: 1em;
@@ -17,7 +16,7 @@ i {
   white-space: nowrap;
   width: 1em;
 
-  &:before {
+  &:before
     font-family: icons;
     font-style: normal;
     font-weight: normal;
@@ -29,7 +28,6 @@ i {
     text-indent: 0;
     top: 0;
     width: 100%;
-  }
 
   &[rel="home"]:before { content: '\2302'; } /* '⌂' */
   &[rel="pause"]:before { content: '\2389'; } /* '⎉' */
@@ -50,4 +48,3 @@ i {
   &[rel="pin"]:before { content: '📌'; } /* '\1f4cc' */
   &[rel="camera"]:before { content: '📷'; } /* '\1f4f7' */
   &[rel="search"]:before { content: '🔍'; } /* '\1f50d' */
-}

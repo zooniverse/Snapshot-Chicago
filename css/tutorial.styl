@@ -1,4 +1,4 @@
-.tutorial.zootorial-dialog {
+.tutorial.zootorial-dialog
   background: $white;
   border-radius: 5px;
   box-shadow: 0 0 0 5px rgba($black, 0.5);
@@ -9,7 +9,7 @@
   position: absolute;
   transition: left 0.25s ease-out, top 0.25s ease-out 0.125s;
 
-  button[name="close"] {
+  button[name="close"]
     font-size: 18px;
     height: 1em;
     line-height: 1em;
@@ -18,109 +18,87 @@
     text-align: center;
     top: 0;
     width: 1em;
-  }
 
-  > .header {
+  > .header
     font-size: 18px;
     font-weight: bold;
-  }
 
-  > .footer {
+  > .footer
     margin: 1em;
     text-align: center;
 
-    button {
+    button
       @extend #standard-button;
       background: $green-really;
-    }
-  }
 
-  &.arrow {
+  &.arrow
     $arrow-size = 10px;
 
     &:before,
-    &:after {
+    &:after
       border: $arrow-size solid transparent;
       content: "";
       position: absolute;
-    }
 
-    &:before {
+    &:before
       border-width: $arrow-size + 2
-    }
 
-    &.up {
+    &.up
       &:before,
-      &:after {
+      &:after
         bottom: 100%;
         border-bottom-color: $white;
         border-top-width: 0;
         left: 50%;
         margin-left: $arrow-size * -1;
-      }
 
-      &:before {
+      &:before
         border-bottom-color: rgba($black, 0.5);
         margin-left: ($arrow-size * -1) - 2;
-      }
-    }
 
-    &.right {
+    &.right
       &:before,
-      &:after {
+      &:after
         border-left-color: $white
         border-right-width: 0;
         left: 100%;
         margin-top: $arrow-size * -1;
         top: 50%
-      }
 
-      &:before {
+      &:before
         border-left-color: rgba($black, 0.5);
         margin-top: ($arrow-size * -1) - 2;
-      }
-    }
 
-    &.down {
+    &.down
       &:before,
-      &:after {
+      &:after
         border-top-color: $white;
         border-bottom-width: 0;
         left: 50%;
         margin-left: $arrow-size * -1;
         top: 100%;
-      }
 
-      &:before {
+      &:before
         border-top-color: rgba($black, 0.5);
         margin-left: ($arrow-size * -1) - 2;
-      }
-    }
 
-    &.left {
+    &.left
       &:before,
-      &:after {
+      &:after
         border-right-color: $white;
         margin-top: $arrow-size * -1;
         border-left-width: 0;
         right: 100%;
         top: 50%;
-      }
 
-      &:before {
+      &:before
         border-right-color: rgba($black, 0.5);
         margin-top: ($arrow-size * -1) - 2;
-      }
-    }
-  }
-}
 
-.zootorial-focuser {
+.zootorial-focuser
   background: $black;
   opacity: 0.75;
   transition: opacity 0.25s ease-in-out;
 
-  &.hidden {
+  &.hidden
     opacity: 0;
-  }
-}

@@ -1,27 +1,26 @@
-.home-page {
+.home-page
   clearfix();
   color: $white;
   font-size: 14px;
   margin: 0 auto;
   padding: 0;
 
-  .home-section {
+  .home-section
     overflow: auto;
     width: 50%;
     min-height: 500px;
     position: relative;
 
-    .content {
+    .content
       padding: 130px 100px 0 100px;
       font-weight: 300;
-      p {
+      p
         line-height: 1.5em;
         margin: 0 auto 20px auto;
-      }
-      .action {
+      .action
         margin-top: 25px;
 
-        a {
+        a
           @extend #standard-button;
           height: 60px;
           line-height: 60px;
@@ -32,111 +31,103 @@
           background: $medium-blue;
           color: $white;
           padding: 0px 50px;
-        }
-      }
-    }
 
-    &.left {
+    &.left
       background: url("./images/chi-img.jpg");
       float: left;
-      .content {
-        h1 {
+      .content
+        h1
           font-size: 60px;
           line-height: 60px;
           margin: 0 auto 20px auto;
           font-weight: 300;
-        }
-      }
-    }
 
-    &.right {
+    &.right
       float: right;
       color: #50504e;
       background-color: $light-blue;
-      .content {
-        h2 {
+      .content
+        h2
           color: #fff;
           font-weight: 300;
           font-size: 16px;
           margin: 0 auto 20px auto;
-        }
-      }
-    }
-  }
 
-  .snapshot-chicago-stats {
+  .snapshot-chicago-stats
     background: url("./images/stats-skyline.png") no-repeat 50%;
     background-color: $white;
     display: block;
     width: 100%;
     overflow: auto;
     float: left;
-    .content {
-      width: 960px;
+    .content
+      wrap(960px)
       overflow: auto;
-      margin: 0 auto;
       padding: 30px 0;
       text-align: center;
-      h1 {
+      h1
         color: #a8a8a8;
         font-weight: 100;
         letter-spacing: 2px;
         font-size: 14px;
-      }
-      .quarter {
+      .quarter
         float: left;
         width: 25%;
-        h2 {
+        h2
           color: $medium-blue
           margin: 10px auto;
           font-size: 40px;
           font-weight: 300;
-        }
-        p {
+        p
           color: $dark-grey-font;
           font-size: 16px;
           font-weight: 300;
           letter-spacing: 2px;
-        }
-      }
-    }
-  }
 
-  @media screen and (max-width: 1100px) {
-    .home-section {
-      width: 100%;
-      .content {
-        text-align: center;
-      }
-    }
-
-    .snapshot-chicago-stats {
-      .content {
-        width: 100%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 540px) {
-    .home-section {
-      width: 100%;
-      .content {
-        padding: 130px 10px 0 10px;
-      }
-    }
-
-    .snapshot-chicago-stats {
-      .content {
-        .quarter {
+  .home-pre-footer
+    background-color: $medium-blue;
+    overflow: auto;
+    float: left;
+    padding: 60px 0;
+    width: 100%;
+    text-align: center;
+    .content
+      overflow: auto;
+      .third
+        width: 33%;
+        vertical-align: middle;
+        display: inline-block;
+        margin 20px auto;
+        @media screen and (max-width: 820px)
           width: 100%;
-        }
-      }
-    }
-  }
+    p
+      max-width: 720px;
+      margin: 60px auto 0 auto;
+      display: block;
+      font-size: 16px;
+      line-height: 1.5em;
 
+  @media screen and (max-width: 1100px)
+    .home-section
+      width: 100%;
+      .content
+        text-align: center;
 
+    .snapshot-chicago-stats
+      .content
+        width: 100%;
 
-// TODO:LPZ: delete everything below this line?
+  @media screen and (max-width: 540px)
+    .home-section
+      width: 100%;
+      .content
+        padding: 130px 10px 0 10px;
+
+    .snapshot-chicago-stats
+      .content .quarter
+        width: 100%;
+
+  // TODO:LPZ: delete everything below this line?
   .recents {
     float: left;
     position: relative
@@ -256,6 +247,5 @@
       text-shadow: none;
     }
   }
-}
 
 @import "./home_page_banners"

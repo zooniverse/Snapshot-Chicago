@@ -1,17 +1,18 @@
-html {
+html
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   min-height: 100%;
   overflow-y: scroll;
 
-  body {
+  body
     background-color: $light-blue;
     margin: 0;
     height: 100%;
     padding: 0;
     position: relative;
+    -webkit-font-smoothing: antialiased;
 
-    > h1 {
+    > h1
       color: $white;
       font: normal 30px Georgia, serif;
       letter-spacing: 10px
@@ -22,17 +23,14 @@ html {
       text-transform: uppercase;
       z-index: 1;
 
-      a {
+      a
         color: inherit;
         text-decoration: none;
 
-        img {
+        img
           border: 0;
-        }
-      }
-    }
 
-    > nav {
+    > nav
       background: white;
       bottom: 0;
       font-size: 14px;
@@ -42,42 +40,45 @@ html {
       overflow: hidden;
       z-index: 3;
       position: relative;
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 1100px)
         padding: 35px 0;
         text-align: center;
-        #site-title {
+        #site-title
           margin: 40px 0 10px 20px;
           display: block;
-        }
-      }
 
-      #site-title {
+      #site-title
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 18px;
         margin-right: 25px;
-        span {
-          &:nth-child(1) {
+        span
+          &:nth-child(1)
             color: $dark-blue;
             font-weight: 400;
-          }
-          &:nth-child(2) {
+          &:nth-child(2)
             color: $red;
             font-weight: 700;
-          }
-        }
-      }
 
-      ul {
+      ul
         margin: 0;
         padding: 0;
-
-        li {
+        img
+          width: 22px;
+          position: absolute;
+          left: 10px;
           display: inline-block;
+          margin: -20px; // increase hamburger icon
+          padding: 20px; // target size for touch screens
+          cursor: pointer;
+          @media screen and (min-width: 520px)
+            display: none;
+
+        li
           width: 90px;
           margin-right: 5px;
-          a {
+          a
             border: 2px solid transparent;
             border-radius: 125px;
             color: $medium-blue;
@@ -88,74 +89,81 @@ html {
             text-decoration: none;
             width: 100%;
             &:hover,
-            &.active {
+            &.active
               border-color: $light-blue
-            }
-          }
-        }
-      }
-    }
+          @media screen and (max-width: 520px)
+            display: none;
+            width: 100%;
+            height: 40px;
+            a
+              &.active, &:hover
+                border-radius: 0;
+                background-color: $light-blue;
+          @media screen and (min-width: 521px)
+            display: inline-block !important
 
-    .before-load {
+    .before-load
       color: $white;
       font-size: 12px;
       font-weight: bold;
       text-align: center;
       text-shadow: 0 1px 1px $black
-    }
 
-    .main {
+    .main
       z-index: 1;
       height 100%
 
-      > * {
+      > *
         display: none;
 
-        &.active {
+        &.active
           display: block;
-        }
-      }
 
-      a {
+      a
         color: inherit;
-      }
 
-      hr {
+      hr
         height: 0;
         border: 1px solid transparent;
         border-top-color: rgba($black, 0.5);
         border-bottom-color: rgba($white, 0.25);
-      }
-    }
-  }
 
-  .site-footer {
-    background-color: $medium-blue;
+  .site-footer
+    background-color: darken($medium-blue, 10%);
 
-    .zooniverse-footer {
+    .zooniverse-footer
       color: white;
       margin: 0 auto;
+      padding: 50px 0 25px 0;
       max-width: 64em;
+      .zooniverse-logo-container
+        display: block;
+        width: 100%;
+        text-align: center;
+        .zooniverse-logo
+          width: 90px;
+          margin-bottom: 30px;
 
-      .zooniverse-logo-container {
-        float: none;
-
-        .zooniverse-logo {
-          width: 100%;
-        }
-      }
-
-      .zooniverse-footer-content {
+      .zooniverse-footer-content
         float: none;
         width: 100%;
-      }
-      .zooniverse-footer-heading {
-        text-align: center;
-      }
 
-      .zooniverse-footer-projects a {
+      .zooniverse-footer-heading
+        wrap(720px);
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+
+      .zooniverse-footer-projects a
         color: #ddd;
-      }
-    }
-  }
-}
+
+      .zooniverse-footer-category
+        @media screen and (max-width: 1020px)
+          width: 50%;
+          text-align: center;
+          margin-bottom: 20px;
+          .zooniverse-footer-category-title
+            margin-bottom: 5px;
+        @media screen and (max-width: 520px)
+          width: 100%;

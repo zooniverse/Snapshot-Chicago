@@ -1,22 +1,19 @@
-.profile {
-  .zooniverse-profile {
+.profile
+  .zooniverse-profile
     color: $medium-grey-font;
     background-color: $white;
     padding: 0 5vw;
     min-height: 400px;
-    .loader {
+    .loader
       z-index: 100;
       top: 70px;
-    }
-  }
 
-  nav, .favorites, .favorites-empty, .recents, .recents-empty {
+  nav, .favorites, .favorites-empty, .recents, .recents-empty
     max-width: 1090px;
     margin: 0 auto;
-  }
 
-  nav {
-    button[name='turn-page'] {
+  nav
+    button[name='turn-page']
       color $medium-grey-font;
       background-color $white;
       font-weight: 300;
@@ -26,21 +23,17 @@
       text-decoration: none;
       box-shadow: none;
       text-shadow: none;
-      &.active {
+      &.active
         color: $white;
         background-color: $red;
-      }
-    }
-  }
 
-  .sign-in-form {
+  .sign-in-form
     padding: 25px
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px)
       width 80%;
-    }
-    .action {
+    .action
       margin-top: 0px;
-      button[type='submit'] {
+      button[type='submit']
         @extend #standard-button
         background-color: $medium-blue;
         color: $white;
@@ -48,16 +41,10 @@
         width: 120px;
         border-radius: 5px;
         box-shadow: none;
-      }
-    }
-    input {
+    input
       border-radius: 0px;
       box-shadow: none;
       outline: 4px solid $light-grey-bg;
-      &:focus {
+      &:focus
         outline: 4px solid $medium-blue;
         outline-offset: 0;
-      }
-    }
-  }
-}
