@@ -22,8 +22,6 @@ class SubjectViewer extends Controller
   elements:
     '.subject-images figure': 'figures'
     'button[name="favorite"]': 'favoriteBtn'
-    '#favorite-empty': 'emptyFavoriteIcon'
-    '#favorite-filled': 'filledFavoriteIcon'
     '.annotations': 'annotationsContainer'
     '.extra-message': 'extraMessageContainer'
     'input[name="nothing"]': 'nothingCheckbox'
@@ -72,11 +70,10 @@ class SubjectViewer extends Controller
 
   onClickFavorite: ->
     @classification.favorite = !@classification.favorite
-    @toggleFavoriteIcons()
+    @toggleFavoriteIcon()
 
-  toggleFavoriteIcons: ->
-    @emptyFavoriteIcon.toggle()
-    @filledFavoriteIcon.toggle()
+  toggleFavoriteIcon: ->
+    @favoriteBtn.toggleClass "favorited", @classification.favorite
 
   onChangeNothingCheckbox: ->
     nothing = @nothingCheckbox.get(0).checked
