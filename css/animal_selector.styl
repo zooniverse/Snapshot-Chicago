@@ -144,7 +144,7 @@
         width: 95%
 
       .menu
-        background: $light-grey-bg;
+        background: $light-blue;
         border-radius: 5px;
         bottom: 100%;
         box-sizing: border-box;
@@ -252,19 +252,11 @@
           text-align: center;
 
       &.open button[name="characteristic"]
-        &:after
-          border: 6px solid transparent;
-          border-bottom-color: lighten($green, 0.33);
-          bottom: 100%;
-          content: "";
-          height: 0;
-          margin: 0 0 -1px -6px;
-          position: absolute;
-          left: 50%;
-          width: 0;
+        color: $white;
+        background-color: $medium-blue;
 
-      &.in-use button[name="characteristic"] {
-      }
+      &.in-use button[name="characteristic"]
+        font-weight: bold;
 
   .selection-area
     border-radius: 3px;
