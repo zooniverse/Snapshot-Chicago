@@ -41,18 +41,18 @@ html
       z-index: 3;
       position: relative;
       @media screen and (max-width: 1100px)
-        padding: 35px 0;
         text-align: center;
-        #site-title
-          margin: 40px 0 10px 20px;
-          display: block;
+        padding: 75px 0 35px 0;
+      @media screen and (max-width: 520px)
+        padding-top: 50px;
+
 
       #site-title
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 18px;
-        margin-right: 25px;
+        margin: 0 25px 10px 0;
         span
           &:nth-child(1)
             color: $dark-blue;
@@ -60,6 +60,9 @@ html
           &:nth-child(2)
             color: $red;
             font-weight: 700;
+        @media screen and (max-width: 1100px)
+          margin-right: 0;
+          display: block;
 
       ul
         margin: 0;
@@ -99,7 +102,7 @@ html
               &.active, &:hover
                 border-radius: 0;
                 background-color: $light-blue;
-          @media screen and (min-width: 521px)
+          @media screen and (min-width: 520px)
             display: inline-block !important
 
     .before-load
@@ -127,6 +130,15 @@ html
         border: 1px solid transparent;
         border-top-color: rgba($black, 0.5);
         border-bottom-color: rgba($white, 0.25);
+
+  @media screen and (max-width: 520px)
+    .zooniverse-top-bar
+      background-color: $white;
+      color: $dark-grey-font;
+      .corner svg
+        display none
+      .zooniverse-info
+        display none
 
   .site-footer
     background-color: darken($medium-blue, 10%);

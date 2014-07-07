@@ -18,7 +18,7 @@ class HomePage extends Controller
   constructor: ->
     super
     @html template
-    #TODO keep? 
+    #TODO keep?
     $(document.body).addClass 'lift-banner'
     setTimeout (-> $(document.body).removeClass 'lift-banner'), 2000
 
@@ -32,7 +32,7 @@ class HomePage extends Controller
     #   @userCount.html data.user_count
     #   @progressFill.width "#{100 * (data.complete_count / @totalSubjects)}%"
 
-    
+
     # success: (recents) =>
     #   recents.sort (a, b) -> a.favorited < b.favorited
     #   mostRecent = for recent, i in recents when i < 3

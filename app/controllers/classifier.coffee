@@ -13,7 +13,7 @@ getEmptySubject = require '../lib/get_empty_subject'
 # TODO review
 # Classification is subclassed from 'zooniverse/models/classification' to keep the event logic around
 # add species. This might not be the best solution
-Classification = require '../models/classification' 
+Classification = require '../models/classification'
 
 class Classifier extends Controller
   className: 'classifier'
@@ -25,9 +25,9 @@ class Classifier extends Controller
 
   constructor: ->
     super
-   
+
     @subjectViewer = new SubjectViewer
-    
+
     @el.append @subjectViewer.el
 
     @animalSelector = new AnimalSelector
