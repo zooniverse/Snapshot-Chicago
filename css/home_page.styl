@@ -98,7 +98,7 @@
         vertical-align: middle;
         display: inline-block;
         margin 20px auto;
-        @media screen and (max-width: 820px)
+        @media $tablet-or-smaller
           width: 100%;
     p
       max-width: 720px;
@@ -107,7 +107,7 @@
       font-size: 16px;
       line-height: 1.5em;
 
-  @media screen and (max-width: 1100px)
+  @media $desktop-or-smaller
     .home-section
       width: 100%;
       .content
@@ -117,9 +117,8 @@
       .content
         width: 100%;
 
-  @media screen and (max-width: 540px)
+  @media $tablet-or-smaller
     .home-section
-      width: 100%;
       .content
         padding: 130px 10px 0 10px;
 

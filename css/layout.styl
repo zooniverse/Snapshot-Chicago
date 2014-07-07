@@ -40,10 +40,10 @@ html
       overflow: hidden;
       z-index: 3;
       position: relative;
-      @media screen and (max-width: 1100px)
+      @media $desktop-or-smaller
         text-align: center;
         padding: 75px 0 35px 0;
-      @media screen and (max-width: 520px)
+      @media $phone-or-smaller
         padding-top: 50px;
 
 
@@ -60,7 +60,7 @@ html
           &:nth-child(2)
             color: $red;
             font-weight: 700;
-        @media screen and (max-width: 1100px)
+        @media $desktop-or-smaller
           margin-right: 0;
           display: block;
 
@@ -75,7 +75,7 @@ html
           margin: -20px; // increase hamburger icon
           padding: 20px; // target size for touch screens
           cursor: pointer;
-          @media screen and (min-width: 520px)
+          @media $phone-or-larger
             display: none;
 
         li
@@ -94,7 +94,7 @@ html
             &:hover,
             &.active
               border-color: $light-blue
-          @media screen and (max-width: 520px)
+          @media $phone-or-smaller
             display: none;
             width: 100%;
             height: 40px;
@@ -102,7 +102,7 @@ html
               &.active, &:hover
                 border-radius: 0;
                 background-color: $light-blue;
-          @media screen and (min-width: 520px)
+          @media $phone-or-larger
             display: inline-block !important
 
     .before-load
@@ -131,7 +131,7 @@ html
         border-top-color: rgba($black, 0.5);
         border-bottom-color: rgba($white, 0.25);
 
-  @media screen and (max-width: 520px)
+  @media $phone-or-smaller
     .zooniverse-top-bar
       background-color: $white;
       color: $dark-grey-font;
@@ -171,13 +171,13 @@ html
         color: #ddd;
 
       .zooniverse-footer-category
-        @media screen and (max-width: 1020px)
+        @media $desktop-or-smaller
           width: 50%;
           text-align: center;
           margin-bottom: 20px;
           .zooniverse-footer-category-title
             margin-bottom: 5px;
-        @media screen and (max-width: 520px)
+        @media $phone-or-smaller
           width: 100%;
   ::selection
     color #fff
