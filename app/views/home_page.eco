@@ -66,30 +66,3 @@
     <p>Snapshot Chicago is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out.</p>
   </div>
 </section>
-
-<!-- TODO: Remove the old .introduction section -->
-<div class="introduction" style="display: none;">
-  <%- translate 'h1', 'home.heading' %>
-
-
-  <% if allSeasonsComplete: %>
-    <%- translate 'div', 'home.allSeasonsComplete', class: 'all-seasons-complete' %>
-
-  <% else: %>
-
-    <% for {season, total, complete}, i in seasons: %>
-      <!-- TODO: Translate these! -->
-
-      <div class="progress">
-        <p>
-          <span class="season"><strong>Season <%= season %></strong></span>
-          <span class="track">
-            <span class="fill" style="width: <%= (complete / total) * 100 %>%;"></span>
-          </span>
-        </p>
-      </div>
-    <% end %>
-
-  <% end %>
-
-</div>

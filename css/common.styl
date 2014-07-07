@@ -23,6 +23,26 @@ $gray = #dcdcdc;
 $brown = #813e1e;
 $gold = #fc0; // TODO
 
+// media queries
+
+media-query-max(screenSize)
+  "screen and (max-width: " + screenSize + ")"
+
+media-query-min(screenSize)
+  "screen and (min-width: " + screenSize + ")"
+
+$mobile-width = 520px
+$phone-or-smaller = media-query-max($mobile-width)
+$phone-or-larger = media-query-min($mobile-width)
+
+$tablet-width = 820px
+$tablet-or-smaller = media-query-max($tablet-width)
+$tablet-or-larger = media-query-min($tablet-width)
+
+$desktop-width = 1100px
+$desktop-or-smaller = media-query-max($desktop-width)
+$desktop-or-larger = media-query-min($desktop-width)
+
 #paper-stripe
   &:before
     border: 1px solid $gray;
