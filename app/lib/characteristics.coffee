@@ -9,6 +9,7 @@ module.exports = [
     values: [
       new Value id: 'likeCatDog', label: translate 'span', 'characteristicValues.likeCatDog'
       new Value id: 'likeRodent', label: translate 'span', 'characteristicValues.likeRodent'
+      new Value id: 'likeManMade', label: translate 'span', 'characteristicValues.likeManMade'
       new Value id: 'likeOther', label: translate 'span', 'characteristicValues.likeOther'
     ]
 
@@ -45,12 +46,5 @@ module.exports = [
       new Value id: 'buildLowSlung', label: translate 'span', 'characteristicValues.buildLowSlung'
     ]
 
-  new Characteristic
-    id: 'manMade'
-    label: translate 'span', 'characteristics.manMade'
-    values: [
-      new Value id: 'manMade', label: translate 'span', 'characteristicValues.manMade'
-    ]  
-   
 ]
 

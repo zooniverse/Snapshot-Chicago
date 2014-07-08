@@ -21,7 +21,7 @@ class AnimalParser
       do_labels
     elsif command == "css"
       do_css
-    else
+    elser
       #no op
     end
   end
@@ -232,40 +232,6 @@ end
 # creates the parser which expects a command to be sent through the arguments list i.e. ARGV
 a_parser =  AnimalParser.new
 
-
-
-
-#Chicago values
-values = [
-  'likeCatDog','likeRodent','likeOther',
-  'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
-  'tailBushy','tailSmooth','tailLong',
-  'buildStocky','buildLanky','buildSmall','buildLowSlung',
-  'manMade'
-]
-
-# # for lib/charachteristics.coffee
-# values = 
-  # 'likeCatDog','likeRodent','likeOther',
-  # 'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
-  # 'tailBushy','tailSmooth','tailLong',
-  # 'buildStocky','buildLanky','buildSmall','buildLowSlung',
-  # 'manMade'
-#]
-# values.each do | chara|
-#   puts "new Value id: '#{chara}', label: translate 'span', 'characteristicValues.#{chara}'"
-# end 
-
-# #for translations
-# # values.each do | chara|
-# #   # get the camelicased value separated out
-# #   human_value =  ActiveSupport::Inflector.humanize(chara.underscore).titleize
-# #   # throw out the keyword
-# #   human_value_a = human_value.split(" ")
-# #   human_value_a.shift
-# #   human_value = human_value_a.join(" ")
-# #   puts "#{chara}: '#{human_value}'"
-# # end 
 
 
 

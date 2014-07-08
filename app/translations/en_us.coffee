@@ -277,6 +277,12 @@ module.exports =
         Describe Horse
     '''
 
+    human:
+      label: 'Human'
+      description: '''
+        Describe Human
+    '''
+
     livestock:
       label: 'Livestock'
       description: '''
@@ -570,11 +576,12 @@ module.exports =
     coat: 'Coat'
     tail: 'Tail'
     build: 'Build'
-    manMade: "Man Made"
+    
 
   characteristicValues:
     likeCatDog: 'Cat Dog'
     likeRodent: 'Rodent'
+    likeManMade: 'Man-made'
     likeOther: 'Other'
     coatTanYellow: 'Tan Yellow'
     coatRedBrown: 'Red Brown'
@@ -590,7 +597,6 @@ module.exports =
     buildLanky: 'Lanky'
     buildSmall: 'Small'
     buildLowSlung: 'Low Slung'
-    manMade: 'Man Made'
 
   profile:
     header: "Your Profile"

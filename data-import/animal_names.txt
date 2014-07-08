@@ -9,6 +9,7 @@ domDog
 grayFox
 redFox
 horse
+human
 livestock
 mink
 mouse
