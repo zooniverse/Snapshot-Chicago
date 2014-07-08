@@ -114,11 +114,15 @@
         right: 0;
 
       button[name="favorite"]
+        &:not(:active)
+          transform scale(1.0)
+          transition 0.5s transform
+        &:active
+          transform scale(1.3)
         &.favorited
           svg
             path
               fill $red
-
   .controls,
   .followup
     color: darken($brown, 67%);
