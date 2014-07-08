@@ -1,7 +1,7 @@
 #copied from lib/animal.coffee TODO data-import/AnimalParser could call directly
 #Chicago values
 values = [
-  'likeCatDog','likeRodent','likeManMade','likeOther'
+  'likeCatDog','likeRodent','likeManMade','likeOther',
   'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
   'tailBushy','tailSmooth','tailLong',
   'buildStocky','buildLanky','buildSmall','buildLowSlung',
