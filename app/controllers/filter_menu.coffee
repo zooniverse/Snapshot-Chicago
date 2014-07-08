@@ -9,11 +9,6 @@ class FilterMenu extends Controller
 
   className: 'filter-menu'
 
-  # this charcteristic is boolean and not a list of a values
-  # therefore special logic will be used to just dispaly 
-  MAN_MADE: "manMade"
-  
-
   events:
     'click button[name="characteristic"]': 'onToggleClick'
     'click button[name="clear-characteristic"]': 'onClearClick'
@@ -33,10 +28,7 @@ class FilterMenu extends Controller
     @close()
 
   onToggleClick: ->
-    if @characteristic.id is @MAN_MADE
-      @toggleManMade()
-    else
-      @toggle()
+    @toggle()
 
   open: ->
     @el.addClass 'open'
@@ -54,9 +46,6 @@ class FilterMenu extends Controller
 
   toggle: ->
     if @el.hasClass 'open' then @close() else @open()
-
-  toggleManMade: ->
-    @filterSetForValue(@MAN_MADE)
 
   onValueClick: ({currentTarget}) ->
     value = $(currentTarget).val()

@@ -33,6 +33,9 @@
         #thumb-for.horse {
           background: url(http://placehold.it/100x100?text=horse); 
         }
+        #thumb-for.human {
+          background: url(http://placehold.it/100x100?text=human); 
+        }
         #thumb-for.livestock {
           background: url(http://placehold.it/100x100?text=livestock); 
         }
@@ -116,6 +119,9 @@
         &.horse .image {
           @extend #thumb-for.horse;
         }
+        &.human .image {
+          @extend #thumb-for.human;
+        }
         &.livestock .image {
           @extend #thumb-for.livestock;
         }
@@ -198,6 +204,9 @@
       }
       [data-animal="horse"] .image {
         @extend #thumb-for.horse;
+      }
+      [data-animal="human"] .image {
+        @extend #thumb-for.human;
       }
       [data-animal="livestock"] .image {
         @extend #thumb-for.livestock;

@@ -64,6 +64,12 @@
                   Describe Horse
               '''
 
+              human:
+                label: 'Human'
+                description: '''
+                  Describe Human
+              '''
+
               livestock:
                 label: 'Livestock'
                 description: '''

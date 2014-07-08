@@ -5,7 +5,7 @@ translate = require 't7e'
 
 #Chicago values
 values = [
-  'likeCatDog','likeRodent','likeOther',
+  'likeCatDog','likeRodent','likeManMade','likeOther'
   'coatTanYellow','coatRedBrown','coatBrownBlack','coatGrayBlack','coatMottled','coatSolid','coatOrTailStriped',
   'tailBushy','tailSmooth','tailLong',
   'buildStocky','buildLanky','buildSmall','buildLowSlung',
