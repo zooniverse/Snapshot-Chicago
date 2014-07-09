@@ -6,8 +6,10 @@
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 10px 20px -10px $dark-grey-font;
+  min-height: 490px;
+  position: relative;
 
-  @media screen and (max-width: 1020px)
+  @media $classifier-vertical-stack-breakpoint
     width: 580px;
     .animal-selector
       width: 100%;
@@ -15,9 +17,9 @@
       width: 100%;
       text-align: center;
 
-  @media screen and (max-width: 680px)
+  @media $classifier-full-width-breakpoint
     width: 100%;
-    padding: 0;
+    padding: 0 0 100px 0;
     margin: 0;
     .subject-viewer
       .images .subject-image

@@ -24,7 +24,6 @@ $brown = #813e1e;
 $gold = #fc0; // TODO
 
 // media queries
-
 media-query-max(screenSize)
   "screen and (max-width: " + screenSize + ")"
 
@@ -42,6 +41,12 @@ $tablet-or-larger = media-query-min($tablet-width)
 $desktop-width = 1100px
 $desktop-or-smaller = media-query-max($desktop-width)
 $desktop-or-larger = media-query-min($desktop-width)
+
+// width at which classifier stacks vertically
+$classifier-vertical-stack-breakpoint = media-query-max(1020px)
+
+// width at which classifier expands across screen
+$classifier-full-width-breakpoint = media-query-max(680px)
 
 #paper-stripe
   &:before
