@@ -44,7 +44,7 @@ class SubjectViewer extends Controller
     if @classification
       @classification.on 'change', @onClassificationChange
       @classification.on 'add-species', @onClassificationAddSpecies
-    
+
       @html template @classification
       @onClassificationChange()
     else
@@ -54,7 +54,7 @@ class SubjectViewer extends Controller
     noAnnotations = @classification.annotations.length is 0
     nothing = @classification.metadata.nothing
     isFavorite = !!@classification.favorite
-    
+
     inSelection = @classification.metadata.inSelection
     @el.toggleClass 'no-annotations', noAnnotations
     @el.toggleClass 'favorite', isFavorite
@@ -64,9 +64,10 @@ class SubjectViewer extends Controller
   onClassificationAddSpecies: (classification, annotation) =>
     item = new AnnotationItem {@classification, annotation}
     item.el.appendTo @annotationsContainer
+    @scrollToBottomOfAnnotations()
 
-  onClickSignIn: ->
-    $(window).trigger 'request-login-dialog'
+  scrollToBottomOfAnnotations: ->
+    @annotationsContainer.animate({ scrollTop: @annotationsContainer[0].scrollHeight}, 1000)
 
   onClickFavorite: ->
     @classification.favorite = !@classification.favorite

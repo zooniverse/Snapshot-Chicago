@@ -38,14 +38,14 @@
 </div>
 
 <div class="followup">
-  <span class="social group">
-    <a href="<%= @subject.facebookHref() %>" target="_blank"><i rel="facebook">Facebook</i><%- translate 'span', 'classify.share' %></a>
-    <a href="<%= @subject.twitterHref() %>" target="_blank"><i rel="twitter">Twitter</i><%- translate 'span', 'classify.tweet' %></a>
-    <a href="<%= @subject.pinterestHref() %>" target="_blank"><i rel="pin">Pinterest</i><%- translate 'span', 'classify.pin' %></a>
-  </span>
-
   <span class="continue group">
     <a href="<%= @subject.talkHref() %>"><i rel="chat">Talk</i> <%- translate 'span', 'classify.discuss' %></a>
     <button name="next" data-shortcut="ENTER"><i rel="camera"></i> <%- translate 'span', 'classify.next' %></button>
+  </span>
+
+  <span class="social group">
+    <a href="<%= @subject.facebookHref() %>" target="_blank"><i rel="facebook"></i></a>
+    <a href="<%= @subject.twitterHref() %>" target="_blank"><i rel="twitter"></i></a>
+    <a href="<%= @subject.pinterestHref() %>" target="_blank"><i rel="pin"></i></a>
   </span>
 </div>

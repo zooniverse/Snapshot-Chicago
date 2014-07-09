@@ -1,5 +1,6 @@
 .subject-viewer
   display: inline-block;
+  position: relative;
   float: left;
   -webkit-tap-highlight-color: transparent;
 
@@ -28,11 +29,15 @@
       color: $white;
       font-size: 12px;
       font-weight: 300;
-      position: relative;
+      position: absolute;
       width: unit($subject-width, 'px')
       left: 10px;
       z-index: 1;
-      overflow: auto;
+      height: 42px;
+      overflow: scroll;
+      @media $classifier-vertical-stack-breakpoint
+        width: 100%
+        left: 0px;
 
       .annotation-item
         transition: background 0.2s;
@@ -127,10 +132,21 @@
   .followup
     color: darken($brown, 67%);
     font-size: 14px;
-    margin: 15px 0 4px;
+    margin: 0;
+    margin-right: 0px;
+    left: 414px;
+    top: 18px
     overflow: auto;
     position: relative;
     text-shadow: 0 1px 0 rgba($white, 0.25);
+    z-index: 1;
+    text-align: right;
+    @media $classifier-vertical-stack-breakpoint
+      left: auto;
+      width: auto;
+      right: 0%;
+      top: 485px;
+      margin-right: 5px;
 
   .controls
     .finished
@@ -161,11 +177,9 @@
 
     .group
       display: inline-block;
-      margin: 0 5px;
       position: relative;
-
-      &.continue
-        float: right;
+      float: right;
+      margin-left: 5px;
 
       a,
       button
@@ -176,6 +190,7 @@
         background: $light-grey-bg;
         font-size: 12px;
         line-height: 25px;
+        height: 30px;
         border-radius: 4px;
         i
           left: 0;
@@ -184,6 +199,9 @@
           position: absolute;
           top: 3px;
           width: 30px;
+      &.social
+        i
+          width: 100%;
 
       button[name="next"]
         color: $white;
