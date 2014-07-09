@@ -13,13 +13,16 @@
     position: relative;
 
     .subject-image
-      border: 5px solid $white;
       box-sizing: border-box;
       left: 0;
       margin: 0;
+      padding: 5px;
       overflow: hidden;
       top: 0;
-      width: 580px;
+      width: unit($subject-width, 'px');
+      min-height: unit($subject-height + 10, 'px');
+      @media $phone-or-smaller
+        min-height: 0;
 
       img
         display: block;
@@ -130,23 +133,25 @@
               fill $red
   .controls,
   .followup
-    color: darken($brown, 67%);
     font-size: 14px;
     margin: 0;
     margin-right: 0px;
     left: 414px;
     top: 18px
-    overflow: auto;
     position: relative;
     text-shadow: 0 1px 0 rgba($white, 0.25);
     z-index: 1;
     text-align: right;
+
     @media $classifier-vertical-stack-breakpoint
       left: auto;
       width: auto;
       right: 0%;
       top: 485px;
       margin-right: 5px;
+
+    @media $classifier-full-width-breakpoint
+      padding: 5px;
 
   .controls
     .finished
