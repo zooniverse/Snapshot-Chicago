@@ -85,7 +85,7 @@ class Classifier extends Controller
       element.click()
 
   onSubjectSelect: (event, subject) =>
-    console.log "********* remote subjects retrieved"
+    #TODO console.log "********* remote subjects retrieved"
     for property in ['tutorial', 'empty']
       @el.toggleClass property, !!subject.metadata[property]
 
@@ -99,7 +99,7 @@ class Classifier extends Controller
       @tutorial.end()
 
   onNoLocalSubjects: =>
-    console?.log "********* No remote subjects retrieved"
+    #TODO console?.log "********* No remote subjects retrieved"
     subject = getEmptySubject()
     subject.select()
 

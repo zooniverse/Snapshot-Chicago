@@ -13,6 +13,8 @@ HomePage = require './controllers/home_page'
 Classifier = require './controllers/classifier'
 Profile = require './controllers/profile'
 Api = require 'zooniverse/lib/api'
+Project  = require 'zooniverse/models/project'
+
 seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
@@ -48,10 +50,7 @@ TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 #   domain: 'X?'
 
 app = {}
-
 api = new Api project: 'serengeti'
-# api = new Api project: 'asteroid'
-
 
 #TODO rewrite this logic for sorted seasons
 # Api.get '/projects/serengeti', (project) ->
@@ -104,6 +103,9 @@ app.topBar.el.appendTo 'body'
 
 siteFooter = $('<div class="site-footer"></div>').append app.footer.el
 siteFooter.appendTo 'body'
+
+Project.fetch()
+
 
 window.app = app
 module.exports = window.app
