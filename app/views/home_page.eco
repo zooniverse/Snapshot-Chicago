@@ -34,22 +34,23 @@
     <div class="content">
       <%- translate 'h1', 'home.stats.header' %>
       <div class="quarter">
-        <h2>275</h2>
+        <!-- todo work out data bind on @stats -->
+        <h2 id="user-count">0</h2>
         <%- translate 'p', 'home.stats.activeUsers' %>
       </div>
 
       <div class="quarter">
-        <h2>10,024</h2>
+        <h2 id="classification-count">0</h2>
         <%- translate 'p', 'home.stats.crittersIdentified' %>
       </div>
 
       <div class="quarter">
-        <h2>100,366</h2>
+        <h2 id="total-images">0</h2>
         <%- translate 'p', 'home.stats.totalImages' %>
       </div>
 
       <div class="quarter">
-        <h2>6%</h2>
+        <h2 id="percent-complete">0</h2>
         <%- translate 'p', 'home.stats.complete' %>
       </div>
     </div>
