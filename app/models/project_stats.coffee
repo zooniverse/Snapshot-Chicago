@@ -1,24 +1,29 @@
 Api = require 'zooniverse/lib/api'
 
-#TODO inherit from Spine.model or not?
 class ProjectStats 
 
-  complete_count: 0
-  classification_count:  0
-  user_count: 0
-  total_count: 0
+  completeCount: 0
+  classificationCount:  0
+  userCount: 0
+  totalSubjectCount: 0
 
   constructor: (project) ->
     if project?
-      @complete_count = project.complete_count
-      @classification_count = project.classification_count
-      @user_count =  project.user_count  
-      total_count = 1
-      for group in project.groups when project.groups.stats?
-        total_count += group.stats["total"]
-    
+      @completeCount = project.complete_count || 0
+      @classificationCount = project.classification_count || 0 
+      @userCount =  project.user_count  || 0 
+      # following field may not be available
+      if project.subject_count?
+        @totalSubjectCount = project.subject_count
+      else
+        # This method of obtaining the total subject count depends on Project.extended being set 
+        # see zoonivers/models/Project.onFetch()
+        for group in project.groups? when project.groups.stats?
+          @totalSubjectCount += group.stats["total"]
+      
    percentComplete: ->
-     complete_count/total_count
+     unless @totalSubjectCount > 0 then return 0 
+     Math.floor(@completeCount / @totalSubjectCount * 100)
 
 module.exports = ProjectStats
 
