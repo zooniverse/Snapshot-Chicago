@@ -18,6 +18,7 @@ TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
 User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
+Notifier = require('./lib/notifier').init()
 
 {Stack} = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
@@ -32,7 +33,7 @@ LanguageManager = require 'zooniverse/lib/language-manager'
 languageManager = new LanguageManager
   translations:
     en: label: 'English', strings: enUs
-   
+
 languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
   t7e.refresh()
@@ -40,7 +41,6 @@ languageManager.on 'change-language', (e, code, strings) ->
 #TODO investigate this functionality
 TranslationEditor = require 't7e/editor'
 TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
-
 
 # #TODO Analytics values
 # googleAnalytics.init
@@ -77,7 +77,7 @@ app.stack = new Stack
     about: AboutPage
     classify: Classifier
     profile: Profile
-  
+
   routes:
     '/home': 'home'
     '/about': 'about'
@@ -91,8 +91,7 @@ Route.setup()
 User.fetch()
 
 app.topBar = new TopBar
-app.footer = new Footer 
-
+app.footer = new Footer
 
 #TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation

@@ -49,6 +49,11 @@ $classifier-vertical-stack-breakpoint = media-query-max(1020px)
 // width at which classifier expands across screen
 $classifier-full-width-breakpoint = media-query-max(680px)
 
+centerFixed(w)
+  width: unit(w, 'px');
+  margin-left: unit(-(w / 2), 'px');
+
+
 #paper-stripe
   &:before
     border: 1px solid $gray;
