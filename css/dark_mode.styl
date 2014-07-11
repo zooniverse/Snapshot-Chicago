@@ -1,0 +1,99 @@
+body.dark-mode
+  DARKEST = #020202
+  DARKER = #101010
+  DARK = #1e1e1e
+  DARK_MODE_FONT_COLOR = #FFF
+
+  background-color: DARKER;
+
+  nav
+    background-color: DARK;
+    #site-title
+      span
+        &:nth-child(1)
+          color: DARK_MODE_FONT_COLOR
+
+  .home-page
+    .home-section.right, .home-pre-footer
+      background-color: DARKER;
+    .snapshot-chicago-stats
+      background-color: DARK;
+      background-image: url("./images/dark-stats-skyline.svg");
+      color: DARK_MODE_FONT_COLOR;
+
+  .site-footer
+    background-color: DARKEST;
+
+  .classifier
+    background-color: DARK;
+    box-shadow: none;
+    .subject-viewer
+      .followup
+       span.group a
+         background: DARKER;
+         &:hover
+           background: DARKEST;
+    .animal-selector
+      background-color: DARK;
+      .selection-area .items [data-animal]
+        color: DARK_MODE_FONT_COLOR;
+      .animal-details
+        background: DARK;
+        box-shadow: none;
+        .content button
+          background: transparent;
+          border: 1px solid DARKEST;
+        .count, .behavior
+          .label
+            background: transparent;
+            border: 1px solid DARKEST;
+      .characteristic-filters button
+        background: darken($medium-blue, 40%)
+        color: #fff;
+      .like.filter-menu
+        color: DARK_MODE_FONT_COLOR;
+        box-shadow: none;
+        button
+          background: DARK;
+          &:hover
+            box-shadow: none;
+        &.open
+          button[name='characteristic-value']
+            &:hover
+              background: $medium-blue;
+      .menu
+        background: DARKER;
+        button
+          border-color: DARK;
+          background-color: DARK;
+      input
+        background-color: DARK;
+        color: DARK_MODE_FONT_COLOR;
+
+  .secondary-bg
+    background: DARK;
+    .secondary-content h1
+      color: DARK_MODE_FONT_COLOR;
+
+  .profile
+    .zooniverse-profile
+      background: DARK;
+      .sign-in-form input
+        background: DARK;
+        color: DARK_MODE_FONT_COLOR;
+        outline: 4px solid $light-blue
+        &:focus
+          outline-color: $medium-blue;
+    nav
+      button[name='turn-page']:not(.active)
+        background: DARK;
+
+  @media $phone-or-smaller
+    .zooniverse-top-bar
+      background: DARK;
+      color: $red;
+    nav li a
+      &:hover, &.active
+        background-color: $medium-blue
+        border-color: $medium-blue
+        color: $white;
