@@ -18,6 +18,7 @@ class AnimalSelector extends Controller
     'click [data-animal]': 'onAnimalItemClick'
     'click button[name="clear-filters"]': 'onClickClearFilters'
     'click button[name="start-tutorial"]': 'onClickStartTutorial'
+    'click button[name="dark-mode"]': 'onClickDarkMode'
 
   elements:
     'input[name="search"]': 'searchInput'
@@ -139,6 +140,9 @@ class AnimalSelector extends Controller
 
   onClickClearFilters: ->
     @clearFilters()
+
+  onClickDarkMode: ->
+    $('body').toggleClass('dark-mode')
 
   clearFilters: =>
     @set.filter {}, true
