@@ -383,7 +383,7 @@ module.exports =
       '''
         
     chipmunk:
-      fraySquirrel: '''
+      graySquirrel: '''
       to do description
       '''
         
