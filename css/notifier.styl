@@ -1,0 +1,29 @@
+#notifier
+  centerFixed(720)
+  display: none;
+  overflow: auto;
+  top: 80px;
+  left: 50%;
+  position: absolute;
+  background-color: #9db12c;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+
+  @media $tablet-or-smaller
+    centerfixed(540)
+
+  @media $phone-or-smaller
+    centerFixed(300)
+
+  .notifier-content
+    padding: 2px;
+    margin-top: 0px;
+    overflow: auto;
+    display: block;
+
+  img
+    float: right;
+    margin: 5px;
+    cursor: pointer;

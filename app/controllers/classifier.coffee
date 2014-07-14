@@ -10,6 +10,7 @@ User = require 'zooniverse/models/user'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
+Notifier = require "../lib/notifier"
 # TODO review
 # Classification is subclassed from 'zooniverse/models/classification' to keep the event logic around
 # add species. This might not be the best solution
