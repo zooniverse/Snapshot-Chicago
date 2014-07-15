@@ -12,6 +12,7 @@ class Navigation extends Controller
   events:
     'click #hamburger-icon': 'onClickHamburgerIcon'
     'click a': 'onChangePage'
+    'click .dark-mode-toggle': 'onClickDarkModeToggle'
 
   constructor: ->
     super
@@ -28,5 +29,8 @@ class Navigation extends Controller
 
   onChangePage: =>
     @navItems.slideUp(200) if window.innerWidth < 520
+
+  onClickDarkModeToggle: =>
+    $('body').toggleClass('dark-mode')
 
 module.exports = Navigation

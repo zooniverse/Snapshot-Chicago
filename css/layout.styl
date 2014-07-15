@@ -68,15 +68,18 @@ html
         margin: 0;
         padding: 0;
         img
-          width: 22px;
-          position: absolute;
-          left: 10px;
-          display: inline-block;
-          margin: -20px; // increase hamburger icon
-          padding: 20px; // target size for touch screens
-          cursor: pointer;
-          @media $phone-or-larger
-            display: none;
+          &#hamburger-icon
+            width: 22px;
+            position: absolute;
+            left: 10px;
+            display: inline-block;
+            margin: -20px; // increase hamburger icon
+            padding: 20px; // target size for touch screens
+            cursor: pointer;
+            @media $phone-or-larger
+              display: none;
+          &.dark-mode-toggle
+            width: 16px;
 
         li
           width: 90px;
