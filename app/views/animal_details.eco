@@ -62,14 +62,17 @@
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>
     <% if Animal.notAVehicle(animalName): %>
-      <% for behavior, key of Animal.behaviors: %>
+      <% for behavior, bKey of Animal.behaviors: %>
         <label>
-          <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= key %>" />
-          <span class="label" title="[<%= key %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
+          <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= bKey %>" />
+          <span class="label" title="[<%= bKey %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
         </label>
       <% end %>
     <% else: %>
-     <%- translate 'span', "classify.behaviors.notApplicable", class: "label" %>
+     <label>
+       <input type="radio" name="behavior" checked>
+       <%- translate 'span', "classify.behaviors.notApplicable", class: "label" %>
+     </label>
     <% end %>
   </div>
 
