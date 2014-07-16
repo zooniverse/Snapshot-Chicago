@@ -22,6 +22,6 @@ class Animal extends Model
   @notAVehicle: (animalName) ->
     animalName not in @vehicles
 
-  @behaviors: ['headUp', 'headDown', 'neither', 'notVisible']
+  @behaviors: {headUp: 'U', headDown: 'D', neither: 'N', notVisible: 'V'}
 
 module.exports = Animal

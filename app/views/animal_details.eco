@@ -61,12 +61,11 @@
 
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>
-    <% behaviorKeys = ['U', 'D', 'N', 'V'] %>
     <% if Animal.notAVehicle(animalName): %>
-      <% for behavior, i in Animal.behaviors: %>
+      <% for behavior, key of Animal.behaviors: %>
         <label>
-          <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= behaviorKeys[i] %>" />
-          <span class="label" title="[<%= behaviorKeys[i] %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
+          <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= key %>" />
+          <span class="label" title="[<%= key %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
         </label>
       <% end %>
     <% else: %>
