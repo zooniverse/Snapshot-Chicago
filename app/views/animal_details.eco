@@ -57,23 +57,33 @@
     <% end %>
   </div>
 
+  <% animalName = translate "animals.#{@id}.label" %>
+
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>
-    <% behaviorKeys = ['U', 'D', 'N', 'V'] %>
-    <% for behavior, i in ['headUp', 'headDown', 'neither', 'notVisible']: %>
-      <label>
-        <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= behaviorKeys[i] %>" />
-        <span class="label" title="[<%= behaviorKeys[i] %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
-      </label>
+    <% if Animal.notAVehicle(animalName): %>
+      <% for behavior, bKey of Animal.behaviors: %>
+        <label>
+          <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= bKey %>" />
+          <span class="label" title="[<%= bKey %>]"><%- translate 'span', "classify.behaviors.#{behavior}" %></span>
+        </label>
+      <% end %>
+    <% else: %>
+     <label>
+       <input type="radio" name="behavior" checked>
+       <%- translate 'span', "classify.behaviors.notApplicable", class: "label" %>
+     </label>
     <% end %>
   </div>
 
-  <div class="babies group">
-    <label title="[Y]">
-      <input type="checkbox" name="babies" data-shortcut="Y" />
-      <span class="label"><%- translate 'span', 'classify.babies' %></span>
-    </label>
-  </div>
+  <% if Animal.notAVehicle(animalName): %>
+    <div class="babies group">
+      <label title="[Y]">
+        <input type="checkbox" name="babies" data-shortcut="Y" />
+        <span class="label"><%- translate 'span', 'classify.babies' %></span>
+      </label>
+    </div>
+  <% end %>
 </div>
 
 <div class="action">

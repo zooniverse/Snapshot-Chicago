@@ -17,4 +17,11 @@ class Animal extends Model
 
   toJSON: -> @id
 
+  @vehicles: ["Mower", "Car", "Vehicle, Other", "Bike"]
+
+  @notAVehicle: (animalName) ->
+    animalName not in @vehicles
+
+  @behaviors: {headUp: 'U', headDown: 'D', neither: 'N', notVisible: 'V'}
+
 module.exports = Animal
