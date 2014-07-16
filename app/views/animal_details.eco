@@ -70,7 +70,7 @@
       <% end %>
     <% else: %>
      <label>
-       <input type="radio" name="behavior" checked>
+       <input type="radio" name="behavior" value="notApplicable" checked>
        <%- translate 'span', "classify.behaviors.notApplicable", class: "label" %>
      </label>
     <% end %>
