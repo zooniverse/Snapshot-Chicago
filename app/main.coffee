@@ -18,9 +18,9 @@ Project  = require 'zooniverse/models/project'
 seasons = require './lib/seasons'
 TopBar = require 'zooniverse/controllers/top-bar'
 Footer = require 'zooniverse/controllers/footer'
+Notifier = require './lib/notifier'
 User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
-Notifier = require('./lib/notifier').init()
 
 {Stack} = require 'spine/lib/manager'
 ContentPage = require './controllers/content_page'
@@ -88,6 +88,8 @@ app.stack = new Stack
 Route.setup()
 
 User.fetch()
+
+Notifier.init()
 
 app.topBar = new TopBar
 app.footer = new Footer
