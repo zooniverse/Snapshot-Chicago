@@ -23,8 +23,6 @@ User = require 'zooniverse/models/user'
 googleAnalytics = require 'zooniverse/lib/google-analytics'
 
 {Stack} = require 'spine/lib/manager'
-ContentPage = require './controllers/content_page'
-feedbackContent = require './views/feedback_page'
 
 BrowserDialog = require 'zooniverse/controllers/browser-dialog'
 BrowserDialog.check()

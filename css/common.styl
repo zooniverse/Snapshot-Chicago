@@ -3,26 +3,14 @@ $medium-blue = #2099de;
 $dark-blue = #213742;
 $red = #ee4737;
 $white = #ffffff;
+$black = #140b03;
 $dark-grey-font = #505050;
 $medium-grey-font = #777777
 $light-grey-bg = #eaeaea;
+$gold = #fc0;
 
 $subject-width = 580
 $subject-height = 427
-/* above are in line with LPZ mockup */
-
-$black = #140b03;
-$blue =  #00688B;
-$red-dark = #7c011c;
-
-$green = #525b46;
-$green-light = #85937a;
-$green-dark = #2b2e27;
-$green-really = #490; // TODO
-
-$gray = #dcdcdc;
-$brown = #813e1e;
-$gold = #fc0; // TODO
 
 // media queries
 media-query-max(screenSize)
@@ -53,23 +41,10 @@ centerFixed(w)
   width: unit(w, 'px');
   margin-left: unit(-(w / 2), 'px');
 
-
-#paper-stripe
-  &:before
-    border: 1px solid $gray;
-    border-width: 1px 0;
-    content: " ";
-    height: 2px;
-    left: 0;
-    position: absolute
-    top: 10px;
-    width: 100%;
-
 #standard-button
-  background: $green-dark;
+  background: $medium-blue;
   border-radius: 2px;
   box-sizing: border-box;
-  color: $gray;
   display: inline-block;
   font: inherit;
   padding: 3px 8px 3px 8px;
@@ -108,20 +83,6 @@ wrap(sectionWidth)
 .light-grey-btn
   color: $dark-grey-font;
   background-color: $light-grey-bg;
-
-outer-deboss($distance)
-  &:before
-    background: rgba($black, 0.25);
-    border-radius: $distance;
-    box-shadow: 0 1px 2px rgba($black, 0.5) inset, 0 -1px 0px rgba($white, 0.25) inset;
-    content: "";
-    height: 100%;
-    left: 0 - $distance;
-    padding: $distance $distance ($distance + 1);
-    position: absolute;
-    top: 0 - $distance;
-    width: 100%;
-    z-index: -1;
 
 #standard-toggle
   color: transparent;
