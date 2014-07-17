@@ -97,7 +97,7 @@ navigation = new Navigation
 app.navigation = navigation
 
 app.navigation.el.appendTo  'body'
-app.stack.el.appendTo  'body'
+app.stack.el.appendTo 'body'
 app.topBar.el.appendTo 'body'
 
 siteFooter = $('<div class="site-footer"></div>').append app.footer.el
