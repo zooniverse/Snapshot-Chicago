@@ -105,6 +105,7 @@ class Classifier extends Controller
     subject.select()
 
   onUserChange: =>
+    #TODO: change all the tutorial triggers
     tutorialDone = true
     doingTutorial = Subject.current?.metadata.tutorial
 
