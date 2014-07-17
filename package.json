@@ -11,7 +11,7 @@
   }, 
   "scripts": {
     "start": "haw serve --port 9999",
-    "deploy-to-staging": "haw build && publisssh ./public zooniverse-demo/TODO && trash ./public/application.*",
-    "deploy-to-production": "haw build && publisssh ./public www.TODO.org && trash ./public/application.*"
+    "deploy-to-staging": "haw build ./build --force && publisssh ./build demo.zooniverse.org/zoo-zoo && rm -rf ./build",
+    "deploy-to-production": "haw build ./build --force && publisssh ./build www.TODO.org && rm -rf ./build"
   }
 }
