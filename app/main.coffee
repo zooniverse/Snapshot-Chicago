@@ -42,9 +42,6 @@ languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
   t7e.refresh()
 
-#TODO investigate this functionality
-TranslationEditor = require 't7e/editor'
-TranslationEditor.init() if !!~location.search.indexOf 'translate=1'
 
 # #TODO Analytics values
 # googleAnalytics.init
