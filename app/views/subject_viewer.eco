@@ -1,5 +1,4 @@
 <% translate = require 't7e' %>
-<% sponsoredCameraTraps = window.SERENGETI_SPONSORED_CAMERA_TRAPS || {} %>
 
 <div class="images">
   <div class="subject-image">
