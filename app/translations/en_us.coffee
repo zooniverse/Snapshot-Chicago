@@ -45,9 +45,6 @@ module.exports =
     notSignedIn: 'You\'re not signed in!'
     favorite: 'Favorite'
     unfavorite: 'Unfavorite'
-    play: 'View series'
-    pause: 'Stop'
-    satellite: 'Satellite view'
     nothingLabel: 'Nothing here'
     nextSubjectButton: 'Finish'
     share: 'Share'
@@ -79,6 +76,7 @@ module.exports =
     cancel: 'Cancel'
     identify: 'Identify'
 
+    #TODO Clean up Constants very little used
     tutorial:
       button: "View Tutorial"
       continueButton: 'Continue'
@@ -202,7 +200,7 @@ module.exports =
   animals:
     beaver:
       label: 'Beaver'
-      description: '''
+      description: '''  
         Describe Beaver
     '''
 
