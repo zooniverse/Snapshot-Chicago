@@ -29,10 +29,14 @@ BrowserDialog.check()
 
 t7e = require 't7e'
 enUs = require './translations/en_us'
+plPl = require './translations/pl_pl'
+esEs = require './translations/es_mx'
 LanguageManager = require 'zooniverse/lib/language-manager'
 languageManager = new LanguageManager
   translations:
     en: label: 'English', strings: enUs
+    pl: label: 'Polish', strings: plPl
+    es: label: 'Spanish', strings: esEs
 
 languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
