@@ -42,7 +42,6 @@ languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
   t7e.refresh()
 
-
 # #TODO Analytics values
 # googleAnalytics.init
 #   account: 'Y?'
@@ -62,7 +61,6 @@ api = new Api project: 'serengeti'
 #       a.season > b.season
 
 #   seasons.push sortedSeasons...
-
 
 #TODO do we need this
 $('.before-load').remove()
@@ -105,7 +103,6 @@ siteFooter = $('<div class="site-footer"></div>').append app.footer.el
 siteFooter.appendTo 'body'
 
 Project.fetch()
-
 
 window.app = app
 module.exports = window.app
