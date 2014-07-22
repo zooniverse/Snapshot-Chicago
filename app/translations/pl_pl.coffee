@@ -40,11 +40,6 @@ module.exports =
     cancel: "anuluj"
     identify: "identyfikuj"
 
-  splits:
-    social: "Dobra robota! Ty oraz ### innych wolontariuszy Zooniverse wspomogło projekt Snapshot Serengeti."
-    task: "Dobra robota! Udało Ci się sklasyfikowac zdjęcie wykonane w Parku Narodowym Serengeti."
-    science: "Dobra robota! Twoja praca bezpośrednio przyczynia się do zrozumienia jak konkurujące ze sobą gatunki współistnieją w Serengeti."
-
   characteristics:
     like: "Wygląda jak..."
     coat: "kolor"
