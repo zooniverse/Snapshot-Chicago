@@ -3,7 +3,6 @@ template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
 modulus = require '../lib/modulus'
-splits = require '../lib/splits'
 
 class SubjectViewer extends Controller
   classification: null
@@ -23,7 +22,6 @@ class SubjectViewer extends Controller
     '.subject-images figure': 'figures'
     'button[name="favorite"]': 'favoriteBtn'
     '.annotations': 'annotationsContainer'
-    '.extra-message': 'extraMessageContainer'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
@@ -81,10 +79,6 @@ class SubjectViewer extends Controller
     @classification.annotate {nothing}, true
 
   onClickFinish: ->
-    message = splits.get 'classifier_messaging' unless @classification.subject.metadata.tutorial
-    @extraMessageContainer.html message
-    @extraMessageContainer.hide() unless message
-
     @el.addClass 'finished'
     # @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)

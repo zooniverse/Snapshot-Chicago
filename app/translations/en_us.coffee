@@ -192,11 +192,6 @@ module.exports =
         Click "Finish" now to move on.
       '''
 
-    splits:
-      social: 'Good job! You and ### other Zooniverse volunteers have contributed to Snapshot Serengeti.'
-      task: 'Good job! The image you successfully classified was taken by one of over 200 motion triggered cameras set-up around Serengeti National Park.'
-      science: 'Good job! Our science team needs your classifications to understand how different animals coexist in the Serengeti.'
-
   animals:
     beaver:
       label: 'Beaver'
