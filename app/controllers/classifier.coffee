@@ -120,3 +120,4 @@ class Classifier extends Controller
     setTimeout => @tutorial.dialog.attach()
 
 module.exports = Classifier
+
