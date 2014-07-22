@@ -22,7 +22,6 @@ class SubjectViewer extends Controller
     '.subject-images figure': 'figures'
     'button[name="favorite"]': 'favoriteBtn'
     '.annotations': 'annotationsContainer'
-    '.extra-message': 'extraMessageContainer'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
@@ -80,9 +79,6 @@ class SubjectViewer extends Controller
     @classification.annotate {nothing}, true
 
   onClickFinish: ->
-    @extraMessageContainer.html message
-    @extraMessageContainer.hide() unless message
-
     @el.addClass 'finished'
     # @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)
