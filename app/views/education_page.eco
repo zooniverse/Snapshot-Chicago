@@ -8,7 +8,7 @@
   <div class='secondary-content'>
     <nav class='sub-nav-education'>
       <button name='overview'><%- translate 'span', 'education.overview.nav' %></button>
-      <button name='about'><%- translate 'span', 'education.resources.nav' %></button>
+      <button name='resources'><%- translate 'span', 'education.resources.nav' %></button>
     </nav>
   </div>
 
