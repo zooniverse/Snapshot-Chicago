@@ -7,7 +7,7 @@
 <div class='secondary-bg'>
   <div class='secondary-content'>
     <nav class='sub-nav-education'>
-      <button name='info'><%- translate 'span', 'education.overview.nav' %></button>
+      <button name='overview'><%- translate 'span', 'education.overview.nav' %></button>
       <button name='about'><%- translate 'span', 'education.resources.nav' %></button>
     </nav>
   </div>
