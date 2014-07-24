@@ -10,6 +10,7 @@ Navigation = require './controllers/navigation'
 Route = require 'spine/lib/route'
 AboutPage = require './controllers/about_page'
 HomePage = require './controllers/home_page'
+EducationPage = require './controllers/education_page'
 Classifier = require './controllers/classifier'
 Profile = require './controllers/profile'
 Api = require 'zooniverse/lib/api'
@@ -73,12 +74,14 @@ app.stack = new Stack
     about: AboutPage
     classify: Classifier
     profile: Profile
+    education: EducationPage
 
   routes:
     '/home': 'home'
     '/about': 'about'
     '/classify': 'classify'
     '/profile': 'profile'
+    '/education': 'education'
 
   default: 'home'
 
