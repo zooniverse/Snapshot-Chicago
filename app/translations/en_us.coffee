@@ -6,14 +6,15 @@ module.exports =
     profile: 'Profile'
     discuss: 'Discuss'
     blog: 'Blog'
+    education: 'Education'
 
   home:
     heading: 'Welcome to Snapshot Chicago'
     rightBannerHeader: "What is Snapshot Chicago?"
     content: '''
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     '''
     allSeasonsComplete: '''
@@ -68,7 +69,7 @@ module.exports =
       neither: 'Neither'
       notVisible: 'Not Visble'
       notApplicable: 'N/A'
-     
+
 
     babies: 'Young present'
     rain: 'Raining'
@@ -195,7 +196,7 @@ module.exports =
   animals:
     beaver:
       label: 'Beaver'
-      description: '''  
+      description: '''
         Describe Beaver
     '''
 
@@ -367,199 +368,199 @@ module.exports =
       muskrat: '''
       to do description
       '''
-        
+
       woodchuck: '''
       to do description
       '''
-        
+
       mink: '''
       to do description
       '''
-        
+
     chipmunk:
       graySquirrel: '''
       to do description
       '''
-        
+
       foxSquirrel: '''
       to do description
       '''
-        
+
     coyote:
       domDog: '''
       to do description
       '''
-        
+
       grayFox: '''
       to do description
       '''
-        
+
       redFox: '''
       to do description
       '''
-        
+
     deer:
       horse: '''
       to do description
       '''
-        
+
     domCat:
       raccoon: '''
       to do description
       '''
-        
+
     domDog:
       coyote: '''
       to do description
       '''
-        
+
       grayFox: '''
       to do description
       '''
-        
+
       redFox: '''
       to do description
       '''
-        
+
     flyingSquirrel:
       mouse: '''
       to do description
       '''
-        
+
       graySquirrel: '''
       to do description
       '''
-        
+
       foxSquirrel: '''
       to do description
       '''
-        
+
       rat: '''
       to do description
       '''
-        
+
     foxSquirrel:
       graySquirrel: '''
       to do description
       '''
-        
+
     grayFox:
       domDog: '''
       to do description
       '''
-        
+
       coyote: '''
       to do description
       '''
-        
+
       redFox: '''
       to do description
       '''
-        
+
     graySquirrel:
       foxSquirrel: '''
       to do description
       '''
-        
+
     horse:
       deer: '''
       to do description
       '''
-        
+
     mink:
       muskrat: '''
       to do description
       '''
-        
+
       beaver: '''
       to do description
       '''
-        
+
       woodChuck: '''
       to do description
       '''
-        
+
     mouse:
       rat: '''
       to do description
       '''
-        
+
     muskrat:
       mink: '''
       to do description
       '''
-        
+
       beaver: '''
       to do description
       '''
-        
+
       woodChuck: '''
       to do description
       '''
-        
+
     opossum:
       rat: '''
       to do description
       '''
-        
+
       raccoon: '''
       to do description
       '''
-        
+
     rabbit:
       opossum: '''
       to do description
       '''
-        
+
     raccoon:
       opossum: '''
       to do description
       '''
-        
+
       domCat: '''
       to do description
       '''
-        
+
     rat:
       mouse: '''
       to do description
       '''
-        
+
       opossum: '''
       to do description
       '''
-        
+
     redFox:
       grayFox: '''
       to do description
       '''
-        
+
       domCat: '''
       to do description
       '''
-        
+
       coyote: '''
       to do description
       '''
-        
+
     skunk:
       raccoon: '''
       to do description
       '''
-        
+
     woodChuck:
       mink: '''
       to do description
       '''
-        
+
       beaver: '''
       to do description
       '''
-        
+
       muskrat: '''
       to do description
       '''
-        
+
     melanisticGraySquirrel:
       mink: '''
       to do description
@@ -570,7 +571,7 @@ module.exports =
     coat: 'Coat'
     tail: 'Tail'
     build: 'Build'
-    
+
 
   characteristicValues:
     likeCatDog: 'Cat Dog'
@@ -606,7 +607,7 @@ module.exports =
       nav: "Info"
       header: "What is Snapshot Chicago?"
       p: """
-        Snapshot Chicago is a collaboration between two of Chicago’s venerated institutions, born of the desire to get everyone involved in the scientific process. 
+        Snapshot Chicago is a collaboration between two of Chicago’s venerated institutions, born of the desire to get everyone involved in the scientific process.
         The project aims to achieve a greater understanding of how our urban development affects local biodiversity.
         Any can participate and help us learn about this great city we live in.
       """
@@ -614,14 +615,14 @@ module.exports =
       nav: "About"
       header: "About"
       p: """
-        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. 
+        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
         However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         <br><br>
-        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, 
-        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four 
+        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
+        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
         times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         <br><br>
-        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and 
+        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
         ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
       """
     organizations:
@@ -630,14 +631,14 @@ module.exports =
       adler:
         header: "Adler Planetarium"
         p: """
-          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler. 
-          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. 
+          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
+          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
           Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
         """
       lincolnParkZoo:
         header: "Lincoln Park Zoo"
         p: """
-          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing 
+          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing
           the highest quality of animal care, education, science and conservation.
         """
 
@@ -703,4 +704,27 @@ module.exports =
       action: "Get Started"
       social: """
         Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
+      """
+
+  education:
+    header: "Education"
+    overview:
+      nav: "Overview"
+      header: "Can I use Snapshot Chicago in the classroom?"
+      p: """
+        Absolutely! Snapshot Chicago, just like all the Zooniverse projects, offers a unique opportunity to explore real scientific data, while making a contribution to cutting edge research. We would like to stress that as each image is marked by the volunteers, it really does not matter if your students don't mark all the features. That being said, the task itself is simple enough that we believe most people can take part and make a worthwhile contribution regardless of age.
+      """
+    resources:
+      nav: "Resources"
+      header: "What resources are there to support use in the classroom?"
+      p: """
+        Videos are a great tool to introduce students to Snapshot Chicago. Here are a couple of our favorites:
+        There is also a podcast featuring one of the science team members,:
+        You may also be able to find activities provided by some of the science team’s partners:
+        The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Snapshot Chicago and the other Zooniverse citizen science projects. Check out resources created for Snapshot Chicago. Have any ideas for how to use the project in the classroom? Please share your lesson ideas or resources on ZooTeach!
+      """
+    aside:
+      content: """
+        <h1>Connect with Education</h1>
+        <p>The Snapshot Chicago blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a @ZooTeach Twitter feed.</p>
       """
