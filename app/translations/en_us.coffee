@@ -196,7 +196,7 @@ module.exports =
     beaver:
       label: 'Beaver'
       description: '''
-        Describe Beaver
+        Usually brown with large sharp front teeth, front feet has claws, back feet are webbed, round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal. They are known for building dams, canals, and lodges out of tree limbs and branches for homes.
     '''
 
     bike:
@@ -214,61 +214,61 @@ module.exports =
     chipmunk:
       label: 'Chipmunk'
       description: '''
-        Describe Chipmunk
+        A small member of the squirrel family that use their cheek pouches to carry various foods of nuts, berries, seeds, etc into their burrow or nest to store their food. These have smaller less bushy tails than a typical squirrel and sport signature white and brown stripes around their eye and going down their back. Typically brown or tan in color.
     '''
 
     coyote:
       label: 'Coyote'
       description: '''
-        Describe Coyote
+        Commonly brown and tan in color, this member of the dog family is smaller than wolves and have occasionally been called prairie wolves or brush wolves due to their wolf like appearance. Although, they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter they form packs for more effective hunting. Humans should not fear urban coyotes, but take precautions not to feed the animals and keep small pets indoors.
     '''
 
     deer:
       label: 'Deer'
       description: '''
-        Describe Deer
+        A fairly big, tan animal that is in the same family as moose and reindeer. They have large ears and short fluffy tails. The males are called bucks while females are called does and the young are called fawns. Some males may have antlers depending on the time of the year.
     '''
 
     domCat:
       label: 'Cat, Domestic'
       description: '''
-        Describe Cat, Domestic
+        A common household pet with a small build, long tails, and small pointed ears. This animals come in a variety of color, patterns (spotted or stripes), and breeds.
     '''
 
     domDog:
       label: 'Dog, Domestic'
       description: '''
-        Describe Dog, Domestic
+        A common household pet related to wolves, foxes, and jackals, but come in a variety of colors, sizes, patterns, and breeds. Dogs communicate in many different ways; such as scent, facial expressions, body position, and movement.
     '''
 
     flyingSquirrel:
       label: 'Squirrel, Flying'
       description: '''
-        Describe Squirrel, Flying
+        A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet, and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide, while using its legs to steer and its tail to brake when it reaches its destination.
     '''
 
     foxSquirrel:
       label: 'Squirrel, Fox'
       description: '''
-        Describe Squirrel, Fox
+        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most time in forging food  and roaming around fields.
     '''
 
     grayFox:
       label: 'Fox, Gray'
       description: '''
-        Describe Fox, Gray
+        A small to medium sized animal with gray coat on its back and head with light fur on its chest and belly. They have a signature black tipped, bushy tail and band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations, and are active during the night.
     '''
 
     graySquirrel:
       label: 'Squirrel, Gray'
       description: '''
-        Describe Squirrel, Gray
+        Small squirrels that are gray-brown all over their bodies except the white patch along their belly. This animals diet consists of acorns, hickory nuts, maple, walnuts, etc.
     '''
 
     horse:
       label: 'Horse'
       description: '''
-        Describe Horse
+        A large, muscular animal with a mane of hair along the back of the head and neck. These animals have hooves and a long tail of hair. Males are called stallions, females are mares, and young ones are called foals. Domesticated these animals are used for transportation and competitive sports.
     '''
 
     human:
@@ -286,13 +286,13 @@ module.exports =
     mink:
       label: 'Mink'
       description: '''
-        Describe Mink
+        Related to otters, weasels, and ferrets, Minks have pointed snouts with dark eyes. They also have clawed feet with webbing and bodies covered in thick brown fur that sheds water quickly. These animals live in semi aquatic habitats.
     '''
 
     mouse:
       label: 'Mouse'
       description: '''
-        Describe Mouse
+        A very small animal with a long snout, big round ears, and a long hairless tail. This animal can be found in and around grasslands and homes.
     '''
 
     mower:
@@ -304,13 +304,13 @@ module.exports =
     muskrat:
       label: 'Muskrat'
       description: '''
-        Describe Muskrat
+        This animal normally has brown fur and a black tail with small dark eyes. The furless, scaly tail is half of its total length. When it walks, the tail creates a trail. Their front paws are clawed while in the rear they are semi-webbed clawed feet.
     '''
 
     opossum:
       label: 'Opossum'
       description: '''
-        Describe Opossum
+        Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal known for playing dead has a white face with a pink nose,  black eyes, black ears, long tail and long, gray fur on their body.
     '''
 
     otherVehicle:
@@ -322,43 +322,43 @@ module.exports =
     rabbit:
       label: 'Rabbit'
       description: '''
-        Describe Rabbit
+        Rabbits we see in urban settings have large, dark eyes, long ears pointed upwards, and brown fur with a short, fluffy, white tail.
     '''
 
     raccoon:
       label: 'Raccoon'
       description: '''
-        Describe Raccoon
+        This brown-gray furry animal looks like it’s wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
     '''
 
     rat:
       label: 'Rat'
       description: '''
-        Describe Rat
+        A large mouse like critter with a pointy nose, round ears, and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but its not uncommon to see then running across the street above ground.
     '''
 
     redFox:
       label: 'Fox, Red'
       description: '''
-        Describe Fox, Red
+        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. It’s tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs. They often hunt for food but can adapt to eating garbage and pet food.
     '''
 
     skunk:
       label: 'Skunk'
       description: '''
-        Describe Skunk
+        An animal, well known for its stinky spray towards predators, has black with white stripe patterns. It has a single thin, white stripe down the middle of its face and two, thicker white stripes originated at the top of its head running down either side of the back into its thick, bushy tail.
     '''
 
     woodChuck:
       label: 'Wood Chuck'
       description: '''
-        Describe Wood Chuck
+        This animal is also known as a groundhog. It has a brown furry coat, clawed feets, small eyes and ears, and a short, flat tail.
     '''
 
     melanisticGraySquirrel:
       label: 'Squirrel, Melanistic Gray'
       description: '''
-        Describe Squirrel, Melanistic Gray
+        Is an animal that has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process, they will appear to be brown and black patchy.
     '''
 
 

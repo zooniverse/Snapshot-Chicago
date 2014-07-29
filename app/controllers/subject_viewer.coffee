@@ -48,7 +48,7 @@ class SubjectViewer extends Controller
     else
       @html ''
 
-  onClassificationChange:  =>
+  onClassificationChange: =>
     noAnnotations = @classification.annotations.length is 0
     nothing = @classification.metadata.nothing
     isFavorite = !!@classification.favorite
