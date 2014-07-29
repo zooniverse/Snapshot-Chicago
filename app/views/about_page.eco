@@ -7,8 +7,7 @@
 <div class='secondary-bg'>
   <div class='secondary-content'>
     <nav class='sub-nav-about'>
-      <button name='info'><%- translate 'span', 'about.info.nav' %></button>
-      <button name='about'><%- translate 'span', 'about.about.nav' %></button>
+      <button name='science'><%- translate 'span', 'about.science.nav' %></button>
       <button name='organizations'><%- translate 'span', 'about.organizations.nav' %></button>
       <button name='team'><%- translate 'span', 'about.team.nav' %></button>
     </nav>
@@ -16,14 +15,10 @@
 
   <div class='secondary-content'>
     <div class='left-column'>
-      <div class='content sub-nav-about-info'>
-        <%- translate 'h1', 'about.info.header' %>
-        <%- translate 'p', 'about.info.p' %>
-      </div>
-
-      <div class='content sub-nav-about-about'>
-        <%- translate 'h1', 'about.about.header' %>
-        <%- translate 'p', 'about.about.p' %>
+      <div class='content sub-nav-about-science'>
+        <%- translate 'h1', 'about.science.header' %>
+        <%- translate 'about.science.p' %>
+        <%- translate 'about.science.questions' %>
       </div>
 
       <div class='content sub-nav-about-organizations'>

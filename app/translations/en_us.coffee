@@ -12,10 +12,9 @@ module.exports =
     heading: 'Welcome to Snapshot Chicago'
     rightBannerHeader: "What is Snapshot Chicago?"
     content: '''
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Snapshot Chicago is a collaboration between two of Chicago’s esteemed institutions, born of the desire to get everyone
+      involved in the scientific process. The project aims to achieve a greater understanding of how our urban development affects
+      local biodiversity. Anyone can participate and help us learn about this great city we live in!
     '''
     allSeasonsComplete: '''
       <p>With your help, we've classified all the data we have so far. Great work!</p>
@@ -31,7 +30,7 @@ module.exports =
         and to find out when more images from the Serengeti are available.
       </p>
     '''
-    action: 'Start classifying'
+    action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:
@@ -603,28 +602,47 @@ module.exports =
     loadMore: 'Load more'
 
   about:
-    info:
-      nav: "Info"
-      header: "What is Snapshot Chicago?"
+    science:
+      nav: "Science"
+      header: "Science"
       p: """
-        Snapshot Chicago is a collaboration between two of Chicago’s venerated institutions, born of the desire to get everyone involved in the scientific process.
-        The project aims to achieve a greater understanding of how our urban development affects local biodiversity.
-        Any can participate and help us learn about this great city we live in.
+        <p>
+          Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
+          However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
+        </p>
+        <p>
+          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
+          forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
+          times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+        </p>
+        <p>
+          Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
+          ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
+        </p>
       """
-    about:
-      nav: "About"
-      header: "About"
-      p: """
-        Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
-        However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
-        <br><br>
-        To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
-        forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
-        times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
-        <br><br>
-        Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
-        ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
+
+      questions: """
+        <h1>Our Scientific Questions</h1>
+
+        <h2>Where do they go?</h2>
+        <p>We don’t know as much as we’d like about species in urban systems.  Even basic facts like what types of habitat attract which species are often unknown in areas like cities.
+        Finding out where certain species are most likely to occur allows us to target conservation and management efforts to ensure we can coexist with our wildlife neighbors.</p>
+
+        <h2>How are they doing?</h2>
+        <p>While we can’t directly measure populations with the data from our cameras, we can get a sense of which species are most common, and which may be in decline.
+        This can help us make recommendations about how to improve conditions for the species that are in trouble.</p>
+
+        <h2>How do they compete?</h2>
+        <p>We know almost nothing about how species in urban areas might compete with one another, engage in predator-prey dynamics, or avoid each other.
+        Preliminary results indicate that the normal community interactions we observe in natural systems don’t apply to urban areas, where entirely new dynamics seem to be in place.
+        By evaluating our camera images, we can begin to assemble the first complete picture of an urban ecosystem, including how all the species interact.</p>
+
+        <h2>How do they interact with us?</h2>
+        <p>By also collecting data on humans, and on pets like cats and dogs, we can get a sense of how animals in urban settings react to the people who make the city their home.
+        Some animals may be attracted to sites that are often visited by humans, while others may be looking for more secluded places.   Humans are a critical part of the system,
+        and our camera data allows us to understand our impact, as well as the importance of food and habitat.</p>
       """
+
     organizations:
       nav: "Organizations"
       header: "Organizations"
