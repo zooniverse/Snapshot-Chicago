@@ -735,14 +735,23 @@ module.exports =
     resources:
       nav: "Resources"
       header: "What resources are there to support use in the classroom?"
-      p: """
-        Videos are a great tool to introduce students to Snapshot Chicago. Here are a couple of our favorites:
-        There is also a podcast featuring one of the science team members,:
-        You may also be able to find activities provided by some of the science team’s partners:
-        The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Snapshot Chicago and the other Zooniverse citizen science projects. Check out resources created for Snapshot Chicago. Have any ideas for how to use the project in the classroom? Please share your lesson ideas or resources on ZooTeach!
+      content: """
+        <p<The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Snapshot Chicago and the other Zooniverse citizen science projects. Check out resources created for Snapshot Chicago
+. Have any ideas for how to use the project in the classroom? Please share your lesson ideas or resources on ZooTeach!</p
+
+        <p>Over the Summer of 2014, teen interns at Adler Planetarium developed a floor activity to bring awareness to the fact that nature is everywhere and we live in nature. A Lesson plan for this activity can be found on <a href='http://www.zooteach.org'>ZooTeach</a></p>
+
+        <p>Videos are also a great tool to introduce students to Snapshot Chicago. Here are a couple of our favorites:</p>
+        <ul>
+          <li><a href='https://www.youtube.com/watch?v=87OSgoYyxWw'>Bill Nye: The Science Guy - Biodiversity</a></li>
+          <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
+        </ul>
+        <p>We also recommend checking out the Urban Wildlife Institute webpage for more information on the organization</p>
+
       """
     aside:
       content: """
         <h1>Connect with Education</h1>
-        <p>The Snapshot Chicago blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a @ZooTeach Twitter feed.</p>
+        <p>The Snapshot Chicago blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.
+</p>
       """

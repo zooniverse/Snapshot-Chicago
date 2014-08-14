@@ -14,20 +14,20 @@
 
   <div class='secondary-content'>
     <div class='left-column'>
-      <div class='content sub-nav-education-info'>
+      <div class='content sub-nav-education-overview'>
         <%- translate 'h1', 'education.overview.header' %>
         <%- translate 'p', 'education.overview.p' %>
       </div>
 
-      <div class='content sub-nav-education-about'>
+      <div class='content sub-nav-education-resources'>
         <%- translate 'h1', 'education.resources.header' %>
-        <%- translate 'p', 'education.resources.p' %>
+        <%- translate 'div', 'education.resources.content' %>
       </div>
     </div>
 
     <div class='right-column'>
       <div class='content'>
-        <%- translate 'span', 'education.aside.content' %>
+        <%- translate 'div', 'education.aside.content' %>
       </div>
     </div>
   </div>
