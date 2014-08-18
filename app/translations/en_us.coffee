@@ -9,10 +9,14 @@ module.exports =
     education: 'Education'
 
   home:
-    heading: 'Welcome to Snapshot Chicago'
-    rightBannerHeader: "What is Snapshot Chicago?"
+    heading: 'Chicago Wildlife Watch'
+    rightBannerHeader: "What is Chicago Wildlife Watch?"
+    leftBannerHeader: "
+      <p>Welcome to</p>
+      <h1>Chicago <br/> Wildlife Watch</h1>
+    "
     content: '''
-      Snapshot Chicago is a collaboration between two of Chicago’s esteemed institutions, born of the desire to get everyone
+      Chicago Wildlife Watch is a collaboration between two of Chicago’s esteemed institutions, born of the desire to get everyone
       involved in the scientific process. The project aims to achieve a greater understanding of how our urban development affects
       local biodiversity. Anyone can participate and help us learn about this great city we live in!
     '''
@@ -34,7 +38,7 @@ module.exports =
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
 
     stats:
-      header: "SNAPSHOT CHICAGO Classification Statistics"
+      header: "CHICAGO WILDLIFE WATCH Classification Statistics"
       activeUsers: "Active Users"
       crittersIdentified: "Critters Identified"
       totalImages: "Images Total"
@@ -721,27 +725,27 @@ module.exports =
       header: "Connect"
       action: "Get Started"
       social: """
-        Follow the <a href= '#/'>Snapshot Chicago Blog</a> and <a href='#/'>@Snapshot_Chicago</a> to keep current with the latest findings
+        Follow the <a href= '#/'>Chicago Wildlife Watch Blog</a> and <a href='#/'>@Chicago_Wildlife_Watch</a> to keep current with the latest findings
       """
 
   education:
     header: "Education"
     overview:
       nav: "Overview"
-      header: "Can I use Snapshot Chicago in the classroom?"
+      header: "Can I use Chicago Wildlife Watch in the classroom?"
       p: """
-        Absolutely! Snapshot Chicago, just like all the Zooniverse projects, offers a unique opportunity to explore real scientific data, while making a contribution to cutting edge research. We would like to stress that as each image is marked by the volunteers, it really does not matter if your students don't mark all the features. That being said, the task itself is simple enough that we believe most people can take part and make a worthwhile contribution regardless of age.
+        Absolutely! Chicago Wildlife Watch, just like all the Zooniverse projects, offers a unique opportunity to explore real scientific data, while making a contribution to cutting edge research. We would like to stress that as each image is marked by the volunteers, it really does not matter if your students don't mark all the features. That being said, the task itself is simple enough that we believe most people can take part and make a worthwhile contribution regardless of age.
       """
     resources:
       nav: "Resources"
       header: "What resources are there to support use in the classroom?"
       content: """
-        <p<The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Snapshot Chicago and the other Zooniverse citizen science projects. Check out resources created for Snapshot Chicago
+        <p<The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Chicago Wildlife Watch and the other Zooniverse citizen science projects. Check out resources created for Chicago Wildlife Watch
 . Have any ideas for how to use the project in the classroom? Please share your lesson ideas or resources on ZooTeach!</p
 
         <p>Over the Summer of 2014, teen interns at Adler Planetarium developed a floor activity to bring awareness to the fact that nature is everywhere and we live in nature. A Lesson plan for this activity can be found on <a href='http://www.zooteach.org'>ZooTeach</a></p>
 
-        <p>Videos are also a great tool to introduce students to Snapshot Chicago. Here are a couple of our favorites:</p>
+        <p>Videos are also a great tool to introduce students to Chicago Wildlife Watch. Here are a couple of our favorites:</p>
         <ul>
           <li><a href='https://www.youtube.com/watch?v=87OSgoYyxWw'>Bill Nye: The Science Guy - Biodiversity</a></li>
           <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
@@ -752,6 +756,6 @@ module.exports =
     aside:
       content: """
         <h1>Connect with Education</h1>
-        <p>The Snapshot Chicago blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.
+        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.
 </p>
       """

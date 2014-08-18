@@ -2,7 +2,7 @@
 
 <ul>
   <img id='hamburger-icon' src='./images/hamburger-icon.svg'">
-  <a href="#/home" id="site-title"><span>Snapshot</span> <span>Chicago</span></a>
+  <a href="#/home" id="site-title"><span>Chicago</span> <span>Wildlife Watch</span></a>
 
   <li><%- translate 'a', 'navigation.classify', href: '#/classify' %></li>
   <li><%- translate 'a', 'navigation.profile', href: '#/profile' %></li>

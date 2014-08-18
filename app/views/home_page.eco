@@ -10,9 +10,7 @@
 <section>
   <div class="home-section left">
     <div class="content">
-      <p>Welcome to</p>
-      <h1>Snapshot</h1>
-      <h1>Chicago</h1>
+      <%- translate 'div', 'home.leftBannerHeader' %>
     </div>
   </div>
 </section>

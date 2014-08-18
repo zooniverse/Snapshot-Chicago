@@ -52,14 +52,18 @@ html
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 18px;
+        line-height: 20px;
         margin: 0 25px 10px 0;
         span
           &:nth-child(1)
-            color: $dark-blue;
-            font-weight: 400;
-          &:nth-child(2)
             color: $red;
             font-weight: 700;
+          &:nth-child(2)
+            color: $dark-blue;
+            font-weight: 400;
+        @media $phone-or-smaller
+          font-size: 14px;
+          margin-left: 10px;
         @media $desktop-or-smaller
           margin-right: 0;
           display: block;
@@ -138,6 +142,11 @@ html
         border: 1px solid transparent;
         border-top-color: rgba($black, 0.5);
         border-bottom-color: rgba($white, 0.25);
+
+  @media screen and (max-width: 1250px)
+    .zooniverse-top-bar
+      .zooniverse-info
+        display: none
 
   @media $phone-or-smaller
     .zooniverse-top-bar
