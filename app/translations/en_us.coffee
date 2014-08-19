@@ -672,8 +672,24 @@ module.exports =
           name: 'Seth Magle'
           image: 'http://placehold.it/100'
           description: '''
-            Short bio
+            <p>Seth first became interested in conservation and ecology as a college student in 1997 while observing black-tailed prairie dogs living in sidewalk median strips near his home in Boulder, Colorado. Daily interactions with these resilient animals made him wonder what adaptations enabled these small mammals to persist in highly urban habitat and which factors contributed to their distribution and abundance. Eventually he completed an honors thesis on the behavior of this urban-adapted keystone species; he ultimately expanded on that research for both a master’s degree and a doctorate.</p>
+
+            <p>However, Seth’s interests go far beyond prairie dogs to encompass all wildlife species impacted by urbanization and human development. He has also engaged in research on movement behavior of white-tailed deer in a rural landscape characterized by high prevalence of disease outbreaks, assessments of the diversity of bird communities residing in agricultural habitat and the conservation of Canada lynx reintroduced to the southern edge of their historical range, where they are threatened by roads and traffic.</p>
+
+            <p>Seth strongly believes that if rare and imperiled species are to be conserved in our modern world, we must understand and mitigate all potential impacts of urban areas on wildlife. To that end, he engages in studies of urban wildlife that span a broad range of scientific disciplines, including behavioral ecology, conservation genetics, landscape ecology, environmental education and human dimensions of wildlife. His vision is to help create a world in which urban ecosystems represent an important component of the worldwide conservation of biodiversity.</p>
           '''
+        lehrer:
+          name: "Liza Lehrer"
+          image: 'http://placehold.it/100'
+          description: '''
+            <p>Liza’s interest in wildlife began as a kid, while digging through her backyard and looking for bugs and worms to scare her sister. In college, she expanded her education with summer internships including wildlife rehabilitation, collecting behavioral data on Mexican wolves and a semester abroad studying marine life in the Great Barrier Reef.</p>
+
+            <p>After earning her degree in zoology, Liza was fortunate to work as a research intern at Lincoln Park Zoo and later as animal records keeper. It was her work at the zoo, and life in Chicago, that lead to her fascination with urban wildlife. Coyotes and foxes were becoming regular residents of the city, but how do they move about the urban landscape? What types of adjustments do they make to survive? To examine some of these questions, Liza returned to graduate school to study how urbanization affects survival, movements and behavior of an urban-adapter species, the woodchuck.</p>
+
+            <p>As urban wildlife ecologist for the Urban Wildlife Institute, Liza manages and collects data for the institute’s field research projects, including the Urban Wildlife Biodiversity Monitoring project. She coordinates collaborations and leads a project in partnership with the University of Illinois on the effects of relocation on nuisance woodchucks, which expands upon her master’s research. Liza’s research interests include urban wildlife, landscape ecology, behavioral ecology, wildlife disease and managing human-wildlife conflict.</p>
+
+            <p>Prior to joining the Urban Wildlife Institute, Liza served as an avian field assistant on a project examining urban disease ecology of West Nile virus and as a guest engagement leader at Lincoln Park Zoo.</p>
+        '''
 
       development:
         borden:
@@ -715,11 +731,18 @@ module.exports =
             Aside from web development; new technologies, science, AI, reptiles, and coffee tend to occupy his attention.
           '''
 
+        weiksnar:
+          name: 'Alex Weiksnar'
+          image: 'images/about/team/michael.jpg'
+          description: '''
+            Alex Bio
+          '''
+
         whyte:
           name: 'Laura Whyte'
           image: 'http://placehold.it/100'
           description: '''
-            Whyte bio
+            <p>The citizen science department at the Adler Planetarium is home to a development team who design and build Zooniverse websites - the worlds largest and most successful collection of citizen science projects. This team, who bring expertise in technology, education, science outreach and research, reach beyond the internet into the local community through school visits, youth programs and hack days events. As former astronomer, high school teacher, museum educator, and web developer, Dr. Whyte leads these initiatives and the opportunity they bring to engage a wider Chicago audience in actively doing science.</p>
           '''
     connect:
       header: "Connect"

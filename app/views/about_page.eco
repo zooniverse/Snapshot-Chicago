@@ -33,6 +33,21 @@
 
       <div class='content sub-nav-about-team'>
         <%- translate 'h1', 'about.team.header' %>
+
+        <%- translate 'h2', 'about.team.science.magle.name' %>
+        <%- translate 'div', 'about.team.science.magle.description' %>
+
+        <%- translate 'h2', 'about.team.science.lehrer.name' %>
+        <%- translate 'div', 'about.team.science.lehrer.description' %>
+
+        <%- translate 'h2', 'about.team.development.whyte.name' %>
+        <%- translate 'div', 'about.team.development.whyte.description' %>
+
+        <%- translate 'h2', 'about.team.development.raden.name' %>
+        <%- translate 'div', 'about.team.development.raden.description' %>
+
+        <%- translate 'h2', 'about.team.development.weiksnar.name' %>
+        <%- translate 'div', 'about.team.development.weiksnar.description' %>
       </div>
     </div>
 
