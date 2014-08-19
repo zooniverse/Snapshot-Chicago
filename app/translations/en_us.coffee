@@ -354,7 +354,7 @@ module.exports =
     '''
 
     woodChuck:
-      label: 'Wood Chuck'
+      label: 'Woodchuck'
       description: '''
         This animal is also known as a groundhog. It has a brown furry coat, clawed feets, small eyes and ears, and a short, flat tail.
     '''
