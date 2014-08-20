@@ -1,14 +1,14 @@
 <% translate = require 't7e' %>
 
 <ul>
-  <img id='hamburger-icon' src='./images/hamburger-icon.svg'">
+  <img id='hamburger-icon' src='./images/hamburger-icon.svg'>
   <a href="#/home" id="site-title"><span>Chicago</span> <span>Wildlife Watch</span></a>
 
   <li><%- translate 'a', 'navigation.classify', href: '#/classify' %></li>
   <li><%- translate 'a', 'navigation.profile', href: '#/profile' %></li>
   <li><%- translate 'a', 'navigation.about', href: '#/about' %></li>
-  <li><%- translate 'a', 'navigation.discuss', href: '#' %></li>
   <li><%- translate 'a', 'navigation.education', href: '#/education' %></li>
+  <li><%- translate 'a', 'navigation.discuss', href: '#' %></li>
   <li><%- translate 'a', 'navigation.blog', href: '#' %></li>
   <img src='./images/day-mode.svg' id="day-mode" class='dark-mode-toggle'>
   <img src='./images/night-mode.svg' id="night-mode" class='dark-mode-toggle'>
