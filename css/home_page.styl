@@ -33,7 +33,10 @@
           padding: 0px 50px;
 
     &.left
-      background: url("./images/chi-img.jpg");
+      background:
+        linear-gradient(rgba(16, 62, 95, .7), rgba(16, 62, 95, .7)),
+        url("./images/skyline.jpg");
+      background-size: cover;
       float: left;
       .content
         h1
@@ -100,6 +103,8 @@
         margin 20px auto;
         @media $tablet-or-smaller
           width: 100%;
+        img
+          max-height: 100px;
     p
       max-width: 720px;
       margin: 60px auto 0 auto;
