@@ -1,6 +1,7 @@
 FilteringSet = require '../models/filtering_set'
 Animal = require '../models/animal'
 translate = require 't7e'
+animalCounts = require "./animal_counts"
 
 
 #Chicago values
@@ -51,17 +52,11 @@ animalCharacteristics = [
 dashedFromId = (id) ->
   id.replace /[A-Z]/g, (cap) -> "-#{cap.toLowerCase()}"
 
-# imagesFromId = (id) -> [
-#     "images/animals/#{dashedFromId id}-1.jpg"
-#     "images/animals/#{dashedFromId id}-2.jpg"
-#     "images/animals/#{dashedFromId id}-3.jpg"
-#   ]
-
-imagesFromId = (id) -> [
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-    "http://placehold.it/350x150&text=#{dashedFromId id}"
-  ]  
+imagesFromId = (id) ->
+  animalName = dashedFromId id
+  animalCount = animalCounts[animalName]
+  [0...animalCount].map (i) ->
+    "images/animals/#{dashedFromId id}-#{i + 1}.jpg"
 
 animals = new FilteringSet
   searchProperties: ['label', 'description']
