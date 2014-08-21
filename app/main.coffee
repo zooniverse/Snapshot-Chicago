@@ -49,7 +49,7 @@ languageManager.on 'change-language', (e, code, strings) ->
 #   domain: 'X?'
 
 app = {}
-api = new Api project: 'serengeti'
+api = new Api project: 'chicago'
 
 #TODO rewrite this logic for sorted seasons
 # Api.get '/projects/serengeti', (project) ->
