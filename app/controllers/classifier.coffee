@@ -5,6 +5,7 @@ animals = require '../lib/animals'
 characteristics = require '../lib/characteristics'
 AnimalMenuItem = require './animal_menu_item'
 Subject = require 'zooniverse/models/subject'
+SubjectSelector = require '../models/subject_selector'
 User = require 'zooniverse/models/user'
 {Tutorial} = require 'zootorial'
 tutorialSteps = require '../lib/tutorial_steps'
@@ -41,6 +42,8 @@ class Classifier extends Controller
     @tutorial = new Tutorial
       steps: tutorialSteps
       parent: @el
+
+    Subject.group = true
 
     User.on 'change', @onUserChange
     Subject.on 'select', @onSubjectSelect
@@ -87,6 +90,7 @@ class Classifier extends Controller
 
   onSubjectSelect: (event, subject) =>
     #TODO console.log "********* remote subjects retrieved"
+
     for property in ['tutorial', 'empty']
       @el.toggleClass property, !!subject.metadata[property]
 
@@ -111,7 +115,7 @@ class Classifier extends Controller
 
     if tutorialDone
       @tutorial.end()
-      Subject.next() # if doingTutorial or not Subject.current
+      SubjectSelector.getNext() # if doingTutorial or not Subject.current
     else
       getTutorialSubject().select()
 
@@ -120,4 +124,3 @@ class Classifier extends Controller
     setTimeout => @tutorial.dialog.attach()
 
 module.exports = Classifier
-
