@@ -58,9 +58,9 @@
 <section>
   <div class='home-pre-footer'>
     <div class='content'>
-      <div class='third'><img src='/images/logos/adler.png'></div>
-      <div class='third'><img src='/images/logos/lpz.png'></div>
-      <div class='third'><img src='/images/logos/zooniverse.png'></div>
+      <div class='third'><img src='./images/logos/adler.png'></div>
+      <div class='third'><img src='./images/logos/lpz.png'></div>
+      <div class='third'><img src='./images/logos/zooniverse.png'></div>
     </div>
     <p>Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out.</p>
   </div>
