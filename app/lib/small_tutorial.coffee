@@ -4,6 +4,8 @@ translate = require "t7e"
 User = require "zooniverse/models/user"
 
 class SmallTutorial
+  tutorialId = "small-tutorial"
+
   html = """
     <div id='small-tutorial'>
       <div class='tutorial-slide'>
@@ -17,10 +19,10 @@ class SmallTutorial
 
   create: ->
     $("body").append(html)
-    @dots = $("#small-tutorial").find(".dots")
+    @dots = $("##{tutorialId}").find(".dots")
 
     for slide, i in @slides
-      $("#small-tutorial #slides-container").append "
+      $("##{tutorialId} #slides-container").append "
         <div id='slide#{i + 1}'>
           <div class='top-half'>
             <img src=#{slide.image}>
@@ -35,7 +37,7 @@ class SmallTutorial
 
   constructor: ({@slides}) ->
     @create()
-    @el = $("#small-tutorial").hide()
+    @el = $("##{tutorialId}").hide()
 
     @nextBtn = @el.find("button#next")
     @closeBtn = @el.find("button#close")
@@ -52,7 +54,7 @@ class SmallTutorial
     @showSlide(1)
     window.addEventListener "click", @exitIfClickOutside
 
-  exitIfClickOutside: (e) => @exit() if e.target.id is "tutorial"
+  exitIfClickOutside: (e) => @exit() if e.target.id is tutorialId
 
   currentSlide: -> @el.find('.dot.active').index() + 1
 
