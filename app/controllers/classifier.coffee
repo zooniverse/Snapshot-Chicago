@@ -43,6 +43,8 @@ class Classifier extends Controller
       steps: tutorialSteps
       parent: @el
 
+    window.tut = @tutorial
+
     Subject.group = true
 
     User.on 'change', @onUserChange

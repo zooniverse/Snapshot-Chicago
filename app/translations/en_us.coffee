@@ -110,29 +110,29 @@ module.exports =
         but there are a few ways to narrow that list down using the characteristics you see.
       '''
 
-      chooseAntelopeHeader: 'Looks like...'
-      chooseAntelope: '''
-        The animal in the foreground of this photo looks like a large antelope of some kind.
+      chooseRodentHeader: 'Looks like...'
+      chooseRodent: '''
+        The animal in the foreground of this photo looks like a rodent of some kind.
 
-        Let's choose "Antelope/deer" from the "looks like" menu.
+        Let's choose "Rodent" from the "looks like" menu.
       '''
 
-      chooseSolidHeader: 'Characteristic: Pattern'
-      chooseSolid: '''
-        Let's narrow the list down a bit by choosing the solid swatch from the "Pattern" menu.
+      chooseTanYellowHeader: 'Characteristic: Coat'
+      chooseTanYellow: '''
+        Let's narrow the list down a bit by choosing the Tan Yellow swatch from the "Coat" menu.
       '''
 
-      chooseCurlyHeader: 'Characteristic: Horns'
-      chooseCurly: '''
+      chooseBushyHeader: 'Characteristic: Horns'
+      chooseBushy: '''
         We've narrowed the list down enough to see thumbnail previews of the remaining animals.
 
-        Choose the "Curly" icon from the "Horns" menu to narrow the list down further.
+        Choose the "Bushy" icon from the "Horns" menu to narrow the list down further.
       '''
 
-      chooseWildebeestHeader: 'Make a choice'
-      chooseWildebeest: '''
+      chooseGraySquirrelHeader: 'Make a choice'
+      chooseGraySquirrel: '''
         Great, that leaves us with just one option!
-        Let's choose "Wildebeest" it and make sure it's a match.
+        Let's choose "Gray Squirrel" it and make sure it's a match.
       '''
 
       confirmWildebeestHeader: 'Looks Good!'
@@ -143,8 +143,8 @@ module.exports =
 
       identifyWildebeestHeader: 'Count & Behavior'
       identifyWildebeest: '''
-        Once you're confident that this is a wildebeest,
-        choose "1" from the count menu and "Moving" from the behavior menu.
+        Once you're confident that this is a Gray Squirrel,
+        choose "1" from the count menu and "Head Up" from the behavior menu.
         Then click "Identify."
       '''
 
