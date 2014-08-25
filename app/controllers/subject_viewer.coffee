@@ -2,6 +2,7 @@
 template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
+SubjectSelector = require '../models/subject_selector'
 modulus = require '../lib/modulus'
 
 class SubjectViewer extends Controller
@@ -84,6 +85,6 @@ class SubjectViewer extends Controller
     console?.log(@classification)
 
   onClickNext: ->
-    Subject.next()
+    SubjectSelector.getNext()
 
 module.exports = SubjectViewer
