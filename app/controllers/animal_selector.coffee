@@ -4,6 +4,8 @@ FilterMenu = require './filter_menu'
 columnize = require '../lib/columnize'
 AnimalDetails = require './animal_details'
 getTutorialSubject = require '../lib/get_tutorial_subject'
+SmallTutorial = require "../lib/small_tutorial"
+SmallTutorialSlides = require "../lib/small_tutorial_slides"
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
 
 class AnimalSelector extends Controller
@@ -17,6 +19,7 @@ class AnimalSelector extends Controller
     'keydown .selection-area': 'onSelectionAreaKeyDown'
     'click [data-animal]': 'onAnimalItemClick'
     'click button[name="clear-filters"]': 'onClickClearFilters'
+    'click button[name="start-small-tutorial"]': 'onClickSmallTutorial'
     'click button[name="start-tutorial"]': 'onClickStartTutorial'
 
   elements:
@@ -37,6 +40,9 @@ class AnimalSelector extends Controller
 
     @onSetFilter @set.items
     @onSetSearch @set.items
+
+    @smallTutorial = new SmallTutorial
+      slides: SmallTutorialSlides
 
   createFilterMenus: ->
     for characteristic in @characteristics
@@ -147,6 +153,9 @@ class AnimalSelector extends Controller
 
   onClickStartTutorial: ->
     getTutorialSubject().select()
+
+  onClickSmallTutorial: ->
+    @smallTutorial.start()
 
 module.exports = AnimalSelector
 

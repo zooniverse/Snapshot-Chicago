@@ -1,0 +1,100 @@
+#small-tutorial
+  GREY = #8f8f8f
+  TUTORIAL_MOBILE_WIDTH = 310
+  TUTORIAL_MOBILE_HEIGHT = 470
+  TUTORIAL_DESKTOP_WIDTH = 420
+  TUTORIAL_DESKTOP_HEIGHT = 530
+  TUTORIAL_UNDERLAY_COLOR = rgba(175, 224, 238, 0.9)
+  TUTORIAL_BOX_SHADOW_COLOR = rgba(34, 34, 34, 0.540)
+  TUTORIAL_BUTTON_COLOR = $medium-blue
+  TUT_BTN_WIDTH = 130
+
+  position fixed
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
+  background-color TUTORIAL_UNDERLAY_COLOR
+  user-select none
+  z-index 1000
+
+  .tutorial-slide
+    border-radius 8px
+    position relative
+    margin 50px auto 0 auto
+    vertical-align middle
+    background-color #fff
+    width unit(TUTORIAL_MOBILE_WIDTH, 'px')
+    height unit(TUTORIAL_MOBILE_HEIGHT, 'px')
+    box-shadow 0 10px 20px -10px TUTORIAL_BOX_SHADOW_COLOR
+    z-index 100
+    @media screen and (max-width: 520px)
+      margin 10px auto
+    @media screen and (min-width: 1020px)
+      width unit(TUTORIAL_DESKTOP_WIDTH, 'px')
+      height unit(TUTORIAL_DESKTOP_HEIGHT, 'px')
+    img
+      width 100%
+      border-radius 8px 8px 0 0
+    .bottom-half
+      padding 10px
+      h1, p
+        color grey
+      h1
+        font-weight 300
+        font-size 24px
+      p
+        font-size 14px
+        font-weight 400
+      @media screen and (max-width: 520px)
+        h1
+          margin-bottom 5px
+        p
+          font-size 12px
+          margin 0
+    #tut-x-icon
+      height 10px
+      width 10px
+      margin-left 10px
+    button#next
+      height 40px
+      width unit(TUT_BTN_WIDTH, "px")
+      background-color TUTORIAL_BUTTON_COLOR
+      color #fff
+      font-size 12px
+      font-weight 700
+      text-align center
+      border-radius 5px
+      margin 0 auto
+      position absolute
+      bottom 45px
+      left 50%
+      margin-left unit(-(TUT_BTN_WIDTH/2), "px")
+    #close
+      position absolute
+      right 10px
+      top 10px
+      background-color transparent
+      color #fff
+      font-weight 700
+      font-size 12px
+      opacity 0.7
+      #skip
+        text-transform uppercase
+        letter-spacing 2px
+    .dots
+      position absolute
+      bottom 5px
+      left 0px
+      width 100%
+      text-align center
+      .dot
+        display inline-block
+        height 10px
+        width 10px
+        border-radius 50%
+        background-color grey
+        cursor pointer
+        margin 3px
+        &.active
+          background-color TUTORIAL_BUTTON_COLOR
