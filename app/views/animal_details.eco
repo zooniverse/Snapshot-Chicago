@@ -90,3 +90,4 @@
   <label><button name="cancel" data-shortcut="ESC" title="[ESC]"><%- translate 'span', 'classify.cancel' %></button></label>
   <label><button name="identify" disabled="disabled" data-shortcut="ENTER" title="[ENTER]"><%- translate 'span', 'classify.identify' %></button></label>
 </div>
+

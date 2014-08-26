@@ -44,6 +44,15 @@ module.exports =
       totalImages: "Images Total"
       complete: "Complete"
 
+  filterPage:
+    header: "Choose Your Data"
+    filtered: "Filtered"
+    unfiltered: "Unfiltered"
+    question: "Would you like to view filtered or unfiltered data?"
+    description: """
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sped like Aldus PageMaker including versions of Lorem Ipsum.
+    """
+
   classify:
     deleteAnnotation: 'Delete'
     notSignedIn: 'You\'re not signed in!'

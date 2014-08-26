@@ -36,6 +36,8 @@ class Classifier extends Controller
       set: animals
       characteristics: characteristics
       itemController: AnimalMenuItem
+      parent: @
+
 
     @el.append @animalSelector.el
 

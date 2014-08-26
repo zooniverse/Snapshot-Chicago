@@ -1,0 +1,12 @@
+<% translate = require 't7e' %>
+
+<%- translate 'h1', 'filterPage.header' %>
+
+<%- translate 'p', 'filterPage.description' %>
+<%- translate 'p', 'filterPage.question' %>
+
+<div id="filter-buttons">
+  <button name='filtered'><%- translate 'span', 'filterPage.filtered' %></button>
+  <button name='unfiltered'><%- translate 'span', 'filterPage.unfiltered' %></button>
+</div>
+

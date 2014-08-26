@@ -12,6 +12,7 @@ AboutPage = require './controllers/about_page'
 HomePage = require './controllers/home_page'
 EducationPage = require './controllers/education_page'
 Classifier = require './controllers/classifier'
+FilterPage = require './controllers/filter_page'
 Profile = require './controllers/profile'
 Api = require 'zooniverse/lib/api'
 Project  = require 'zooniverse/models/project'
@@ -75,6 +76,7 @@ app.stack = new Stack
     classify: Classifier
     profile: Profile
     education: EducationPage
+    filter: FilterPage
 
   routes:
     '/home': 'home'
@@ -82,6 +84,7 @@ app.stack = new Stack
     '/classify': 'classify'
     '/profile': 'profile'
     '/education': 'education'
+    '/filter': 'filter'
 
   default: 'home'
 

@@ -7,6 +7,7 @@ getTutorialSubject = require '../lib/get_tutorial_subject'
 SmallTutorial = require "../lib/small_tutorial"
 SmallTutorialSlides = require "../lib/small_tutorial_slides"
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
+redirectTo = require "../lib/redirect_to"
 
 class AnimalSelector extends Controller
   set: null
@@ -21,6 +22,7 @@ class AnimalSelector extends Controller
     'click button[name="clear-filters"]': 'onClickClearFilters'
     'click button[name="start-small-tutorial"]': 'onClickSmallTutorial'
     'click button[name="start-tutorial"]': 'onClickStartTutorial'
+    'click button[name="safe-mode"]': 'onClickSafeMode'
 
   elements:
     'input[name="search"]': 'searchInput'
@@ -157,5 +159,7 @@ class AnimalSelector extends Controller
   onClickSmallTutorial: ->
     @smallTutorial.start()
 
-module.exports = AnimalSelector
+  onClickSafeMode: ->
+    redirectTo("filter")
 
+module.exports = AnimalSelector
