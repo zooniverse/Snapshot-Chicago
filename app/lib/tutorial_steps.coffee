@@ -33,20 +33,20 @@ module.exports = [
 
     onEnter: ->
       @toHighlight = $('button[value="likeRodent"][name="characteristic-value"]')
-      @toHighlight.css 'background-color': '#2099de'
+      @toHighlight.css 'font-weight': 'bold'
 
     onExit: ->
-      @toHighlight.css 'background-color': ''
+      @toHighlight.css 'font-weight': 'auto'
 
   new Step
-    header: -> inline translate 'p', 'classify.tutorial.chooseTanYellow'
+    header: -> inline translate 'p', 'classify.tutorial.chooseTanYellowHeader'
     content: -> inline translate 'p', 'classify.tutorial.chooseTanYellow'
     nextOn: click: 'button[value="coatTanYellow"]'
     attachment: x: 'right', margin: 10, to: 'button[name="characteristic"][value="coat"]', at: x: 'left'
     className: 'arrow right'
 
   new Step
-    header: -> inline translate 'p', 'classify.tutorial.chooseBushy'
+    header: -> inline translate 'p', 'classify.tutorial.chooseBushyHeader'
     content: -> inline translate 'p', 'classify.tutorial.chooseBushy'
     nextOn: click: 'button[value="tailBushy"]'
     attachment: y: 'top', margin: 10, to: 'button[name="characteristic"][value="tail"]', at: y: 'bottom'

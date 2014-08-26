@@ -85,20 +85,15 @@ module.exports =
       button: "View Tutorial"
       continueButton: 'Continue'
 
-      welcomeHeader: 'Welcome to Snapshot Serengeti!'
+      welcomeHeader: 'Welcome to Chicago Wildlife Watch!'
       welcome: '''
         This short tutorial will walk you through your first classification. Let's get started!
       '''
 
       trapsHeader: 'Check out the Images'
       traps: '''
-        All over the Serengeti, scientists have set up motion sensitive camera traps.
+        All over Chicago, scientists have set up motion sensitive camera traps.
         The camera snaps a few shots anytime something moves in front of it.
-
-        The photos often come as a sequence of 2 or 3, called a "capture".
-
-        Check out other snapshots in the sequence using the buttons below the image,
-        or play them like a flipbook by clicking the play button.
       '''
 
       taskHeader: 'Identify the Animals'
@@ -114,37 +109,37 @@ module.exports =
       chooseRodent: '''
         The animal in the foreground of this photo looks like a rodent of some kind.
 
-        Let's choose "Rodent" from the "looks like" menu.
+        Let's choose <strong>"Rodent"</strong> from the <strong>"Looks like"</strong> menu.
       '''
 
       chooseTanYellowHeader: 'Characteristic: Coat'
       chooseTanYellow: '''
-        Let's narrow the list down a bit by choosing the Tan Yellow swatch from the "Coat" menu.
+        Let's narrow the list down a bit by choosing the <strong>"Tan Yellow"</strong> swatch from the <strong>"Coat"</strong> menu.
       '''
 
-      chooseBushyHeader: 'Characteristic: Horns'
+      chooseBushyHeader: 'Characteristic: Tail'
       chooseBushy: '''
         We've narrowed the list down enough to see thumbnail previews of the remaining animals.
 
-        Choose the "Bushy" icon from the "Horns" menu to narrow the list down further.
+        Choose the <strong>"Bushy"</strong> icon from the <strong>"Tail"</strong> menu to narrow the list down further.
       '''
 
       chooseGraySquirrelHeader: 'Make a choice'
       chooseGraySquirrel: '''
         Great, that leaves us with just one option!
-        Let's choose "Gray Squirrel" it and make sure it's a match.
+        Let's choose <strong>"Gray Squirrel"</strong> it and make sure it's a match.
       '''
 
       confirmWildebeestHeader: 'Looks Good!'
       confirmWildebeest: '''
-        By comparing the animal to to the photos here and reading the description below, we can confirm that this is indeed a wildebeest.
+        By comparing the animal to to the photos here and reading the description below, we can confirm that this is indeed a Gray Squirrel.
         You can flip through the photos to see examples of the animal from multiple angles using the bullets on the right.
       '''
 
       identifyWildebeestHeader: 'Count & Behavior'
       identifyWildebeest: '''
         Once you're confident that this is a Gray Squirrel,
-        choose "1" from the count menu and "Head Up" from the behavior menu.
+        choose <strong>"1"</strong> from the count menu and <strong>"Head Up"</strong> from the behavior menu.
         Then click "Identify."
       '''
 
@@ -193,7 +188,7 @@ module.exports =
 
         Don't forget: after classifying an image you can always discuss it with professional and citizen scientists or share it with friends.
 
-        Click "Finish" now to move on.
+        Click <strong>"Finish"</strong> now to move on.
       '''
 
   animals:
