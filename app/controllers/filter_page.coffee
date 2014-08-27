@@ -20,9 +20,6 @@ class FilterPage extends Controller
     super
     @html template
 
-  redirectTo: (path, delay = 0) ->
-    setTimeout (=> window.location.hash = "#/" + path), delay
-
   onClickFiltered: =>
     SubjectSelector.safeMode = true
     @dimNotClicked @unfilteredBtn
