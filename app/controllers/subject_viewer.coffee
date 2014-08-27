@@ -31,7 +31,11 @@ class SubjectViewer extends Controller
     super
     @playTimeouts = []
     @el.attr tabindex: 0
+
     @setClassification @classification
+
+    Subject.on 'select', @onSubjectSelect
+
 
   setClassification: (classification) ->
     @el.removeClass 'finished'
@@ -45,6 +49,7 @@ class SubjectViewer extends Controller
       @classification.on 'add-species', @onClassificationAddSpecies
 
       @html template @classification
+      @loader = @el.find(".subject-loader").show()
       @onClassificationChange()
     else
       @html ''
@@ -79,6 +84,9 @@ class SubjectViewer extends Controller
     nothing = @nothingCheckbox.get(0).checked
     @classification.annotate {nothing}, true
 
+  onSubjectSelect: =>
+    setTimeout => @loader.hide()
+
   onClickFinish: ->
     @el.addClass 'finished'
     # @classification.send() unless @classification.subject.metadata.empty
@@ -86,5 +94,7 @@ class SubjectViewer extends Controller
 
   onClickNext: ->
     SubjectSelector.getNext()
+    @loader.show()
+
 
 module.exports = SubjectViewer

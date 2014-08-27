@@ -1,5 +1,7 @@
 <% translate = require 't7e' %>
 
+<div class="subject-loader"></div>
+
 <div class="images">
   <div class="subject-image">
     <img src="<%- @subject.location.standard %>" />
