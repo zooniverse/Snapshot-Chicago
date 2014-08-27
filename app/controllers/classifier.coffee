@@ -43,8 +43,6 @@ class Classifier extends Controller
       steps: tutorialSteps
       parent: @el
 
-    window.tut = @tutorial
-
     Subject.group = true
 
     User.on 'change', @onUserChange
@@ -123,6 +121,10 @@ class Classifier extends Controller
 
   activate: ->
     super
+    @el.fadeIn(500)
     setTimeout => @tutorial.dialog.attach()
+
+  deactivate: ->
+    @el.hide()
 
 module.exports = Classifier

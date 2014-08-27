@@ -20,6 +20,12 @@ class FilterPage extends Controller
     super
     @html template
 
+  activate: ->
+    setTimeout => @el.slideDown(500)
+
+  deactivate: ->
+    @el.hide()
+
   onClickFiltered: =>
     SubjectSelector.safeMode = true
     @dimNotClicked @unfilteredBtn
