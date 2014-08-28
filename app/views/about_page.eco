@@ -8,6 +8,8 @@
   <div class='secondary-content'>
     <nav class='sub-nav-about'>
       <button name='science'><%- translate 'span', 'about.science.nav' %></button>
+      <button name='uwi'><%- translate 'span', 'about.uwi.nav' %></button>
+      <button name='zooniverse'><%- translate 'span', 'about.zooniverse.nav' %></button>
       <button name='organizations'><%- translate 'span', 'about.organizations.nav' %></button>
       <button name='team'><%- translate 'span', 'about.team.nav' %></button>
     </nav>
@@ -19,6 +21,16 @@
         <%- translate 'h1', 'about.science.header' %>
         <%- translate 'about.science.p' %>
         <%- translate 'about.science.questions' %>
+      </div>
+
+      <div class="content sub-nav-about-uwi">
+        <%- translate 'h1', 'about.uwi.header' %>
+        <%- translate 'div', 'about.uwi.content' %>
+      </div>
+
+      <div class="content sub-nav-about-zooniverse">
+        <%- translate 'h1', 'about.zooniverse.header' %>
+        <%- translate 'div', 'about.zooniverse.content' %>
       </div>
 
       <div class='content sub-nav-about-organizations'>
