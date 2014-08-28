@@ -29,7 +29,7 @@
 
   <div class="behavior group">
     <span class="title"><%- translate 'span', 'classify.behavior' %>:</span>
-    <% if Animal.notAVehicle(animalName): %>
+    <% if Animal.notAVehicleOrDomestic(animalName): %>
       <% for behavior, bKey of Animal.behaviors: %>
         <label>
           <input type="radio" name="behavior" value="<%= behavior %>" data-shortcut="<%= bKey %>" />

@@ -19,8 +19,13 @@ class Animal extends Model
 
   @vehicles: ["Mower", "Car", "Vehicle, Other", "Bike"]
 
+  @domestics: ["Human", "Cat, Domestic", "Dog, Domestic"]
+
   @notAVehicle: (animalName) ->
     animalName not in @vehicles
+
+  @notAVehicleOrDomestic: (animalName) ->
+    animalName not in @domestics.concat @vehicles
 
   @behaviors: {headUp: 'U', headDown: 'D', neither: 'N', notVisible: 'V'}
 
