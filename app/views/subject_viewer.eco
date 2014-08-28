@@ -43,7 +43,7 @@
   </span>
 
   <span class="social group">
-    <a href="<%= @subject.facebookHref() %>" target="_blank"><i rel="facebook"></i></a>
+    <a class="fb-social-link" href="<%= @subject.facebookHref() %>" target="_blank"><i rel="facebook"></i></a>
     <a href="<%= @subject.twitterHref() %>" target="_blank"><i rel="twitter"></i></a>
     <a href="<%= @subject.pinterestHref() %>" target="_blank"><i rel="pin"></i></a>
   </span>

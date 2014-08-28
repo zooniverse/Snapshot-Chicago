@@ -50,6 +50,7 @@ class SubjectViewer extends Controller
 
       @html template @classification
       @loader = @el.find(".subject-loader").show()
+      @overrideFacebookShareLink()
       @onClassificationChange()
     else
       @html ''
@@ -96,5 +97,19 @@ class SubjectViewer extends Controller
     SubjectSelector.getNext()
     @loader.show()
 
+  overrideFacebookShareLink: ->
+    @el.find(".fb-social-link").attr 'href', @facebookHref()
+
+  facebookHref: ->
+    subject = Subject.current if Subject.current
+    subjectImage = subject?.location?.standard
+    """
+      https://www.facebook.com/sharer/sharer.php
+      ?s=100
+      &p[url]=#{encodeURIComponent?(subjectImage)}
+      &p[title]=#{encodeURIComponent subject?.socialTitle()}
+      &p[summary]=#{encodeURIComponent subject?.socialMessage()}
+      &p[images][0]=#{subject?.socialMessage()}
+    """.replace '\n', '', 'g'
 
 module.exports = SubjectViewer
