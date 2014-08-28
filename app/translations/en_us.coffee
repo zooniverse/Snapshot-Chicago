@@ -16,23 +16,7 @@ module.exports =
       <h1>Chicago <br/> Wildlife Watch</h1>
     "
     content: '''
-      Chicago Wildlife Watch is a collaboration between two of Chicago’s esteemed institutions, born of the desire to get everyone
-      involved in the scientific process. The project aims to achieve a greater understanding of how our urban development affects
-      local biodiversity. Anyone can participate and help us learn about this great city we live in!
-    '''
-    allSeasonsComplete: '''
-      <p>With your help, we've classified all the data we have so far. Great work!</p>
-      <p>
-        We're leaving some images up for further classification, but we have more projects
-        (like <a href="https://www.zooniverse.org/project/cyclonecenter">Cyclone Center</a>
-        and <a href="https://www.zooniverse.org/project/batdetective">Bat Detective</a>) that need your help.
-        Visit <a href="https://www.zooniverse.org/">zooniverse.org</a> to see them all.
-      </p>
-      <p>
-        Keep an eye on <a href="http://blog.snapshotserengeti.org/">the blog</a>
-        to learn what happens with the data the project has generated
-        and to find out when more images from the Serengeti are available.
-      </p>
+      Chicago Wildlife Watch is a collaboration between the Lincoln Park Zoo and the Adler Planetarium, born of the desire to get everyone involved in the scientific process. The project aims to achieve a greater understanding of how our urban development affects local biodiversity. Anyone can participate and help us learn about this great city we live in!
     '''
     action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
@@ -369,7 +353,6 @@ module.exports =
         Is an animal that has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process, they will appear to be brown and black patchy.
     '''
 
-
   differences:
     beaver:
       muskrat: '''
@@ -579,7 +562,6 @@ module.exports =
     tail: 'Tail'
     build: 'Build'
 
-
   characteristicValues:
     likeCatDog: 'Cat Dog'
     likeRodent: 'Rodent'
@@ -627,6 +609,8 @@ module.exports =
           Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
           ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
         </p>
+
+        <img src="./images/animals/fox-squirrel-1.jpg">
       """
 
       questions: """
@@ -651,21 +635,46 @@ module.exports =
         and our camera data allows us to understand our impact, as well as the importance of food and habitat.</p>
       """
 
+    uwi:
+      nav: "Urban Wildlife Inst."
+      header: "Urban Wildlife Institute"
+      content: """
+        <p>Utilizing Lincoln Park Zoo’s diverse scientific specialties, the Urban Wildlife Institute studies the interaction between urban development and the natural ecosystem to develop scientific standards for minimizing conflict between these overlapping areas. Landscape ecology, population biology, epidemiology, endocrinology, veterinary medicine and other core disciplines contribute to an increased understanding of ecosystem health in an urban setting. The Urban Wildlife Institute aims to use Chicago as a model for urban areas struggling to deal with wildlife relocation, rehabilitation, disease and conflicts.</p>
+
+        <p>One issue receiving special emphasis is the transmission of disease from animals to humans—another byproduct of urban sprawl. By studying how people and animals interact in an urban setting, the Urban Wildlife Institute can help scientists to better understand—and curb—zoonotic disease threats such as West Nile virus, rabies and avian influenza.</p>
+
+        <p>Supported by a $1.5 million grant from the Davee Foundation, the Urban Wildlife Institute is forming partnerships with local nature and conservation organizations and conducting pilot studies into ecosystem health and human-wildlife interaction. By developing standards for managing urban wildlife issues, the institute is creating a conflict-management model that can be followed worldwide.</p>
+
+        <p>To learn more, you can visit <a href="http://www.lpzoo.org/conservation-science/science-centers/urban-wildlife-institute">their website</a>.</p>
+      """
+    zooniverse:
+      nav: "Zooniverse"
+      header: "Zooniverse"
+      content: """
+        <p>The amount of data collected by modern research equipment is often too large for any one person or small team of people to effectively analyze. Over the past several decades, scientists have explored partnering with the public to help do real science when human eyes and thinking are still better at analysis than computers.</p>
+
+        <p>Known online as the Zooniverse, the Adler's Citizen Science department designs and develops web applications using data sets that would normally take a science team over 100 years to analyze and, with the help of a worldwide network of volunteers, complete the analysis with a high level of accuracy in weeks or months.</p>
+
+        <p>To participate in other citizen science efforts, visit <a href="http://www.zooniverse.org">Zooniverse.org</a>.</p>
+      """
     organizations:
       nav: "Organizations"
       header: "Organizations"
       adler:
         header: "Adler Planetarium"
         p: """
-          The Adler Planetarium - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
+          <img src="./images/logos/adler-black.png" class="inline">
+          <a href="http://www.adlerplanetarium.org/">The Adler Planetarium</a> - America's First Planetarium - was founded in 1930 by Chicago business leader Max Adler.
           The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
           Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
         """
       lincolnParkZoo:
         header: "Lincoln Park Zoo"
         p: """
-          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing
-          the highest quality of animal care, education, science and conservation.
+          <img src="./images/logos/lpz-black.png" class="inline">
+          <a href=""http://www.lpzoo.org/">Lincoln Park Zoo</a> is a world of wildlife in the shadow of skyscrapers. Located within a verdant park just minutes north of Chicago, the zoo has been a natural, free oasis for generations of animal lovers, who visit the zoo to hear a lion’s roar echo off nearby apartment buildings, see gorillas climb trees as the Willis Tower looms in the distance, or forget where they are as they immerse themselves in tropical rainforests, dry-thorn forests or spacious savannas.<br><br>
+
+          The Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing the highest quality of animal care, education, science and conservation.
         """
 
     team:
@@ -767,22 +776,20 @@ module.exports =
       nav: "Resources"
       header: "What resources are there to support use in the classroom?"
       content: """
-        <p<The Zooniverse has launched ZooTeach where educators can find and share educational resources relating to Chicago Wildlife Watch and the other Zooniverse citizen science projects. Check out resources created for Chicago Wildlife Watch
-. Have any ideas for how to use the project in the classroom? Please share your lesson ideas or resources on ZooTeach!</p
-
         <p>Over the Summer of 2014, teen interns at Adler Planetarium developed a floor activity to bring awareness to the fact that nature is everywhere and we live in nature. A Lesson plan for this activity can be found on <a href='http://www.zooteach.org'>ZooTeach</a></p>
 
         <p>Videos are also a great tool to introduce students to Chicago Wildlife Watch. Here are a couple of our favorites:</p>
+
         <ul>
           <li><a href='https://www.youtube.com/watch?v=87OSgoYyxWw'>Bill Nye: The Science Guy - Biodiversity</a></li>
           <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
         </ul>
+
         <p>We also recommend checking out the Urban Wildlife Institute webpage for more information on the organization</p>
 
       """
     aside:
       content: """
         <h1>Connect with Education</h1>
-        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.
-</p>
+        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.</p>
       """
