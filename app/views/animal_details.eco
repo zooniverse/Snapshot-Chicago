@@ -11,38 +11,6 @@
 <div class="content">
   <%- translate 'p.label', "animals.#{@id}.label" %>
   <%- translate 'p', "animals.#{@id}.description" %>
-
-  <% differences = try translate "differences.#{@id}", fallback: 'NOPE' %>
-  <% unless differences is 'NOPE': %>
-    <p>
-      <%- translate 'span', 'classify.oftenConfused' %>
-      <% for animalId of differences: %>
-        <% animal = try Animal.find animalId %>
-        <% if animal: %>
-          <button name="confusion" data-popup=".<%- animal.id %>.confusion-popup" data-popup-position="center bottom, center top, 10"><%- translate 'span', "animals.#{animal.id}.label" %></button>
-        <% else: %>
-          <button name="confusion" data-popup=".<%- animalId.replace /\s/g, '' %>.confusion-popup" data-popup-position="center bottom, center top, 10"><%- animalId %></button>
-        <% end %>
-      <% end %>
-    </p>
-
-    <!-- TODO: Differences still don't change languages right. -->
-
-    <% for animalId, difference of differences: %>
-      <% animal = try Animal.find animalId %>
-      <div class="<%= animalId.replace /\s/g, '' %> confusion-popup">
-        <% if animal: %>
-          <div class="image"></div>
-          <div class="description">
-            <p class="label"><%- translate 'span', "animals.#{animal.id}.label" %></p>
-            <p><%- translate 'span', "differences.#{@id}.#{animal.id}" %></p>
-          </div>
-        <% else: %>
-          <%- difference %>
-        <% end %>
-      </div>
-    <% end %>
-  <% end %>
 </div>
 
 <div class="options">
