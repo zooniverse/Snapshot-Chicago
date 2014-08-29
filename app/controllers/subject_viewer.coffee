@@ -26,6 +26,7 @@ class SubjectViewer extends Controller
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
+    '.subject-image': 'subjectImage'
 
   constructor: ->
     super
@@ -94,8 +95,9 @@ class SubjectViewer extends Controller
     console?.log(@classification)
 
   onClickNext: ->
-    SubjectSelector.getNext()
     @loader.show()
+    @subjectImage.css('visibility', 'hidden')
+    SubjectSelector.getNext()
 
   overrideFacebookShareLink: ->
     @el.find(".fb-social-link").attr 'href', @facebookHref()

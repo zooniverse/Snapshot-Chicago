@@ -21,9 +21,6 @@ SubjectSelector =
   setGroupByName: (name) ->
     @setGroup(@groups[name])
 
-  setGoldStandardGroup: ->
-    @setGroup(@groups.gold)
-
   setGoldStandardComplete: ->
     localStorage.goldStandardComplete = true
 
@@ -32,7 +29,7 @@ SubjectSelector =
 
   fetchGoldStandard: ->
     groupToReturnTo = if Subject.group is @groups.gold then true else Subject.group
-    @setGoldStandardGroup()
+    @setGroup(@groups.gold)
 
     Subject.fetch limit: 1, (subjects) =>
       if subjects?.length
