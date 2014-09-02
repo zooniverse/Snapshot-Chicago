@@ -166,7 +166,7 @@ class AnimalSelector extends Controller
     @smallTutorial.start()
 
   handleFirstVisit: (e, user) =>
-    if user.classification_count is 0
+    if user?.classification_count is 0 or not user
       @smallTutorial.start()
       Notifier.message(translate('div', 'filterPage.notification'), Notifier.red, true)
 
