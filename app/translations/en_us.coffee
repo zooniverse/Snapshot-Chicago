@@ -76,7 +76,6 @@ module.exports =
     cancel: 'Cancel'
     identify: 'Identify'
 
-    #TODO Clean up Constants very little used
     tutorial:
       small: "Site Intro"
       button: "Tutorial"

@@ -1,4 +1,4 @@
-#copied from lib/animal.coffee TODO data-import/AnimalParser could call directly
+#copied from lib/animal.coffee
 #Chicago values
 values = [
   'likeCatDog','likeRodent','likeManMade','likeOther',

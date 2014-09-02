@@ -118,7 +118,6 @@ class AnimalParser
     print_animal_labels(formated_labels)
   end
 
-  #TODO this would need to be revised to expect and use the descriptions
   # formats the translation records from the animal list
   # uses ActiveSupport to get humanize the names in the list
   def labels_from_animal_list(animal_list)

@@ -147,7 +147,6 @@ class AnimalSelector extends Controller
     @el.append details.el
     setTimeout details.show, 125
 
-  #TODO This seems to create a second inSelection annotation which seems like strange thing  
   onDetailsRelease: =>
     @classification.annotate inSelection: null, true
 

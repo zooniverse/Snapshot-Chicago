@@ -44,7 +44,6 @@ languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
   t7e.refresh()
 
-# #TODO Analytics values
 # googleAnalytics.init
 #   account: 'Y?'
 #   domain: 'X?'
@@ -63,9 +62,6 @@ api = new Api project: 'chicago'
 #       a.season > b.season
 
 #   seasons.push sortedSeasons...
-
-#TODO do we need this
-$('.before-load').remove()
 
 app.stack = new Stack
   className: "main #{Stack::className}"
@@ -97,7 +93,6 @@ Notifier.init()
 app.topBar = new TopBar
 app.footer = new Footer
 
-#TODO note Navigation does not extend from Controller c.f. Condors:app/controllers/SiteNavigation
 navigation = new Navigation
 app.navigation = navigation
 

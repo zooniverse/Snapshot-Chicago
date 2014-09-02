@@ -30,7 +30,7 @@
     <div class="content">
       <%- translate 'h1', 'home.stats.header' %>
       <div class="quarter">
-        <!-- todo work out data bind on @stats -->
+        <!-- todo work out data bind on @stats, after classifications -->
         <h2 id="user-count">0</h2>
         <%- translate 'p', 'home.stats.activeUsers' %>
       </div>

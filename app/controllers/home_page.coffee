@@ -4,7 +4,6 @@ Project  = require 'zooniverse/models/project'
 ProjectStats = require '../models/project_stats'
 formatNumber =  require '../lib/format_number'
 
-
 class HomePage extends Controller
   className: 'home-page'
 

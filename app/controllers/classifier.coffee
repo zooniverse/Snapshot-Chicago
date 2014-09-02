@@ -12,9 +12,6 @@ tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
 Notifier = require "../lib/notifier"
-# TODO review
-# Classification is subclassed from 'zooniverse/models/classification' to keep the event logic around
-# add species. This might not be the best solution
 Classification = require '../models/classification'
 
 class Classifier extends Controller
@@ -63,7 +60,6 @@ class Classifier extends Controller
   onKeyDown: (e) =>
     return if e.altKey or e.ctrlKey or e.metaKey
 
-    # @log 'Keydown', e, e.which
     return unless @el.is ':visible'
 
     target = $(e.target)
@@ -89,8 +85,6 @@ class Classifier extends Controller
       element.click()
 
   onSubjectSelect: (event, subject) =>
-    #TODO console.log "********* remote subjects retrieved"
-
     for property in ['tutorial', 'empty']
       @el.toggleClass property, !!subject.metadata[property]
 
@@ -104,20 +98,12 @@ class Classifier extends Controller
       @tutorial.end()
 
   onNoLocalSubjects: =>
-    #TODO console?.log "********* No remote subjects retrieved"
     subject = getEmptySubject()
     subject.select()
 
   onUserChange: =>
-    #TODO: change all the tutorial triggers
-    tutorialDone = true
-    doingTutorial = Subject.current?.metadata.tutorial
-
-    if tutorialDone
-      @tutorial.end()
-      SubjectSelector.getNext() # if doingTutorial or not Subject.current
-    else
-      getTutorialSubject().select()
+    @tutorial.end()
+    SubjectSelector.getNext()
 
   activate: ->
     super

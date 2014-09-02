@@ -35,7 +35,6 @@ module.exports = [
       new Value id: 'tailLong', label: translate 'span', 'characteristicValues.tailLong'
     ]
 
-  #TODO was tall build omitted by LPZ on purpose?
   new Characteristic
     id: 'build'
     label: translate 'span', 'characteristics.build'
