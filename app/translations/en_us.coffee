@@ -183,7 +183,7 @@ module.exports =
         Your observations will be combined with those of multiple volunteers,
         so even if you're not sure on something, your contribution is still very useful!
 
-        Don't forget: after classifying an image you can always discuss it with professional and citizen scientists or share it with friends.
+        Don't forget: after classifying an image you can always <strong>discuss</strong> it with professional and citizen scientists or share it with friends.
 
         Click <strong>"Finish"</strong> now to move on.
       '''
