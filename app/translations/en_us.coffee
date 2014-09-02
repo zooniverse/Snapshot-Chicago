@@ -20,6 +20,7 @@ module.exports =
     '''
     action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
+    preFooterText: "Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out."
 
     stats:
       header: "CHICAGO WILDLIFE WATCH Classification Statistics"

@@ -56,10 +56,10 @@
 <section>
   <div class='home-pre-footer'>
     <div class='content'>
-      <div class='third'><img src='./images/logos/adler.png'></div>
-      <div class='third'><img src='./images/logos/lpz.png'></div>
-      <div class='third'><img src='./images/logos/zooniverse.png'></div>
+      <div class='third'><a href="http://www.adlerplanetarium.org"><img src='./images/logos/adler.png'></a></div>
+      <div class='third'><a href="http://www.lpzoo.org"><img src='./images/logos/lpz.png'></a></div>
+      <div class='third'><a href="http://www.zooniverse.org"><img src='./images/logos/zooniverse.png'></a></div>
     </div>
-    <p>Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out.</p>
+    <%- translate 'p', 'home.preFooterText' %>
   </div>
 </section>
