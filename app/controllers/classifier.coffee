@@ -29,6 +29,8 @@ class Classifier extends Controller
 
     @el.append @subjectViewer.el
 
+    User.on 'change', @onUserChange
+
     @animalSelector = new AnimalSelector
       set: animals
       characteristics: characteristics
@@ -42,7 +44,6 @@ class Classifier extends Controller
 
     Subject.group = true
 
-    User.on 'change', @onUserChange
     Subject.on 'select', @onSubjectSelect
     Subject.on 'no-more', @onNoLocalSubjects
 
@@ -101,13 +102,19 @@ class Classifier extends Controller
     subject = getEmptySubject()
     subject.select()
 
-  onUserChange: =>
+  onUserChange: (e, user) =>
+    @user = user
     @tutorial.end()
     SubjectSelector.getNext()
+
+    # logic to proclaim user's first visit
+    @animalSelector.firstVisit = true if user?.classification_count < 1 or not user
+    @animalSelector.handleFirstVisit() if @el.hasClass 'active'
 
   activate: ->
     super
     @el.fadeIn(500)
+    @animalSelector.handleFirstVisit()
     setTimeout => @tutorial.dialog.attach()
 
   deactivate: ->

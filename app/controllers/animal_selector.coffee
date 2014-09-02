@@ -50,8 +50,6 @@ class AnimalSelector extends Controller
     @smallTutorial = new SmallTutorial
       slides: SmallTutorialSlides
 
-    User.on 'change', @handleFirstVisit
-
   createFilterMenus: ->
     for characteristic in @characteristics
       new FilterMenu
@@ -164,10 +162,11 @@ class AnimalSelector extends Controller
   onClickSmallTutorial: ->
     @smallTutorial.start()
 
-  handleFirstVisit: (e, user) =>
-    if user?.classification_count is 0 or not user
+  handleFirstVisit: ->
+    if @firstVisit
       @smallTutorial.start()
       Notifier.message(translate('div', 'filterPage.notification'), Notifier.red, true)
+      @firstVisit = false
 
   onClickSafeMode: ->
     redirectTo("filter")

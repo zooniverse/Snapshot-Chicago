@@ -462,6 +462,9 @@
       font-weight: 300;
       margin: 0 10px;
       text-align: right;
+      @media $classifier-vertical-stack-breakpoint
+        &[name='start-tutorial']
+          display: none;
 
   .finished + &
     opacity: 0.3;
