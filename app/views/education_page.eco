@@ -24,6 +24,7 @@
     <div class='right-column'>
       <div class='content'>
         <%- translate 'div', 'education.aside.content' %>
+        <a href='#/filter'><%- translate 'button', 'about.connect.action' %></a>
       </div>
     </div>
   </div>

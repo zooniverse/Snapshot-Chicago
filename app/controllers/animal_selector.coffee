@@ -8,6 +8,7 @@ SmallTutorial = require "../lib/small_tutorial"
 SmallTutorialSlides = require "../lib/small_tutorial_slides"
 getPhysicallyAdjacentSibling = require '../lib/get_physically_adjacent_sibling'
 redirectTo = require "../lib/redirect_to"
+User = require 'zooniverse/models/user'
 
 class AnimalSelector extends Controller
   set: null
@@ -45,6 +46,8 @@ class AnimalSelector extends Controller
 
     @smallTutorial = new SmallTutorial
       slides: SmallTutorialSlides
+
+    User.on 'change', @showSmallTutorialIfFirstVisit
 
   createFilterMenus: ->
     for characteristic in @characteristics
@@ -158,6 +161,9 @@ class AnimalSelector extends Controller
 
   onClickSmallTutorial: ->
     @smallTutorial.start()
+
+  showSmallTutorialOnFirstVisit: (e, user) =>
+    @smallTutorial.start() if user.classification_count is 0
 
   onClickSafeMode: ->
     redirectTo("filter")

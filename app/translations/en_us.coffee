@@ -30,9 +30,10 @@ module.exports =
 
   filterPage:
     header: "Choose Your Data"
-    filtered: "Filtered"
-    unfiltered: "Unfiltered"
-    question: "Would you like to view filtered or unfiltered data?"
+    name: "Education Mode"
+    filtered: "Curated"
+    unfiltered: "Uncurated"
+    question: "Would you like to view Curated or Uncurated data?"
     description: """
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sped like Aldus PageMaker including versions of Lorem Ipsum.
     """
@@ -75,7 +76,8 @@ module.exports =
 
     #TODO Clean up Constants very little used
     tutorial:
-      button: "View Tutorial"
+      small: "Site Intro"
+      button: "Tutorial"
       continueButton: 'Continue'
 
       welcomeHeader: 'Welcome to Chicago Wildlife Watch!'
