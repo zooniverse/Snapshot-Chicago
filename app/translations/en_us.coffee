@@ -129,7 +129,7 @@ module.exports =
 
       confirmWildebeestHeader: 'Looks Good!'
       confirmWildebeest: '''
-        By comparing the animal to to the photos here and reading the description below, we can confirm that this is indeed a Gray Squirrel.
+        By comparing the animal to the photos here and reading the description below, we can confirm that this is indeed a Gray Squirrel.
         You can flip through the photos to see examples of the animal from multiple angles using the bullets on the right.
       '''
 
