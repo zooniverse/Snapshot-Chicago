@@ -34,8 +34,9 @@ module.exports =
     filtered: "Curated"
     unfiltered: "Uncurated"
     question: "Would you like to view Curated or Uncurated data?"
+    notification: "These images have been taken by cameras in public spaces"
     description: """
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type sped like Aldus PageMaker including versions of Lorem Ipsum.
+      If you are using the Chicago Urban Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal, but still require additional classifications to confirm the animal type. For a younger audience, or for a situation where classification time is limited, this may provide a more engaging experience.
     """
 
   classify:

@@ -10,11 +10,17 @@ $ = window.jQuery
 
 Notifier =
   init: ->
-    @el = $("<div id='notifier'><img class='notifier-close' src='./images/x-icon.svg'><div class='notifier-content'></div>")
+    @el = $("""
+      <div id='notifier'>
+        <img class='notifier-close' src='./images/x-icon.svg'>
+        <div class='notifier-content'></div>
+        <button class='action-button'>Continue</button>
+      """)
       .appendTo $('body')
 
     @content = @el.find('.notifier-content')
-    @closeIcon = @el.find('.notifier-close')
+    @actionButton = @el.find('.action-button')
+    @closeIcon = @el.find('.notifier-close, .action-button')
       .on 'click', => @hide()
 
     window.onresize = => @setPosition() if @notifierIsVisible()
@@ -42,9 +48,10 @@ Notifier =
   hide: (transitionTime = 150) ->
     @el.slideUp(transitionTime)
 
-  message: (message, backgroundColor) ->
+  message: (message, backgroundColor = @grey, action = false) ->
     setTimeout =>
-      @show().css {backgroundColor: backgroundColor or @grey}
+      @show().css {backgroundColor: backgroundColor}
       @content.html message
+      @actionButton.toggle(action)
 
 module?.exports = Notifier

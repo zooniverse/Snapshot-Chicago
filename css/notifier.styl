@@ -10,6 +10,7 @@
   text-align: center;
   z-index: 2;
   border-radius: 0 0 5px 5px;
+  padding: 15px 0;
 
   @media $tablet-or-smaller
     centerfixed(540)
@@ -18,12 +19,28 @@
     centerFixed(300)
 
   .notifier-content
-    padding: 2px;
     margin-top: 0px;
     overflow: auto;
     display: block;
 
   img
-    float: right;
-    margin: 5px;
+    position: absolute;
+    padding: 5px;
+    top: 0px;
+    right: 0px;
     cursor: pointer;
+
+  .action-button
+    margin-top: 20px;
+    height: 40px;
+    padding: 0 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    background-color: transparent;
+    text-transform: uppercase
+    border: 2px solid #fff;
+    border-radius: 5px;
+    &:hover
+      background-color: #fff
+      color: $red
