@@ -44,9 +44,10 @@ languageManager.on 'change-language', (e, code, strings) ->
   t7e.load strings
   t7e.refresh()
 
-# googleAnalytics.init
-#   account: 'Y?'
-#   domain: 'X?'
+GoogleAnalytics = require 'zooniverse/lib/google-analytics'
+new GoogleAnalytics
+  account: 'UA-53428944-3'
+  domain: 'chicagowildlifewatch.org'
 
 app = {}
 api = new Api project: 'chicago'
