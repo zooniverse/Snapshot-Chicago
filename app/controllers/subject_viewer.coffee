@@ -91,7 +91,7 @@ class SubjectViewer extends Controller
 
   onClickFinish: ->
     @el.addClass 'finished'
-    # @classification.send() unless @classification.subject.metadata.empty
+    @classification.send() unless @classification.annotations.length < 1
     console?.log(@classification)
 
   onClickNext: ->
