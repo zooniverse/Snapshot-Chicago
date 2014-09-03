@@ -92,6 +92,24 @@ body.dark-mode
       button[name='turn-page']:not(.active)
         background: DARK;
 
+  .tutorial.zootorial-dialog
+    background: DARKER;
+    color: DARK_MODE_FONT_COLOR;
+    &.arrow.right:after
+      border-left-color: DARKER;
+    &.arrow.left:after
+      border-right-color: DARKER;
+    &.arrow.up:after
+      border-bottom-color: DARKER;
+    &.arrow.down:after
+      border-top-color: DARKER;
+
+  #small-tutorial
+    background-color: rgba(0,0,0, 0.9);
+    .tutorial-slide
+      color: DARK_MODE_FONT_COLOR;
+      background-color: DARK;
+
   @media $phone-or-smaller
     .zooniverse-top-bar
       background: DARK;
