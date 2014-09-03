@@ -7,7 +7,7 @@ module?.exports = [
     content: translate "span", "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
   },
   {
-    image: 'http://placehold.it/320X200&text=tutorial+step+2'
+    image: './images/cww-animal-picking.gif'
     title: translate "span", "Step 2"
     content: translate "span", "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as number of animals found in the image."
   },
