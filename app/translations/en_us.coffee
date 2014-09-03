@@ -751,7 +751,9 @@ module.exports =
           name: 'Alex Weiksnar'
           image: 'images/about/team/michael.jpg'
           description: '''
-            Alex Bio
+           <p>Alex currently works as a front-end developer for the Zooniverse out of the Adler Planetarium. He spends his time building rich and engaging user interfaces for the web.
+           Alex previously attended University of Miami, where he studied Psychology, Biology, and English. 
+           </p>
           '''
 
         whyte:
