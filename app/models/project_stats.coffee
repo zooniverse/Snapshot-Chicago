@@ -15,7 +15,9 @@ class ProjectStats
       # following field may not be available
       if project.subject_count?
         @totalSubjectCount = project.subject_count
-      
+      else
+        for group in project.groups when project.groups.stats?
+          totalSubjectCount += group.stats["total"]
       
    percentComplete: ->
      unless @totalSubjectCount > 0 then return 0 
