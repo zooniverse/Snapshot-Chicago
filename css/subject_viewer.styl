@@ -85,9 +85,13 @@
       padding: 5px 5px 0;
       right: 20px;
       top: 0px;
+      .favorite-tooltip
+        @extend #tooltip
 
       &:hover
         padding-top: 10px;
+        .favorite-tooltip, &:after
+          display: block
 
       &:before,
       &:after
