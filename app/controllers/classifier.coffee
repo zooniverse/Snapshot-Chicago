@@ -46,7 +46,6 @@ class Classifier extends Controller
 
     Subject.on 'select', @onSubjectSelect
     Subject.on 'no-more', @onNoLocalSubjects
-
     $(document).on 'keydown', @onKeyDown
 
   KEYS =

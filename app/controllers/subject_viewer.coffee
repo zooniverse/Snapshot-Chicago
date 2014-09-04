@@ -4,7 +4,6 @@ AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
 SubjectSelector = require '../models/subject_selector'
 modulus = require '../lib/modulus'
-HomePageController = require './home_page'
 
 class SubjectViewer extends Controller
   classification: null
@@ -94,14 +93,6 @@ class SubjectViewer extends Controller
     @el.addClass 'finished'
     @classification.send() unless @classification.annotations.length < 1
     console?.log(@classification)
-    @updateHomePageStats()
-
-  updateHomePageStats: ->
-    #wait a bit then tell home page controller it can update project stats
-    setTimeout =>
-      homePageController = new HomePageController
-      homePageController.updateStatsAfterClassify()
-    , 500 
 
   onClickNext: ->
     @loader.show()

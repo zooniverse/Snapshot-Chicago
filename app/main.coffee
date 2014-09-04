@@ -76,7 +76,7 @@ app.stack = new Stack
     filter: FilterPage
 
   routes:
-    '/home': 'home'
+    '/': 'home'
     '/about': 'about'
     '/classify': 'classify'
     '/profile': 'profile'
@@ -103,8 +103,6 @@ app.topBar.el.appendTo 'body'
 
 siteFooter = $('<div class="site-footer"></div>').append app.footer.el
 siteFooter.appendTo 'body'
-
-Project.fetch()
 
 window.app = app
 module.exports = window.app
