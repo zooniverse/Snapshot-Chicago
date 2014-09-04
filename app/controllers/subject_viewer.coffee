@@ -22,6 +22,7 @@ class SubjectViewer extends Controller
   elements:
     '.subject-images figure': 'figures'
     'button[name="favorite"]': 'favoriteBtn'
+    '.favorite-tooltip': 'favoriteTooltip'
     '.annotations': 'annotationsContainer'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
@@ -76,11 +77,16 @@ class SubjectViewer extends Controller
     @annotationsContainer.animate({ scrollTop: @annotationsContainer[0].scrollHeight}, 1000)
 
   onClickFavorite: ->
-    @classification.favorite = !@classification.favorite
-    @toggleFavoriteIcon()
+    favorited = @classification.favorite = !@classification.favorite
+    @toggleFavoriteIcon(favorited)
+    @toggleFavoriteHoverText(favorited)
 
-  toggleFavoriteIcon: ->
-    @favoriteBtn.toggleClass "favorited", @classification.favorite
+  toggleFavoriteIcon: (favorited) ->
+    @favoriteBtn.toggleClass "favorited", favorited
+
+  toggleFavoriteHoverText: (favorited) ->
+    @favoriteTooltip
+      .find(".add-favorite, .remove-favorite").toggle()
 
   onChangeNothingCheckbox: ->
     nothing = @nothingCheckbox.get(0).checked
