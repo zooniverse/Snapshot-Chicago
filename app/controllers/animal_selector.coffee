@@ -165,7 +165,7 @@ class AnimalSelector extends Controller
   handleFirstVisit: ->
     if @firstVisit
       @smallTutorial.start()
-      Notifier.message(translate('div', 'filterPage.notification'), Notifier.red, true)
+      Notifier.message(translate('div', 'filterPage.notification'), "#fff", true)
       @firstVisit = false
 
   onClickSafeMode: ->

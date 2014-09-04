@@ -12,7 +12,7 @@ module.exports =
     heading: 'Chicago Wildlife Watch'
     rightBannerHeader: "What is Chicago Wildlife Watch?"
     leftBannerHeader: "
-      <p>Welcome to</p>
+      <h2>Welcome to</h2>
       <h1>Chicago <br/> Wildlife Watch</h1>
     "
     content: '''

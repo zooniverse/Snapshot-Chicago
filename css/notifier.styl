@@ -6,11 +6,13 @@
   left: 50%;
   position: absolute;
   background-color: #9db12c;
-  color: #fff;
+  color: $dark-grey-font;
   text-align: center;
   z-index: 2;
   border-radius: 0 0 5px 5px;
   padding: 15px 0;
+  box-shadow: 0 10px 20px -10px $dark-grey-font;
+  border-top: 2px solid $light-grey-bg
 
   @media $tablet-or-smaller
     centerfixed(540)
@@ -37,10 +39,9 @@
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 40px;
-    background-color: transparent;
+    background-color: $medium-blue;
+    color: #fff;
     text-transform: uppercase
-    border: 2px solid #fff;
     border-radius: 5px;
     &:hover
-      background-color: #fff
-      color: $red
+      background-color: lighten($medium-blue, 10%)

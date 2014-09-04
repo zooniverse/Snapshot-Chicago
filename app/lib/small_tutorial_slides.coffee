@@ -12,7 +12,7 @@ module?.exports = [
     content: translate "span", "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as number of animals found in the image."
   },
   {
-    image: "http://placehold.it/320X200&text=tutorial+step+3"
+    image: "./images/cww-wizard.gif"
     title: translate "span", "Step 3"
     content: translate "span", "Occasionally it is difficult to disambiguate which animal is in the photo. Just above the list of animals is a variety of methods to filter the animal list. Selecting different options reduces the number of choices, making your job easier."
   },
