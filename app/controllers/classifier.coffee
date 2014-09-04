@@ -113,7 +113,7 @@ class Classifier extends Controller
 
   activate: ->
     super
-    @el.fadeIn(500)
+    @el.fadeIn(250)
     @animalSelector.handleFirstVisit()
     setTimeout => @tutorial.dialog.attach()
 
