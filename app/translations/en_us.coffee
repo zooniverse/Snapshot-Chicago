@@ -726,7 +726,6 @@ module.exports =
         '''
 
       development:
-      
         raden:
           name: 'Steve Raden'
           image: 'http://placehold.it/100'
