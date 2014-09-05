@@ -1,35 +1,23 @@
 {Controller} = require 'spine'
 template = require '../views/home_page'
 Project  = require 'zooniverse/models/project'
-ProjectStats = require '../models/project_stats'
-formatNumber =  require '../lib/format_number'
+StatsBox = require "./stats_box"
 
 class HomePage extends Controller
   className: 'home-page'
 
-  stats: null
-  
-  onStatsDataReady: =>
-    #render stats on the view
-    formatedPercentComplete = @stats.percentComplete().toString() + "%"
-    view_controls = $(".snapshot-chicago-stats")
-    view_controls.find("#user-count").text(formatNumber(@stats.userCount))
-    view_controls.find("#classification-count").text(formatNumber(@stats.classificationCount))
-    view_controls.find("#percent-complete").text(formatedPercentComplete)
-    view_controls.find("#total-images").text(formatNumber(@stats.totalSubjectCount))
-
-  handleProjectFetch: =>
-    @stats = new ProjectStats(Project.current)
-    #wait for all stats to be be ready before formatting
-    @stats.on 'statsDataReady', @onStatsDataReady
-
-  updateStatsAfterClassify: =>
-    #this will trigger the logic for handleProjectFetch which was already bound
-    Project.fetch()
+  elements:
+    'section[role="stats-box"]': 'statsSection'
 
   constructor: ->
     super
-    Project.on "fetch", @handleProjectFetch 
+    @statsBox = new StatsBox
+    Project.on 'fetch', @statsBox.update
     @html template
-   
+    @statsSection.append @statsBox.el
+
+  activate: ->
+    super
+    Project.fetch() # to render current stats data
+
 module.exports = HomePage

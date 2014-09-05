@@ -4,7 +4,6 @@ AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
 SubjectSelector = require '../models/subject_selector'
 modulus = require '../lib/modulus'
-HomePageController = require './home_page'
 
 class SubjectViewer extends Controller
   classification: null
@@ -23,6 +22,7 @@ class SubjectViewer extends Controller
   elements:
     '.subject-images figure': 'figures'
     'button[name="favorite"]': 'favoriteBtn'
+    '.favorite-tooltip': 'favoriteTooltip'
     '.annotations': 'annotationsContainer'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
@@ -77,11 +77,18 @@ class SubjectViewer extends Controller
     @annotationsContainer.animate({ scrollTop: @annotationsContainer[0].scrollHeight}, 1000)
 
   onClickFavorite: ->
-    @classification.favorite = !@classification.favorite
-    @toggleFavoriteIcon()
+    favorited = @classification.favorite = !@classification.favorite
+    @toggleFavoriteIcon(favorited)
+    @toggleFavoriteHoverText(favorited)
 
-  toggleFavoriteIcon: ->
-    @favoriteBtn.toggleClass "favorited", @classification.favorite
+  toggleFavoriteIcon: (favorited) ->
+    @favoriteBtn.toggleClass "favorited", favorited
+
+  toggleFavoriteHoverText: (favorited) ->
+    @favoriteTooltip
+      .find(".add-favorite").toggle(!favorited)
+      .addBack()
+      .find(".remove-favorite").toggle(!!favorited)
 
   onChangeNothingCheckbox: ->
     nothing = @nothingCheckbox.get(0).checked
@@ -94,14 +101,6 @@ class SubjectViewer extends Controller
     @el.addClass 'finished'
     @classification.send() unless @classification.subject.metadata.empty
     console?.log(@classification)
-    @updateHomePageStats()
-
-  updateHomePageStats: ->
-    #wait a bit then tell home page controller it can update project stats
-    setTimeout =>
-      homePageController = new HomePageController
-      homePageController.updateStatsAfterClassify()
-    , 500 
 
   onClickNext: ->
     @loader.show()
