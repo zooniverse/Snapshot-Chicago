@@ -11,6 +11,6 @@ class ProfilePage extends Controller
     @profile ?= new Profile
     @html @profile.el
 
-    @el.prepend "<div class='secondary-header'><h1>#{translate 'profile.header'}</h1></div>"
+    @el.prepend "<div class='secondary-header'>#{translate 'h1', 'profile.header'}</div>"
 
 module.exports = ProfilePage

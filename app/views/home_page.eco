@@ -32,7 +32,7 @@
     <div class='content'>
       <div class='third'><a href="http://www.adlerplanetarium.org"><img src='./images/logos/adler.png'></a></div>
       <div class='third'><a href="http://www.lpzoo.org"><img src='./images/logos/lpz.png'></a></div>
-      <div class='third'><a href="http://www.zooniverse.org"><img src='./images/logos/zooniverse.png'></a></div>
+      <div class='third'><a href="http://www.zooniverse.org"><img src='./images/logos/zooniverse.svg'></a></div>
     </div>
     <%- translate 'p', 'home.preFooterText' %>
   </div>

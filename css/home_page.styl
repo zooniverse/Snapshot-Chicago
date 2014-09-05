@@ -22,8 +22,8 @@
 
         a
           @extend #standard-button;
-          height: 60px;
-          line-height: 60px;
+          height: 50px;
+          line-height: 50px;
           text-shadow: none;
           border-radius: 5px;
           letter-spacing: 1px;
@@ -31,6 +31,12 @@
           background: $medium-blue;
           color: $white;
           padding: 0px 50px;
+
+      h2
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0;
 
     &.left
       background:
@@ -44,20 +50,19 @@
           line-height: 75px;
           margin: 0 auto 20px auto;
           font-weight: 300;
+        p
+          font-size: 16px;
+          margin-bottom: 0;
 
     &.right
       float: right;
       color: #50504e;
       background-color: $light-blue;
-      .content
-        h2
-          color: #fff;
-          font-weight: 300;
-          font-size: 16px;
-          margin: 0 auto 20px auto;
+      .content h2
+        margin: 0 auto 20px auto;
 
   .snapshot-chicago-stats
-    background: url("./images/stats-skyline.png") no-repeat 50%;
+    background: url("./images/stats-skyline.svg") no-repeat 50%;
     background-color: $white;
     display: block;
     width: 100%;

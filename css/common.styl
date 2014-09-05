@@ -84,6 +84,29 @@ wrap(sectionWidth)
   color: $dark-grey-font;
   background-color: $light-grey-bg;
 
+#tooltip
+  bottom: 100%;
+  border-radius: 3px;
+  color: $dark-grey-font;
+  display: none;
+  font-size: 10px;
+  font-weight: bold;
+  left: 50%;
+  margin: 0 0 3px -10px;
+  padding: 2px 10px;
+  position: absolute;
+  background-color: $gold;
+  white-space: nowrap;
+  z-index: 1;
+
+  &:after
+    border: 5px solid transparent;
+    border-top-color: $gold;
+    content: "";
+    left: 5px;
+    position: absolute;
+    top: 100%;
+
 #standard-toggle
   color: transparent;
   height: 20px;

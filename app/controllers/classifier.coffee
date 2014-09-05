@@ -11,7 +11,6 @@ User = require 'zooniverse/models/user'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
-Notifier = require "../lib/notifier"
 Classification = require '../models/classification'
 
 class Classifier extends Controller
@@ -112,7 +111,7 @@ class Classifier extends Controller
 
   activate: ->
     super
-    @el.fadeIn(500)
+    @el.fadeIn(250)
     @animalSelector.handleFirstVisit()
     setTimeout => @tutorial.dialog.attach()
 

@@ -12,6 +12,6 @@
   "scripts": {
     "start": "haw serve --port 9999",
     "deploy-to-staging": "haw build ./build --force && publisssh ./build demo.zooniverse.org/zoo-zoo && rm -rf ./build",
-    "deploy-to-production": "haw build ./build --force && publisssh ./build www.TODO.org && rm -rf ./build"
+    "deploy-to-production": "haw build ./build --force && publisssh ./build zooniverse-static/www.chicagowildlifewatch.org && rm -rf ./build"
   }
 }

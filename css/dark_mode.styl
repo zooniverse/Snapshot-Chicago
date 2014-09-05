@@ -44,6 +44,8 @@ body.dark-mode
       .animal-details
         background: DARK;
         box-shadow: none;
+        .image-changer .images
+          border-bottom: none;
         .content button
           background: transparent;
           border: 1px solid DARKEST;
@@ -85,12 +87,14 @@ body.dark-mode
       .sign-in-form input
         background: DARK;
         color: DARK_MODE_FONT_COLOR;
-        outline: 4px solid $light-blue
-        &:focus
-          outline-color: $medium-blue;
     nav
       button[name='turn-page']:not(.active)
         background: DARK;
+
+  #notifier
+    color: DARK_MODE_FONT_COLOR;
+    background-color: DARKER !important; // override jQuerys inline styles
+    border-top: 2px solid DARKEST;
 
   .tutorial.zootorial-dialog
     background: DARKER;

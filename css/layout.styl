@@ -48,24 +48,13 @@ html
 
 
       #site-title
+        width: 200px;
         text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 18px;
-        line-height: 20px;
-        margin: 0 25px 10px 0;
-        span
-          &:nth-child(1)
-            color: $red;
-            font-weight: 700;
-          &:nth-child(2)
-            color: $dark-blue;
-            font-weight: 400;
-        @media $phone-or-smaller
-          font-size: 14px;
-          margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 40px;
         @media $desktop-or-smaller
-          margin-right: 0;
+          margin: 0 auto;
           display: block;
 
       ul
@@ -85,7 +74,7 @@ html
           &#day-mode
             display: none;
           &.dark-mode-toggle
-            width: 12px;
+            width: 13px;
             position: absolute;
             right: 5px;
             top: 35px;
@@ -138,7 +127,7 @@ html
 
   @media screen and (max-width: 1250px)
     .zooniverse-top-bar
-      .zooniverse-info
+      .zooniverse-info.piece span
         display: none
 
   @media $phone-or-smaller
