@@ -739,12 +739,14 @@ module.exports =
           name: 'Steve Raden'
           image: 'http://placehold.it/100'
           description: '''
-            Steve bio
+            Steve is a software developer at Adler Planetarium and Zooniverse. 
+            As a Chicagoan, he enjoys walking the city's park and streets and occasional spotting
+            animals. 
           '''
 
         lintott:
           name: 'Chris Lintott'
-          image: 'images/about/team/chris.jpg'
+          image: 'images/about/steam/chris.jpg'
           description: '''
             Chris Lintott leads the Zooniverse team, and is his copious spare time is a researcher at the University of Oxford specialising in galaxy formation and evolution.
             A keen popularizer of science, he is best known as co-presenter of the BBC's long running Sky at Night program. He's currently drinking a lot of sherry.
@@ -754,7 +756,7 @@ module.exports =
           name: 'Heath Van Singel'
           image: 'http://placehold.it/100'
           description: '''
-            Heath bio
+            Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.
           '''
 
         parrish:
