@@ -34,8 +34,8 @@
 </div>
 
 <div class="aux">
-  <button name="safe-mode"><%- translate 'span', 'filterPage.name' %></button>
   <button name="start-small-tutorial"><%- translate 'span', 'classify.tutorial.small' %></button>
   <button name="start-tutorial"><%- translate 'span', 'classify.tutorial.button' %></button>
+  <button name="safe-mode"><%- translate 'span', 'filterPage.name' %></button>
   <button name="clear-filters"><%- translate 'span', 'classify.clearFilters' %></button>
 </div>
