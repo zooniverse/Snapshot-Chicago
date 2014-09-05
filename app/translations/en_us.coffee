@@ -785,8 +785,10 @@ module.exports =
           <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
         </ul>
 
-        <p>We also recommend checking out the Urban Wildlife Institute webpage for more information on the organization</p>
-
+        <p>Please visit Lincoln Park Zoo's Educator's Resources <a href="http://www.lpzoo.org/education/educators-resources"> webpage</a> to access curriculum guides, Zoo field trip and self-tour information, accesssibility kits, and links to several multi-media apps.
+        </p>
+        <p>We also recommend checking out the Urban Wildlife Institute <a href="http://www.lpzoo.org/conservation-science/science-centers/urban-wildlife-institute">webpage</a> for more information on the organization.
+        </p>
       """
     aside:
       content: """
