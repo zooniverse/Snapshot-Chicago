@@ -18,6 +18,8 @@
         <%- translate 'p', 'education.overview.p' %>
         <%- translate 'h1', 'education.resources.header' %>
         <%- translate 'div', 'education.resources.content' %>
+        <%- translate 'h1', 'education.partner_resources.header' %>
+        <%- translate 'div', 'education.partner_resources.content' %>
       </div>
     </div>
 
