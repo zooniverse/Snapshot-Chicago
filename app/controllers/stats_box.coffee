@@ -19,19 +19,27 @@ class StatsBox extends Controller
 
   updateSubjectTotal: ->
     # this is separate from update because not stored on the project
-    Api.current.get '/projects/chicago/groups/', (groups) =>
-      @totalSubjectCount = groups
-        .map (group) -> +group.stats.total
-        .reduce (total, count) -> total + count
-      @totalImages.text num(@totalSubjectCount)
+    deffered = new $.Deferred()
+    if @totalSubjectCount
+      deffered.resolve(@totalSubjectCount)
+    else
+      Api.current.get '/projects/chicago/groups/', (groups) =>
+        @totalSubjectCount = groups
+          .map (group) -> +group.stats.total
+          .reduce (total, count) -> total + count
+        deffered.resolve(@totalSubjectCount)
+    return deffered.promise()
+
+  setTotal: (total) =>
+    @totalImages.text num(total)
+    return total
 
   update: =>
-    if @totalSubjectCount
-      @updateHelper()
-    else 
-       @updateSubjectTotal().then(@updateHelper()) 
+    console.log('update')
+    @updateSubjectTotal().then(@setTotal).then(@updateHelper) 
 
-   updateHelper: =>
+  updateHelper: =>
+    console.log('update helper ')
     project = Project.current
     @completeCount = num(project.complete_count)
     @complete.text @percentComplete() + "%"
