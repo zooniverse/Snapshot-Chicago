@@ -121,3 +121,4 @@ class SubjectViewer extends Controller
     """.replace '\n', '', 'g'
 
 module.exports = SubjectViewer
+  
