@@ -35,11 +35,9 @@ class StatsBox extends Controller
     return total
 
   update: =>
-    console.log('update')
-    @updateSubjectTotal().then(@setTotal).then(@updateHelper) 
+    @updateSubjectTotal().then(@setTotal).then(@updateHelper)
 
   updateHelper: =>
-    console.log('update helper ')
     project = Project.current
     @completeCount = num(project.complete_count)
     @complete.text @percentComplete() + "%"
