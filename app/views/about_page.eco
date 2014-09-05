@@ -55,6 +55,9 @@
         <%- translate 'h2', 'about.team.development.whyte.name' %>
         <%- translate 'div', 'about.team.development.whyte.description' %>
 
+        <%- translate 'h2', 'about.team.development.vansingel.name' %>
+        <%- translate 'div', 'about.team.development.vansingel.description' %>
+
         <%- translate 'h2', 'about.team.development.raden.name' %>
         <%- translate 'div', 'about.team.development.raden.description' %>
 

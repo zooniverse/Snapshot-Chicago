@@ -726,43 +726,21 @@ module.exports =
         '''
 
       development:
-        borden:
-          name: 'Kelly Borden'
-          image: 'images/about/team/kelly.jpg'
-          description: '''
-            Kelly is an archaeologist by training but an educator by passion.
-            While working at the Museum of Science and Industry and the Adler Planetarium she became an enthusiastic science educator eager to bring science to the masses.
-            When not pondering the wonders of science, Kelly can often be found baking or spending time with her herd of cats – Murray, Ada, & Kepler.
-          '''
-
+      
         raden:
           name: 'Steve Raden'
           image: 'http://placehold.it/100'
           description: '''
-            Steve bio
-          '''
-
-        lintott:
-          name: 'Chris Lintott'
-          image: 'images/about/team/chris.jpg'
-          description: '''
-            Chris Lintott leads the Zooniverse team, and is his copious spare time is a researcher at the University of Oxford specialising in galaxy formation and evolution.
-            A keen popularizer of science, he is best known as co-presenter of the BBC's long running Sky at Night program. He's currently drinking a lot of sherry.
+            Steve is a software developer at Adler Planetarium and Zooniverse. 
+            As a Chicagoan, he enjoys walking the city's parks and streets and occasionally spotting
+            animals. 
           '''
 
         vansingel:
           name: 'Heath Van Singel'
           image: 'http://placehold.it/100'
           description: '''
-            Heath bio
-          '''
-
-        parrish:
-          name: 'Michael Parrish'
-          image: 'images/about/team/michael.jpg'
-          description: '''
-            Michael has a degree in Computer Science and has been working with The Zooniverse for the past three years as a Software Developer.
-            Aside from web development; new technologies, science, AI, reptiles, and coffee tend to occupy his attention.
+            Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.
           '''
 
         weiksnar:
