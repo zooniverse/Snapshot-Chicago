@@ -86,9 +86,7 @@ class SubjectViewer extends Controller
 
   toggleFavoriteHoverText: (favorited) ->
     @favoriteTooltip
-      .find(".add-favorite").toggle(!favorited)
-      .addBack()
-      .find(".remove-favorite").toggle(!!favorited)
+      .find(".add-favorite, .remove-favorite").toggle()
 
   onChangeNothingCheckbox: ->
     nothing = @nothingCheckbox.get(0).checked
