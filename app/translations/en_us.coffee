@@ -12,7 +12,7 @@ module.exports =
     heading: 'Chicago Wildlife Watch'
     rightBannerHeader: "What is Chicago Wildlife Watch?"
     leftBannerHeader: "
-      <p>Welcome to</p>
+      <h2>Welcome to</h2>
       <h1>Chicago <br/> Wildlife Watch</h1>
     "
     content: '''
@@ -39,6 +39,24 @@ module.exports =
     description: """
       If you are using the Chicago Urban Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal, but still require additional classifications to confirm the animal type. For a younger audience, or for a situation where classification time is limited, this may provide a more engaging experience.
     """
+
+  siteIntro:
+    s1:
+      title: "Welcome to Snapshot Chicago"
+      content: "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
+    s2:
+      title: "Identifying animals"
+      content: "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
+    s3:
+      title: "Filtering by characteristics"
+      content: "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as number of animals found in the image."
+    s4:
+      title: "Made a mistake?"
+      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
+    s5:
+      title: "That's it!"
+      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
+
 
   classify:
     deleteAnnotation: 'Delete'
@@ -751,7 +769,9 @@ module.exports =
           name: 'Alex Weiksnar'
           image: 'images/about/team/michael.jpg'
           description: '''
-            Alex Bio
+           <p>Alex currently works as a front-end developer for the Zooniverse out of the Adler Planetarium. He spends his time building rich and engaging user interfaces for the web.
+           Alex previously attended University of Miami, where he studied Psychology, Biology, and English. 
+           </p>
           '''
 
         whyte:
