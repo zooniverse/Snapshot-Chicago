@@ -2,6 +2,7 @@
 template = require '../views/stats_box'
 Api = require 'zooniverse/lib/api'
 Project = require "zooniverse/models/project"
+num = require "../lib/format_number"
 
 class StatsBox extends Controller
   className: 'snapshot-chicago-stats'
@@ -23,16 +24,16 @@ class StatsBox extends Controller
       @totalSubjectCount = groups
         .map (group) -> +group.stats.total
         .reduce (total, count) -> total + count
-      @totalImages.text @totalSubjectCount
+      @totalImages.text num(@totalSubjectCount)
 
   update: =>
     project = Project.current
 
     @updateSubjectTotal() unless @totalSubjectCount
-    @completeCount = project.complete_count
+    @completeCount = num(project.complete_count)
     @complete.text @percentComplete() + "%"
-    @classificationCount.text project.classification_count
-    @userCount.text project.user_count
+    @classificationCount.text num(project.classification_count)
+    @userCount.text num(project.user_count)
 
   percentComplete: ->
     return 0 unless @totalSubjectCount
