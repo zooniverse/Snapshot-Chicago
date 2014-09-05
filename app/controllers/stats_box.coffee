@@ -19,7 +19,6 @@ class StatsBox extends Controller
 
   updateSubjectTotal: ->
     # this is separate from update because not stored on the project
-
     Api.current.get '/projects/chicago/groups/', (groups) =>
       @totalSubjectCount = groups
         .map (group) -> +group.stats.total
@@ -27,9 +26,13 @@ class StatsBox extends Controller
       @totalImages.text num(@totalSubjectCount)
 
   update: =>
-    project = Project.current
+    if @totalSubjectCount
+      @updateHelper()
+    else 
+       @updateSubjectTotal().then(@updateHelper()) 
 
-    @updateSubjectTotal() unless @totalSubjectCount
+   updateHelper: =>
+    project = Project.current
     @completeCount = num(project.complete_count)
     @complete.text @percentComplete() + "%"
     @classificationCount.text num(project.classification_count)
