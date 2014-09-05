@@ -657,7 +657,7 @@ module.exports =
       """
 
     uwi:
-      nav: "Urban Wildlife Inst."
+      nav: "Urban Wildlife Institute"
       header: "Urban Wildlife Institute"
       content: """
         <p>Utilizing Lincoln Park Zoo’s diverse scientific specialties, the Urban Wildlife Institute studies the interaction between urban development and the natural ecosystem to develop scientific standards for minimizing conflict between these overlapping areas. Landscape ecology, population biology, epidemiology, endocrinology, veterinary medicine and other core disciplines contribute to an increased understanding of ecosystem health in an urban setting. The Urban Wildlife Institute aims to use Chicago as a model for urban areas struggling to deal with wildlife relocation, rehabilitation, disease and conflicts.</p>
