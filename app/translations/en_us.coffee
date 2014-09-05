@@ -42,7 +42,7 @@ module.exports =
 
   siteIntro:
     s1:
-      title: "Welcome to Snapshot Chicago"
+      title: "Welcome!"
       content: "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
     s2:
       title: "Identifying animals"
