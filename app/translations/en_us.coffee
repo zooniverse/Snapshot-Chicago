@@ -214,13 +214,13 @@ module.exports =
     bike:
       label: 'Bike'
       description: '''
-        N/A
+        N/A. Identifying the frequency of bikes helps us understand  the the impact of human activity on the animal population in this urban habitat. 
       '''
 
     car:
       label: 'Car'
       description: '''
-        N/A
+        N/A. Identifying the frequency of cars helps us understand the impact of human activity on the animal population in this urban habitat. 
       '''
 
     chipmunk:
@@ -292,7 +292,7 @@ module.exports =
     livestock:
       label: 'Livestock'
       description: '''
-        N/A
+         N/A. Identifying the frequency of livestock helps us understand the impact of human activity on the animal population in this urban habitat. 
       '''
 
     mink:
@@ -310,7 +310,7 @@ module.exports =
     mower:
       label: 'Mower'
       description: '''
-        N/A
+        N/A. Identifying the frequency of mowers helps us understand the impact of human activity on the animal population in this urban habitat.
     '''
 
     muskrat:
@@ -328,7 +328,7 @@ module.exports =
     otherVehicle:
       label: 'Vehicle, Other'
       description: '''
-        N/A
+        N/A. Identifying the frequency of vehicles helps us understand the impact of human activity on the animal population in this urban habitat.
       '''
 
     rabbit:
