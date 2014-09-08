@@ -763,7 +763,7 @@ module.exports =
       header: "Connect"
       action: "Get Started"
       social: """
-        Follow the <a href= 'https://twitter.com/adlerskywatch'>Adler Planetarium</a> and <a href='https://twitter.com/lincolnparkzoo'>Lincoln Park Zoo</a> on Twitter to keep current with the latest findings!
+        Follow the Adler Planetarium [<a href='http://www.adlerplanetarium.org/blogs'>Blog</a> / <a href= 'https://twitter.com/adlerskywatch'>Twitter</a>] and Lincoln Park Zoo [<a href='http://www.lpzoo.org/blog/lincoln-park-zoo'>Blog</a> / <a href='https://twitter.com/lincolnparkzoo'>Twitter</a>] to keep current with the latest findings!
       """
 
   education:
