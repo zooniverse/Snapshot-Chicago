@@ -9,7 +9,6 @@
   <li><%- translate 'a', 'navigation.about', href: '#/about' %></li>
   <li><%- translate 'a', 'navigation.education', href: '#/education' %></li>
   <li><%- translate 'a', 'navigation.discuss', href: 'http://talk.chicagowildlifewatch.org' %></li>
-  <li><%- translate 'a', 'navigation.blog', href: '#' %></li>
   <img src='./images/day-mode.svg' id="day-mode" class='dark-mode-toggle'>
   <img src='./images/night-mode.svg' id="night-mode" class='dark-mode-toggle'>
 </ul>

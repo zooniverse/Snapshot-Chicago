@@ -763,7 +763,7 @@ module.exports =
       header: "Connect"
       action: "Get Started"
       social: """
-        Follow the <a href= '#/'>Chicago Wildlife Watch Blog</a> and <a href='#/'>@Chicago_Wildlife_Watch</a> to keep current with the latest findings
+        Follow the <a href= 'https://twitter.com/adlerskywatch'>Adler Planetarium</a> and <a href='https://twitter.com/lincolnparkzoo'>Lincoln Park Zoo</a> on Twitter to keep current with the latest findings!
       """
 
   education:
