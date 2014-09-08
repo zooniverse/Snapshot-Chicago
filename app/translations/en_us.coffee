@@ -46,17 +46,16 @@ module.exports =
       content: "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
     s2:
       title: "Identifying animals"
-      content: "Welcome to Chicago Wildlife Watch! In this project, we are asking you to identify animals found in camera trap photos from around the city. Your help allows us to continue our research into urban biodiversity, making the city a better home for both humans and animals."
+      content: "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as the number of animals found in the image."
     s3:
       title: "Filtering by characteristics"
-      content: "You are presented with a photo on the left and a list of potential animals on the right. When you spot an animal within a photo, simply click the corresponding animal on the right. You will be asked to supply some followup info, such as number of animals found in the image."
+      content: "Occasionally it is difficult to determine which animal is in the photo. Just above the list of animals is a variety of methods to filter the animal list. Selecting different options reduces the number of choices, making your job easier."
     s4:
       title: "Made a mistake?"
       content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
     s5:
       title: "That's it!"
-      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
-
+      content: "That's it! You may catchup on project updates either on the blog or through speaking with other volunteers. If you need additional help using the interface, click Tutorial within the list of links below the Finish button."
 
   classify:
     deleteAnnotation: 'Delete'
@@ -209,170 +208,170 @@ module.exports =
     beaver:
       label: 'Beaver'
       description: '''
-        Usually brown with large sharp front teeth, front feet has claws, back feet are webbed, round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal. They are known for building dams, canals, and lodges out of tree limbs and branches for homes.
-    '''
+        Usually brown with large sharp front teeth, front feet has claws, back feet are webbed, round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
+      '''
 
     bike:
       label: 'Bike'
       description: '''
-        Describe Bike
-    '''
+        N/A
+      '''
 
     car:
       label: 'Car'
       description: '''
-        Describe Car
-    '''
+        N/A
+      '''
 
     chipmunk:
       label: 'Chipmunk'
       description: '''
         A small member of the squirrel family that use their cheek pouches to carry various foods of nuts, berries, seeds, etc into their burrow or nest to store their food. These have smaller less bushy tails than a typical squirrel and sport signature white and brown stripes around their eye and going down their back. Typically brown or tan in color.
-    '''
+      '''
 
     coyote:
       label: 'Coyote'
       description: '''
-        Commonly brown and tan in color, this member of the dog family is smaller than wolves and have occasionally been called prairie wolves or brush wolves due to their wolf like appearance. Although, they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter they form packs for more effective hunting. Humans should not fear urban coyotes, but take precautions not to feed the animals and keep small pets indoors.
-    '''
+        Commonly brown and tan in color, this member of the dog family is smaller than wolves and have occasionally been called prairie wolves or brush wolves due to their wolf like appearance. Although, they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter they form packs for more effective hunting.
+      '''
 
     deer:
       label: 'Deer'
       description: '''
         A fairly big, tan animal that is in the same family as moose and reindeer. They have large ears and short fluffy tails. The males are called bucks while females are called does and the young are called fawns. Some males may have antlers depending on the time of the year.
-    '''
+      '''
 
     domCat:
       label: 'Cat, Domestic'
       description: '''
         A common household pet with a small build, long tails, and small pointed ears. This animals come in a variety of color, patterns (spotted or stripes), and breeds.
-    '''
+      '''
 
     domDog:
       label: 'Dog, Domestic'
       description: '''
-        A common household pet related to wolves, foxes, and jackals, but come in a variety of colors, sizes, patterns, and breeds. Dogs communicate in many different ways; such as scent, facial expressions, body position, and movement.
-    '''
+        A common household pet related to wolves, foxes, and jackals, but come in a variety of colors, sizes, patterns, and breeds.
+      '''
 
     flyingSquirrel:
       label: 'Squirrel, Flying'
       description: '''
         A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet, and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide, while using its legs to steer and its tail to brake when it reaches its destination.
-    '''
+      '''
 
     foxSquirrel:
       label: 'Squirrel, Fox'
       description: '''
-        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most time in forging food  and roaming around fields.
-    '''
+        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most time in forging food and roaming around fields.
+      '''
 
     grayFox:
       label: 'Fox, Gray'
       description: '''
         A small to medium sized animal with gray coat on its back and head with light fur on its chest and belly. They have a signature black tipped, bushy tail and band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations, and are active during the night.
-    '''
+      '''
 
     graySquirrel:
       label: 'Squirrel, Gray'
       description: '''
         Small squirrels that are gray-brown all over their bodies except the white patch along their belly. This animals diet consists of acorns, hickory nuts, maple, walnuts, etc.
-    '''
+      '''
 
     horse:
       label: 'Horse'
       description: '''
-        A large, muscular animal with a mane of hair along the back of the head and neck. These animals have hooves and a long tail of hair. Males are called stallions, females are mares, and young ones are called foals. Domesticated these animals are used for transportation and competitive sports.
-    '''
+        A large, muscular animal with a mane of hair along the back of the head and neck. These animals have hooves and a long tail of hair.
+      '''
 
     human:
       label: 'Human'
       description: '''
-        Describe Human
-    '''
+        Identifying a human within a photo flags this image. We generally remove images of humans very quickly from the dataset.
+      '''
 
     livestock:
       label: 'Livestock'
       description: '''
-        Describe Livestock
-    '''
+        N/A
+      '''
 
     mink:
       label: 'Mink'
       description: '''
         Related to otters, weasels, and ferrets, Minks have pointed snouts with dark eyes. They also have clawed feet with webbing and bodies covered in thick brown fur that sheds water quickly. These animals live in semi aquatic habitats.
-    '''
+      '''
 
     mouse:
       label: 'Mouse'
       description: '''
         A very small animal with a long snout, big round ears, and a long hairless tail. This animal can be found in and around grasslands and homes.
-    '''
+      '''
 
     mower:
       label: 'Mower'
       description: '''
-        Describe Mower
+        N/A
     '''
 
     muskrat:
       label: 'Muskrat'
       description: '''
         This animal normally has brown fur and a black tail with small dark eyes. The furless, scaly tail is half of its total length. When it walks, the tail creates a trail. Their front paws are clawed while in the rear they are semi-webbed clawed feet.
-    '''
+      '''
 
     opossum:
       label: 'Opossum'
       description: '''
         Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal known for playing dead has a white face with a pink nose,  black eyes, black ears, long tail and long, gray fur on their body.
-    '''
+      '''
 
     otherVehicle:
       label: 'Vehicle, Other'
       description: '''
-        Describe Vehicle, Other
-    '''
+        N/A
+      '''
 
     rabbit:
       label: 'Rabbit'
       description: '''
         Rabbits we see in urban settings have large, dark eyes, long ears pointed upwards, and brown fur with a short, fluffy, white tail.
-    '''
+      '''
 
     raccoon:
       label: 'Raccoon'
       description: '''
         This brown-gray furry animal looks like it’s wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
-    '''
+      '''
 
     rat:
       label: 'Rat'
       description: '''
         A large mouse like critter with a pointy nose, round ears, and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but its not uncommon to see then running across the street above ground.
-    '''
+      '''
 
     redFox:
       label: 'Fox, Red'
       description: '''
-        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. It’s tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs. They often hunt for food but can adapt to eating garbage and pet food.
-    '''
+        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. It’s tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs.
+      '''
 
     skunk:
       label: 'Skunk'
       description: '''
         An animal, well known for its stinky spray towards predators, has black with white stripe patterns. It has a single thin, white stripe down the middle of its face and two, thicker white stripes originated at the top of its head running down either side of the back into its thick, bushy tail.
-    '''
+      '''
 
     woodChuck:
       label: 'Woodchuck'
       description: '''
         This animal is also known as a groundhog. It has a brown furry coat, clawed feets, small eyes and ears, and a short, flat tail.
-    '''
+      '''
 
     melanisticGraySquirrel:
       label: 'Squirrel, Melanistic Gray'
       description: '''
         Is an animal that has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process, they will appear to be brown and black patchy.
-    '''
+      '''
 
   differences:
     beaver:
