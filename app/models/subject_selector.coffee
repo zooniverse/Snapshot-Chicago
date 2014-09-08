@@ -1,4 +1,6 @@
 Subject = require "zooniverse/models/subject"
+Notify = require "../lib/notifier"
+translate = require "t7e"
 
 SubjectSelector =
   groups:
@@ -27,35 +29,43 @@ SubjectSelector =
   completedGoldStandard: ->
     localStorage.goldStandardComplete is true
 
-  fetchGoldStandard: ->
+  tryForAGoldStandard: (failCallback) ->
     groupToReturnTo = if Subject.group is @groups.gold then true else Subject.group
     @setGroup(@groups.gold)
 
     Subject.fetch limit: 1, (subjects) =>
       if subjects?.length
+        @setGroup(groupToReturnTo)
         subjects[0].select()
       else
+        @setGroup(groupToReturnTo)
         @setGoldStandardComplete()
-        @fetchNext()
-      @setGroup(groupToReturnTo)
+        failCallback()
 
-  getSafeNext: (attempts = 3) ->
-    return @fetchGoldStandard() if attempts <= 0
+  getSafeNext: (attempts = 5) ->
+    return @subjectError() if attempts <= 0
 
     Subject.fetch limit: 10, (subjects) =>
-      safes = subjects.filter (s) -> s.classification_count > @safeCount
+      safes = subjects.filter (s) => s.classification_count > @safeCount
+
       if safes?.length
         safes[0].select()
       else
         @getSafeNext(attempts - 1)
 
+  fetchGoldStandard: ->
+    @tryForAGoldStandard => @fetchNext()
+
+  subjectError: ->
+    @tryForAGoldStandard ->
+      Notify.message(translate('span', 'classify.curatedError'), "#fff", true)
+      $(".subject-loader").hide()
+
   fetchNext: ->
     if @safeMode then @getSafeNext() else Subject.next()
 
   getNext: ->
-    if @shouldShowGoldStandard()
-      @fetchGoldStandard()
-    else
-      @fetchNext()
+    # call where Subject.next would normally happen
+    if @shouldShowGoldStandard() then @fetchGoldStandard() else @fetchNext()
 
 module?.exports = SubjectSelector

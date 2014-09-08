@@ -28,11 +28,13 @@ class FilterPage extends Controller
 
   onClickFiltered: =>
     SubjectSelector.safeMode = true
+    SubjectSelector.getNext()
     @dimNotClicked @unfilteredBtn
     redirectTo("classify", @redirectDelay)
 
   onClickUnfiltered: =>
     SubjectSelector.safeMode = false
+    SubjectSelector.getNext()
     @dimNotClicked @filteredBtn
     redirectTo("classify", @redirectDelay)
 

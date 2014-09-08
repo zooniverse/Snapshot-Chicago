@@ -55,3 +55,4 @@ Notifier =
       @actionButton.toggle(action)
 
 module?.exports = Notifier
+

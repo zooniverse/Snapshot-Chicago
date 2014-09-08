@@ -90,6 +90,7 @@ Route.setup()
 User.fetch()
 
 Notifier.init()
+window.addEventListener 'hashchange' , -> Notifier.hide()
 
 app.topBar = new TopBar
 app.footer = new Footer
