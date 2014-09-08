@@ -208,7 +208,7 @@ module.exports =
     beaver:
       label: 'Beaver'
       description: '''
-        Usually brown with large sharp front teeth, front feet has claws, back feet are webbed, round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
+        This animal is usually brown with large sharp front teeth, clawed front feet, webbed back feet, a round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
       '''
 
     bike:
@@ -226,55 +226,55 @@ module.exports =
     chipmunk:
       label: 'Chipmunk'
       description: '''
-        A small member of the squirrel family that use their cheek pouches to carry various foods of nuts, berries, seeds, etc into their burrow or nest to store their food. These have smaller less bushy tails than a typical squirrel and sport signature white and brown stripes around their eye and going down their back. Typically brown or tan in color.
+        A small member of the squirrel family that use their cheek pouches to carry various nuts, berries and seeds into their burrow or nest to store their food. They have smaller, less bushy tails than a typical squirrel and sport signature white and brown stripes around their eye and going down their back. Typically brown or tan in color.
       '''
 
     coyote:
       label: 'Coyote'
       description: '''
-        Commonly brown and tan in color, this member of the dog family is smaller than wolves and have occasionally been called prairie wolves or brush wolves due to their wolf like appearance. Although, they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter they form packs for more effective hunting.
+        Commonly brown and tan in color, this member of the dog family is smaller than a wolf. They have occasionally been called prairie wolves or brush wolves due to their wolf like appearance, but they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter, they form packs for more effective hunting.
       '''
 
     deer:
       label: 'Deer'
       description: '''
-        A fairly big, tan animal that is in the same family as moose and reindeer. They have large ears and short fluffy tails. The males are called bucks while females are called does and the young are called fawns. Some males may have antlers depending on the time of the year.
+        A fairly big, tan animal that is in the same family as moose and reindeer. They have large ears and short fluffy tails. The males are called bucks while females are called does, and the young are called fawns. Some males may have antlers depending on the time of the year.
       '''
 
     domCat:
       label: 'Cat, Domestic'
       description: '''
-        A common household pet with a small build, long tails, and small pointed ears. This animals come in a variety of color, patterns (spotted or stripes), and breeds.
+        A common household pet with a small build, a long tail, and small pointed ears. This animal comes in a variety of color, patterns (spotted or stripes), and breeds.
       '''
 
     domDog:
       label: 'Dog, Domestic'
       description: '''
-        A common household pet related to wolves, foxes, and jackals, but come in a variety of colors, sizes, patterns, and breeds.
+        A common household pet related to wolves, foxes, and jackals. This animal comes in a variety of colors, sizes, patterns, and breeds.
       '''
 
     flyingSquirrel:
       label: 'Squirrel, Flying'
       description: '''
-        A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet, and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide, while using its legs to steer and its tail to brake when it reaches its destination.
+        A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet, and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide while using its legs to steer and its tail to brake when it reaches its destination.
       '''
 
     foxSquirrel:
       label: 'Squirrel, Fox'
       description: '''
-        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most time in forging food and roaming around fields.
+        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most of its time forging food and roaming around fields.
       '''
 
     grayFox:
       label: 'Fox, Gray'
       description: '''
-        A small to medium sized animal with gray coat on its back and head with light fur on its chest and belly. They have a signature black tipped, bushy tail and band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations, and are active during the night.
+        A small to medium sized animal with a gray coat on its back and head with light fur on its chest and belly. They have a signature black tipped, bushy tail and a band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations, and are active during the night.
       '''
 
     graySquirrel:
       label: 'Squirrel, Gray'
       description: '''
-        Small squirrels that are gray-brown all over their bodies except the white patch along their belly. This animals diet consists of acorns, hickory nuts, maple, walnuts, etc.
+        Small squirrels that are gray-brown all over their bodies except the white patch along their belly. This animal's diet consists of acorns, hickory nuts, maple and walnuts.
       '''
 
     horse:
@@ -316,13 +316,13 @@ module.exports =
     muskrat:
       label: 'Muskrat'
       description: '''
-        This animal normally has brown fur and a black tail with small dark eyes. The furless, scaly tail is half of its total length. When it walks, the tail creates a trail. Their front paws are clawed while in the rear they are semi-webbed clawed feet.
+        This animal normally has brown fur and a black tail with small dark eyes. The fur-less, scaly tail is half of its total length. When it walks, the tail creates a trail. Their front paws are clawed while  the rear feet are semi-webbed and clawed.
       '''
 
     opossum:
       label: 'Opossum'
       description: '''
-        Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal known for playing dead has a white face with a pink nose,  black eyes, black ears, long tail and long, gray fur on their body.
+        Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal is known for playing dead and has a white face with a pink nose, black eyes, black ears, long tail and long, gray fur on their body.
       '''
 
     otherVehicle:
@@ -340,37 +340,37 @@ module.exports =
     raccoon:
       label: 'Raccoon'
       description: '''
-        This brown-gray furry animal looks like it’s wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
+        This brown-gray furry animal looks like it is wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
       '''
 
     rat:
       label: 'Rat'
       description: '''
-        A large mouse like critter with a pointy nose, round ears, and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but its not uncommon to see then running across the street above ground.
+        A large mouse-like critter with a pointy nose, round ears, and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but it is not uncommon to see then running across the street above ground.
       '''
 
     redFox:
       label: 'Fox, Red'
       description: '''
-        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. It’s tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs.
+        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. Its tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs.
       '''
 
     skunk:
       label: 'Skunk'
       description: '''
-        An animal, well known for its stinky spray towards predators, has black with white stripe patterns. It has a single thin, white stripe down the middle of its face and two, thicker white stripes originated at the top of its head running down either side of the back into its thick, bushy tail.
+        An animal well known for its stinky spray towards predators and black coat with white stripe patterns. It has a single thin, white stripe down the middle of its face and two, thicker white stripes originated at the top of its head running down either side of the back into its thick, bushy tail.
       '''
 
     woodChuck:
       label: 'Woodchuck'
       description: '''
-        This animal is also known as a groundhog. It has a brown furry coat, clawed feets, small eyes and ears, and a short, flat tail.
+        This animal is also known as a groundhog. It has a brown furry coat, clawed feet, small eyes and ears, and a short, flat tail.
       '''
 
     melanisticGraySquirrel:
       label: 'Squirrel, Melanistic Gray'
       description: '''
-        Is an animal that has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process, they will appear to be brown and black patchy.
+        This animal has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process when they will appear to be brown and black patchy.
       '''
 
   differences:
