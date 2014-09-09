@@ -1,0 +1,49 @@
+<% translate = require 't7e' %>
+
+<div class="secondary-header">
+  <h1>Press</h1>
+</div>
+
+<div class='secondary-bg'>
+  <div class='secondary-content'>
+    <div class='middle-column'>
+      <img src="./images/site-logo.svg">
+      <p><b>Chicago Wildlife Watch Recruits Chicagoans to Help with Urban Wildlife Science Research from Home or Classroom</b></p>
+
+      <p>On Thursday, September 11, the Adler Planetarium and Lincoln Park Zoo launched Chicago Wildlife Watch, a new web-based citizen science initiative that provides an opportunity for students, teachers and members of the public to actively participate in Chicagoland wildlife research through photo identification technology. The platform is available at <a href="http://www.chicagowildlifewatch.org">chicagowildlifewatch.org</a>.</p>
+
+      <p><b>Chicago Wildlife Watch</b> is a collaboration between the Adler Planetarium’s Zooniverse team and Lincoln Park Zoo’s Urban Wildlife Institute that began in early 2014. Faced with a year’s worth of back logged research, the Urban Wildlife Institute enlisted the help of the Adler Planetarium’s Zooniverse development team to create a citizen science platform that would empower the people of Chicago to assist researchers in classifying important data essential in assessing local wildlife and their habitats.</p>
+
+      <hr>
+
+      <p><b>Media Downloads:</b></p>
+      <ul>
+        <li><a href="./downlaods/chicago-wildlife-watch.pdf">Press Release PDF</a></li>
+        <li><a href="./downlaods/lpz-photos.zip">Chicago Wildlife Watch Images</a></li>
+        <li>Chicago Wildlife Watch Image Caption Sheet</li>
+        <li>HD Chicago Wildlife Watch B-roll Footage</li>
+      </ul>
+
+      <hr>
+
+      <p><b>Media Contacts:</b></p>
+
+      <table>
+        <tr>
+          <td width="50%">
+            Sharon Dewar<br>
+            Lincoln Park Zoo<br>
+            312-742-2246<br>
+            SDewar@lpzoo.org
+          </td>
+          <td width="50%">
+            Molly O’Connell<br>
+            Adler Planetarium<br>
+            312-322-0524<br>
+            moconnell@adlerplanetarium.org
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
