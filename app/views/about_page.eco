@@ -47,12 +47,14 @@
         <%- translate 'h1', 'about.team.header' %>
 
         <%- translate 'h2', 'about.team.science.magle.name' %>
+        <%- translate 'div.title', 'about.team.science.magle.title' %>
         <%- translate 'div', 'about.team.science.magle.description' %>
 
         <%- translate 'h2', 'about.team.science.lehrer.name' %>
         <%- translate 'div', 'about.team.science.lehrer.description' %>
 
         <%- translate 'h2', 'about.team.development.whyte.name' %>
+        <%- translate 'div.title', 'about.team.development.whyte.title' %>
         <%- translate 'div', 'about.team.development.whyte.description' %>
 
         <%- translate 'h2', 'about.team.development.vansingel.name' %>

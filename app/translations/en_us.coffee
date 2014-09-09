@@ -620,17 +620,13 @@ module.exports =
       header: "Science"
       p: """
         <p>
-          Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species.
-          However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
+          Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         </p>
         <p>
-          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks,
-          forest preserves, golf courses and cemeteries across a four-county area, including downtown Chicago and its suburbs. Motion-triggered cameras are deployed four
-          times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         </p>
         <p>
-          Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and
-          ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
+          Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
         </p>
 
         <img src="./images/animals/fox-squirrel-1.jpg">
@@ -695,9 +691,9 @@ module.exports =
         header: "Lincoln Park Zoo"
         p: """
           <img src="./images/logos/lpz-black.png" class="inline">
-          <a href=""http://www.lpzoo.org/">Lincoln Park Zoo</a> is a world of wildlife in the shadow of skyscrapers. Located within a verdant park just minutes north of Chicago, the zoo has been a natural, free oasis for generations of animal lovers, who visit the zoo to hear a lion’s roar echo off nearby apartment buildings, see gorillas climb trees as the Willis Tower looms in the distance, or forget where they are as they immerse themselves in tropical rainforests, dry-thorn forests or spacious savannas.<br><br>
+          <a href="http://www.lpzoo.org/">Lincoln Park Zoo</a> is a world of wildlife in the shadow of skyscrapers. Located within a verdant park just minutes north of Chicago, the zoo has been a natural, free oasis for generations of animal lovers, who visit the zoo to hear a lion’s roar echo off nearby apartment buildings, see gorillas climb trees as the Willis Tower looms in the distance, or forget where they are as they immerse themselves in tropical rainforests, dry-thorn forests or spacious savannas.<br><br>
 
-          The Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing the highest quality of animal care, education, science and conservation.
+          Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing the highest quality of animal care, education, science and conservation.
         """
 
     team:
@@ -705,7 +701,8 @@ module.exports =
       header: "Team"
       science:
         magle:
-          name: 'Seth Magle'
+          name: 'Dr. Seth Magle'
+          title: 'Director, Urban Wildlife Institute at Lincoln Park Zoo'
           image: 'http://placehold.it/100'
           description: '''
             <p>Seth first became interested in conservation and ecology as a college student in 1997 while observing black-tailed prairie dogs living in sidewalk median strips near his home in Boulder, Colorado. Daily interactions with these resilient animals made him wonder what adaptations enabled these small mammals to persist in highly urban habitat and which factors contributed to their distribution and abundance. Eventually he completed an honors thesis on the behavior of this urban-adapted keystone species; he ultimately expanded on that research for both a master’s degree and a doctorate.</p>
@@ -732,16 +729,14 @@ module.exports =
           name: 'Steve Raden'
           image: 'http://placehold.it/100'
           description: '''
-            Steve is a software developer at Adler Planetarium and Zooniverse. 
-            As a Chicagoan, he enjoys walking the city's parks and streets and occasionally spotting
-            animals. 
+            <p>Steve is a software developer at Adler Planetarium and Zooniverse. As a Chicagoan, he enjoys walking the city's parks and streets and occasionally spotting animals. </p>
           '''
 
         vansingel:
           name: 'Heath Van Singel'
           image: 'http://placehold.it/100'
           description: '''
-            Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.
+            <p>Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.</p>
           '''
 
         weiksnar:
@@ -755,6 +750,7 @@ module.exports =
 
         whyte:
           name: 'Laura Whyte'
+          title: 'Director of Citizen Science at Adler Planetarium'
           image: 'http://placehold.it/100'
           description: '''
             <p>The citizen science department at the Adler Planetarium is home to a development team who design and build Zooniverse websites - the worlds largest and most successful collection of citizen science projects. This team, who bring expertise in technology, education, science outreach and research, reach beyond the internet into the local community through school visits, youth programs and hack days events. As former astronomer, high school teacher, museum educator, and web developer, Dr. Whyte leads these initiatives and the opportunity they bring to engage a wider Chicago audience in actively doing science.</p>
@@ -763,7 +759,7 @@ module.exports =
       header: "Connect"
       action: "Get Started"
       social: """
-        Follow the Adler Planetarium [<a href='http://www.adlerplanetarium.org/blogs'>Blog</a> / <a href= 'https://twitter.com/adlerskywatch'>Twitter</a>] and Lincoln Park Zoo [<a href='http://www.lpzoo.org/blog/lincoln-park-zoo'>Blog</a> / <a href='https://twitter.com/lincolnparkzoo'>Twitter</a>] to keep current with the latest findings!
+        Follow the Adler Planetarium [<a href='http://www.adlerplanetarium.org/blogs'>Blog</a> / <a href= 'https://twitter.com/adlerskywatch'>Twitter</a>] and Lincoln Park Zoo Urban Wildlife Institute [<a href='http://www.lpzoo.org/blog/lincoln-park-zoo'>Blog</a> / <a href='https://twitter.com/lpz_uwi'>Twitter</a>] to keep current with the latest findings!
       """
 
   education:
