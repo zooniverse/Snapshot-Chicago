@@ -615,6 +615,10 @@ module.exports =
     loadMore: 'Load more'
 
   about:
+    press:
+      nav:
+        "Press"
+
     science:
       nav: "Science"
       header: "Science"
