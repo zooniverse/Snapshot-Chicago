@@ -786,6 +786,7 @@ module.exports =
 
         <ul>
           <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
+          <li><a href='https://www.youtube.com/watch?v=iFeRFmqFChQ'>Bill Nye: The Science Guy - Biodiversity</a></li>
         </ul>
 
         <p>We also recommend checking out the Urban Wildlife Institute <a href="http://www.lpzoo.org/conservation-science/science-centers/urban-wildlife-institute">webpage</a> for more information on the organization.
