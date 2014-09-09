@@ -16,11 +16,13 @@ module.exports =
       <h1>Chicago <br/> Wildlife Watch</h1>
     "
     content: '''
-      Chicago Wildlife Watch is a collaboration between the Lincoln Park Zoo and the Adler Planetarium, born of the desire to get everyone involved in the scientific process. The project aims to achieve a greater understanding of how our urban development affects local biodiversity. Anyone can participate and help us learn about this great city we live in!
+      To find out which animals live in Chicago, we’ve collected more than 1 million photos of wildlife from the Loop to the burbs. To ID them, though, we need your help! 
+
+      Chicago Wildlife Watch, developed by Lincoln Park Zoo and the Adler Planetarium, lets everyone help us understand how animals—from coyotes to chipmunks—share this great city.
     '''
     action: 'Get Started'
     currentStatus: '<span class="classification-count">0</span> classifications by <span class="user-count">0</span> volunteers'
-    preFooterText: "Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium, and the Zooniverse. Maybe another line about Chicago to pad this out."
+    preFooterText: "Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium and the Zooniverse."
 
     stats:
       header: "CHICAGO WILDLIFE WATCH Classification Statistics"
@@ -37,7 +39,7 @@ module.exports =
     question: "Would you like to view Curated or Uncurated data?"
     notification: "These images have been taken by cameras in public spaces"
     description: """
-      If you are using the Chicago Urban Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal, but still require additional classifications to confirm the animal type. For a younger audience, or for a situation where classification time is limited, this may provide a more engaging experience.
+      If you are using Chicago Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal but still require additional classifications to confirm the animal type. For a younger audience, or for a situation where classification time is limited, this may provide a more engaging experience.
     """
 
   siteIntro:
@@ -55,7 +57,7 @@ module.exports =
       content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
     s5:
       title: "That's it!"
-      content: "That's it! You may catchup on project updates either on the blog or through speaking with other volunteers. If you need additional help using the interface, click Tutorial within the list of links below the Finish button."
+      content: "That's it! You may catch up on project updates either on the blog or through speaking with other volunteers. If you need additional help using the interface, click Tutorial within the list of links below the Finish button."
 
   classify:
     deleteAnnotation: 'Delete'
@@ -148,7 +150,7 @@ module.exports =
 
       confirmWildebeestHeader: 'Looks Good!'
       confirmWildebeest: '''
-        By comparing the animal to the photos here and reading the description below, we can confirm that this is indeed a Gray Squirrel.
+        By comparing the animal to the photos here and reading the description below, we can confirm that this is indeed a gray Squirrel.
         You can flip through the photos to see examples of the animal from multiple angles using the bullets on the right.
       '''
 
@@ -211,13 +213,13 @@ module.exports =
     beaver:
       label: 'Beaver'
       description: '''
-        This animal is usually brown with large sharp front teeth, clawed front feet, webbed back feet, a round body, and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
+        This animal is usually brown with large sharp front teeth, clawed front feet webbed back feet, a round body and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
       '''
 
     bike:
       label: 'Bike'
       description: '''
-        N/A. Identifying the frequency of bikes helps us understand  the the impact of human activity on the animal population in this urban habitat. 
+        N/A. Identifying the frequency of bikes helps us understand the impact of human activity on the animal population in this urban habitat. 
       '''
 
     car:
@@ -229,13 +231,13 @@ module.exports =
     chipmunk:
       label: 'Chipmunk'
       description: '''
-        A small member of the squirrel family that use their cheek pouches to carry various nuts, berries and seeds into their burrow or nest to store their food. They have smaller, less bushy tails than a typical squirrel and sport signature white and brown stripes around their eye and going down their back. Typically brown or tan in color.
+        A small member of the squirrel family that use its cheek pouch to carry various nuts, berries and seeds into its burrow or nest to store their food. They have smaller, less bushy tails than a typical squirrel and sport signature white-and-brown stripes around their eye and going down their back. Typically brown or tan in color.
       '''
 
     coyote:
       label: 'Coyote'
       description: '''
-        Commonly brown and tan in color, this member of the dog family is smaller than a wolf. They have occasionally been called prairie wolves or brush wolves due to their wolf like appearance, but they differ from wolves with their pointed snouts, slender body, and tall, pointy ears. In the fall and winter, they form packs for more effective hunting.
+        Commonly brown and tan in color, this member of the dog family is smaller than a wolf. They have occasionally been called prairie wolves or brush wolves due to their wolf-like appearance, but they differ from wolves with their pointed snouts, slender body and tall, pointy ears. In the fall and winter, they form packs for more effective hunting.
       '''
 
     deer:
@@ -247,13 +249,13 @@ module.exports =
     domCat:
       label: 'Cat, Domestic'
       description: '''
-        A common household pet with a small build, a long tail, and small pointed ears. This animal comes in a variety of color, patterns (spotted or stripes), and breeds.
+        A common household pet with a small build, a long tail and small pointed ears. This animal comes in a variety of color, patterns (spotted or stripes), and breeds.
       '''
 
     domDog:
       label: 'Dog, Domestic'
       description: '''
-        A common household pet related to wolves, foxes, and jackals. This animal comes in a variety of colors, sizes, patterns, and breeds.
+        A common household pet related to wolves, foxes and jackals. This animal comes in a variety of colors, sizes, patterns and breeds.
       '''
 
     flyingSquirrel:
@@ -265,13 +267,13 @@ module.exports =
     foxSquirrel:
       label: 'Squirrel, Fox'
       description: '''
-        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most of its time forging food and roaming around fields.
+        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most of its time forging for food and roaming around fields.
       '''
 
     grayFox:
       label: 'Fox, Gray'
       description: '''
-        A small to medium sized animal with a gray coat on its back and head with light fur on its chest and belly. They have a signature black tipped, bushy tail and a band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations, and are active during the night.
+        A small to medium-sized animal with a gray coat on its back and head with light fur on its chest and belly. They have a signature black-tipped, bushy tail and a band of black fur from the inner corner of their eyes around the bottom of their snout. They are tree climbers, typically sleep during the day at very rocky locations and are active during the night.
       '''
 
     graySquirrel:
@@ -301,13 +303,13 @@ module.exports =
     mink:
       label: 'Mink'
       description: '''
-        Related to otters, weasels, and ferrets, Minks have pointed snouts with dark eyes. They also have clawed feet with webbing and bodies covered in thick brown fur that sheds water quickly. These animals live in semi aquatic habitats.
+        Related to otters, weasels and ferrets, minks have pointed snouts with dark eyes. They also have clawed feet with webbing and bodies covered in thick brown fur that sheds water quickly. These animals live in semi-aquatic habitats.
       '''
 
     mouse:
       label: 'Mouse'
       description: '''
-        A very small animal with a long snout, big round ears, and a long hairless tail. This animal can be found in and around grasslands and homes.
+        A very small animal with a long snout, big round ears and a long hairless tail. This animal can be found in and around grasslands and homes.
       '''
 
     mower:
@@ -325,7 +327,7 @@ module.exports =
     opossum:
       label: 'Opossum'
       description: '''
-        Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal is known for playing dead and has a white face with a pink nose, black eyes, black ears, long tail and long, gray fur on their body.
+        Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal is known for playing dead and has a white face with a pink nose, black eyes, black ears, long tail and long, gray fur on its body.
       '''
 
     otherVehicle:
@@ -337,31 +339,31 @@ module.exports =
     rabbit:
       label: 'Rabbit'
       description: '''
-        Rabbits we see in urban settings have large, dark eyes, long ears pointed upwards, and brown fur with a short, fluffy, white tail.
+        Rabbits we see in urban settings have large, dark eyes, long ears pointed upwards and brown fur with a short, fluffy, white tail.
       '''
 
     raccoon:
       label: 'Raccoon'
       description: '''
-        This brown-gray furry animal looks like it is wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
+        This brown-gray furry animal looks like it is wearing a bandit mask with the black patches around its eyes on its white face. Another notable features are its finger-like clawed toes and its black-ringed tail with long fur. Raccoons are nocturnal and often seen foraging for food in trash bins.
       '''
 
     rat:
       label: 'Rat'
       description: '''
-        A large mouse-like critter with a pointy nose, round ears, and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but it is not uncommon to see then running across the street above ground.
+        A large mouse-like critter with a pointy nose, round ears and a long, hairless, pinkish tail. Many people think they only roam the subway and sewers, but it is not uncommon to see then running across the street above ground.
       '''
 
     redFox:
       label: 'Fox, Red'
       description: '''
-        An animal with orange brownish fur along its head and back with and white fur on its belly and typically at the tip of its bushy tail. Its tail helps it balance just like a cat’s. Some have black fur on the back of its ears and legs.
+        An animal with orange brownish fur along its head and back and white fur on its belly and typically at the tip of its bushy tail. Its tail helps it balance just like a cat’s. Some have black fur on the back of their ears and legs.
       '''
 
     skunk:
       label: 'Skunk'
       description: '''
-        An animal well known for its stinky spray towards predators and black coat with white stripe patterns. It has a single thin, white stripe down the middle of its face and two, thicker white stripes originated at the top of its head running down either side of the back into its thick, bushy tail.
+        An animal well known for its stinky spray towards predators and black coat with white stripe patterns. It has a single thin, white stripe down the middle of its face and two thicker white stripes originating at the top of its head running down either side of the back into its thick, bushy tail.
       '''
 
     woodChuck:
@@ -373,7 +375,7 @@ module.exports =
     melanisticGraySquirrel:
       label: 'Squirrel, Melanistic Gray'
       description: '''
-        This animal has a color morph to change its fur from gray to black. You may occasionally see them during the color changing process when they will appear to be brown and black patchy.
+        This animal has a color morph to change its fur from gray to black. You may occasionally see them during the color-changing process when they will appear to be patchy brown and black.
       '''
 
   differences:
@@ -627,7 +629,7 @@ module.exports =
           Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         </p>
         <p>
-          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will Counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         </p>
         <p>
           Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
@@ -644,11 +646,11 @@ module.exports =
         Finding out where certain species are most likely to occur allows us to target conservation and management efforts to ensure we can coexist with our wildlife neighbors.</p>
 
         <h2>How are they doing?</h2>
-        <p>While we can’t directly measure populations with the data from our cameras, we can get a sense of which species are most common, and which may be in decline.
+        <p>While we can’t directly measure populations with the data from our cameras, we can get a sense of which species are most common and which may be in decline.
         This can help us make recommendations about how to improve conditions for the species that are in trouble.</p>
 
         <h2>How do they compete?</h2>
-        <p>We know almost nothing about how species in urban areas might compete with one another, engage in predator-prey dynamics, or avoid each other.
+        <p>We know almost nothing about how species in urban areas might compete with one another, engage in predator-prey dynamics or avoid each other.
         Preliminary results indicate that the normal community interactions we observe in natural systems don’t apply to urban areas, where entirely new dynamics seem to be in place.
         By evaluating our camera images, we can begin to assemble the first complete picture of an urban ecosystem, including how all the species interact.</p>
 
@@ -695,7 +697,7 @@ module.exports =
         header: "Lincoln Park Zoo"
         p: """
           <img src="./images/logos/lpz-black.png" class="inline">
-          <a href="http://www.lpzoo.org/">Lincoln Park Zoo</a> is a world of wildlife in the shadow of skyscrapers. Located within a verdant park just minutes north of Chicago, the zoo has been a natural, free oasis for generations of animal lovers, who visit the zoo to hear a lion’s roar echo off nearby apartment buildings, see gorillas climb trees as the Willis Tower looms in the distance, or forget where they are as they immerse themselves in tropical rainforests, dry-thorn forests or spacious savannas.<br><br>
+          <a href="http://www.lpzoo.org/">Lincoln Park Zoo</a> is a world of wildlife in the shadow of skyscrapers. Located within a verdant park just minutes north of Chicago, the zoo has been a natural, free oasis for generations of animal lovers, who visit the zoo to hear a lion’s roar echo off nearby apartment buildings, see gorillas climb trees as the Willis Tower looms in the distance or forget where they are as they immerse themselves in tropical rainforests, dry-thorn forests or spacious savannas.<br><br>
 
           Lincoln Park Zoo is dedicated to connecting people with nature by providing a free, family-oriented wildlife experience in the heart of Chicago and by advancing the highest quality of animal care, education, science and conservation.
         """
@@ -740,7 +742,7 @@ module.exports =
           name: 'Heath Van Singel'
           image: 'http://placehold.it/100'
           description: '''
-            <p>Heath is the UX/UI Designer for projects at the Zooniverse where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.</p>
+            <p>Heath is the UX/UI Designer for projects at the Zooniverse, where he works to craft thoughtful and engaging user experiences. Apart from design Heath also enjoys illustration, a good sci-fi or fantasy novel, and trips back to Michigan.</p>
           '''
 
         weiksnar:
@@ -748,22 +750,22 @@ module.exports =
           image: 'images/about/team/michael.jpg'
           description: '''
            <p>Alex currently works as a front-end developer for the Zooniverse out of the Adler Planetarium. He spends his time building rich and engaging user interfaces for the web.
-           Alex previously attended University of Miami, where he studied Psychology, Biology, and English. 
+           Alex previously attended University of Miami, where he studied psychology, biology and English. 
            </p>
           '''
 
         whyte:
-          name: 'Laura Whyte'
+          name: 'Dr. Laura Whyte'
           title: 'Director of Citizen Science at Adler Planetarium'
           image: 'http://placehold.it/100'
           description: '''
-            <p>The citizen science department at the Adler Planetarium is home to a development team who design and build Zooniverse websites - the worlds largest and most successful collection of citizen science projects. This team, who bring expertise in technology, education, science outreach and research, reach beyond the internet into the local community through school visits, youth programs and hack days events. As former astronomer, high school teacher, museum educator, and web developer, Dr. Whyte leads these initiatives and the opportunity they bring to engage a wider Chicago audience in actively doing science.</p>
+            <p>The citizen science department at the Adler Planetarium is home to a development team who design and build Zooniverse websites - the worlds largest and most successful collection of citizen science projects. This team, who bring expertise in technology, education, science outreach and research, reach beyond the internet into the local community through school visits, youth programs and hack days events. As former astronomer, high school teacher, museum educator, and web developer, Laura leads these initiatives and the opportunity they bring to engage a wider Chicago audience in actively doing science.</p>
           '''
     connect:
       header: "Connect"
       action: "Get Started"
       social: """
-        Follow the Adler Planetarium [<a href='http://www.adlerplanetarium.org/blogs'>Blog</a> / <a href= 'https://twitter.com/adlerskywatch'>Twitter</a>] and Lincoln Park Zoo Urban Wildlife Institute [<a href='http://www.lpzoo.org/blog/lincoln-park-zoo'>Blog</a> / <a href='https://twitter.com/lpz_uwi'>Twitter</a>] to keep current with the latest findings!
+        Follow the Adler Planetarium [<a href='http://www.adlerplanetarium.org/blogs'>Blog</a> / <a href= 'https://twitter.com/adlerskywatch'>Twitter</a>] and Lincoln Park Zoo Urban Wildlife Institute [<a href='https://www.lpzoo.org/rss-feeds?'>Blog</a> / <a href='https://twitter.com/lpz_uwi'>Twitter</a>] to keep current with the latest findings!
       """
 
   education:
@@ -772,18 +774,17 @@ module.exports =
       nav: "Overview"
       header: "Can I use Chicago Wildlife Watch in the classroom?"
       p: """
-        Absolutely! Chicago Wildlife Watch, just like all the Zooniverse projects, offers a unique opportunity to explore real scientific data, while making a contribution to cutting edge research. We would like to stress that as each image is marked by the volunteers, it really does not matter if your students don't mark all the features. That being said, the task itself is simple enough that we believe most people can take part and make a worthwhile contribution regardless of age.
+        Absolutely! Chicago Wildlife Watch, just like all the Zooniverse projects, offers a unique opportunity to explore real scientific data while making a contribution to cutting-edge research. We would like to stress that as each image is marked by the volunteers, it really does not matter if your students don't mark all the features. That being said, the task itself is simple enough that we believe most people can take part and make a worthwhile contribution regardless of age.
       """
     resources:
       nav: "Resources"
       header: "What resources are there to support use in the classroom?"
       content: """
-        <p>Over the Summer of 2014, teen interns at Adler Planetarium developed a floor activity to bring awareness to the fact that nature is everywhere and we live in nature. A Lesson plan for this activity can be found on <a href='http://www.zooteach.org'>ZooTeach</a></p>
+        <p>Over the summer of 2014, teen interns at Adler Planetarium developed a floor activity to bring awareness to the fact that nature is everywhere and we live in nature. A Lesson plan for this activity can be found on <a href='http://www.zooteach.org'>ZooTeach</a></p>
 
         <p>Videos are also a great tool to introduce students to Chicago Wildlife Watch. Here are a couple of our favorites:</p>
 
         <ul>
-          <li><a href='https://www.youtube.com/watch?v=87OSgoYyxWw'>Bill Nye: The Science Guy - Biodiversity</a></li>
           <li><a href='https://www.youtube.com/watch?v=iRhdDs91aas'> TropicMind.com: Ecosystem and Food Chain (aimed for younger children)</a> </li>
         </ul>
 
@@ -794,7 +795,7 @@ module.exports =
       nav: "Partner Resouces"
       header: "Partner resources"  
       content: """
-          <p>Please visit Lincoln Park Zoo's Educator's Resources <a href="http://www.lpzoo.org/education/educators-resources"> webpage</a> to access curriculum guides, Zoo field trip and self-tour information, accessibility  kits, and links to several multi-media apps.
+          <p>Please visit Lincoln Park Zoo's Educator's Resources <a href="http://www.lpzoo.org/education/educators-resources"> webpage</a> to access curriculum guides, zoo field trip and self-tour information, accessibility  kits and links to several multi-media apps.
           </p>
 
           <p>The Adler Planetarium is dedicated to helping the public experience science and discover the universe through field trips, school partnerships, child and teen programming. See the Teach and Learn <a href="http://www.adlerplanetarium.org/educator-resources/">section</a> of the Adler's website for details.
@@ -804,5 +805,5 @@ module.exports =
     aside:
       content: """
         <h1>Connect with Education</h1>
-        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latests science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a> that you can follow for more information on their work.</p>
+        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latest science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a Twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a>, that you can follow for more information on their work.</p>
       """
