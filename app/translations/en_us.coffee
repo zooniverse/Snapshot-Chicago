@@ -110,7 +110,7 @@ module.exports =
 
       trapsHeader: 'Check out the Images'
       traps: '''
-        All over Chicago, scientists have set up motion sensitive camera traps.
+        All over Chicago, scientists have set up motion-sensitive camera traps.
         The camera snaps a few shots anytime something moves in front of it.
       '''
 
@@ -145,18 +145,18 @@ module.exports =
       chooseGraySquirrelHeader: 'Make a choice'
       chooseGraySquirrel: '''
         Great, that leaves us with just one option!
-        Let's choose <strong>"Gray Squirrel"</strong> it and make sure it's a match.
+        Let's choose <strong>"Gray Squirrel"</strong> and make sure it's a match.
       '''
 
       confirmWildebeestHeader: 'Looks Good!'
       confirmWildebeest: '''
-        By comparing the animal to the photos here and reading the description below, we can confirm that this is indeed a gray Squirrel.
+        By comparing the animal to the photos here and reading the description below, we can confirm that this is indeed a gray squirrel.
         You can flip through the photos to see examples of the animal from multiple angles using the bullets on the right.
       '''
 
       identifyWildebeestHeader: 'Count & Behavior'
       identifyWildebeest: '''
-        Once you're confident that this is a Gray Squirrel,
+        Once you're confident that this is a gray squirrel,
         choose <strong>"1"</strong> from the count menu and <strong>"Head Up"</strong> from the behavior menu.
         Then click "Identify."
       '''
@@ -231,7 +231,7 @@ module.exports =
     chipmunk:
       label: 'Chipmunk'
       description: '''
-        A small member of the squirrel family that use its cheek pouch to carry various nuts, berries and seeds into its burrow or nest to store their food. They have smaller, less bushy tails than a typical squirrel and sport signature white-and-brown stripes around their eye and going down their back. Typically brown or tan in color.
+        A small member of the squirrel family that uses its cheek pouch to carry various nuts, berries and seeds into its burrow or nest to store its food. They have smaller, less bushy tails than a typical squirrel and sport signature white-and-brown stripes around their eye and going down their back. Typically brown or tan in color.
       '''
 
     coyote:
@@ -261,13 +261,13 @@ module.exports =
     flyingSquirrel:
       label: 'Squirrel, Flying'
       description: '''
-        A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet, and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide while using its legs to steer and its tail to brake when it reaches its destination.
+        A member of the squirrel family, this animal has large, dark eyes, loose skin between the front and back legs, clawed feet and a long, bushy tail with dark fur on top and light below. It travels from tree to tree by launching itself and spreading its limbs so it can glide while using its legs to steer and its tail to brake when it reaches its destination.
       '''
 
     foxSquirrel:
       label: 'Squirrel, Fox'
       description: '''
-        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most of its time forging for food and roaming around fields.
+        The largest species of tree squirrel in North America, they look like a larger typical squirrel with an orange tone to their fur. They can be around 2 feet in length and weight 1 - 2 lbs. It spends most of its time foraging for food and roaming around fields.
       '''
 
     grayFox:
@@ -629,7 +629,7 @@ module.exports =
           Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         </p>
         <p>
-          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will Counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         </p>
         <p>
           Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
@@ -707,7 +707,7 @@ module.exports =
       header: "Team"
       science:
         magle:
-          name: 'Dr. Seth Magle PhD'
+          name: 'Dr. Seth Magle'
           title: 'Director, Urban Wildlife Institute at Lincoln Park Zoo'
           image: 'http://placehold.it/100'
           description: '''
@@ -806,5 +806,5 @@ module.exports =
     aside:
       content: """
         <h1>Connect with Education</h1>
-        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages below, are great places to keep up to date with the latest science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a Twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a>, that you can follow for more information on their work.</p>
+        <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages, are great places to keep up to date with the latest science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a Twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a>, that you can follow for more information on their work.</p>
       """
