@@ -2,7 +2,7 @@ translate = require "t7e"
 
 module?.exports = [
   {
-    image: './images/tutorial-slide-first.jpg'
+    image: './images/tutorial-slide-first.png'
     title: translate "span", 'siteIntro.s1.title'
     content: translate "span", 'siteIntro.s1.content'
   },
