@@ -24,6 +24,7 @@ class SubjectViewer extends Controller
     'button[name="favorite"]': 'favoriteBtn'
     '.favorite-tooltip': 'favoriteTooltip'
     '.annotations': 'annotationsContainer'
+    '.annotations p': 'annotationsMessage'
     'input[name="nothing"]': 'nothingCheckbox'
     'button[name="finish"]': 'finishButton'
     'a.talk-link': 'talkLink'
@@ -69,6 +70,7 @@ class SubjectViewer extends Controller
     @finishButton.attr disabled: inSelection or (noAnnotations and not nothing)
 
   onClassificationAddSpecies: (classification, annotation) =>
+    @annotationsMessage.remove()
     item = new AnnotationItem {@classification, annotation}
     item.el.appendTo @annotationsContainer
     @scrollToBottomOfAnnotations()

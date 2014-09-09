@@ -71,7 +71,7 @@ module.exports =
     next: 'Next capture'
     search: 'Search'
 
-
+    annotationsMessage: "See something? Animals you identify will appear here..."
     nothingToShow: 'There\'s nothing to show with these filters.'
     clearFilters: 'Clear filters'
 

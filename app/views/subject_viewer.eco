@@ -7,7 +7,9 @@
     <img src="<%- @subject.location.standard %>" />
   </div>
 
-  <div class="annotations"></div>
+  <div class="annotations">
+    <%- translate 'p', 'classify.annotationsMessage' %>
+  </div>
 
   <span class="favorite">
     <button name="favorite" title="<%- translate 'classify.favorite' %> [F]" data-shortcut="F">
