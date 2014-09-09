@@ -629,7 +629,7 @@ module.exports =
           Cities can be hostile places for wildlife, with threats coming from habitat destruction, roads and traffic, humans, pets and large numbers of invasive species. However, with proper management, urban areas can house a number of important wildlife species, including carnivores and small mammals.
         </p>
         <p>
-          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will Counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
+          To assess the biodiversity of the greater Chicagoland area, Lincoln Park Zoo’s Urban Wildlife Institute has established monitoring stations within city parks, forest preserves, golf courses and cemeteries in parts of Cook, Lake, DuPage and Will counties including downtown Chicago. Motion-triggered cameras are deployed four times per year at more than 100 sites to determine which species are present and to assess spatial and long-term patterns in wildlife communities.
         </p>
         <p>
           Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
@@ -707,7 +707,7 @@ module.exports =
       header: "Team"
       science:
         magle:
-          name: 'Dr. Seth Magle'
+          name: 'Dr. Seth Magle PhD'
           title: 'Director, Urban Wildlife Institute at Lincoln Park Zoo'
           image: 'http://placehold.it/100'
           description: '''
