@@ -12,6 +12,12 @@ html
     position: relative;
     -webkit-font-smoothing: antialiased;
 
+    a
+      img
+        border-style: none;
+        outline-style: none;
+
+
     > h1
       color: $white;
       font: normal 30px Georgia, serif;
@@ -46,16 +52,18 @@ html
       @media $phone-or-smaller
         padding-top: 50px;
 
-
       #site-title
-        width: 200px;
         text-decoration: none;
         display: inline-block;
         vertical-align: middle;
         margin-right: 40px;
+        img
+          width: 200px;
+          height: 42px;
         @media $desktop-or-smaller
           margin: 0 auto;
           display: block;
+
 
       ul
         margin: 0;

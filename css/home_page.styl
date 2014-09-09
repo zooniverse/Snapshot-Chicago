@@ -38,12 +38,21 @@
         font-size: 16px;
         margin: 0;
 
+    &.blue-overlay:after
+      content: "";
+      position: absolute;
+      background: rgba(16, 62, 95, .7);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
     &.left
-      background:
-        linear-gradient(rgba(16, 62, 95, .7), rgba(16, 62, 95, .7)),
-        url("./images/skyline.jpg");
+      background: url("./images/skyline.jpg");
       background-size: cover;
       float: left;
+      z-index: 1;
       .content
         h1
           font-size: 60px;
