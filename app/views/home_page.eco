@@ -6,7 +6,7 @@
 </div>
 
 <section>
-  <div class="home-section left">
+  <div class="home-section left blue-overlay">
     <div class="content">
       <%- translate 'div', 'home.leftBannerHeader' %>
     </div>
