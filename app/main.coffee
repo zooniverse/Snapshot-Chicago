@@ -4,6 +4,7 @@ translate.load enUs
 
 $ = window.jQuery
 require 'spine'
+window.slider = require './lib/jquery.slider.min'
 
 Navigation = require './controllers/navigation'
 

@@ -8,4 +8,7 @@ class PressPage extends Controller
     super
     @html @template @
 
+    document.addEventListener 'DOMContentLoaded', ->
+      $('#slider').nivoSlider()
+
 module.exports = PressPage
