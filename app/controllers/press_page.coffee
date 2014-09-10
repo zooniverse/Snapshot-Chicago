@@ -9,6 +9,9 @@ class PressPage extends Controller
     @html @template @
 
     document.addEventListener 'DOMContentLoaded', ->
-      $('#slider').nivoSlider()
+      $('#slider').nivoSlider
+        effect: 'fade'
+        directionNav: false
+        pauseTime: 5000
 
 module.exports = PressPage
