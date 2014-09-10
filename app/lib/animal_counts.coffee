@@ -14,7 +14,7 @@ animalCounts =
   'empty': 3
   'flying-squirrel': 3
   'fox-squirrel': 3
-  'gray-fox': 3
+  'gray-fox': 1
   'gray-squirrel': 3
   'horse': 2
   'human': 3
