@@ -375,7 +375,7 @@ module.exports =
     melanisticGraySquirrel:
       label: 'Squirrel, Melanistic Gray'
       description: '''
-        This animal has a color morph to change its fur from gray to black. You may occasionally see them during the color-changing process when they will appear to be patchy brown and black.
+        Melanism is a genetic trait that produces extra melanin in the skin and fur, making an organism appear jet black if it has two sets of this recessive gene or brown/black if it only has one.  Gray squirrels are known to carry this unusual genetic trait.   This trait may be beneficial to gray squirrels living at northern latitudes as they would lose less heat during the cold winter months.  The photo in this ID is of a brown/black melanistic gray squirrel.
       '''
 
   differences:
