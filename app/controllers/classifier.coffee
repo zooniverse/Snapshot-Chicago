@@ -106,7 +106,7 @@ class Classifier extends Controller
     SubjectSelector.getNext()
 
     # logic to proclaim user's first visit
-    @animalSelector.firstVisit = true if user?.classification_count < 1 or not user
+    @animalSelector.firstVisit = true unless user?.classification_count
     @animalSelector.handleFirstVisit() if @el.hasClass 'active'
 
   activate: ->
