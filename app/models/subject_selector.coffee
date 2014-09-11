@@ -2,11 +2,16 @@ Subject = require "zooniverse/models/subject"
 Notify = require "../lib/notifier"
 translate = require "t7e"
 
-SubjectSelector =
-  groups:
+groups = if !!~location.hostname.indexOf('demo') || +location.port >= 1024
     gold: '53f61f71edf877ca7f000003'
     winter2013: '53f61f8cedf877ca7f000004'
     spring2014: '53f61f8cedf877ca7f000005'
+  else
+    gold: '5410f7213ae740c000000001'
+    spring2012: '5410f5723ae740bff2000001'
+
+SubjectSelector =
+  groups: groups
 
   goldStandardRate: 1 / 3
 
