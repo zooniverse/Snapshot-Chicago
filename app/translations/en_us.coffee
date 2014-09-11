@@ -190,6 +190,11 @@ module.exports =
       description: '''
         N/A. Identifying the frequency of bikes helps us understand the impact of human activity on the animal population in this urban habitat. 
       '''
+    bird:
+      label: 'Bird'
+      description: '''
+        All manner of birds will be captured in the pictures, from cardinals to seagulls. They will frequently be found either nesting in trees or scavenging for food on the ground.
+      '''
 
     car:
       label: 'Car'
