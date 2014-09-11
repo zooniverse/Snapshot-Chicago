@@ -40,7 +40,7 @@ module.exports =
     question: "Would you like to view Curated or Uncurated data?"
     notification: "These images have been taken by cameras in public spaces"
     description: """
-      If you are using Chicago Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal but still require additional classifications to confirm the animal type. For a younger audience, or for a situation where classification time is limited, this may provide a more engaging experience.
+      If you are using Chicago Wildlife Watch for educational purposes or with young children, you might want to use our 'Curated' dataset option.  The images in this data set are much more likely to contain an animal but still require additional attention to confirm the animal type. For a younger audience, or for a situation where time is limited, this may provide a more engaging experience.
     """
 
   siteIntro:
@@ -106,7 +106,7 @@ module.exports =
 
       welcomeHeader: 'Welcome to Chicago Wildlife Watch!'
       welcome: '''
-        This short tutorial will walk you through your first classification. Let's get started!
+        This short tutorial will walk you through your first identification. Let's get started!
       '''
 
       trapsHeader: 'Check out the Images'
@@ -162,41 +162,9 @@ module.exports =
         Then click "Identify."
       '''
 
-      findZebrasHeader: 'Identify another animal'
-      findZebras: '''
-        We want to try to identify all the animals in each capture.
-        Look closely and you'll notice that there are some zebras in the distance.
-
-        Let's look at another way of classifying when we already know which species we can see.
-      '''
-
-      typeZebraHeader: 'Search'
-      typeZebra: '''
-        The seach field is a quick way to highlight animals whose descriptions contain certain words.
-
-        Type "zebra" in the search field...
-      '''
-
-      clickZebraHeader: 'Search'
-      clickZebra: '''
-        ...and click "Zebra," which is the only animal highlighted.
-      '''
-
-      confirmZebraHeader: 'Just do your best!'
-      confirmZebra: '''
-        It's hard to make out the zebras in the distance, so classify as best you can.
-        Each classification is compared with the classifications of other volunteers, so even if you're not sure, just try your best!
-      '''
-
-      identifyZebraHeader: 'Count & Behavior'
-      identifyZebra: '''
-        There are two zebras in the distance, and they appear to be grazing with their heads bowed.
-        Mark "2," "Standing," and "Eating," then click "Identify."
-      '''
-
       finishHeader: 'Nice Job!'
       finish: '''
-        Now you're ready to classify some images on your own.
+        Now you're ready to identify some images on your own.
 
         In each image, do your best to identify all the animals you can,
         even if you can't see enough to be completely sure.
@@ -205,7 +173,7 @@ module.exports =
         Your observations will be combined with those of multiple volunteers,
         so even if you're not sure on something, your contribution is still very useful!
 
-        Don't forget: after classifying an image you can always <strong>discuss</strong> it with professional and citizen scientists or share it with friends.
+        Don't forget: after identifying an image you can always <strong>discuss</strong> it with professional and citizen scientists or share it with friends.
 
         Click <strong>"Finish"</strong> now to move on.
       '''
@@ -613,7 +581,7 @@ module.exports =
     favorites: 'Favorites'
     recents: 'Recents'
     noFavorites: 'You have no favorites!'
-    noRecents: 'You have no recent classifications!'
+    noRecents: 'You have no recent identifications!'
     showing: 'Showing'
     loadMore: 'Load more'
 
