@@ -5,8 +5,8 @@ module.exports =
     classify: 'Classify'
     profile: 'Profile'
     discuss: 'Discuss'
-    blog: 'Blog'
     education: 'Education'
+    press: 'Press'
 
   home:
     heading: 'Chicago Wildlife Watch'
@@ -807,4 +807,80 @@ module.exports =
       content: """
         <h1>Connect with Education</h1>
         <p>The Chicago Wildlife Watch blog, as well as the partner Facebook pages, are great places to keep up to date with the latest science results, but there is also a Zooniverse Education Blog as well as a <a href='https://www.twitter.com/ZooTeach'>@ZooTeach</a> Twitter feed. The Urban Wildlife Institute also has a Twitter account, <a href='https://www.twitter.com/LPZ_UWI'>@LPZ_UWI</a>, that you can follow for more information on their work.</p>
+      """
+
+  press:
+    header: "Press"
+    intro: "Chicago Wildlife Watch Recruits Chicagoans to Help with Urban Wildlife Science Research from Home or Classroom"
+    section_1: """
+      The Adler Planetarium and Lincoln Park Zoo have launched <b>Chicago Wildlife Watch</b>, a new web-based citizen science initiative that provides an opportunity for students, teachers and members of the public to actively participate in Chicagoland wildlife research through photo identification technology. The platform is available at <a href="http://www.chicagowildlifewatch.org">chicagowildlifewatch.org</a>.
+    """
+    section_2: """
+      <b>Chicago Wildlife Watch</b> is a collaboration between the Adler Planetarium’s Zooniverse team and Lincoln Park Zoo’s Urban Wildlife Institute that began in early 2014. Faced with a year’s worth of back logged research, the Urban Wildlife Institute enlisted the help of the Adler Planetarium’s Zooniverse development team to create a citizen science platform that would empower the people of Chicago to assist researchers in classifying important data essential in assessing local wildlife and their habitats.
+    """
+    downloads:
+      header: "Chicago Wildlife Watch Media Downloads:"
+      pressReleasePdf: "Press Release PDF"
+      bRollFootage: "B-roll Footage"
+      imagesDownloads: "Images Downloads"
+      imageCaptionSheet: "Image Caption Sheet"
+    slider:
+      header: "Images"
+      captions: """
+        <div id="caption-1" class="nivo-html-caption">
+          <p>The Adler Planetarium and Lincoln Park Zoo have launched Chicago Wildlife Watch, a new web-based citizen science initiative that provides an opportunity for students, teachers and members of the public to actively participate in Chicagoland wildlife research through photo identification technology available at chicagowildlifewatch.org. This data will help re- searchers apply findings that will positively influence urban wildlife policy.</p>
+          <p>&copy; Adler Planetarium</p>
+        </div>
+
+        <div id="caption-2" class="nivo-html-caption">
+          <p>The camera traps used for Chicago Wildlife Watch data collection are set up in urban areas throughout Chicago including this South Loop location.</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
+        </div>
+
+        <div id="caption-3" class="nivo-html-caption">
+          <p>Seth Magle, PhD, Director of the Urban Wildlife Institute secures a camera trap that is used to capture data for Chicago Wildlife Watch. Urban Wildlife Institute scientists set up camera traps four times a year.</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
+        </div>
+
+        <div id="caption-4" class="nivo-html-caption">
+          <p>A resting coyote is captured by a Urban Wildlife Institute camera trap southwest of Chicago. Coyotes are among the most common carnivores in the Chicagoland area.</p>
+          <p>&copy; Urban Wildlife Institute/Linco]ln Park Zoo</p>
+        </div>
+        <div id="caption-5" class="nivo-html-caption">
+          <p>This image shows a raccoon and opossum in the city of Chicago. Exploring the relationship between urban species is one goal of Chicago Wildlife Watch.</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
+        </div>
+
+        <div id="caption-6" class="nivo-html-caption">
+          <p>Chicago Wildlife Watch will explore wildlife that utilize public spaces such as these coyotes foraging in a park on the Northwest side of Chicago.</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
+        </div>
+
+        <div id="caption-7" class="nivo-html-caption">
+          <p>This red fox sits facing an Urban Wildlife Institute camera trap west of the city. Red foxes are becoming uncommon in the Chicago area, with some speculat- ing that coyotes may be outcompeting them in urban spaces. Chicago Wildlife Watch may shed light on why this is occurring.</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
+        </div>
+
+        <div id="caption-8" class="nivo-html-caption">
+          <p>A Zooniverse team member from the Adler Planetarium demonstrates Chicago Wildlife Watch to participants of the Lincoln Park Zoo Conservation Camp. The Zooniverse is the world’s leading - and largest - citizen science platform.</p>
+          <p>&copy; Adler Planetarium</p>
+        </div>
+        <div id="caption-9" class="nivo-html-caption">
+          <p>Participants of the Lincoln Park Zoo Conservation Camp classify animals on Chicago Wildlife Watch. This easy to use online platform, allows everyone from middle-school aged children to adults to contribute to real scientific research.</p>
+          <p>&copy; Adler Planetarium</p>
+        </div>
+      """
+    contacts:
+      header: "Media Contacts:"
+      sharon: """
+        Sharon Dewar<br>
+        Lincoln Park Zoo<br>
+        312-742-2246<br>
+        SDewar@lpzoo.org
+      """
+      molly: """
+        Molly O’Connell<br>
+        Adler Planetarium<br>
+        312-322-0524<br>
+        moconnell@adlerplanetarium.org
       """

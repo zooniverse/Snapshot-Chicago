@@ -12,7 +12,6 @@
       <button name='zooniverse'><%- translate 'span', 'about.zooniverse.nav' %></button>
       <button name='organizations'><%- translate 'span', 'about.organizations.nav' %></button>
       <button name='team'><%- translate 'span', 'about.team.nav' %></button>
-      <a href="#/press"><button><%- translate 'span', 'about.press.nav' %></button></a>
     </nav>
   </div>
 
