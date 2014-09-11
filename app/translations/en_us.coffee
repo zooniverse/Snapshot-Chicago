@@ -25,7 +25,7 @@ module.exports =
     preFooterText: "Chicago Wildlife Watch is a collaboration between Lincoln Park Zoo, the Adler Planetarium and the Zooniverse."
 
     stats:
-      header: "CHICAGO WILDLIFE WATCH Classification Statistics"
+      header: "CHICAGO WILDLIFE WATCH Statistics"
       activeUsers: "Active Users"
       crittersIdentified: "Critters Identified"
       totalImages: "Images Total"
