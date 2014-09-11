@@ -10,6 +10,7 @@
     <div class="content">
       <%- translate 'div', 'home.leftBannerHeader' %>
     </div>
+    <%- translate 'div.imageCredit', 'home.imageCredit' %>
   </div>
 </section>
 

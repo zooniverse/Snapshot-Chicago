@@ -15,6 +15,7 @@ module.exports =
       <h2>Welcome to</h2>
       <h1>Chicago <br/> Wildlife Watch</h1>
     "
+    imageCredit: "Image credit and &copy; Brian Koprowski"
     content: '''
       To find out which animals live in Chicago, we’ve collected more than 1 million photos of wildlife from the Loop to the burbs. To ID them, though, we need your help! 
 

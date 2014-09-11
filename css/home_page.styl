@@ -11,6 +11,14 @@
     min-height: 500px;
     position: relative;
 
+    .imageCredit
+      bottom: 11px;
+      font-size: 11px;
+      opacity: 0.35;
+      padding: 0 100px;
+      position: absolute;
+      width: 100%;
+
     .content
       padding: 130px 100px 0 100px;
       font-weight: 300;
@@ -138,6 +146,8 @@
 
   @media $tablet-or-smaller
     .home-section
+      .imageCredit
+        display: none;
       .content
         padding: 130px 10px 0 10px;
 
