@@ -704,6 +704,12 @@ module.exports =
             <p>Prior to joining the Urban Wildlife Institute, Liza served as an avian field assistant on a project examining urban disease ecology of West Nile virus and as a guest engagement leader at Lincoln Park Zoo.</p>
         '''
 
+        fidino:
+          name: 'Mason Fidino'
+          description: '''
+            <p>Mason first began conservation and ecology work in 2006. Since then he has aided in numerous studies, from collecting clams and fish in the Columbia River to coring trees and identifying birds on the mountains of Washington. Mason completed his undergraduate education at Western Washington University in 2009. After a year-long stay in Dublin, Ireland, he moved to Chicago and began working at the Urban Wildlife Institute as Coordinator of Wildlife Management.</p>
+          '''
+
       development:
         raden:
           name: 'Steve Raden'
