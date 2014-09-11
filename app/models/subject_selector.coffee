@@ -40,6 +40,7 @@ SubjectSelector =
 
     Subject.fetch limit: 1, (subjects) =>
       if subjects?.length
+        Subject.current?.destroy()
         @setGroup(groupToReturnTo)
         subjects[0].select()
       else
@@ -54,6 +55,7 @@ SubjectSelector =
       safes = subjects.filter (s) => s.classification_count > @safeCount
 
       if safes?.length
+        Subject.current?.destroy()
         safes[0].select()
       else
         @getSafeNext(attempts - 1)
