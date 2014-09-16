@@ -3,7 +3,9 @@ template = require '../views/subject_viewer'
 AnnotationItem = require './annotation_item'
 Subject = require 'zooniverse/models/subject'
 SubjectSelector = require '../models/subject_selector'
+User = require 'zooniverse/models/user'
 modulus = require '../lib/modulus'
+Notify = require '../lib/notifier'
 
 class SubjectViewer extends Controller
   classification: null
@@ -39,6 +41,7 @@ class SubjectViewer extends Controller
 
     Subject.on 'select', @onSubjectSelect
 
+    localStorage.cwwClassifyCount = 0 if not User.current and not localStorage.cwwClassifyCount
 
   setClassification: (classification) ->
     @el.removeClass 'finished'
@@ -100,7 +103,17 @@ class SubjectViewer extends Controller
   onClickFinish: ->
     @el.addClass 'finished'
     @classification.send() unless @classification.subject.metadata.empty
-    console?.log(@classification)
+    @handleLoginPrompt()
+
+  handleLoginPrompt: =>
+    return if +localStorage.cwwClassifyCount > 2
+    if +localStorage.cwwClassifyCount is 2
+      Notify.message """
+        <a href='#' onclick='window.zooniverse.controllers.loginDialog.show()'>Sign in</a> or
+        <a href='#' onclick='window.zooniverse.controllers.signupDialog.show()'>Sign up</a>  
+        to track your progress, add images to your favorites, and receive credit for your contributions!
+      """, "#fff"
+    localStorage.cwwClassifyCount++
 
   onClickNext: ->
     @loader.show()
