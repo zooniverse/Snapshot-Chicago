@@ -9,7 +9,7 @@ class SmallTutorial
   html = """
     <div id='small-tutorial'>
       <div class='tutorial-slide'>
-        <button id='close'><span id='skip'>Skip</span><img id='tut-x-icon' src='./images/x-icon.svg'></button>
+        <button id='close'><span id='skip'>Skip</span><img id='tut-x-icon' src='./images/x-icon-light.svg'></button>
         <div id='slides-container'></div>
         <button id='next'>Next</button>
         <div class='dots'></div>
