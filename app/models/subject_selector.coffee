@@ -13,7 +13,7 @@ groups = if !!~location.hostname.indexOf('demo') || +location.port >= 1024
 SubjectSelector =
   groups: groups
 
-  goldStandardRate: 1 / 3
+  goldStandardRate: 1 / 6
 
   safeCount: 2
 
