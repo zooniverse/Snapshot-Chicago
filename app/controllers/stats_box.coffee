@@ -39,7 +39,7 @@ class StatsBox extends Controller
 
   updateHelper: =>
     project = Project.current
-    @completeCount = num(project.complete_count)
+    @completeCount = project.complete_count
     @complete.text @percentComplete() + "%"
     @classificationCount.text num(project.classification_count)
     @userCount.text num(project.user_count)
