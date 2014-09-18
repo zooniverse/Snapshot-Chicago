@@ -68,6 +68,9 @@
 
         <%- translate 'h2', 'about.team.development.weiksnar.name' %>
         <%- translate 'div', 'about.team.development.weiksnar.description' %>
+
+        <%- translate 'h2', 'about.team.development.wang.name' %>
+        <%- translate 'div', 'about.team.development.wang.description' %>
       </div>
     </div>
 

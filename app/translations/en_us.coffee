@@ -734,6 +734,12 @@ module.exports =
            </p>
           '''
 
+        wang:
+          name: 'Jun Wang'
+          description: '''
+            <p>Jun Wang is a research scientist at the Syracuse University School of Information Studies. He is interested in designing enjoyable web applications. He is currently a principal investigator of a project sponsored by National Academies: "Drawing-based social learning". He is also an investigator of a citizen science project (citizensort) at Syracuse University. Fascinated by the recent breakthrough in deep learning, he wonders how much computer and human can teach each other. He has enjoyed working with the Zooniverse n using Caffe, a fast deep learning framework, to accomplish pre-processing on the images displayed to volunteers on Chicago Wildlife Watch.</p>
+          '''
+
         whyte:
           name: 'Dr. Laura Whyte'
           title: 'Director of Citizen Science at Adler Planetarium'
