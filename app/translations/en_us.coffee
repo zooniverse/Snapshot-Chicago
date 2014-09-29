@@ -89,9 +89,8 @@ module.exports =
       headUp: 'Head Up'
       headDown: 'Head Down'
       neither: 'Neither'
-      notVisible: 'Not Visble'
+      notVisible: 'Not Visible'
       notApplicable: 'N/A'
-
 
     babies: 'Young present'
     rain: 'Raining'
