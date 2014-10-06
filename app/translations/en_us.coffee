@@ -55,7 +55,7 @@ module.exports =
       content: "Occasionally it is difficult to determine which animal is in the photo. Just above the list of animals is a variety of methods to filter the animal list. Selecting different options reduces the number of choices, making your job easier."
     s4:
       title: "Made a mistake?"
-      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon"
+      content: "If you need to delete any of your existing marks while viewing an image, simply find your animal in the list below the image and click the 'X' icon. Don’t worry if you’re unsure about your choices, though—even a guess is more helpful than nothing!"
     s5:
       title: "That's it!"
       content: "That's it! You may catch up on project updates either on the blog or through speaking with other volunteers. If you need additional help using the interface, click Tutorial within the list of links below the Finish button."
