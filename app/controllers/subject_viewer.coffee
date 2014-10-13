@@ -106,7 +106,7 @@ class SubjectViewer extends Controller
     @handleLoginPrompt()
 
   handleLoginPrompt: =>
-    return if +localStorage.cwwClassifyCount > 2
+    return if +localStorage.cwwClassifyCount > 2 or !!User.current
     if +localStorage.cwwClassifyCount is 2
       Notify.message """
         <a href='#' onclick='window.zooniverse.controllers.loginDialog.show()'>Sign in</a> or
