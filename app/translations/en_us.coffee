@@ -4,7 +4,7 @@ module.exports =
     about: 'About'
     classify: 'Classify'
     profile: 'Profile'
-    discuss: 'Discuss'
+    discuss: 'Talk'
     education: 'Education'
     press: 'Press'
 
