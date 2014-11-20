@@ -829,7 +829,7 @@ module.exports =
 
         <div id="caption-4" class="nivo-html-caption">
           <p>A resting coyote is captured by a Urban Wildlife Institute camera trap southwest of Chicago. Coyotes are among the most common carnivores in the Chicagoland area.</p>
-          <p>&copy; Urban Wildlife Institute/Linco]ln Park Zoo</p>
+          <p>&copy; Urban Wildlife Institute/Lincoln Park Zoo</p>
         </div>
         <div id="caption-5" class="nivo-html-caption">
           <p>This image shows a raccoon and opossum in the city of Chicago. Exploring the relationship between urban species is one goal of Chicago Wildlife Watch.</p>
