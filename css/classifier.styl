@@ -30,3 +30,33 @@
           display: none;
     .animal-selector .selection-area .items[data-items="10"] [data-animal] .image
       display: none;
+
+ .classifier-help-link
+   HEIGHT = 23px
+
+   border: 2px solid $medium-blue
+   text-decoration: none
+   line-height: HEIGHT
+   border-radius: HEIGHT
+   font-size: 12px
+   color: $medium-grey-font !important // override font color
+   position: absolute
+   bottom: -50px // anchor below the classifier
+   left: 0px
+   overflow: auto
+   padding: 2px 15px 2px 2px
+
+   .classifier-help-icon
+     background: $medium-blue
+     margin-right: 10px
+     color: $white
+     border-radius: 50%
+     width: HEIGHT
+     line-height: HEIGHT
+     box-sizing: border-box
+     text-align: center
+     display: inline-block
+
+
+    @media $classifier-vertical-stack-breakpoint
+      display: none

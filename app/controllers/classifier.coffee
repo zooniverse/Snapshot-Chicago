@@ -12,6 +12,7 @@ tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
 Classification = require '../models/classification'
+helpLink = require '../views/classifier_help_link.eco'
 
 class Classifier extends Controller
   className: 'classifier'
@@ -40,6 +41,8 @@ class Classifier extends Controller
     @tutorial = new Tutorial
       steps: tutorialSteps
       parent: @el
+
+    @el.append helpLink
 
     Subject.group = true
 

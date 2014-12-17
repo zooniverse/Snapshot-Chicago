@@ -75,9 +75,9 @@ module.exports =
     search: 'Search'
 
     annotationsMessage: "See something? Animals you identify will appear here..."
+    helpLink: "Need some spotting tips? Check out these blog posts"
     nothingToShow: 'There\'s nothing to show with these filters.'
     clearFilters: 'Clear filters'
-
     curatedError: "We can't find any subjects right now in our curated dataset', Click the 'Next Capture' button to try again or <a href='#/filter'>view our uncurated dataset</a>"
 
     oftenConfused: 'Often confused with:'

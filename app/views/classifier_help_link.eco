@@ -1,0 +1,6 @@
+<% translate = require 't7e' %>
+
+<a class='classifier-help-link' href='http://www.lpzoo.org/conservation-science/projects/chicago-wildlife-watch/chicago-wildlife-identification-guide'>
+  <div class='classifier-help-icon'>?</div>
+  <%- translate 'span', 'classify.helpLink' %>
+</a>
