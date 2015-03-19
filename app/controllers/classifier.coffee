@@ -13,6 +13,7 @@ getTutorialSubject = require '../lib/get_tutorial_subject'
 getEmptySubject = require '../lib/get_empty_subject'
 Classification = require '../models/classification'
 helpLink = require '../views/classifier_help_link.eco'
+template = require '../views/classifier'
 
 class Classifier extends Controller
   className: 'classifier'
@@ -24,19 +25,20 @@ class Classifier extends Controller
 
   constructor: ->
     super
-
-    @subjectViewer = new SubjectViewer
-
-    @el.append @subjectViewer.el
-
-    User.on 'change', @onUserChange
+    @html(template)
 
     @animalSelector = new AnimalSelector
       set: animals
       characteristics: characteristics
       itemController: AnimalMenuItem
 
-    @el.append @animalSelector.el
+    @el.find('.animal-selector-container').append @animalSelector.el
+
+    @subjectViewer = new SubjectViewer
+
+    @el.find('.subject-viewer-container').append @subjectViewer.el
+
+    User.on 'change', @onUserChange
 
     @tutorial = new Tutorial
       steps: tutorialSteps
