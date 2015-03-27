@@ -28,7 +28,7 @@ module.exports =
     stats:
       header: "CHICAGO WILDLIFE WATCH Statistics"
       activeUsers: "Active Users"
-      crittersIdentified: "Critters Identified"
+      crittersIdentified: "Classifications"
       totalImages: "Images Total"
       complete: "Complete"
 
