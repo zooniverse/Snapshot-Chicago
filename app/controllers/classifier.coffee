@@ -10,7 +10,6 @@ User = require 'zooniverse/models/user'
 {Tutorial} = require 'zootorial'
 tutorialSteps = require '../lib/tutorial_steps'
 getTutorialSubject = require '../lib/get_tutorial_subject'
-getEmptySubject = require '../lib/get_empty_subject'
 Classification = require '../models/classification'
 helpLink = require '../views/classifier_help_link.eco'
 template = require '../views/classifier'
@@ -102,8 +101,7 @@ class Classifier extends Controller
       @tutorial.end()
 
   onNoLocalSubjects: =>
-    subject = getEmptySubject()
-    subject.select()
+    alert 'Couldn\'t find an image to display. Maybe you have classified all currently available images. Check back soon!'
 
   onUserChange: (e, user) =>
     @user = user
