@@ -184,11 +184,6 @@ module.exports =
         This animal is usually brown with large sharp front teeth, clawed front feet webbed back feet, a round body and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
       '''
 
-    bike:
-      label: 'Bike'
-      description: '''
-        N/A. Identifying the frequency of bikes helps us understand the impact of human activity on the animal population in this urban habitat. 
-      '''
     bird:
       label: 'Bird'
       description: '''

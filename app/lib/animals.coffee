@@ -19,7 +19,6 @@ characteristics = ['like', 'coat','tail', 'build']
 #Chicago animal  characteristics
 animalCharacteristics = [
   {beaver:                  [0,1,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,1]}
-  {bike:                    [0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
   {bird:                    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}
   {domCat:                  [1,0,0,0,1,1,1,1,1,1,1,1,0,1,1,0,0,0]}
   {chipmunk:                [0,1,0,0,1,1,0,0,0,0,1,0,1,1,0,0,1,1]}
