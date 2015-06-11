@@ -292,12 +292,6 @@ module.exports =
         Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal is known for playing dead and has a white face with a pink nose, black eyes, black ears, long tail and long, gray fur on its body.
       '''
 
-    otherVehicle:
-      label: 'Vehicle, Other'
-      description: '''
-        N/A. Identifying the frequency of vehicles helps us understand the impact of human activity on the animal population in this urban habitat.
-      '''
-
     rabbit:
       label: 'Rabbit'
       description: '''

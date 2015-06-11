@@ -24,7 +24,6 @@ animalCounts =
   'mower': 3
   'muskrat': 2
   'opossum': 3
-  'other-vehicle': 2
   'rabbit': 3
   'raccoon': 3
   'rat': 3
