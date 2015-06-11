@@ -184,21 +184,10 @@ module.exports =
         This animal is usually brown with large sharp front teeth, clawed front feet webbed back feet, a round body and a large flat tail. As the second largest rodent in the world, beavers are semi-aquatic and primarily nocturnal.
       '''
 
-    bike:
-      label: 'Bike'
-      description: '''
-        N/A. Identifying the frequency of bikes helps us understand the impact of human activity on the animal population in this urban habitat. 
-      '''
     bird:
       label: 'Bird'
       description: '''
         All manner of birds will be captured in the pictures, from cardinals to seagulls. They will frequently be found either nesting in trees or scavenging for food on the ground.
-      '''
-
-    car:
-      label: 'Car'
-      description: '''
-        N/A. Identifying the frequency of cars helps us understand the impact of human activity on the animal population in this urban habitat. 
       '''
 
     chipmunk:
@@ -301,12 +290,6 @@ module.exports =
       label: 'Opossum'
       description: '''
         Adept tree climbers with their clawed feet and opposable big toe on rear paw. This animal is known for playing dead and has a white face with a pink nose, black eyes, black ears, long tail and long, gray fur on its body.
-      '''
-
-    otherVehicle:
-      label: 'Vehicle, Other'
-      description: '''
-        N/A. Identifying the frequency of vehicles helps us understand the impact of human activity on the animal population in this urban habitat.
       '''
 
     rabbit:
