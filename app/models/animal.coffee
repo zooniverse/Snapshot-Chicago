@@ -17,7 +17,7 @@ class Animal extends Model
 
   toJSON: -> @id
 
-  @vehicles: ["Mower", "Car", "Vehicle, Other", "Bike"]
+  @vehicles: ["Mower", "Vehicle, Other", "Bike"]
 
   @domestics: ["Human", "Cat, Domestic", "Dog, Domestic"]
 

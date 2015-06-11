@@ -6,7 +6,6 @@ animalCounts =
   'bike': 3
   'bird': 3
   'canada-goose': 3
-  'car': 3
   'chipmunk': 3
   'coyote': 3
   'deer': 3

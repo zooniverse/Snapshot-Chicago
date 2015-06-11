@@ -195,12 +195,6 @@ module.exports =
         All manner of birds will be captured in the pictures, from cardinals to seagulls. They will frequently be found either nesting in trees or scavenging for food on the ground.
       '''
 
-    car:
-      label: 'Car'
-      description: '''
-        N/A. Identifying the frequency of cars helps us understand the impact of human activity on the animal population in this urban habitat. 
-      '''
-
     chipmunk:
       label: 'Chipmunk'
       description: '''
