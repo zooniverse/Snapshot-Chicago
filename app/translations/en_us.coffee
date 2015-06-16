@@ -7,6 +7,7 @@ module.exports =
     discuss: 'Talk'
     education: 'Education'
     press: 'Press'
+    blog: 'Blog'
 
   home:
     heading: 'Chicago Wildlife Watch'
