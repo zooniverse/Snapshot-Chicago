@@ -67,7 +67,7 @@ class AnimalDetails extends Controller
       $(checkbox).val()
 
   getBabies: ->
-    !!@babiesCheckbox.attr 'checked'
+    !!@babiesCheckbox.filter(':checked')
 
   onClickCancel: ->
     @hide()
