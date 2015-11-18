@@ -388,6 +388,9 @@ module.exports =
         <p>
           Knowing where Chicago’s urban wildlife is located will help us to better conserve it. This knowledge will pave the way for future studies on the behavior and ecology of specific urban species, helping stakeholders to better manage wildlife conflict.
         </p>
+        <p>
+          Keep an eye out for the black pouches that are often attached to trees in most of the photos. They contain a scented lure that increases the probability of photographing the wildlife community at a site.
+        </p>
 
         <img src="./images/animals/fox-squirrel-1.jpg">
       """
