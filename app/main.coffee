@@ -48,7 +48,10 @@ new GoogleAnalytics
   domain: 'chicagowildlifewatch.org'
 
 app = {}
-api = new Api project: 'chicago'
+api = if window.location.hostname is 'www.chicagowildlifewatch.org'
+  new zooniverse.Api project: 'chicago', host: 'http://www.chicagowildlifewatch.org', path: '/_ouroboros_api/proxy'
+else
+  new zooniverse.Api project: 'chicago'
 
 #TODO rewrite this logic for sorted seasons
 # Api.get '/projects/serengeti', (project) ->
