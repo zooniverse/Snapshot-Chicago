@@ -49,7 +49,7 @@ new GoogleAnalytics
 
 app = {}
 api = if window.location.hostname is 'www.chicagowildlifewatch.org'
-  new zooniverse.Api project: 'chicago', host: 'http://www.chicagowildlifewatch.org', path: '/_ouroboros_api/proxy'
+  new zooniverse.Api project: 'chicago', host: 'https://www.chicagowildlifewatch.org', path: '/_ouroboros_api/proxy'
 else
   new zooniverse.Api project: 'chicago'
 
