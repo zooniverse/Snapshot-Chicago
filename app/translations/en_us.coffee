@@ -437,7 +437,7 @@ module.exports =
 
         <p>Known online as the Zooniverse, the Adler's Citizen Science department designs and develops web applications using data sets that would normally take a science team over 100 years to analyze and, with the help of a worldwide network of volunteers, complete the analysis with a high level of accuracy in weeks or months.</p>
 
-        <p>To participate in other citizen science efforts, visit <a href="http://www.zooniverse.org">Zooniverse.org</a>.</p>
+        <p>To participate in other citizen science efforts, visit <a href="https://www.zooniverse.org">Zooniverse.org</a>.</p>
       """
     organizations:
       nav: "Organizations"
