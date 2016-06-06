@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "dependencies": {
     "haw": "~0.5.1",
-    "t7e": "~0.2.3",
-    "spine": "1.3.2",
-    "zooniverse": "~0.7.1",
-    "zootorial": "~0.2.0",
     "publisssh": "~0.2.5",
-    "translator-seed": "0.1.2"
+    "spine": "1.3.2",
+    "t7e": "~0.4.0",
+    "translator-seed": "0.1.2",
+    "zooniverse": "~0.7.1",
+    "zootorial": "~0.2.0"
   },
   "scripts": {
     "start": "haw serve --port 9999",
